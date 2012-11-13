@@ -1,0 +1,15 @@
+First: add players
+	- add from address book
+	- add recently added players
+	- type in name
+
+Second: start scoring
+	- enter in all scores
+	
+Third: Final, display all scores
+
+Allow save of scores.
+Allow delete of games
+Show graph of final scores vs dates for selected players
+
+send to github?
