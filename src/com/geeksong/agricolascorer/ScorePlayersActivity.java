@@ -1,15 +1,22 @@
 package com.geeksong.agricolascorer;
 
 import java.util.ArrayList;
+import java.util.Dictionary;
+import java.util.Hashtable;
+
+import com.geeksong.agricolascorer.model.Score;
 
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
 
 public class ScorePlayersActivity extends Activity {
-
+	private Hashtable<String, Score> scores = new Hashtable<String, Score>();
+	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,10 +27,13 @@ public class ScorePlayersActivity extends Activity {
         TabHost tabs = (TabHost) findViewById(android.R.id.tabhost);
         tabs.setup();
         
+        ScoreTabFactory factory = new ScoreTabFactory(this, scores);
+        
         for(int i = 0; i < playerList.size(); i++ ) {
         	String playerName = playerList.get(i);
             TabSpec tab = tabs.newTabSpec(playerName);
-            tab.setContent(R.id.scorePlayer);
+            
+            tab.setContent(factory);
             tab.setIndicator(playerName);
             tabs.addTab(tab);
         }

@@ -1,5 +1,7 @@
 package com.geeksong.agricolascorer;
 
+import com.geeksong.agricolascorer.mapper.RecentPlayersMapper;
+
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
@@ -11,12 +13,30 @@ import android.view.View;
 import android.widget.EditText;
 
 public class AddPlayersActivity extends Activity {
-	private static final int PICK_CONTACT = 1; 
+	private static final int PICK_CONTACT = 1;
+	
+	private RecentPlayersMapper recentPlayersMapper; 
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_players);
+        
+        recentPlayersMapper = new RecentPlayersMapper(this);
+            }
+    
+    private void fillData() {
+    	// LoaderManager with CursorLoader?
+    	/*
+        // Get all of the notes from the database and create the item list
+        Cursor c = recentPlayersMapper.getTopPlayers(5);
+
+        String[] from = new String[] { RecentPlayersMapper.KEY_NAME };
+        int[] to = new int[] { R.id.text1 };
+        
+        // Now create an array adapter and set it to display using our row
+        SimpleCursorAdapter notes = new SimpleCursorAdapter(this, R.layout.notes_row, c, from, to);
+        setListAdapter(notes);*/
     }
 
     @Override
@@ -28,8 +48,7 @@ public class AddPlayersActivity extends Activity {
     private void putNameIntoInput(String name) {
     	EditText inputPlayerName = (EditText) findViewById(R.id.inputPlayerName);
     	inputPlayerName.setText(name);	
-    }
-    
+    }    
     
     public void addPlayerToGame(View source) {
     	EditText inputPlayerName = (EditText) findViewById(R.id.inputPlayerName);

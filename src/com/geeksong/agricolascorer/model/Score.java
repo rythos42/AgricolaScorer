@@ -1,4 +1,6 @@
-package com.geeksong.agricolascorer;
+package com.geeksong.agricolascorer.model;
+
+import com.geeksong.agricolascorer.RoomType;
 
 public class Score {
 	private int fieldCount;

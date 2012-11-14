@@ -6,6 +6,7 @@ First:
 
 Second: start scoring
 	- enter in all scores
+	- display final score
 	
 Third: Final, display all scores
 
