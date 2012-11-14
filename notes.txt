@@ -1,7 +1,8 @@
-First: add players
-	- add from address book
-	- add recently added players
-	- type in name
+First: 
+	- recent players from database
+		- figure out database?
+		- top X players
+	
 
 Second: start scoring
 	- enter in all scores
@@ -12,4 +13,4 @@ Allow save of scores.
 Allow delete of games
 Show graph of final scores vs dates for selected players
 
-send to github?
+ensure can back-enter old data from old application

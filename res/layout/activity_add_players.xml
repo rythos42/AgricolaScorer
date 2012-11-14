@@ -3,12 +3,56 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <TextView
+    <EditText
+        android:id="@+id/inputPlayerName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world"
-        tools:context=".AddPlayersActivity" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="@string/input_player_name" >
 
-</RelativeLayout>
+        <requestFocus />
+    </EditText>
+    
+    <RelativeLayout android:id="@+id/listContainer"
+            android:layout_height="wrap_content" 
+            android:layout_width="fill_parent"
+            android:layout_above="@+id/buttonsContainer"
+	        android:layout_below="@+id/inputPlayerName">
+        <TextView
+            android:id="@+id/recentPlayersLabel"
+            android:text="@string/recent_label" 
+            android:layout_height="wrap_content" 
+            android:layout_width="fill_parent"
+            />
+	    <ListView
+	        android:id="@+id/recentPlayersList"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/recentPlayersLabel" >
+	    </ListView>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/buttonsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+    	<Button
+	        android:id="@+id/addressBookButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/address_book"
+	        android:layout_alignParentLeft="true"
+	        android:onClick="searchAddressBook" />
+
+	    <Button
+	        android:id="@+id/doneAddingPlayerButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/add"
+	        android:onClick="addPlayerToGame"
+	        android:layout_alignParentRight="true" />
+    </RelativeLayout></RelativeLayout>
