@@ -1,19 +1,12 @@
 package com.geeksong.agricolascorer;
 
-<<<<<<< HEAD
-=======
 import com.geeksong.agricolascorer.mapper.RecentPlayersMapper;
-
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
->>>>>>> branch 'master' of https://github.com/rythos42/AgricolaScorer.git
 import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
-import android.net.Uri;
-import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
@@ -22,13 +15,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
-<<<<<<< HEAD
-import com.geeksong.agricolascorer.mapper.RecentPlayersMapper;
-
 public class AddPlayersActivity extends Activity implements OnItemClickListener {
-=======
-public class AddPlayersActivity extends Activity {
->>>>>>> branch 'master' of https://github.com/rythos42/AgricolaScorer.git
 	private static final int PICK_CONTACT = 1;
 	
 	private RecentPlayersMapper recentPlayersMapper; 
@@ -39,28 +26,11 @@ public class AddPlayersActivity extends Activity {
         setContentView(R.layout.activity_add_players);
         
         recentPlayersMapper = new RecentPlayersMapper(this);
-<<<<<<< HEAD
         ListView list = (ListView) this.findViewById(R.id.recentPlayersList);
         list.setOnItemClickListener(this);
         list.setAdapter(recentPlayersMapper.getListAdapter());
-=======
-            }
-    
-    private void fillData() {
-    	// LoaderManager with CursorLoader?
-    	/*
-        // Get all of the notes from the database and create the item list
-        Cursor c = recentPlayersMapper.getTopPlayers(5);
-
-        String[] from = new String[] { RecentPlayersMapper.KEY_NAME };
-        int[] to = new int[] { R.id.text1 };
-        
-        // Now create an array adapter and set it to display using our row
-        SimpleCursorAdapter notes = new SimpleCursorAdapter(this, R.layout.notes_row, c, from, to);
-        setListAdapter(notes);*/
->>>>>>> branch 'master' of https://github.com/rythos42/AgricolaScorer.git
-    }
-    
+	}
+       
 	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 		TextView item = (TextView) view;
 		
@@ -77,17 +47,13 @@ public class AddPlayersActivity extends Activity {
     private void putNameIntoInput(String name) {
     	EditText inputPlayerName = (EditText) findViewById(R.id.inputPlayerName);
     	inputPlayerName.setText(name);	
-<<<<<<< HEAD
     }
     
     private String getInputName() {
     	EditText inputPlayerName = (EditText) findViewById(R.id.inputPlayerName);
     	return inputPlayerName.getText().toString();
     }
-=======
-    }    
->>>>>>> branch 'master' of https://github.com/rythos42/AgricolaScorer.git
-    
+     
     public void addPlayerToGame(View source) {
     	String name = getInputName();
     	
