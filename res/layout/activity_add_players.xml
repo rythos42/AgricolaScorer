@@ -31,7 +31,7 @@
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
 	        android:layout_alignParentLeft="true"
-	        android:layout_below="@+id/recentPlayersLabel" >
+	        android:layout_below="@+id/recentPlayersLabel">
 	    </ListView>
     </RelativeLayout>
     

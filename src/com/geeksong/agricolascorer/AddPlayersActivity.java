@@ -1,24 +1,44 @@
 package com.geeksong.agricolascorer;
 
-import android.net.Uri;
-import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
+import android.net.Uri;
+import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.view.Menu;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.TextView;
 
-public class AddPlayersActivity extends Activity {
-	private static final int PICK_CONTACT = 1; 
+import com.geeksong.agricolascorer.mapper.RecentPlayersMapper;
+
+public class AddPlayersActivity extends Activity implements OnItemClickListener {
+	private static final int PICK_CONTACT = 1;
+	
+	private RecentPlayersMapper recentPlayersMapper; 
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_players);
+        
+        recentPlayersMapper = new RecentPlayersMapper(this);
+        ListView list = (ListView) this.findViewById(R.id.recentPlayersList);
+        list.setOnItemClickListener(this);
+        list.setAdapter(recentPlayersMapper.getListAdapter());
     }
-
+    
+	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+		TextView item = (TextView) view;
+		
+		putNameIntoInput(item.getText().toString().trim());
+		addPlayerToGame(null);
+	}
+    
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.activity_add_players, menu);
@@ -30,12 +50,18 @@ public class AddPlayersActivity extends Activity {
     	inputPlayerName.setText(name);	
     }
     
+    private String getInputName() {
+    	EditText inputPlayerName = (EditText) findViewById(R.id.inputPlayerName);
+    	return inputPlayerName.getText().toString();
+    }
     
     public void addPlayerToGame(View source) {
-    	EditText inputPlayerName = (EditText) findViewById(R.id.inputPlayerName);
+    	String name = getInputName();
+    	
+    	recentPlayersMapper.addPlayer(name);
     	
     	Intent backToCreateGame = new Intent();
-    	backToCreateGame.putExtra("playerName", inputPlayerName.getText().toString());
+    	backToCreateGame.putExtra("playerName", name);
     	setResult(CreateGameActivity.AddPlayerResultCode, backToCreateGame);
     	finish();
     }

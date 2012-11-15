@@ -1,16 +1,21 @@
-First: 
-	- recent players from database
-		- figure out database?
-		- top X players
-	
+- link UI entries to score object
+	- unused spaces
+	- fenced stables
+	- rooms
+	- family members
+	- points for cards
+	- bonus points
+	- begging cards
 
-Second: start scoring
-	- enter in all scores
-	
-Third: Final, display all scores
-
+Display final score for all players	
 Allow save of scores.
 Allow delete of games
 Show graph of final scores vs dates for selected players
 
 ensure can back-enter old data from old application
+
+
+Future
+	- make look good
+		- colours on segmented control
+	- put game count when displayed on recent players

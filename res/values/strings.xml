@@ -6,15 +6,30 @@
     <string name="title_activity_add_players">AddPlayersActivity</string>
     <string name="title_activity_create_game">CreateGameActivity</string>
     <string name="input_player_name">Input a player name</string>
-    <string name="add">add</string>
+    <string name="add">Add</string>
     <string name="address_book">Address Book</string>
     <string name="recent_label">Recent:</string>
-    <string name="title_section3">Section 3</string>
-    <string name="title_section2">Section 2</string>
-    <string name="title_section1">Section 1</string>
-    <string name="hello_world">Hello world!</string>
     <string name="title_activity_score_players">ScorePlayersActivity</string>
     <string name="title_activity_score_player">ScorePlayerActivity</string>
     <string name="start_game">Start game</string>
+    <string name="fields_label">Fields</string>
+    <string name="pastures_label">Pastures:</string>
+    <string name="grain_label">Grain:</string>
+    <string name="vegetables_label">Vegetables:</string>
+    <string name="sheep_label">Sheep:</string>
+    <string name="wild_boar_label">Wild boar:</string>
+    <string name="cattle_label">Cattle:</string>
+    <string name="unused_spaces_label">Unused spaces</string>
+    <string name="fenced_stables_label">Fenced stables</string>
+    <string name="room_type_label">Material:</string>
+    <string name="rooms_label">Rooms</string>
+    <string name="family_members_label">Family members:</string>
+    <string name="points_for_cards_label">Points for cards</string>
+    <string name="bonus_points_label">Bonus points</string>
+    <string name="begging_cards_label">Begging cards</string>
+    <string name="score_label">Score:</string>
+    <string name="wood">Wood</string>
+    <string name="clay">Clay</string>
+    <string name="stone">Stone</string>
 
 </resources>

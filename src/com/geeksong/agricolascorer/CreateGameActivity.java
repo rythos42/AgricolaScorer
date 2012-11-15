@@ -1,7 +1,6 @@
 package com.geeksong.agricolascorer;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import android.os.Bundle;
 import android.app.ListActivity;
