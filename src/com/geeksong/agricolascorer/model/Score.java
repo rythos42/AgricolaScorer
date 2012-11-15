@@ -78,6 +78,6 @@ public class Score {
 	}
 
 	public int getTotalScore() {
-		return this.fieldScore;
+		return this.fieldScore + this.pastureScore + this.grainScore + this.vegetableScore + this.sheepScore + this.boarScore + this.cattleScore;
 	}
 }

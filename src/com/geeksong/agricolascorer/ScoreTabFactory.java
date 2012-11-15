@@ -5,11 +5,8 @@ import java.util.Dictionary;
 import com.geeksong.agricolascorer.model.Score;
 
 import android.app.Activity;
-import android.util.Log;
 import android.view.View;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TabHost;
 import android.widget.TextView;
 
