@@ -75,4 +75,3 @@ public class SegmentedControlButton extends RadioButton {
         mX = w * 0.5f; // remember the center of the screen
     } 
 }
-

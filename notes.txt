@@ -7,7 +7,16 @@
 	- bonus points
 	- begging cards
 
+<<<<<<< HEAD
 Display final score for all players	
+=======
+Second: start scoring
+	- enter in all scores
+	- display final score
+	
+Third: Final, display all scores
+
+>>>>>>> branch 'master' of https://github.com/rythos42/AgricolaScorer.git
 Allow save of scores.
 Allow delete of games
 Show graph of final scores vs dates for selected players
