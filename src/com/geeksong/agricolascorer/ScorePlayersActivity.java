@@ -7,12 +7,15 @@ import com.geeksong.agricolascorer.model.Score;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
 
 public class ScorePlayersActivity extends Activity {
-	private Hashtable<String, Score> scores = new Hashtable<String, Score>();
+	private ArrayList<Score> scores = new ArrayList<Score>();
+	private static final String Scores = "Scores";
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -40,5 +43,18 @@ public class ScorePlayersActivity extends Activity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.activity_score_players, menu);
         return true;
+    }
+    
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+    	switch(item.getItemId()) {
+    		case R.id.finishButton:
+    	    	Intent finishGameIntent = new Intent(this, FinishedActivity.class);
+    	    	
+    	    	finishGameIntent.putParcelableArrayListExtra(Scores, this.scores);
+    	    	startActivity(finishGameIntent);
+    			break;
+    	}
+    	return true;
     }
 }

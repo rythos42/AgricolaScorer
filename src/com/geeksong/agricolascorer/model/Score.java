@@ -1,6 +1,9 @@
 package com.geeksong.agricolascorer.model;
 
-public class Score {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class Score implements Parcelable {
 	private int fieldScore;
 	private int pastureScore;
 	private int grainScore;
@@ -11,12 +14,14 @@ public class Score {
 	private int unusedSpacesScore;
 	private int fencedStablesScore;
 	private int roomsScore;
-	private RoomType roomType;
 	private int familyMemberScore;
 	private int pointsForCards;
 	private int bonusPoints;
 	private int beggingCardsScore;
 
+	private RoomType roomType;
+	private int roomCount;
+	
 	public void setFieldScore(int fieldScore) {
 		this.fieldScore = fieldScore;
 	}
@@ -57,10 +62,6 @@ public class Score {
 		this.roomsScore = roomsScore;
 	}
 
-	public void setRoomType(RoomType roomType) {
-		this.roomType = roomType;
-	}
-
 	public void setFamilyMemberScore(int familyMemberScore) {
 		this.familyMemberScore = familyMemberScore;
 	}
@@ -76,8 +77,78 @@ public class Score {
 	public void setBeggingCardsScore(int beggingCardsScore) {
 		this.beggingCardsScore = beggingCardsScore;
 	}
+	
+	public int getRoomCount() {
+		return this.roomCount;
+	}
+	
+	public void setRoomCount(int roomCount) {
+		this.roomCount = roomCount;
+	}
+	
+	public RoomType getRoomType() {
+		return this.roomType;
+	}
+
+	public void setRoomType(RoomType roomType) {
+		this.roomType = roomType;
+	}
 
 	public int getTotalScore() {
-		return this.fieldScore + this.pastureScore + this.grainScore + this.vegetableScore + this.sheepScore + this.boarScore + this.cattleScore;
+		return this.fieldScore + this.pastureScore + this.grainScore + this.vegetableScore + this.sheepScore + this.boarScore + this.cattleScore
+				+ this.roomsScore + this.familyMemberScore + this.unusedSpacesScore + this.fencedStablesScore + this.pointsForCards + this.bonusPoints + this.beggingCardsScore;
 	}
+
+	public int describeContents() {
+		return 0;
+	}
+
+	public void writeToParcel(Parcel out, int flags) {
+		out.writeInt(this.fieldScore);
+		out.writeInt(this.pastureScore);
+		out.writeInt(this.grainScore);
+		out.writeInt(this.vegetableScore);
+		out.writeInt(this.sheepScore);
+		out.writeInt(this.boarScore);
+		out.writeInt(this.cattleScore);
+		out.writeInt(this.roomsScore);
+		out.writeInt(this.familyMemberScore);
+		out.writeInt(this.unusedSpacesScore);
+		out.writeInt(this.fencedStablesScore);
+		out.writeInt(this.pointsForCards);
+		out.writeInt(this.bonusPoints);
+		out.writeInt(this.beggingCardsScore);
+		out.writeInt(this.roomCount);
+		out.writeValue(this.roomType);		
+	}
+	
+	public static final Parcelable.Creator<Score> CREATOR = new Parcelable.Creator<Score> () {
+		public Score createFromParcel(Parcel source) {
+			Score score = new Score();
+			
+			score.setFieldScore(source.readInt());
+			score.setPastureScore(source.readInt());
+			score.setGrainScore(source.readInt());
+			score.setVegetableScore(source.readInt());
+			score.setSheepScore(source.readInt());
+			score.setBoarScore(source.readInt());
+			score.setCattleScore(source.readInt());
+			score.setRoomsScore(source.readInt());
+			score.setFamilyMemberScore(source.readInt());
+			score.setUnusedSpacesScore(source.readInt());
+			score.setFencedStablesScore(source.readInt());
+			score.setPointsForCards(source.readInt());
+			score.setBonusPoints(source.readInt());
+			score.setBeggingCardsScore(source.readInt());
+			
+			score.setRoomCount(source.readInt());
+			score.setRoomType((RoomType) source.readValue(ClassLoader.getSystemClassLoader()));
+			
+			return score;
+		}
+
+		public Score[] newArray(int size) {
+			return new Score[size];
+		}
+	};
 }

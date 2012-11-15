@@ -1,5 +1,9 @@
 <resources>
 
     <style name="AppTheme" parent="android:Theme.Light" />
-
+    
+    <style name="NumberPickerTheme" parent="android:Theme.Holo.Light">
+        <item name="android:background">#ffffff</item>
+    </style>
+    
 </resources>

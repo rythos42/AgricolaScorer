@@ -26,7 +26,7 @@
 				android:orientation="horizontal"
 				android:id="@+id/fields"
 				android:onClick="selectField">
-				<com.geeksong.agricolascorer.SegmentedControlButton android:text="0-1" android:layout_weight="5"/>
+				<com.geeksong.agricolascorer.SegmentedControlButton android:text="0-1" android:layout_weight="5" />
 				<com.geeksong.agricolascorer.SegmentedControlButton android:text="2" android:layout_weight="5" />
 				<com.geeksong.agricolascorer.SegmentedControlButton android:text="3" android:layout_weight="5" />
 				<com.geeksong.agricolascorer.SegmentedControlButton android:text="4" android:layout_weight="5" />
@@ -44,7 +44,7 @@
 		        android:layout_height="wrap_content"
 				android:orientation="horizontal"
 				android:id="@+id/pastures">
-				<com.geeksong.agricolascorer.SegmentedControlButton android:text="0" android:layout_weight="5"/>
+				<com.geeksong.agricolascorer.SegmentedControlButton android:text="0" android:layout_weight="5" />
 				<com.geeksong.agricolascorer.SegmentedControlButton android:text="1" android:layout_weight="5" />
 				<com.geeksong.agricolascorer.SegmentedControlButton android:text="2" android:layout_weight="5" />
 				<com.geeksong.agricolascorer.SegmentedControlButton android:text="3" android:layout_weight="5" />
@@ -62,7 +62,7 @@
 		        android:layout_height="wrap_content"
 				android:orientation="horizontal"
 				android:id="@+id/grains">
-				<com.geeksong.agricolascorer.SegmentedControlButton android:text="0" android:layout_weight="5"/>
+				<com.geeksong.agricolascorer.SegmentedControlButton android:text="0" android:layout_weight="5" />
 				<com.geeksong.agricolascorer.SegmentedControlButton android:text="1-3" android:layout_weight="5" />
 				<com.geeksong.agricolascorer.SegmentedControlButton android:text="4-5" android:layout_weight="5" />
 				<com.geeksong.agricolascorer.SegmentedControlButton android:text="6-7" android:layout_weight="5" />
@@ -80,7 +80,7 @@
 		        android:layout_height="wrap_content"
 				android:orientation="horizontal"
 				android:id="@+id/vegetables">
-				<com.geeksong.agricolascorer.SegmentedControlButton android:text="0" android:layout_weight="5"/>
+				<com.geeksong.agricolascorer.SegmentedControlButton android:text="0" android:layout_weight="5" />
 				<com.geeksong.agricolascorer.SegmentedControlButton android:text="1" android:layout_weight="5" />
 				<com.geeksong.agricolascorer.SegmentedControlButton android:text="2" android:layout_weight="5" />
 				<com.geeksong.agricolascorer.SegmentedControlButton android:text="3" android:layout_weight="5" />
@@ -98,7 +98,7 @@
 		        android:layout_height="wrap_content"
 				android:orientation="horizontal"
 				android:id="@+id/sheep">
-				<com.geeksong.agricolascorer.SegmentedControlButton android:text="0" android:layout_weight="5"/>
+				<com.geeksong.agricolascorer.SegmentedControlButton android:text="0" android:layout_weight="5" />
 				<com.geeksong.agricolascorer.SegmentedControlButton android:text="1-3" android:layout_weight="5" />
 				<com.geeksong.agricolascorer.SegmentedControlButton android:text="4-5" android:layout_weight="5" />
 				<com.geeksong.agricolascorer.SegmentedControlButton android:text="6-7" android:layout_weight="5" />
@@ -116,7 +116,7 @@
 		        android:layout_height="wrap_content"
 				android:orientation="horizontal"
 				android:id="@+id/wild_boar">
-				<com.geeksong.agricolascorer.SegmentedControlButton android:text="0" android:layout_weight="5"/>
+				<com.geeksong.agricolascorer.SegmentedControlButton android:text="0" android:layout_weight="5" />
 				<com.geeksong.agricolascorer.SegmentedControlButton android:text="1-2" android:layout_weight="5" />
 				<com.geeksong.agricolascorer.SegmentedControlButton android:text="3-4" android:layout_weight="5" />
 				<com.geeksong.agricolascorer.SegmentedControlButton android:text="5-6" android:layout_weight="5" />
@@ -134,70 +134,13 @@
 		        android:layout_height="wrap_content"
 				android:orientation="horizontal"
 				android:id="@+id/cattle">
-				<com.geeksong.agricolascorer.SegmentedControlButton android:text="0" android:layout_weight="5"/>
+				<com.geeksong.agricolascorer.SegmentedControlButton android:text="0" android:layout_weight="5" />
 				<com.geeksong.agricolascorer.SegmentedControlButton android:text="1" android:layout_weight="5" />
 				<com.geeksong.agricolascorer.SegmentedControlButton android:text="2-3" android:layout_weight="5" />
 				<com.geeksong.agricolascorer.SegmentedControlButton android:text="4-5" android:layout_weight="5" />
 				<com.geeksong.agricolascorer.SegmentedControlButton android:text="6+" android:layout_weight="5" />		        
 		    </RadioGroup>
 		       
-	       <LinearLayout 
-				android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-				android:orientation="horizontal"
-				android:baselineAligned="false">       			    <LinearLayout
-			        android:layout_width="match_parent"
-			        android:layout_height="wrap_content"
-			        android:layout_weight="3"
-			        android:orientation="vertical" >
-
-					<TextView
-				        android:id="@+id/unused_spaces_label"
-				        android:layout_width="wrap_content"
-				        android:layout_height="wrap_content"
-				        android:text="@string/unused_spaces_label" />
-					<NumberPicker
-					    android:id="@+id/unused_spaces_picker"
-					    android:layout_width="wrap_content"
-					    android:layout_height="wrap_content"
-					    android:orientation="vertical" />
-			    </LinearLayout>
-			    		    		       
-			    <LinearLayout
-					android:layout_width="match_parent"
-			        android:layout_height="wrap_content"
-			        android:layout_weight="3"
-					android:orientation="vertical">	
-					<TextView
-				        android:id="@+id/fenced_stables_label"
-				        android:layout_width="wrap_content"
-				        android:layout_height="wrap_content"
-				        android:text="@string/fenced_stables_label" />
-					<NumberPicker
-					    android:id="@+id/fenced_stables_picker"
-					    android:layout_width="wrap_content"
-					    android:layout_height="wrap_content"
-					    android:orientation="vertical" />
-			    </LinearLayout>
-			    
-   			    <LinearLayout
-					android:layout_width="match_parent"
-					android:layout_weight="3"
-			        android:layout_height="wrap_content"
-					android:orientation="vertical">	
-					<TextView
-				        android:id="@+id/rooms_label"
-				        android:layout_width="wrap_content"
-				        android:layout_height="wrap_content"
-				        android:text="@string/rooms_label" />
-					<NumberPicker
-					    android:id="@+id/rooms_picker"
-					    android:layout_width="wrap_content"
-					    android:layout_height="wrap_content"
-					    android:orientation="vertical" />
-			    </LinearLayout>
-		    </LinearLayout>
-		    
    		   	<TextView
 		        android:id="@+id/room_type_label"
 		        android:layout_width="wrap_content"
@@ -209,7 +152,7 @@
 		        android:layout_height="wrap_content"
 				android:orientation="horizontal"
 				android:id="@+id/room_type">
-				<com.geeksong.agricolascorer.SegmentedControlButton android:text="@string/wood" android:layout_weight="3"/>
+				<com.geeksong.agricolascorer.SegmentedControlButton android:text="@string/wood" android:layout_weight="3" />
 				<com.geeksong.agricolascorer.SegmentedControlButton android:text="@string/clay" android:layout_weight="3" />
 				<com.geeksong.agricolascorer.SegmentedControlButton android:text="@string/stone" android:layout_weight="3" />	        
 		    </RadioGroup>
@@ -225,7 +168,7 @@
 		        android:layout_height="wrap_content"
 				android:orientation="horizontal"
 				android:id="@+id/family_members">
-				<com.geeksong.agricolascorer.SegmentedControlButton android:text="1" android:layout_weight="5"/>
+				<com.geeksong.agricolascorer.SegmentedControlButton android:text="1" android:layout_weight="5" />
 				<com.geeksong.agricolascorer.SegmentedControlButton android:text="2" android:layout_weight="5" />
 				<com.geeksong.agricolascorer.SegmentedControlButton android:text="3" android:layout_weight="5" />
 				<com.geeksong.agricolascorer.SegmentedControlButton android:text="4" android:layout_weight="5" />
@@ -236,62 +179,134 @@
 				android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
 				android:orientation="horizontal"
-				android:baselineAligned="false">       
+				android:baselineAligned="false"> 
 
 			    <LinearLayout
-			        android:layout_width="match_parent"
+			        android:layout_width="52dp"
 			        android:layout_height="wrap_content"
-			        android:layout_weight="3"
 			        android:orientation="vertical" >
 
 					<TextView
-				        android:id="@+id/points_for_cards_label"
-				        android:layout_width="wrap_content"
-				        android:layout_height="wrap_content"
-				        android:text="@string/points_for_cards_label" />
+					    android:id="@+id/unused_spaces_label"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:text="@string/unused_spaces_label" />
+
 					<NumberPicker
-					    android:id="@+id/points_for_cards_picker"
-					    android:layout_width="wrap_content"
+					    android:id="@+id/unused_spaces_picker"
+					    style="@style/NumberPickerTheme"
+					    android:layout_width="match_parent"
 					    android:layout_height="wrap_content"
 					    android:orientation="vertical" />
+
 			    </LinearLayout>
 			    		    		       
 			    <LinearLayout
-					android:layout_width="match_parent"
+					android:layout_width="52dp"
 			        android:layout_height="wrap_content"
-			        android:layout_weight="3"
+			        android:layout_weight="6"
 					android:orientation="vertical">	
+
 					<TextView
-				        android:id="@+id/bonus_points_label"
-				        android:layout_width="wrap_content"
-				        android:layout_height="wrap_content"
-				        android:text="@string/bonus_points_label" />
+					    android:id="@+id/fenced_stables_label"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:text="@string/fenced_stables_label" />
+
 					<NumberPicker
-					    android:id="@+id/bonus_points_picker"
-					    android:layout_width="wrap_content"
+					    android:id="@+id/fenced_stables_picker"
+					    style="@style/NumberPickerTheme"
+					    android:layout_width="match_parent"
 					    android:layout_height="wrap_content"
 					    android:orientation="vertical" />
+
 			    </LinearLayout>
 			    
    			    <LinearLayout
-					android:layout_width="match_parent"
-					android:layout_weight="3"
+					android:layout_width="52dp"
+					android:layout_weight="6"
 			        android:layout_height="wrap_content"
 					android:orientation="vertical">	
+
 					<TextView
-				        android:id="@+id/begging_cards_label"
-				        android:layout_width="wrap_content"
-				        android:layout_height="wrap_content"
-				        android:text="@string/begging_cards_label" />
+					    android:id="@+id/rooms_label"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:text="@string/rooms_label" />
+
 					<NumberPicker
-					    android:id="@+id/begging_cards_picker"
-					    android:layout_width="wrap_content"
+					    android:id="@+id/rooms_picker"
+					    style="@style/NumberPickerTheme"
+					    android:layout_width="match_parent"
 					    android:layout_height="wrap_content"
 					    android:orientation="vertical" />
+
+			    </LinearLayout>
+
+			    <LinearLayout
+			        android:layout_width="52dp"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="6"
+			        android:orientation="vertical" >
+
+					<TextView
+					    android:id="@+id/points_for_cards_label"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:text="@string/points_for_cards_label" />
+
+					<NumberPicker
+					    android:id="@+id/points_for_cards_picker"
+					    style="@style/NumberPickerTheme"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:orientation="vertical" />
+
+			    </LinearLayout>
+			    		    		       
+			    <LinearLayout
+					android:layout_width="52dp"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="6"
+					android:orientation="vertical">	
+
+					<TextView
+					    android:id="@+id/bonus_points_label"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:text="@string/bonus_points_label" />
+
+					<NumberPicker
+					    android:id="@+id/bonus_points_picker"
+					    style="@style/NumberPickerTheme"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:orientation="vertical" />
+
+			    </LinearLayout>
+			    
+   			    <LinearLayout
+   			        android:layout_width="52dp"
+   			        android:layout_height="wrap_content"
+   			        android:layout_weight="6"
+   			        android:orientation="vertical" >
+
+					<TextView
+					    android:id="@+id/begging_cards_label"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:text="@string/begging_cards_label" />
+
+					<NumberPicker
+					    android:id="@+id/begging_cards_picker"
+					    style="@style/NumberPickerTheme"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:orientation="vertical" />
+
 			    </LinearLayout>
 		    </LinearLayout>
-		    
-		</LinearLayout>
+	    </LinearLayout>
 	</ScrollView>
 	
 	<LinearLayout

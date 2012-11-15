@@ -1,14 +1,10 @@
-- link UI entries to score object
-	- unused spaces
-	- fenced stables
-	- rooms
-	- family members
-	- points for cards
-	- bonus points
-	- begging cards
-	
-	- default scores
+- start room picker on 2
+- start family members radio on 2
 
+- "Finish" menu item
+	- displays final totals of everyone
+	- need players in there somewhere
+	- optionally allow save of game, or just back to start game activity
 
 Allow save of scores.
 Allow delete of games
@@ -20,4 +16,7 @@ ensure can back-enter old data from old application
 Future
 	- make look good
 		- colours on segmented control
+		- separation on pickers
 	- put game count when displayed on recent players
+	- remove menus for those activities that don't need them
+	- "CreateGameActivity" I'm sure it can have a cooler name
