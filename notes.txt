@@ -1,10 +1,11 @@
 - display history
 
-
-ensure can back-enter old data from old application
-
-
-Future
+Next:
+	- number picker is unusable
+		- use that simonvt one? Probably works ok if I add the max and min as it desired...
+	- those "titles" appear at the top of the activities, should rename them.
+	- remove player from game
+	- rename player
 	- closer look at Database abstraction
 	- Show graph of final scores vs dates for selected players
 	- delete old games
@@ -16,4 +17,5 @@ Future
 	- put game count when displayed on recent players
 		- "gameCount" is not actually game count, it's the count of times that player has been selected
 	- remove menus for those activities that don't need them
-	- "CreateGameActivity" I'm sure it can have a cooler name
+	- "CreateGameActivity" is the main launcher I'm sure it can have a cooler name
+	- back-enter old data from old application
