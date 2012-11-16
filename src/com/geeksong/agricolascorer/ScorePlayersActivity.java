@@ -1,9 +1,8 @@
 package com.geeksong.agricolascorer;
 
 import java.util.ArrayList;
-import java.util.Hashtable;
 
-import com.geeksong.agricolascorer.model.Score;
+import com.geeksong.agricolascorer.model.Player;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -14,23 +13,21 @@ import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
 
 public class ScorePlayersActivity extends Activity {
-	private ArrayList<Score> scores = new ArrayList<Score>();
-	private static final String Scores = "Scores";
-	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score_players);
 
-        ArrayList<String> playerList = getIntent().getExtras().getStringArrayList(CreateGameActivity.PlayerList);
+        ArrayList<Player> playerList = GameCache.getPlayerList();
         
         TabHost tabs = (TabHost) findViewById(android.R.id.tabhost);
         tabs.setup();
         
-        ScoreTabFactory factory = new ScoreTabFactory(this, scores);
+        ScoreTabFactory factory = new ScoreTabFactory(this, GameCache.getScoreList());
         
         for(int i = 0; i < playerList.size(); i++ ) {
-        	String playerName = playerList.get(i);
+        	Player player = playerList.get(i);
+        	String playerName = player.getName();
             TabSpec tab = tabs.newTabSpec(playerName);
             
             tab.setContent(factory);
@@ -50,8 +47,6 @@ public class ScorePlayersActivity extends Activity {
     	switch(item.getItemId()) {
     		case R.id.finishButton:
     	    	Intent finishGameIntent = new Intent(this, FinishedActivity.class);
-    	    	
-    	    	finishGameIntent.putParcelableArrayListExtra(Scores, this.scores);
     	    	startActivity(finishGameIntent);
     			break;
     	}

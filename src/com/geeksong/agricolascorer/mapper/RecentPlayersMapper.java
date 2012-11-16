@@ -7,52 +7,23 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.SimpleCursorAdapter;
 
-public class RecentPlayersMapper extends SQLiteOpenHelper {
-    private static final int DATABASE_VERSION = 3;
-    private static final String DATABASE_NAME = "AgricolaScorer";
- 
-    private static final String TABLE_RECENTPLAYERS = "RecentPlayers";
- 
-    private static final String KEY_ID = "id";
-    public static final String KEY_NAME = "name";
-    private static final String KEY_GAMECOUNT = "gameCount";
-    
+public class RecentPlayersMapper {
     private SimpleCursorAdapter listAdapter;
     
     private Context context;
+    private Database db;
  
-    public RecentPlayersMapper(Context context) {
-        super(context, DATABASE_NAME, null, DATABASE_VERSION);
-        
-        this.context = context;
-    }
- 
-    @Override
-    public void onCreate(SQLiteDatabase db) {
-        String CREATE_RECENTPLAYERS_TABLE = "CREATE TABLE " + TABLE_RECENTPLAYERS + "(" +
-        		KEY_ID + " INTEGER PRIMARY KEY," +
-        		KEY_NAME + " TEXT, " +
-                KEY_GAMECOUNT + " INTEGER" +
-				")";
-        db.execSQL(CREATE_RECENTPLAYERS_TABLE);
-    }
- 
-    @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // Drop older table if existed
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_RECENTPLAYERS);
- 
-        // Create tables again
-        onCreate(db);
+    public RecentPlayersMapper(Context context, Database db) {
+    	this.context = context;
+    	this.db = db;
     }
     
-    public void addPlayer(String name) {
-        String selectQuery = "SELECT * FROM " + TABLE_RECENTPLAYERS + " WHERE " + KEY_NAME + " = '" + name + "'";
-        SQLiteDatabase db = this.getWritableDatabase();
-        Cursor playerCursor = db.rawQuery(selectQuery, null);
+    public Player addPlayer(String name) {
+        String selectQuery = "SELECT * FROM " + Database.TABLE_RECENTPLAYERS + " WHERE " + Database.KEY_NAME + " = '" + name + "'";
+        SQLiteDatabase sqlDb = db.getReadableDatabase();
+        Cursor playerCursor = sqlDb.rawQuery(selectQuery, null);
         
         Player addedPlayer = new Player(name);
         
@@ -60,8 +31,11 @@ public class RecentPlayersMapper extends SQLiteOpenHelper {
         	addedPlayer.setId(playerCursor.getInt(0));
         	addedPlayer.setGameCount(playerCursor.getInt(2));
         }
+        sqlDb.close();
         
         addPlayer(addedPlayer);
+        
+        return addedPlayer;
     }
     
     public void addPlayer(Player player) {
@@ -80,7 +54,7 @@ public class RecentPlayersMapper extends SQLiteOpenHelper {
     	
         Cursor c = getTopPlayersCursor(5);
 
-        String[] from = new String[] { KEY_NAME };
+        String[] from = new String[] { Database.KEY_NAME };
         int[] to = new int[] { R.id.name };
         
         listAdapter = new SimpleCursorAdapter(this.context, R.layout.recent_player_list_item, c, from, to, 0);
@@ -88,29 +62,30 @@ public class RecentPlayersMapper extends SQLiteOpenHelper {
     }
     
     private void insertPlayer(Player player) {
-        SQLiteDatabase db = this.getWritableDatabase();
+        SQLiteDatabase sqlDb = db.getWritableDatabase();
         
         ContentValues values = new ContentValues();
-        values.put(KEY_NAME, player.getName());
-        values.put(KEY_GAMECOUNT, player.getGameCount());
+        values.put(Database.KEY_NAME, player.getName());
+        values.put(Database.KEY_GAMECOUNT, player.getGameCount());
      
-        db.insert(TABLE_RECENTPLAYERS, null, values);
-        db.close();
+        int id = (int) sqlDb.insert(Database.TABLE_RECENTPLAYERS, null, values);
+        player.setId(id);
+        sqlDb.close();
     }
     
     private int updatePlayer(Player player) {
-        SQLiteDatabase db = this.getWritableDatabase();
+        SQLiteDatabase sqlDb = db.getWritableDatabase();
      
         ContentValues values = new ContentValues();
-        values.put(KEY_NAME, player.getName());
-        values.put(KEY_GAMECOUNT, player.getGameCount());
+        values.put(Database.KEY_NAME, player.getName());
+        values.put(Database.KEY_GAMECOUNT, player.getGameCount());
      
-        return db.update(TABLE_RECENTPLAYERS, values, KEY_ID + " = ?", new String[] { String.valueOf(player.getId()) });
+        return sqlDb.update(Database.TABLE_RECENTPLAYERS, values, Database.KEY_ID + " = ?", new String[] { String.valueOf(player.getId()) });
     }
     
     private Cursor getTopPlayersCursor(int x) {
-        String selectQuery = "SELECT id as _id, * FROM " + TABLE_RECENTPLAYERS + " LIMIT 5";
-        SQLiteDatabase db = this.getWritableDatabase();
-        return db.rawQuery(selectQuery, null);
+        String selectQuery = "SELECT id as _id, * FROM " + Database.TABLE_RECENTPLAYERS + " LIMIT 5";
+        SQLiteDatabase sqlDb = db.getWritableDatabase();
+        return sqlDb.rawQuery(selectQuery, null);
     }
 }

@@ -1,27 +1,27 @@
 package com.geeksong.agricolascorer;
 
-import java.util.ArrayList;
+import com.geeksong.agricolascorer.mapper.Database;
 
 import android.os.Bundle;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
-import android.widget.ArrayAdapter;
 
 public class CreateGameActivity extends ListActivity {
 	public static final int AddPlayerResultCode = 1;
 	public static final String PlayerList = "playerList";
 	
-	ArrayList<String> playerList = new ArrayList<String>();
-	ArrayAdapter<String> adapter;
+	CurrentPlayersAdapter adapter;
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_game);
         
-        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, playerList);
+        Database.initialize(this);
+        
+        adapter = new CurrentPlayersAdapter(this, R.layout.current_players_list_item, GameCache.getPlayerList());
         setListAdapter(adapter);
     }
 
@@ -40,17 +40,12 @@ public class CreateGameActivity extends ListActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         
-        if(resultCode == AddPlayerResultCode){
-        	String playerName = (String) data.getExtras().get("playerName");
-         	playerList.add(playerName);
+        if(resultCode == AddPlayerResultCode)
          	adapter.notifyDataSetChanged();
-        }
     }
     
     public void startGame(View source) {
     	Intent startGameIntent = new Intent(source.getContext(), ScorePlayersActivity.class);
-    	
-    	startGameIntent.putStringArrayListExtra(PlayerList, playerList);
     	startActivity(startGameIntent);
     }
 }

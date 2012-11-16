@@ -1,9 +1,6 @@
 package com.geeksong.agricolascorer.model;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-
-public class Score implements Parcelable {
+public class Score {
 	private int fieldScore;
 	private int pastureScore;
 	private int grainScore;
@@ -21,134 +18,63 @@ public class Score implements Parcelable {
 
 	private RoomType roomType;
 	private int roomCount;
+	private Player player;
 	
-	public void setFieldScore(int fieldScore) {
-		this.fieldScore = fieldScore;
-	}
+	public void setFieldScore(int fieldScore) { this.fieldScore = fieldScore; }
+	public int getFieldScore() { return this.fieldScore; }
 
-	public void setPastureScore(int pastureScore) {
-		this.pastureScore = pastureScore;
-	}
+	public void setPastureScore(int pastureScore) { this.pastureScore = pastureScore; }
+	public int getPastureScore() { return this.pastureScore; }
 
-	public void setGrainScore(int grainScore) {
-		this.grainScore = grainScore;
-	}
+	public void setGrainScore(int grainScore) { this.grainScore = grainScore; }
+	public int getGrainScore() { return this.grainScore; }
 
-	public void setVegetableScore(int vegetableScore) {
-		this.vegetableScore = vegetableScore;
-	}
+	public void setVegetableScore(int vegetableScore) { this.vegetableScore = vegetableScore; }
+	public int getVegetableScore() { return this.vegetableScore; }
 
-	public void setSheepScore(int sheepScore) {
-		this.sheepScore = sheepScore;
-	}
+	public void setSheepScore(int sheepScore) { this.sheepScore = sheepScore; }
+	public int getSheepScore() { return this.sheepScore; }
 
-	public void setBoarScore(int boarScore) {
-		this.boarScore = boarScore;
-	}
+	public void setBoarScore(int boarScore) { this.boarScore = boarScore; }
+	public int getBoarScore() { return this.boarScore; }
 
-	public void setCattleScore(int cattleScore) {
-		this.cattleScore = cattleScore;
-	}
+	public void setCattleScore(int cattleScore) { this.cattleScore = cattleScore; }
+	public int getCattleScore() { return this.cattleScore; }
 
-	public void setUnusedSpacesScore(int unusedSpacesScore) {
-		this.unusedSpacesScore = unusedSpacesScore;
-	}
+	public void setUnusedSpacesScore(int unusedSpacesScore) { this.unusedSpacesScore = unusedSpacesScore; }
+	public int getUnusedSpacesScore() { return this.unusedSpacesScore; }
 
-	public void setFencedStablesScore(int fencedStablesScore) {
-		this.fencedStablesScore = fencedStablesScore;
-	}
+	public void setFencedStablesScore(int fencedStablesScore) { this.fencedStablesScore = fencedStablesScore; }
+	public int getFencedStablesScore() { return this.fencedStablesScore; }
 
-	public void setRoomsScore(int roomsScore) {
-		this.roomsScore = roomsScore;
-	}
+	public void setRoomsScore(int roomsScore) { this.roomsScore = roomsScore; }
+	public int getRoomsScore() { return this.roomsScore; }
 
-	public void setFamilyMemberScore(int familyMemberScore) {
-		this.familyMemberScore = familyMemberScore;
-	}
+	public void setFamilyMemberScore(int familyMemberScore) { this.familyMemberScore = familyMemberScore; }
+	public int getFamilyMemberScore() { return this.familyMemberScore; }
 
-	public void setPointsForCards(int pointsForCards) {
-		this.pointsForCards = pointsForCards;
-	}
+	public void setPointsForCards(int pointsForCards) { this.pointsForCards = pointsForCards; }
+	public int getPointsForCards() { return this.pointsForCards; }
 
-	public void setBonusPoints(int bonusPoints) {
-		this.bonusPoints = bonusPoints;
-	}
+	public void setBonusPoints(int bonusPoints) { this.bonusPoints = bonusPoints; }
+	public int getBonusPoints() { return this.bonusPoints; }
 
-	public void setBeggingCardsScore(int beggingCardsScore) {
-		this.beggingCardsScore = beggingCardsScore;
-	}
+	public void setBeggingCardsScore(int beggingCardsScore) { this.beggingCardsScore = beggingCardsScore; }
+	public int getBeggingCardsScore() { return this.beggingCardsScore; }
 	
-	public int getRoomCount() {
-		return this.roomCount;
-	}
 	
-	public void setRoomCount(int roomCount) {
-		this.roomCount = roomCount;
-	}
+	public int getRoomCount() { return this.roomCount; }
+	public void setRoomCount(int roomCount) { this.roomCount = roomCount; }
 	
-	public RoomType getRoomType() {
-		return this.roomType;
-	}
-
-	public void setRoomType(RoomType roomType) {
-		this.roomType = roomType;
-	}
+	public RoomType getRoomType() { return this.roomType; }
+	public void setRoomType(RoomType roomType) { this.roomType = roomType; }
+	
+	public Player getPlayer() { return this.player; }
+	public void setPlayer(Player player) { this.player = player; }
 
 	public int getTotalScore() {
 		return this.fieldScore + this.pastureScore + this.grainScore + this.vegetableScore + this.sheepScore + this.boarScore + this.cattleScore
-				+ this.roomsScore + this.familyMemberScore + this.unusedSpacesScore + this.fencedStablesScore + this.pointsForCards + this.bonusPoints + this.beggingCardsScore;
+				+ this.roomsScore + this.familyMemberScore + this.unusedSpacesScore + this.fencedStablesScore + this.pointsForCards 
+				+ this.bonusPoints + this.beggingCardsScore;
 	}
-
-	public int describeContents() {
-		return 0;
-	}
-
-	public void writeToParcel(Parcel out, int flags) {
-		out.writeInt(this.fieldScore);
-		out.writeInt(this.pastureScore);
-		out.writeInt(this.grainScore);
-		out.writeInt(this.vegetableScore);
-		out.writeInt(this.sheepScore);
-		out.writeInt(this.boarScore);
-		out.writeInt(this.cattleScore);
-		out.writeInt(this.roomsScore);
-		out.writeInt(this.familyMemberScore);
-		out.writeInt(this.unusedSpacesScore);
-		out.writeInt(this.fencedStablesScore);
-		out.writeInt(this.pointsForCards);
-		out.writeInt(this.bonusPoints);
-		out.writeInt(this.beggingCardsScore);
-		out.writeInt(this.roomCount);
-		out.writeValue(this.roomType);		
-	}
-	
-	public static final Parcelable.Creator<Score> CREATOR = new Parcelable.Creator<Score> () {
-		public Score createFromParcel(Parcel source) {
-			Score score = new Score();
-			
-			score.setFieldScore(source.readInt());
-			score.setPastureScore(source.readInt());
-			score.setGrainScore(source.readInt());
-			score.setVegetableScore(source.readInt());
-			score.setSheepScore(source.readInt());
-			score.setBoarScore(source.readInt());
-			score.setCattleScore(source.readInt());
-			score.setRoomsScore(source.readInt());
-			score.setFamilyMemberScore(source.readInt());
-			score.setUnusedSpacesScore(source.readInt());
-			score.setFencedStablesScore(source.readInt());
-			score.setPointsForCards(source.readInt());
-			score.setBonusPoints(source.readInt());
-			score.setBeggingCardsScore(source.readInt());
-			
-			score.setRoomCount(source.readInt());
-			score.setRoomType((RoomType) source.readValue(ClassLoader.getSystemClassLoader()));
-			
-			return score;
-		}
-
-		public Score[] newArray(int size) {
-			return new Score[size];
-		}
-	};
 }

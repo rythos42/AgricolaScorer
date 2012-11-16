@@ -1,7 +1,6 @@
 package com.geeksong.agricolascorer;
 
 import java.util.ArrayList;
-import java.util.Dictionary;
 
 import com.geeksong.agricolascorer.model.Score;
 
@@ -25,6 +24,8 @@ public class ScoreTabFactory implements TabHost.TabContentFactory {
 	public View createTabContent(String playerName) {
 		View scorePlayer = tabHost.getLayoutInflater().inflate(R.layout.score_player, null);
 		Score score = new Score();
+		score.setPlayer(GameCache.getPlayerByName(playerName));
+		scores.add(score);
 		
 		TextView totalScoreView = (TextView) scorePlayer.findViewById(R.id.score);
 		ScoreManager manager = new ScoreManager(score, totalScoreView);
@@ -46,9 +47,7 @@ public class ScoreTabFactory implements TabHost.TabContentFactory {
 		addValueChangeListener(scorePlayer, manager, R.id.points_for_cards_picker);
 		addValueChangeListener(scorePlayer, manager, R.id.bonus_points_picker);
 		addValueChangeListener(scorePlayer, manager, R.id.begging_cards_picker);
-		
-		scores.add(score);
-		
+			
 		return scorePlayer;
 	}
 	

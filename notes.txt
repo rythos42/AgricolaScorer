@@ -1,22 +1,19 @@
-- start room picker on 2
-- start family members radio on 2
+- display history
 
-- "Finish" menu item
-	- displays final totals of everyone
-	- need players in there somewhere
-	- optionally allow save of game, or just back to start game activity
-
-Allow save of scores.
-Allow delete of games
-Show graph of final scores vs dates for selected players
 
 ensure can back-enter old data from old application
 
 
 Future
+	- closer look at Database abstraction
+	- Show graph of final scores vs dates for selected players
+	- delete old games
+	- start room picker on 2
+	- start family members radio on 2
 	- make look good
 		- colours on segmented control
 		- separation on pickers
 	- put game count when displayed on recent players
+		- "gameCount" is not actually game count, it's the count of times that player has been selected
 	- remove menus for those activities that don't need them
 	- "CreateGameActivity" I'm sure it can have a cooler name
