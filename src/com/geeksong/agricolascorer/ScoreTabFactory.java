@@ -2,6 +2,7 @@ package com.geeksong.agricolascorer;
 
 import java.util.ArrayList;
 
+import com.geeksong.agricolascorer.control.NumberPicker;
 import com.geeksong.agricolascorer.model.Score;
 
 import android.app.Activity;
@@ -46,7 +47,7 @@ public class ScoreTabFactory implements TabHost.TabContentFactory {
 		addValueChangeListener(scorePlayer, manager, R.id.points_for_cards_picker);
 		addValueChangeListener(scorePlayer, manager, R.id.bonus_points_picker);
 		addValueChangeListener(scorePlayer, manager, R.id.begging_cards_picker);
-			
+		
 		return scorePlayer;
 	}
 	
@@ -57,19 +58,11 @@ public class ScoreTabFactory implements TabHost.TabContentFactory {
 	}
 	
 	private void addValueChangeListener(View scorePlayer, ScoreManager manager, int id) {
-		if(id == R.id.begging_cards_picker) {
-			/*net.simonvt.widget.NumberPicker picker = (net.simonvt.widget.NumberPicker) scorePlayer.findViewById(id);
-			picker.setMaxValue(20);
-			picker.setMinValue(0);
-			picker.setFocusable(true);
-			picker.setFocusableInTouchMode(true);*/
-			//picker.setOnValueChangedListener(manager);
-			
-		} else {
-			/*NumberPicker picker = (NumberPicker) scorePlayer.findViewById(id);
-			picker.setMinValue(0);
-			picker.setMaxValue(20);
-			picker.setOnValueChangedListener(manager);*/
-		}
+		NumberPicker picker = (NumberPicker) scorePlayer.findViewById(id);
+		picker.setMinimum(0);
+		picker.setOnValueChangedListener(manager);
+		
+		if(id == R.id.rooms_picker)
+			picker.setValue(2);
 	}
 }

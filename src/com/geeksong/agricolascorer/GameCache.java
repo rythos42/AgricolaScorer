@@ -18,6 +18,22 @@ public class GameCache {
 		players.add(player);
 	}
 	
+	public static void removePlayer(int index) {
+		Player playerToRemove = players.get(index);
+		
+		Score scoreToRemove = null;
+		for(Score score : scores) {
+			if(score.getPlayer().getId() == playerToRemove.getId()) {
+				scoreToRemove = score;
+				break;
+			}
+		}
+		if(scoreToRemove != null)
+			scores.remove(scoreToRemove);
+		
+		players.remove(index);
+	}
+	
 	public static Player getPlayerByName(String playerName) {
 		for(Player player : players) {
 			if(player.getName().equals(playerName))

@@ -6,9 +6,15 @@ import com.geeksong.agricolascorer.mapper.Database;
 import android.os.Bundle;
 import android.app.ListActivity;
 import android.content.Intent;
+import android.view.ContextMenu;
+import android.view.ContextMenu.ContextMenuInfo;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.AdapterContextMenuInfo;
+import android.widget.AdapterView.OnItemLongClickListener;
+import android.widget.ListView;
 
 public class CreateGameActivity extends ListActivity {
 	public static final int AddPlayerResultCode = 1;
@@ -22,6 +28,8 @@ public class CreateGameActivity extends ListActivity {
         setContentView(R.layout.activity_create_game);
         
         Database.initialize(this);
+        
+        this.registerForContextMenu(getListView());
         
         adapter = new CurrentPlayersAdapter(this, R.layout.current_players_list_item, GameCache.getPlayerList());
         setListAdapter(adapter);
@@ -60,5 +68,25 @@ public class CreateGameActivity extends ListActivity {
     			break;
     	}
     	return true;
+    }
+    
+    private final int MENU_REMOVE_FROM_GAME = 0;
+    
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
+    	menu.add(Menu.NONE, MENU_REMOVE_FROM_GAME, Menu.NONE, R.string.remove_from_game);
+    }
+    
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+    	AdapterContextMenuInfo info = (AdapterContextMenuInfo) item.getMenuInfo();
+    	switch(item.getItemId()) {
+    		case MENU_REMOVE_FROM_GAME:
+    			GameCache.removePlayer((int) info.id);
+    			adapter.notifyDataSetChanged();
+    			return true;
+    		default:
+    	    	return super.onContextItemSelected(item);
+    	}
     }
 }

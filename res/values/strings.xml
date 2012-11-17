@@ -37,5 +37,6 @@
     <string name="start_again">Start again</string>
     <string name="history">History</string>
     <string name="title_activity_history">HistoryActivity</string>
+    <string name="remove_from_game">Remove from game</string>
 
 </resources>

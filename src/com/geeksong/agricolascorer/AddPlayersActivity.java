@@ -53,8 +53,10 @@ public class AddPlayersActivity extends Activity implements OnItemClickListener 
     public void addPlayerToGame(View source) {
     	String name = getInputName();
     	
-    	Player addedPlayer = recentPlayersMapper.addPlayer(name);
-    	GameCache.addPlayer(addedPlayer);
+    	if(!name.equals("")) {
+    		Player addedPlayer = recentPlayersMapper.addPlayer(name);
+    		GameCache.addPlayer(addedPlayer);
+    	}
     	
     	Intent backToCreateGame = new Intent();
     	setResult(CreateGameActivity.AddPlayerResultCode, backToCreateGame);
