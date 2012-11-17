@@ -20,6 +20,8 @@ public class Score {
 	private int roomCount;
 	private Player player;
 	
+	private int totalScore = -1;
+	
 	public void setFieldScore(int fieldScore) { this.fieldScore = fieldScore; }
 	public int getFieldScore() { return this.fieldScore; }
 
@@ -72,7 +74,14 @@ public class Score {
 	public Player getPlayer() { return this.player; }
 	public void setPlayer(Player player) { this.player = player; }
 
+	public void setTotalScore(int totalScore) {
+		this.totalScore = totalScore;
+	}
+	
 	public int getTotalScore() {
+		if(this.totalScore != -1)
+			return this.totalScore;
+		
 		return this.fieldScore + this.pastureScore + this.grainScore + this.vegetableScore + this.sheepScore + this.boarScore + this.cattleScore
 				+ this.roomsScore + this.familyMemberScore + this.unusedSpacesScore + this.fencedStablesScore + this.pointsForCards 
 				+ this.bonusPoints + this.beggingCardsScore;

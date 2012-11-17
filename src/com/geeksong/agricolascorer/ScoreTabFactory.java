@@ -6,7 +6,6 @@ import com.geeksong.agricolascorer.model.Score;
 
 import android.app.Activity;
 import android.view.View;
-import android.widget.NumberPicker;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TabHost;
@@ -58,9 +57,19 @@ public class ScoreTabFactory implements TabHost.TabContentFactory {
 	}
 	
 	private void addValueChangeListener(View scorePlayer, ScoreManager manager, int id) {
-		NumberPicker picker = (NumberPicker) scorePlayer.findViewById(id);
-		picker.setMinValue(0);
-		picker.setMaxValue(20);
-		picker.setOnValueChangedListener(manager);
+		if(id == R.id.begging_cards_picker) {
+			/*net.simonvt.widget.NumberPicker picker = (net.simonvt.widget.NumberPicker) scorePlayer.findViewById(id);
+			picker.setMaxValue(20);
+			picker.setMinValue(0);
+			picker.setFocusable(true);
+			picker.setFocusableInTouchMode(true);*/
+			//picker.setOnValueChangedListener(manager);
+			
+		} else {
+			/*NumberPicker picker = (NumberPicker) scorePlayer.findViewById(id);
+			picker.setMinValue(0);
+			picker.setMaxValue(20);
+			picker.setOnValueChangedListener(manager);*/
+		}
 	}
 }

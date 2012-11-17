@@ -19,22 +19,23 @@
     <string name="sheep_label">Sheep:</string>
     <string name="wild_boar_label">Wild boar:</string>
     <string name="cattle_label">Cattle:</string>
-    <string name="unused_spaces_label">Unused spaces</string>
-    <string name="fenced_stables_label">Fenced stables</string>
+    <string name="unused_spaces_label">Unused spaces:</string>
+    <string name="fenced_stables_label">Fenced stables:</string>
     <string name="room_type_label">Material:</string>
-    <string name="rooms_label">Room count</string>
+    <string name="rooms_label">Room count:</string>
     <string name="family_members_label">Family members:</string>
-    <string name="points_for_cards_label">Card points</string>
-    <string name="bonus_points_label">Bonus points</string>
-    <string name="begging_cards_label">Begging cards</string>
+    <string name="points_for_cards_label">Card points:</string>
+    <string name="bonus_points_label">Bonus points:</string>
+    <string name="begging_cards_label">Begging cards:</string>
     <string name="score_label">Score:</string>
     <string name="wood">Wood</string>
     <string name="clay">Clay</string>
     <string name="stone">Stone</string>
-    <string name="hello_world">Hello world!</string>
     <string name="title_activity_finished">FinishedActivity</string>
     <string name="finish">Finish</string>
     <string name="save_game">Save game</string>
     <string name="start_again">Start again</string>
+    <string name="history">History</string>
+    <string name="title_activity_history">HistoryActivity</string>
 
 </resources>

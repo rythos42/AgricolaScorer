@@ -10,7 +10,6 @@ import android.provider.ContactsContract;
 import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
-import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -40,12 +39,6 @@ public class AddPlayersActivity extends Activity implements OnItemClickListener 
 		putNameIntoInput(item.getText().toString().trim());
 		addPlayerToGame(null);
 	}
-    
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_add_players, menu);
-        return true;
-    }
     
     private void putNameIntoInput(String name) {
     	EditText inputPlayerName = (EditText) findViewById(R.id.inputPlayerName);

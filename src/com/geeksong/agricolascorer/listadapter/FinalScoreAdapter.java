@@ -1,7 +1,8 @@
-package com.geeksong.agricolascorer;
+package com.geeksong.agricolascorer.listadapter;
 
 import java.util.ArrayList;
 
+import com.geeksong.agricolascorer.R;
 import com.geeksong.agricolascorer.model.Score;
 
 import android.app.Activity;

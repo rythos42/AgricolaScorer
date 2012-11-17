@@ -2,6 +2,8 @@ package com.geeksong.agricolascorer;
 
 import java.util.ArrayList;
 
+import com.geeksong.agricolascorer.R;
+import com.geeksong.agricolascorer.listadapter.FinalScoreAdapter;
 import com.geeksong.agricolascorer.mapper.Database;
 import com.geeksong.agricolascorer.mapper.SavedGameMapper;
 import com.geeksong.agricolascorer.model.Score;

@@ -1,4 +1,4 @@
-package com.geeksong.agricolascorer;
+package com.geeksong.agricolascorer.control;
 
 import android.content.Context;
 import android.graphics.Canvas;

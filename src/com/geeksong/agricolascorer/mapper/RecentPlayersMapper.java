@@ -84,7 +84,7 @@ public class RecentPlayersMapper {
     }
     
     private Cursor getTopPlayersCursor(int x) {
-        String selectQuery = "SELECT id as _id, * FROM " + Database.TABLE_RECENTPLAYERS + " LIMIT 5";
+        String selectQuery = "SELECT " + Database.KEY_ID + " as _id, * FROM " + Database.TABLE_RECENTPLAYERS + " LIMIT 5";
         SQLiteDatabase sqlDb = db.getWritableDatabase();
         return sqlDb.rawQuery(selectQuery, null);
     }
