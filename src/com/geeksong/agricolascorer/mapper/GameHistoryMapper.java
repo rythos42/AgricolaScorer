@@ -34,6 +34,7 @@ public class GameHistoryMapper {
         		games.put(gameId, new Game());
         	
         	Game game = games.get(gameId);
+        	game.setId(gameId);
         	game.setDateAsTicks(c.getLong(1));
         	
         	Player player = new Player(c.getString(2));
@@ -58,5 +59,13 @@ public class GameHistoryMapper {
     			Database.TABLE_GAMES, Database.KEY_ID, Database.KEY_GAMEID);
         SQLiteDatabase sqlDb = db.getWritableDatabase();
         return sqlDb.rawQuery(selectQuery, null);
+    }
+    
+    public void deleteGame(Game game) {
+    	SQLiteDatabase sqlDb = db.getWritableDatabase();
+    	String gameId = Integer.toString(game.getId());
+    	
+    	sqlDb.delete(Database.TABLE_SCORES, Database.KEY_GAMEID + " = ?", new String[] { gameId });    	
+    	sqlDb.delete(Database.TABLE_GAMES, Database.KEY_ID + " = ?", new String[] { gameId });
     }
 }

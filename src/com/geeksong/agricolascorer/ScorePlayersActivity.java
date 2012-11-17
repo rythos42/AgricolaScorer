@@ -18,12 +18,12 @@ public class ScorePlayersActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score_players);
 
-        ArrayList<Player> playerList = GameCache.getPlayerList();
+        ArrayList<Player> playerList = GameCache.getInstance().getPlayerList();
         
         TabHost tabs = (TabHost) findViewById(android.R.id.tabhost);
         tabs.setup();
         
-        ScoreTabFactory factory = new ScoreTabFactory(this, GameCache.getScoreList());
+        ScoreTabFactory factory = new ScoreTabFactory(this, GameCache.getInstance().getScoreList());
         
         for(int i = 0; i < playerList.size(); i++ ) {
         	Player player = playerList.get(i);

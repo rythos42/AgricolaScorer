@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 import com.geeksong.agricolascorer.R;
 import com.geeksong.agricolascorer.listadapter.FinalScoreAdapter;
-import com.geeksong.agricolascorer.mapper.Database;
 import com.geeksong.agricolascorer.mapper.SavedGameMapper;
 import com.geeksong.agricolascorer.model.Score;
 
@@ -25,27 +24,21 @@ public class FinishedActivity extends Activity {
         
         mapper = new SavedGameMapper();
         
-        ArrayList<Score> scoreList = GameCache.getScoreList();
+        ArrayList<Score> scoreList = GameCache.getInstance().getScoreList();
         FinalScoreAdapter adapter = new FinalScoreAdapter(this, R.layout.finished_player_list_item, scoreList);
         
         ListView finalScore = (ListView) findViewById(R.id.finishedList);
         finalScore.setAdapter(adapter);
     }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_finished, menu);
-        return true;
-    }
     
     public void saveGame(View source) {
-    	mapper.save(GameCache.getScoreList());
+    	mapper.save(GameCache.getInstance().getScoreList());
     	
     	startAgain(source);
     }
     
     public void startAgain(View source) {
-    	GameCache.clearGame();
+    	GameCache.getInstance().clearGame();
     	
     	Intent createGameIntent = new Intent(source.getContext(), CreateGameActivity.class);
     	startActivity(createGameIntent);

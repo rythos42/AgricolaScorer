@@ -4,13 +4,11 @@ import com.geeksong.agricolascorer.control.DialogResult;
 import com.geeksong.agricolascorer.control.InputDialog;
 import com.geeksong.agricolascorer.control.OnClickListener;
 import com.geeksong.agricolascorer.listadapter.CurrentPlayersAdapter;
-import com.geeksong.agricolascorer.mapper.Database;
 import com.geeksong.agricolascorer.mapper.PlayerMapper;
 import com.geeksong.agricolascorer.model.Player;
 
 import android.os.Bundle;
 import android.app.ListActivity;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
@@ -20,21 +18,21 @@ import android.view.View;
 import android.widget.AdapterView.AdapterContextMenuInfo;
 
 public class CreateGameActivity extends ListActivity {
-	public static final int AddPlayerResultCode = 1;
-	public static final String PlayerList = "playerList";
+    private final int MENU_REMOVE_FROM_GAME = 0;
+    private final int MENU_RENAME_PLAYER = 1;
 	
-	CurrentPlayersAdapter adapter;
+	public static final int AddPlayerResultCode = 1;
+	
+	private CurrentPlayersAdapter adapter;
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_game);
         
-        Database.initialize(this);
+        registerForContextMenu(getListView());
         
-        this.registerForContextMenu(getListView());
-        
-        adapter = new CurrentPlayersAdapter(this, R.layout.current_players_list_item, GameCache.getPlayerList());
+        adapter = new CurrentPlayersAdapter(this, R.layout.current_players_list_item, GameCache.getInstance().getPlayerList());
         setListAdapter(adapter);
     }
     
@@ -73,9 +71,6 @@ public class CreateGameActivity extends ListActivity {
     	return true;
     }
     
-    private final int MENU_REMOVE_FROM_GAME = 0;
-    private final int MENU_RENAME_PLAYER = 1;
-    
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
     	menu.add(Menu.NONE, MENU_REMOVE_FROM_GAME, Menu.NONE, R.string.remove_from_game);
@@ -87,7 +82,7 @@ public class CreateGameActivity extends ListActivity {
     	AdapterContextMenuInfo info = (AdapterContextMenuInfo) item.getMenuInfo();
     	switch(item.getItemId()) {
     		case MENU_REMOVE_FROM_GAME:
-    			GameCache.removePlayer((int) info.id);
+    			GameCache.getInstance().removePlayer((int) info.id);
     			adapter.notifyDataSetChanged();
     			return true;
     		case MENU_RENAME_PLAYER:
@@ -110,7 +105,7 @@ public class CreateGameActivity extends ListActivity {
     	dialog.setOnClickListener(new OnClickListener() {
 			public void onClick(InputDialog dialog, DialogResult result, String input) {
 		    	if(result == DialogResult.OK && !input.equals("")) {
-					Player renamedPlayer = GameCache.renamePlayer(playerPosition, input);
+					Player renamedPlayer = GameCache.getInstance().renamePlayer(playerPosition, input);
 					new PlayerMapper(thisContext).updatePlayer(renamedPlayer);
 	    			adapter.notifyDataSetChanged();
 		    	}

@@ -24,7 +24,7 @@ public class ScoreTabFactory implements TabHost.TabContentFactory {
 	public View createTabContent(String playerName) {
 		View scorePlayer = tabHost.getLayoutInflater().inflate(R.layout.score_player, null);
 		Score score = new Score();
-		score.setPlayer(GameCache.getPlayerByName(playerName));
+		score.setPlayer(GameCache.getInstance().getPlayerByName(playerName));
 		scores.add(score);
 		
 		TextView totalScoreView = (TextView) scorePlayer.findViewById(R.id.score);
@@ -53,8 +53,12 @@ public class ScoreTabFactory implements TabHost.TabContentFactory {
 	
 	private void addCheckedChangeListener(View scorePlayer, ScoreManager manager, int id) {
 		RadioGroup group = (RadioGroup) scorePlayer.findViewById(id);
-		((RadioButton) group.getChildAt(0)).setChecked(true);
 		group.setOnCheckedChangeListener(manager);
+		
+		if(id == R.id.family_members)
+			((RadioButton) group.getChildAt(1)).setChecked(true);
+		else
+			((RadioButton) group.getChildAt(0)).setChecked(true);
 	}
 	
 	private void addValueChangeListener(View scorePlayer, ScoreManager manager, int id) {

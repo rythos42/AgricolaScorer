@@ -21,6 +21,7 @@ public class Score {
 	private Player player;
 	
 	private int totalScore = -1;
+	private boolean isTotalScoreProvided = false;
 	
 	public void setFieldScore(int fieldScore) { this.fieldScore = fieldScore; }
 	public int getFieldScore() { return this.fieldScore; }
@@ -76,10 +77,11 @@ public class Score {
 
 	public void setTotalScore(int totalScore) {
 		this.totalScore = totalScore;
+		this.isTotalScoreProvided = true;
 	}
 	
 	public int getTotalScore() {
-		if(this.totalScore != -1)
+		if(this.isTotalScoreProvided)
 			return this.totalScore;
 		
 		return this.fieldScore + this.pastureScore + this.grainScore + this.vegetableScore + this.sheepScore + this.boarScore + this.cattleScore

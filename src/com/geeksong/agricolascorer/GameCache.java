@@ -6,19 +6,31 @@ import com.geeksong.agricolascorer.model.Player;
 import com.geeksong.agricolascorer.model.Score;
 
 public class GameCache {
-	private static ArrayList<Score> scores = new ArrayList<Score>();
-	private static ArrayList<Player> players = new ArrayList<Player>();
+	private ArrayList<Score> scores = new ArrayList<Score>();
+	private ArrayList<Player> players = new ArrayList<Player>();
 	
-	public static void clearGame() {
+	private static GameCache instance;
+	public static GameCache getInstance() {
+		if(instance == null)
+			instance = new GameCache();
+		
+		return instance;
+	}
+	
+	private GameCache() {
+		
+	}
+	
+	public void clearGame() {
 		scores.clear();
 		players.clear();
 	}
 	
-	public static void addPlayer(Player player) {
+	public void addPlayer(Player player) {
 		players.add(player);
 	}
 	
-	public static void removePlayer(int index) {
+	public void removePlayer(int index) {
 		Player playerToRemove = players.get(index);
 		
 		Score scoreToRemove = null;
@@ -34,13 +46,17 @@ public class GameCache {
 		players.remove(index);
 	}
 	
-	public static Player renamePlayer(int index, String newName) {
+	public boolean isPlayerInGame(String playerName) {
+		return getPlayerByName(playerName) != null;
+	}
+	
+	public Player renamePlayer(int index, String newName) {
 		Player player = players.get(index);
 		player.setName(newName);
 		return player;
 	}
 	
-	public static Player getPlayerByName(String playerName) {
+	public Player getPlayerByName(String playerName) {
 		for(Player player : players) {
 			if(player.getName().equals(playerName))
 				return player;
@@ -48,6 +64,6 @@ public class GameCache {
 		return null;
 	}
 	
-	public static ArrayList<Player> getPlayerList() { return players; }
-	public static ArrayList<Score> getScoreList() { return scores; }
+	public ArrayList<Player> getPlayerList() { return players; }
+	public ArrayList<Score> getScoreList() { return scores; }
 }

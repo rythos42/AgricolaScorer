@@ -22,7 +22,12 @@ public class GameHistoryAdapter extends BaseExpandableListAdapter {
 		this.context = context;
 		this.games = games;
 	}
-
+	
+	public void deleteGame(Game game) {
+		games.remove(game);
+		notifyDataSetChanged();
+	}
+	
 	public Object getChild(int groupPosition, int childPosition) {
 		Game game = games.get(groupPosition);
 		return game.getScore(childPosition);

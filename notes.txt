@@ -1,21 +1,4 @@
 Next:
-	- delete old games
-	- start family members radio on 2
-	- can add same player multiple times
-
-	- put game count when displayed on recent players
-		- "gameCount" is not actually game count, it's the count of times that player has been selected
-	- remove menus for those activities that don't need them
-	- "CreateGameActivity" is the main launcher I'm sure it can have a cooler name
-
-Future:
-	- exception if history with no history
-	- closer look at Database abstraction
-	- was somehow able to get 5 players on score screen even with only 3 on tabs
-		- there was a back and forth involved.
-	- those "titles" appear at the top of the activities, should rename them.
-	- Show graph of final scores vs dates for selected players
-	- back-enter old data from old application
 	- make look good
 		- list items to small
 		- colours on segmented control
@@ -23,4 +6,15 @@ Future:
 		- more space between segmenteds
 		- left margin near number pickers on the left
 		- "Recent" isn't "header" enough
-	
+
+	- put game count when displayed on recent players
+		- "gameCount" is not actually game count, it's the count of times that player has been selected
+	- blank screen if no history
+	- closer look at Database abstraction
+	- was somehow able to get 5 players on score screen even with only 3 on tabs
+		- there was a back and forth involved.
+	- those "titles" appear at the top of the activities, should rename them.
+	- Show graph of final scores vs dates for selected players
+	- back-enter old data from old application
+
+Future:
