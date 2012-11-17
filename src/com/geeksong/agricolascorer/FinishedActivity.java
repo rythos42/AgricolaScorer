@@ -23,7 +23,7 @@ public class FinishedActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_finished);
         
-        mapper = new SavedGameMapper(Database.getInstance());
+        mapper = new SavedGameMapper();
         
         ArrayList<Score> scoreList = GameCache.getScoreList();
         FinalScoreAdapter adapter = new FinalScoreAdapter(this, R.layout.finished_player_list_item, scoreList);

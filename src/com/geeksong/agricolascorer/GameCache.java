@@ -34,6 +34,12 @@ public class GameCache {
 		players.remove(index);
 	}
 	
+	public static Player renamePlayer(int index, String newName) {
+		Player player = players.get(index);
+		player.setName(newName);
+		return player;
+	}
+	
 	public static Player getPlayerByName(String playerName) {
 		for(Player player : players) {
 			if(player.getName().equals(playerName))

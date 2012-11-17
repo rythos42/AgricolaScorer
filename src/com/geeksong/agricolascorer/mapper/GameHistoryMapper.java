@@ -17,9 +17,9 @@ public class GameHistoryMapper {
     private Context context;
     private Database db;
  
-    public GameHistoryMapper(Context context, Database db) {
+    public GameHistoryMapper(Context context) {
     	this.context = context;
-    	this.db = db;
+    	this.db = Database.getInstance();
     }
 	
     public GameHistoryAdapter getListAdapter() {

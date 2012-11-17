@@ -1,7 +1,6 @@
 package com.geeksong.agricolascorer;
 
-import com.geeksong.agricolascorer.mapper.Database;
-import com.geeksong.agricolascorer.mapper.RecentPlayersMapper;
+import com.geeksong.agricolascorer.mapper.PlayerMapper;
 import com.geeksong.agricolascorer.model.Player;
 
 import android.net.Uri;
@@ -20,14 +19,14 @@ import android.widget.TextView;
 public class AddPlayersActivity extends Activity implements OnItemClickListener {
 	private static final int PICK_CONTACT = 1;
 	
-	private RecentPlayersMapper recentPlayersMapper; 
+	private PlayerMapper recentPlayersMapper; 
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_players);
         
-        recentPlayersMapper = new RecentPlayersMapper(this, Database.getInstance());
+        recentPlayersMapper = new PlayerMapper(this);
         ListView list = (ListView) this.findViewById(R.id.recentPlayersList);
         list.setOnItemClickListener(this);
         list.setAdapter(recentPlayersMapper.getListAdapter());

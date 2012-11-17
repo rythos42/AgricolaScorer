@@ -1,20 +1,23 @@
 package com.geeksong.agricolascorer;
 
+import com.geeksong.agricolascorer.control.DialogResult;
+import com.geeksong.agricolascorer.control.InputDialog;
+import com.geeksong.agricolascorer.control.OnClickListener;
 import com.geeksong.agricolascorer.listadapter.CurrentPlayersAdapter;
 import com.geeksong.agricolascorer.mapper.Database;
+import com.geeksong.agricolascorer.mapper.PlayerMapper;
+import com.geeksong.agricolascorer.model.Player;
 
 import android.os.Bundle;
 import android.app.ListActivity;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.AdapterView.AdapterContextMenuInfo;
-import android.widget.AdapterView.OnItemLongClickListener;
-import android.widget.ListView;
 
 public class CreateGameActivity extends ListActivity {
 	public static final int AddPlayerResultCode = 1;
@@ -71,10 +74,12 @@ public class CreateGameActivity extends ListActivity {
     }
     
     private final int MENU_REMOVE_FROM_GAME = 0;
+    private final int MENU_RENAME_PLAYER = 1;
     
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
     	menu.add(Menu.NONE, MENU_REMOVE_FROM_GAME, Menu.NONE, R.string.remove_from_game);
+    	menu.add(Menu.NONE, MENU_RENAME_PLAYER, Menu.NONE, R.string.rename_player);
     }
     
     @Override
@@ -85,8 +90,33 @@ public class CreateGameActivity extends ListActivity {
     			GameCache.removePlayer((int) info.id);
     			adapter.notifyDataSetChanged();
     			return true;
+    		case MENU_RENAME_PLAYER:
+    			renamePlayer((int) info.id);
+    			return true;
     		default:
     	    	return super.onContextItemSelected(item);
     	}
+    }
+    
+    private void renamePlayer(int position) {
+    	InputDialog dialog = new InputDialog(this);
+    	
+    	dialog.setTitle(R.string.rename);
+    	dialog.setMessage(R.string.rename_player);
+    	
+    	final int playerPosition = position;
+    	final ListActivity thisContext = this;
+    	
+    	dialog.setOnClickListener(new OnClickListener() {
+			public void onClick(InputDialog dialog, DialogResult result, String input) {
+		    	if(result == DialogResult.OK && !input.equals("")) {
+					Player renamedPlayer = GameCache.renamePlayer(playerPosition, input);
+					new PlayerMapper(thisContext).updatePlayer(renamedPlayer);
+	    			adapter.notifyDataSetChanged();
+		    	}
+			}
+		});
+    	
+    	dialog.show();
     }
 }

@@ -9,15 +9,15 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.widget.SimpleCursorAdapter;
 
-public class RecentPlayersMapper {
+public class PlayerMapper {
     private SimpleCursorAdapter listAdapter;
     
     private Context context;
     private Database db;
  
-    public RecentPlayersMapper(Context context, Database db) {
+    public PlayerMapper(Context context) {
     	this.context = context;
-    	this.db = db;
+    	this.db = Database.getInstance();
     }
     
     public Player addPlayer(String name) {
@@ -73,7 +73,7 @@ public class RecentPlayersMapper {
         sqlDb.close();
     }
     
-    private int updatePlayer(Player player) {
+    public int updatePlayer(Player player) {
         SQLiteDatabase sqlDb = db.getWritableDatabase();
      
         ContentValues values = new ContentValues();

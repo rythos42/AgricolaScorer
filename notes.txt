@@ -1,7 +1,7 @@
 Next:
-	- rename player
 	- delete old games
 	- start family members radio on 2
+	- can add same player multiple times
 
 	- put game count when displayed on recent players
 		- "gameCount" is not actually game count, it's the count of times that player has been selected
@@ -9,6 +9,7 @@ Next:
 	- "CreateGameActivity" is the main launcher I'm sure it can have a cooler name
 
 Future:
+	- exception if history with no history
 	- closer look at Database abstraction
 	- was somehow able to get 5 players on score screen even with only 3 on tabs
 		- there was a back and forth involved.

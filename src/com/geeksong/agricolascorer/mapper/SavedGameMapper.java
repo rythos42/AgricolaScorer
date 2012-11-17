@@ -10,8 +10,9 @@ import android.database.sqlite.SQLiteDatabase;
 
 public class SavedGameMapper {
 	private Database db;
-    public SavedGameMapper(Database db) {
-    	this.db = db;
+	
+    public SavedGameMapper() {
+    	this.db = Database.getInstance();
     }
     
     public void save(ArrayList<Score> scores) {

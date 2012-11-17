@@ -1,6 +1,5 @@
 package com.geeksong.agricolascorer;
 
-import com.geeksong.agricolascorer.mapper.Database;
 import com.geeksong.agricolascorer.mapper.GameHistoryMapper;
 
 import android.os.Bundle;
@@ -15,7 +14,7 @@ public class HistoryActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
         
-        historyAdapter = new GameHistoryMapper(this, Database.getInstance());
+        historyAdapter = new GameHistoryMapper(this);
         ExpandableListView list = (ExpandableListView) this.findViewById(R.id.historyList);
         list.setAdapter(historyAdapter.getListAdapter());
     }

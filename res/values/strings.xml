@@ -38,5 +38,7 @@
     <string name="history">History</string>
     <string name="title_activity_history">HistoryActivity</string>
     <string name="remove_from_game">Remove from game</string>
+    <string name="rename_player">Rename player</string>
+    <string name="rename">Rename</string>
 
 </resources>
