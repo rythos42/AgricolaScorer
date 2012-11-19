@@ -7,10 +7,9 @@
     <string name="title_activity_create_game">CreateGameActivity</string>
     <string name="input_player_name">Input a player name</string>
     <string name="add">Add</string>
-    <string name="address_book">Address Book</string>
+    <string name="address_book">Add from address book</string>
     <string name="recent_label">Recent:</string>
     <string name="title_activity_score_players">ScorePlayersActivity</string>
-    <string name="title_activity_score_player">ScorePlayerActivity</string>
     <string name="start_game">Start game</string>
     <string name="fields_label">Fields</string>
     <string name="pastures_label">Pastures:</string>
@@ -41,5 +40,6 @@
     <string name="rename_player">Rename player</string>
     <string name="rename">Rename</string>
     <string name="delete_game">Delete game</string>
-
+    <string name="add_player_prompt">Add a player to get started!</string>
+    
 </resources>

@@ -8,5 +8,6 @@ public class AgricolaApplication extends Application {
 	@Override
 	public void onCreate() {
 		Database.initialize(getApplicationContext());
+		FontManager.initialize(getAssets());
 	}
 }

@@ -1,5 +1,38 @@
-<resources>
-
-    <style name="AppTheme" parent="android:Theme.Light" />
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <style name="GreenTheme" parent="android:Theme.Holo.Light">
+        <item name="android:buttonStyle">@style/button</item>
+        <item name="android:windowBackground">@drawable/grass</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="grassBackground">
+        <item name="android:background">@drawable/grass</item>
+    </style>
+    
+    <style name="button" parent="android:style/Widget.Holo.Light.Button">
+        <item name="android:textColor">#BBFFBB</item>
+    </style>
+    
+    <style name="text">
+        <item name="android:textColor">#BBFFBB</item>
+    </style>
         
+    <style name="listContainer">
+        <item name="android:background">@drawable/primary_list_shape</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    
+    <style name="listContainerText">
+        <item name="android:textColor">#BBFFBB</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    
+    <style name="listTitle" parent="@android:style/TextAppearance.Holo.Large.Inverse">
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">#DDFFDD</item>
+    </style>
+
 </resources>

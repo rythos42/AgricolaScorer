@@ -16,10 +16,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView.AdapterContextMenuInfo;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class CreateGameActivity extends ListActivity {
     private final int MENU_REMOVE_FROM_GAME = 0;
     private final int MENU_RENAME_PLAYER = 1;
+    
+    private final int MAX_PLAYERS = 5;
 	
 	public static final int AddPlayerResultCode = 1;
 	
@@ -29,6 +33,9 @@ public class CreateGameActivity extends ListActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_game);
+        
+        TextView title = (TextView) findViewById(R.id.title);
+        title.setTypeface(FontManager.getInstance().getDominican());
         
         registerForContextMenu(getListView());
         
@@ -40,8 +47,17 @@ public class CreateGameActivity extends ListActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         
-        if(resultCode == AddPlayerResultCode)
+        if(resultCode == AddPlayerResultCode) {
          	adapter.notifyDataSetChanged();
+         	
+         	checkAddPlayerButtonVisibility();
+        }
+    }
+    
+    private void checkAddPlayerButtonVisibility() {
+    	boolean visible = GameCache.getInstance().getPlayerList().size() < MAX_PLAYERS;
+  		Button addPlayerButton = (Button) findViewById(R.id.addPlayerButton);
+   		addPlayerButton.setVisibility(visible? View.VISIBLE : View.GONE);
     }
     
     public void addPlayer(View source) {
@@ -53,22 +69,10 @@ public class CreateGameActivity extends ListActivity {
     	Intent startGameIntent = new Intent(source.getContext(), ScorePlayersActivity.class);
     	startActivity(startGameIntent);
     }
-    
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_create_game, menu);
-        return true;
-    }
-    
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-    	switch(item.getItemId()) {
-    		case R.id.historyButton:
-    	    	Intent historyIntent = new Intent(this, HistoryActivity.class);
-    	    	startActivity(historyIntent);
-    			break;
-    	}
-    	return true;
+
+    public void showHistory(View source) {
+    	Intent historyIntent = new Intent(this, HistoryActivity.class);
+    	startActivity(historyIntent);
     }
     
     @Override
@@ -84,6 +88,7 @@ public class CreateGameActivity extends ListActivity {
     		case MENU_REMOVE_FROM_GAME:
     			GameCache.getInstance().removePlayer((int) info.id);
     			adapter.notifyDataSetChanged();
+    			checkAddPlayerButtonVisibility();
     			return true;
     		case MENU_RENAME_PLAYER:
     			renamePlayer((int) info.id);
