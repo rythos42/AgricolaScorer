@@ -7,10 +7,13 @@ import com.geeksong.agricolascorer.model.Player;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
+import android.widget.TextView;
 
 public class ScorePlayersActivity extends Activity {
     @Override
@@ -24,14 +27,18 @@ public class ScorePlayersActivity extends Activity {
         tabs.setup();
         
         ScoreTabFactory factory = new ScoreTabFactory(this, GameCache.getInstance().getScoreList());
+        LayoutInflater inflater = getLayoutInflater();
         
         for(int i = 0; i < playerList.size(); i++ ) {
-        	Player player = playerList.get(i);
-        	String playerName = player.getName();
+        	String playerName = playerList.get(i).getName();
             TabSpec tab = tabs.newTabSpec(playerName);
             
+            View tabButtonView = inflater.inflate(R.layout.score_tab_button, null);
+            TextView tabText = (TextView) tabButtonView.findViewById(R.id.tabText);
+            tabText.setText(playerName);
+            
             tab.setContent(factory);
-            tab.setIndicator(playerName);
+            tab.setIndicator(tabButtonView);
             tabs.addTab(tab);
         }
     }

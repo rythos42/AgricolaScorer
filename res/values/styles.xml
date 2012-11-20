@@ -49,4 +49,11 @@
         <item name="android:layout_marginBottom">10dp</item>
     </style>
 
+    <style name="tabWidgetText" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textColor">#DDFFDD</item>
+        <item name="android:background">@drawable/tab_indicator</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
 </resources>
