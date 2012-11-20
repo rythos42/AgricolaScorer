@@ -4,6 +4,7 @@
         <item name="android:buttonStyle">@style/button</item>
         <item name="android:windowBackground">@drawable/grass</item>
         <item name="android:windowNoTitle">true</item>
+        <item name="android:listViewStyle">@style/listView</item>
     </style>
     
     <style name="grassBackground">
@@ -30,9 +31,22 @@
         <item name="android:padding">5dp</item>
     </style>
     
+    <style name="smallerText" parent="@style/listContainerText">
+        <item name="android:textSize">16dp</item>
+    </style>
+        
     <style name="listTitle" parent="@android:style/TextAppearance.Holo.Large.Inverse">
         <item name="android:paddingBottom">10dp</item>
         <item name="android:textColor">#DDFFDD</item>
+    </style>
+    
+	<style name="historyDate">
+	    <item name="android:textSize">20dp</item>
+		<item name="android:textColor">#DDFFDD</item>
+    </style>
+    
+    <style name="listView" parent="@android:style/Widget.Holo.Light.ListView">
+        <item name="android:layout_marginBottom">10dp</item>
     </style>
 
 </resources>

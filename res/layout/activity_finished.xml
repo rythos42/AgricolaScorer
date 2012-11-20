@@ -1,37 +1,28 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/listContainer" >
 
 	<ListView
 	    android:clickable="false"
 	    android:id="@+id/finishedList"
 		android:layout_width="match_parent"
-    	android:layout_height="match_parent"
-    	android:layout_above="@+id/buttonsContainer" />
+    	android:layout_height="wrap_content" />
 	
-    <RelativeLayout
-        android:id="@+id/buttonsContainer"
+	<Button
+        android:id="@+id/startAgainButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true">
+        android:text="@string/start_again"
+        android:onClick="startAgain" />
         
-        <Button
-	        android:id="@+id/startAgainButton"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:text="@string/start_again"
-	        android:onClick="startAgain"
-	        android:layout_alignParentLeft="true" />
-        
-        <Button
-	        android:id="@+id/saveGameButton"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:text="@string/save_game"
-	        android:onClick="saveGame"
-	        android:layout_alignParentRight="true" />
-    </RelativeLayout>
+	<Button
+        android:id="@+id/saveGameButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save_game"
+        android:onClick="saveGame" />
 
-
-</RelativeLayout>
+</LinearLayout>

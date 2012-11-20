@@ -1,29 +1,23 @@
 Next:
 	- make look good
-		- add player
-			- changing edit text colour...
-		
 		- scoring
-		- finish
-		- history		
-	
-		- list items to small
-		- colours on segmented control
- 		- more space between segmenteds
-		- left margin near number pickers on the left
-		- "Recent" isn't "header" enough
-		- buttons aren't right?
+			- need to put Finish button somewhere (no menus)
+			- list items to small
+			- colours on segmented control
+	 		- more space between segmenteds
+			- left margin near number pickers on the left
+		
+	- was somehow able to get 5 players on score screen even with only 3 on tabs
+		- there was a back and forth involved.
 
+	- can start game with no players
+	- "in game" note (smaller, grey?) next to "recent players"
 	- put game count when displayed on recent players
 		- "gameCount" is not actually game count, it's the count of times that player has been selected
 	- blank screen if no history
-	- closer look at Database abstraction
-	- was somehow able to get 5 players on score screen even with only 3 on tabs
-		- there was a back and forth involved.
-	- those "titles" appear at the top of the activities, should rename them.
-		- removed from CreateGame, maybe remove from others?
-		- need place to put menu if so
 	- Show graph of final scores vs dates for selected players
 	- back-enter old data from old application
 
 Future:
+	- more rounded corners on buttons
+		- this is a pain. Have to define background styles for each of the buttons states.

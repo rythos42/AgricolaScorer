@@ -12,7 +12,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.widget.ExpandableListView;
-import android.widget.AdapterView.AdapterContextMenuInfo;
 
 public class HistoryActivity extends Activity {
 	private static final int MENU_DELETE_GAME = 0;

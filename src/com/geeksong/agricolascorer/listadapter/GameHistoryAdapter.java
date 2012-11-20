@@ -1,5 +1,7 @@
 package com.geeksong.agricolascorer.listadapter;
 
+import java.text.Format;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 import com.geeksong.agricolascorer.R;
@@ -45,10 +47,10 @@ public class GameHistoryAdapter extends BaseExpandableListAdapter {
 		
 		Score score = (Score) getChild(groupPosition, childPosition);
 		
-		TextView personNameView = (TextView) convertView.findViewById(R.id.personName);
+		TextView personNameView = (TextView) convertView.findViewById(R.id.name);
 		personNameView.setText(score.getPlayer().getName());
 
-		TextView personScoreView = (TextView) convertView.findViewById(R.id.personScore);
+		TextView personScoreView = (TextView) convertView.findViewById(R.id.score);
 		personScoreView.setText(Integer.toString(score.getTotalScore()));
 
 		return convertView;
@@ -78,7 +80,8 @@ public class GameHistoryAdapter extends BaseExpandableListAdapter {
 		}
 		
 		TextView gameDateView = (TextView) convertView.findViewById(R.id.gameDate);
-		gameDateView.setText(game.getDate().toString());
+		Format formatter = new SimpleDateFormat("E, dd MMM yyyy HH:mm");
+		gameDateView.setText(formatter.format(game.getDate()));
 
 		return convertView;
 	}
