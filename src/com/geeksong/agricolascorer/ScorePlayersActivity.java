@@ -42,21 +42,9 @@ public class ScorePlayersActivity extends Activity {
             tabs.addTab(tab);
         }
     }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_score_players, menu);
-        return true;
-    }
     
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-    	switch(item.getItemId()) {
-    		case R.id.finishButton:
-    	    	Intent finishGameIntent = new Intent(this, FinishedActivity.class);
-    	    	startActivity(finishGameIntent);
-    			break;
-    	}
-    	return true;
-    }
+	public void finishScoring(View source) {
+		Intent finishGameIntent = new Intent(this, FinishedActivity.class);
+		startActivity(finishGameIntent);
+	}
 }

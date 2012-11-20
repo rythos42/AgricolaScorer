@@ -1,12 +1,10 @@
 Next:
 	- make look good
 		- scoring
-			- need to put Finish button somewhere (no menus)
-			- list items to small
 			- colours on segmented control
-	 		- more space between segmenteds
-			- left margin near number pickers on the left
-		
+			- number picker text needs to be themable
+			- number picker buttons need to be the same size
+			
 	- was somehow able to get 5 players on score screen even with only 3 on tabs
 		- there was a back and forth involved.
 
@@ -15,9 +13,10 @@ Next:
 	- put game count when displayed on recent players
 		- "gameCount" is not actually game count, it's the count of times that player has been selected
 	- blank screen if no history
-	- Show graph of final scores vs dates for selected players
-	- back-enter old data from old application
 
 Future:
 	- more rounded corners on buttons
-		- this is a pain. Have to define background styles for each of the buttons states.
+		- Have to define background styles for each of the buttons states.
+	- Show graph of final scores vs dates for selected players
+	- back-enter old data from old application
+		
