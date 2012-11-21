@@ -28,11 +28,11 @@
 				android:orientation="horizontal"
 				android:id="@+id/fields"
 				android:onClick="selectField">
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="0-1" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="2" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="3" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="4" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="5" android:layout_weight="5" />		        
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="0-1" android:layout_weight="5" style="@style/fieldsStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="2" android:layout_weight="5" style="@style/fieldsStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="3" android:layout_weight="5" style="@style/fieldsStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="4" android:layout_weight="5" style="@style/fieldsStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="5" android:layout_weight="5" style="@style/fieldsStyle" />		        
 		    </RadioGroup>
 				    
 			<TextView
@@ -47,11 +47,11 @@
 		        android:layout_height="wrap_content"
 				android:orientation="horizontal"
 				android:id="@+id/pastures">
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="0" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="1" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="2" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="3" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="4" android:layout_weight="5" />		        
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="0" android:layout_weight="5" style="@style/pasturesStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="1" android:layout_weight="5" style="@style/pasturesStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="2" android:layout_weight="5" style="@style/pasturesStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="3" android:layout_weight="5" style="@style/pasturesStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="4" android:layout_weight="5" style="@style/pasturesStyle" />		        
 		    </RadioGroup>
 		
 			<TextView
@@ -66,11 +66,11 @@
 		        android:layout_height="wrap_content"
 				android:orientation="horizontal"
 				android:id="@+id/grains">
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="0" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="1-3" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="4-5" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="6-7" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="8+" android:layout_weight="5" />		        
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="0" android:layout_weight="5" style="@style/grainStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="1-3" android:layout_weight="5" style="@style/grainStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="4-5" android:layout_weight="5" style="@style/grainStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="6-7" android:layout_weight="5" style="@style/grainStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="8+" android:layout_weight="5" style="@style/grainStyle" />		        
 		    </RadioGroup>
 		    
 			<TextView
@@ -85,11 +85,11 @@
 		        android:layout_height="wrap_content"
 				android:orientation="horizontal"
 				android:id="@+id/vegetables">
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="0" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="1" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="2" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="3" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="4+" android:layout_weight="5" />		        
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="0" android:layout_weight="5" style="@style/vegetableStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="1" android:layout_weight="5" style="@style/vegetableStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="2" android:layout_weight="5" style="@style/vegetableStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="3" android:layout_weight="5" style="@style/vegetableStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="4+" android:layout_weight="5" style="@style/vegetableStyle" />		        
 		    </RadioGroup>
 		
 			<TextView
@@ -104,11 +104,11 @@
 		        android:layout_height="wrap_content"
 				android:orientation="horizontal"
 				android:id="@+id/sheep">
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="0" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="1-3" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="4-5" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="6-7" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="8+" android:layout_weight="5" />		        
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="0" android:layout_weight="5" style="@style/sheepStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="1-3" android:layout_weight="5" style="@style/sheepStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="4-5" android:layout_weight="5" style="@style/sheepStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="6-7" android:layout_weight="5" style="@style/sheepStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="8+" android:layout_weight="5" style="@style/sheepStyle" />		        
 		    </RadioGroup>  
 			
 			<TextView
@@ -123,11 +123,11 @@
 		        android:layout_height="wrap_content"
 				android:orientation="horizontal"
 				android:id="@+id/wild_boar">
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="0" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="1-2" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="3-4" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="5-6" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="7+" android:layout_weight="5" />		        
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="0" android:layout_weight="5" style="@style/wildBoarStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="1-2" android:layout_weight="5" style="@style/wildBoarStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="3-4" android:layout_weight="5" style="@style/wildBoarStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="5-6" android:layout_weight="5" style="@style/wildBoarStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="7+" android:layout_weight="5" style="@style/wildBoarStyle" />		        
 		    </RadioGroup>
 
 		   	<TextView
@@ -142,11 +142,11 @@
 		        android:layout_height="wrap_content"
 				android:orientation="horizontal"
 				android:id="@+id/cattle">
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="0" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="1" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="2-3" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="4-5" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="6+" android:layout_weight="5" />		        
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="0" android:layout_weight="5" style="@style/cattleStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="1" android:layout_weight="5" style="@style/cattleStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="2-3" android:layout_weight="5" style="@style/cattleStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="4-5" android:layout_weight="5" style="@style/cattleStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="6+" android:layout_weight="5" style="@style/cattleStyle" />		        
 		    </RadioGroup>
 			    
    		   	<TextView
@@ -161,11 +161,11 @@
 		        android:layout_height="wrap_content"
 				android:orientation="horizontal"
 				android:id="@+id/family_members">
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="1" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="2" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="3" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="4" android:layout_weight="5" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="5" android:layout_weight="5" />		        
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="1" android:layout_weight="5" style="@style/familyMemberStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="2" android:layout_weight="5" style="@style/familyMemberStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="3" android:layout_weight="5" style="@style/familyMemberStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="4" android:layout_weight="5" style="@style/familyMemberStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="5" android:layout_weight="5" style="@style/familyMemberStyle" />		        
 		    </RadioGroup>
 		    					       
    		   	<TextView
@@ -180,9 +180,9 @@
 		        android:layout_height="wrap_content"
 				android:orientation="horizontal"
 				android:id="@+id/room_type">
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/wood" android:layout_weight="3" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/clay" android:layout_weight="3" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/stone" android:layout_weight="3" />	        
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/wood" android:layout_weight="3" style="@style/roomTypeStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/clay" android:layout_weight="3" style="@style/roomTypeStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/stone" android:layout_weight="3" style="@style/roomTypeStyle" />	        
 		    </RadioGroup>
 	       
 			<LinearLayout 
@@ -208,7 +208,8 @@
 					    android:id="@+id/rooms_picker"
 					    android:layout_width="match_parent"
 					    android:layout_height="wrap_content"
-					    android:orientation="vertical" />
+					    android:orientation="vertical"
+					    style="@style/numberPicker" />
 
 			    </LinearLayout>
 				<LinearLayout
@@ -228,7 +229,8 @@
 					    android:id="@+id/unused_spaces_picker"
 					    android:layout_width="match_parent"
 					    android:layout_height="wrap_content"
-					    android:orientation="vertical" />
+					    android:orientation="vertical"
+					    style="@style/numberPicker" />
 
 			    </LinearLayout>
 			</LinearLayout>
@@ -256,7 +258,8 @@
 					    android:id="@+id/fenced_stables_picker"
 					    android:layout_width="match_parent"
 					    android:layout_height="wrap_content"
-					    android:orientation="vertical" />
+					    android:orientation="vertical"
+					    style="@style/numberPicker" />
 
 			    </LinearLayout>
 			    
@@ -277,7 +280,8 @@
 					    android:id="@+id/points_for_cards_picker"
 					    android:layout_width="match_parent"
 					    android:layout_height="wrap_content"
-					    android:orientation="vertical" />
+					    android:orientation="vertical"
+					    style="@style/numberPicker" />
 
 			    </LinearLayout>
 			</LinearLayout> 		    	
@@ -304,7 +308,8 @@
 					    android:id="@+id/bonus_points_picker"
 					    android:layout_width="match_parent"
 					    android:layout_height="wrap_content"
-					    android:orientation="vertical" />
+					    android:orientation="vertical"
+					    style="@style/numberPicker" />
 
 			    </LinearLayout>
 			    
@@ -325,41 +330,46 @@
 					    android:id="@+id/begging_cards_picker"
 					    android:layout_width="match_parent"
 					    android:layout_height="wrap_content"
-					    android:orientation="vertical" />
+					    android:orientation="vertical"
+					    style="@style/numberPicker" />
 
 			    </LinearLayout>
 		    </LinearLayout>
 	    </LinearLayout>
 	</ScrollView>
 	
-	<RelativeLayout
+	<LinearLayout
 	    android:id="@+id/score_footer"
-		android:layout_width="wrap_content"
+		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_alignParentBottom="true">
 		
-		<TextView android:id="@+id/score_label"
-			android:layout_width="wrap_content"
+	    <LinearLayout
+	        android:id="@+id/left"
+			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:text="@string/score_label"
-		    style="@style/listContainerText"
-		    android:layout_alignParentLeft="true" />
-		
-		<TextView android:id="@+id/score"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-		    style="@style/listContainerText"
-		    android:layout_toRightOf="@+id/score_label" />
-		
+			android:layout_weight="1">
+			
+			<TextView android:id="@+id/score_label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/score_label"
+			    style="@style/listContainerText" />
+			
+			<TextView android:id="@+id/score"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+			    style="@style/listContainerText" />
+	        	        
+	    </LinearLayout>
+	        		
 		<Button
 		    android:id="@+id/finishButton"
 		    android:text="@string/finish"
 		    android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:onClick="finishScoring"
-			style="@style/finishButton"
-			android:layout_toRightOf="@+id/score"
-			android:layout_alignParentRight="true" >
+			android:layout_weight="1" >
 		</Button>
-	</RelativeLayout>
+	</LinearLayout>
 </RelativeLayout>

@@ -1,6 +1,9 @@
 package com.geeksong.agricolascorer.control;
 
+import com.geeksong.agricolascorer.R;
+
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -12,66 +15,75 @@ import android.util.AttributeSet;
 import android.widget.RadioButton;
  
 public class SegmentedControlButton extends RadioButton {
-    private float mX;
-        
-    private GradientDrawable checkedGradient = new GradientDrawable(Orientation.TOP_BOTTOM, new int[] { 0xffdcdcdc, 0xff111111 });
-    private GradientDrawable uncheckGradient = new GradientDrawable(Orientation.TOP_BOTTOM, new int[] { 0xffa5a5a5, 0xff000000 });
-    private Paint textPaint = new Paint();
-    private Paint borderPaint = new Paint();
- 
+    private GradientDrawable checkedGradient;
+    private GradientDrawable uncheckedGradient;
+    private Paint checkedTextPaint;
+    private Paint uncheckedTextPaint;
+    private Paint borderPaint;
+    private Rect rect = new Rect();
+    
     public SegmentedControlButton(Context context) {
         super(context);
-        setupDrawables();
+        init(null);
     }
  
     public SegmentedControlButton(Context context, AttributeSet attrs) {
         super(context, attrs);
-        setupDrawables();
+        init(attrs);
     }
  
     public SegmentedControlButton(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-        setupDrawables();
+        init(attrs);
     }
-    
-    private void setupDrawables() {
-        textPaint.setAntiAlias(true);
-        textPaint.setTextAlign(Paint.Align.CENTER);
+       
+    private void init(AttributeSet attrs) { 
+        TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.SegmentedControlButton);
+        int checkedTextColour = a.getColor(R.styleable.SegmentedControlButton_checkedTextColour, Color.WHITE);
+        int checkedStartColour = a.getColor(R.styleable.SegmentedControlButton_checkedStartColour, 0xffdcdcdc);
+        int checkedEndColour = a.getColor(R.styleable.SegmentedControlButton_checkedEndColour, 0xff111111);
+        int uncheckedTextColour = a.getColor(R.styleable.SegmentedControlButton_uncheckedTextColour, 0xffcccccc);
+        int uncheckedStartColour = a.getColor(R.styleable.SegmentedControlButton_uncheckedStartColour, 0xffa5a5a5);
+        int uncheckedEndColour = a.getColor(R.styleable.SegmentedControlButton_uncheckedEndColour, 0xff000000);
+        a.recycle();
         
+        checkedTextPaint = new Paint();
+        checkedTextPaint.setAntiAlias(true);
+        checkedTextPaint.setTextAlign(Paint.Align.CENTER);
+        checkedTextPaint.setColor(checkedTextColour);
+        
+        uncheckedTextPaint = new Paint();
+        uncheckedTextPaint.setAntiAlias(true);
+        uncheckedTextPaint.setTextAlign(Paint.Align.CENTER);
+        uncheckedTextPaint.setColor(uncheckedTextColour);
+        
+        borderPaint = new Paint();
         borderPaint.setColor(Color.BLACK);
         borderPaint.setStyle(Style.STROKE);
+        
+        checkedGradient = new GradientDrawable(Orientation.TOP_BOTTOM, new int[] { checkedStartColour, checkedEndColour });
+        uncheckedGradient = new GradientDrawable(Orientation.TOP_BOTTOM, new int[] { uncheckedStartColour, uncheckedEndColour });
     }
  
     @Override
     public void onDraw(Canvas canvas) {
         String text = this.getText().toString();
+        Paint textPaint = (isChecked() ? checkedTextPaint : uncheckedTextPaint);
+        GradientDrawable gradient = (isChecked() ? checkedGradient : uncheckedGradient);
 
-        //float currentWidth = textPaint.measureText(text);
-        float currentHeight = textPaint.measureText("x");
- 
         textPaint.setTextSize(this.getTextSize());
+  
+        int currentHeight = this.getHeight();
+        int currentWidth = this.getWidth();
+    	gradient.setBounds(0, 0, currentWidth, currentHeight);
+    	gradient.draw(canvas);
+    	
+        float textHeight = textPaint.measureText("x");
+    	float w = (currentWidth / 2);
+    	float h = (currentHeight / 2) + textHeight;
+        canvas.drawText(text, w, h, textPaint);
  
-        if (isChecked()) {
-        	checkedGradient.setBounds(0, 0, this.getWidth(), this.getHeight());
-        	checkedGradient.draw(canvas);
-            textPaint.setColor(Color.WHITE);
-        } else {
-        	uncheckGradient.setBounds(0, 0, this.getWidth(), this.getHeight());
-        	uncheckGradient.draw(canvas);
-            textPaint.setColor(0xffcccccc);
-        }
- 
-        //float w = (this.getWidth() / 2) - currentWidth;
-        float h = (this.getHeight() / 2) + currentHeight;
-        canvas.drawText(text, mX, h, textPaint);
- 
-        Rect rect = new Rect(0, 0, this.getWidth(), this.getHeight());
+        rect.set(0, 0, currentWidth, currentHeight);
         canvas.drawRect(rect, borderPaint);
     }
- 
-    @Override
-    protected void onSizeChanged(int w, int h, int ow, int oh) {
-        super.onSizeChanged(w, h, ow, oh);
-        mX = w * 0.5f; // remember the center of the screen
-    } 
 }

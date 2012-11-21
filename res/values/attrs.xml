@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SegmentedControlButton">
+        <attr name="checkedTextColour" format="color" />
+        <attr name="checkedStartColour" format="color" />            
+		<attr name="checkedEndColour" format="color" />            
+        <attr name="uncheckedTextColour" format="color" />
+		<attr name="uncheckedStartColour" format="color" />            
+		<attr name="uncheckedEndColour" format="color" />            
+	</declare-styleable>
+	
+    <declare-styleable name="NumberPicker">
+        <attr name="android:textColor" />
+    </declare-styleable>
+</resources>

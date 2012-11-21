@@ -1,22 +1,27 @@
 Next:
-	- make look good
-		- scoring
-			- colours on segmented control
-			- number picker text needs to be themable
-			- number picker buttons need to be the same size
-			
 	- was somehow able to get 5 players on score screen even with only 3 on tabs
 		- there was a back and forth involved.
 
-	- can start game with no players
-	- "in game" note (smaller, grey?) next to "recent players"
-	- put game count when displayed on recent players
-		- "gameCount" is not actually game count, it's the count of times that player has been selected
 	- blank screen if no history
 
 Future:
+	- "in game" note (smaller, grey?) next to "recent players"
+	- put game count when displayed on recent players
+		- "gameCount" is not actually game count, it's the count of times that player has been selected
+	- "checked" gradient is solid colour :(
 	- more rounded corners on buttons
 		- Have to define background styles for each of the buttons states.
 	- Show graph of final scores vs dates for selected players
 	- back-enter old data from old application
+	- number picker numbers are a little to low
 		
+		
+Fields 8C4D00 (light) to 6E3700 (dark)
+Pastures 1E7E27 to 176114
+Grain F4E12D to FAC020
+Vege FF960F to EA7001
+Sheep E7E1D5 to C4C1BA
+Pig 8B8883 to 686663
+Cow E57411 to A04F11
+Family 3592DB to 136DB5
+
