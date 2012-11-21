@@ -18,7 +18,6 @@ public class GameCache {
 	}
 	
 	private GameCache() {
-		
 	}
 	
 	public void clearGame() {
@@ -28,6 +27,7 @@ public class GameCache {
 	
 	public void addPlayer(Player player) {
 		players.add(player);
+		scores.add(new Score(player));
 	}
 	
 	public void removePlayer(int index) {
@@ -60,6 +60,14 @@ public class GameCache {
 		for(Player player : players) {
 			if(player.getName().equals(playerName))
 				return player;
+		}
+		return null;
+	}
+	
+	public Score getScoreByPlayerName(String playerName) {
+		for(Score score : scores) {
+			if(score.getPlayer().getName().equals(playerName))
+				return score;
 		}
 		return null;
 	}

@@ -8,8 +8,6 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
@@ -21,14 +19,13 @@ public class ScorePlayersActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score_players);
 
-        ArrayList<Player> playerList = GameCache.getInstance().getPlayerList();
-        
         TabHost tabs = (TabHost) findViewById(android.R.id.tabhost);
         tabs.setup();
         
-        ScoreTabFactory factory = new ScoreTabFactory(this, GameCache.getInstance().getScoreList());
+        ScoreTabFactory factory = new ScoreTabFactory(this);
         LayoutInflater inflater = getLayoutInflater();
         
+        ArrayList<Player> playerList = GameCache.getInstance().getPlayerList();
         for(int i = 0; i < playerList.size(); i++ ) {
         	String playerName = playerList.get(i).getName();
             TabSpec tab = tabs.newTabSpec(playerName);

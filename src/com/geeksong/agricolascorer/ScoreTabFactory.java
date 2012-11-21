@@ -1,7 +1,5 @@
 package com.geeksong.agricolascorer;
 
-import java.util.ArrayList;
-
 import com.geeksong.agricolascorer.control.NumberPicker;
 import com.geeksong.agricolascorer.model.Score;
 
@@ -13,19 +11,15 @@ import android.widget.TabHost;
 import android.widget.TextView;
 
 public class ScoreTabFactory implements TabHost.TabContentFactory {
-	private ArrayList<Score> scores;
 	private Activity tabHost;
 	
-	public ScoreTabFactory(Activity tabHost, ArrayList<Score> scores) {
-		this.scores = scores;
+	public ScoreTabFactory(Activity tabHost) {
 		this.tabHost = tabHost;
 	}
 	
 	public View createTabContent(String playerName) {
 		View scorePlayer = tabHost.getLayoutInflater().inflate(R.layout.score_player, null);
-		Score score = new Score();
-		score.setPlayer(GameCache.getInstance().getPlayerByName(playerName));
-		scores.add(score);
+		Score score = GameCache.getInstance().getScoreByPlayerName(playerName);
 		
 		TextView totalScoreView = (TextView) scorePlayer.findViewById(R.id.score);
 		ScoreManager manager = new ScoreManager(score, totalScoreView);

@@ -1,5 +1,9 @@
 package com.geeksong.agricolascorer.model;
 
+import com.geeksong.agricolascorer.ScoreManager;
+
+import android.util.Log;
+
 public class Score {
 	private int fieldScore;
 	private int pastureScore;
@@ -22,6 +26,30 @@ public class Score {
 	
 	private int totalScore = -1;
 	private boolean isTotalScoreProvided = false;
+	
+	public Score(Player player) {
+		this.player = player;
+		
+		try {
+			setFieldScore(ScoreManager.getScoreForFields("0"));
+			setPastureScore(ScoreManager.getScoreForPastures("0"));
+			setGrainScore(ScoreManager.getScoreForGrains("0"));
+			setVegetableScore(ScoreManager.getScoreForVegetables("0"));
+			setSheepScore(ScoreManager.getScoreForSheep("0"));
+			setBoarScore(ScoreManager.getScoreForWildBoar("0"));
+			setCattleScore(ScoreManager.getScoreForCattle("0"));
+			setRoomType(RoomType.Wood);
+			setFamilyMemberScore(ScoreManager.getScoreForFamilyMembers("2"));
+			setUnusedSpacesScore(ScoreManager.getScoreForUnusedSpaces(0));
+			setFencedStablesScore(ScoreManager.getScoreForFencedStables(0));
+			setRoomsScore(ScoreManager.getScoreForRooms(2, getRoomType()));
+			setPointsForCards(ScoreManager.getScoreForPointsForCards(0));
+			setBonusPoints(ScoreManager.getScoreForBonusPoints(0));
+			setBeggingCardsScore(ScoreManager.getScoreForBeggingCards(0));
+		} catch(Exception e) {
+    		Log.e("com.geeksong.agricolascorer", e.getMessage());
+    	}
+	}
 	
 	public void setFieldScore(int fieldScore) { this.fieldScore = fieldScore; }
 	public int getFieldScore() { return this.fieldScore; }

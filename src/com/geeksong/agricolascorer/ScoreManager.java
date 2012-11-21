@@ -19,7 +19,6 @@ public class ScoreManager implements OnCheckedChangeListener, OnValueChangeListe
 		this.score = score;
 		this.totalScoreView = totalScoreView;
 		
-		initializeScore(this.score);
 		totalScoreView.setText(Integer.toString(score.getTotalScore()));
 	}
 	
@@ -90,28 +89,6 @@ public class ScoreManager implements OnCheckedChangeListener, OnValueChangeListe
 	    	}
 			totalScoreView.setText(Integer.toString(score.getTotalScore()));
     	} catch(Exception e) {
-    		Log.e("com.geeksong.agricolascorer", e.getMessage());
-    	}
-	}
-	
-	private static void initializeScore(Score s) {
-		try {
-			s.setFieldScore(getScoreForFields("0"));
-			s.setPastureScore(getScoreForPastures("0"));
-			s.setGrainScore(getScoreForGrains("0"));
-			s.setVegetableScore(getScoreForVegetables("0"));
-			s.setSheepScore(getScoreForSheep("0"));
-			s.setBoarScore(getScoreForWildBoar("0"));
-			s.setCattleScore(getScoreForCattle("0"));
-			s.setRoomType(RoomType.Wood);
-			s.setFamilyMemberScore(getScoreForFamilyMembers("2"));
-			s.setUnusedSpacesScore(getScoreForUnusedSpaces(0));
-			s.setFencedStablesScore(getScoreForFencedStables(0));
-			s.setRoomsScore(getScoreForRooms(2, s.getRoomType()));
-			s.setPointsForCards(getScoreForPointsForCards(0));
-			s.setBonusPoints(getScoreForBonusPoints(0));
-			s.setBeggingCardsScore(getScoreForBeggingCards(0));
-		} catch(Exception e) {
     		Log.e("com.geeksong.agricolascorer", e.getMessage());
     	}
 	}

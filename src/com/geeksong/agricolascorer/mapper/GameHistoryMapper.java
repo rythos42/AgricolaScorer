@@ -38,8 +38,7 @@ public class GameHistoryMapper {
         	game.setDateAsTicks(c.getLong(1));
         	
         	Player player = new Player(c.getString(2));
-        	Score score = new Score();
-        	score.setPlayer(player);
+        	Score score = new Score(player);
         	score.setTotalScore(c.getInt(3));
         	game.addScore(score);
         }

@@ -35,7 +35,7 @@
         <item name="android:textSize">16dp</item>
     </style>
         
-    <style name="listTitle" parent="@android:style/TextAppearance.Holo.Large.Inverse">
+    <style name="listTitle" parent="@android:style/TextAppearance.Large.Inverse">
         <item name="android:paddingBottom">10dp</item>
         <item name="android:textColor">#DDFFDD</item>
     </style>
