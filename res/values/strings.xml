@@ -42,5 +42,6 @@
     <string name="delete_game">Delete game</string>
     <string name="add_player_prompt">Add a player to get started!</string>
     <string name="no_history">No history available. Go play some games!</string>
+    <string name="from_player_list">From Player List</string>
     
 </resources>

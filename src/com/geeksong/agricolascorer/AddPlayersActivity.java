@@ -9,6 +9,9 @@ import android.provider.ContactsContract;
 import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -85,4 +88,15 @@ public class AddPlayersActivity extends Activity implements OnItemClickListener 
 			break;
     	}
 	}
+    
+    
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_add_players, menu);
+        return true;
+    }
+    
+    public boolean onOptionsItemSelected(MenuItem item) {
+        return true;
+    }
 }

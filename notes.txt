@@ -1,3 +1,8 @@
+Now:	
+	- list of all players in database
+		- can select from this list
+	- can rename players to an existing player
+	
 	- "in game" note (smaller, grey?) next to "recent players"
 	- put game count when displayed on recent players
 		- "gameCount" is not actually game count, it's the count of times that player has been selected
@@ -7,7 +12,11 @@
 	- Show graph of final scores vs dates for selected players
 	- back-enter old data from old application
 	- number picker numbers are a little to low
+	- scoring screen is a little dark
+		- gradient to a dark brown instead?
+		- find space at the edges to margin the black transparency?
+	- shrink background a bit in download size
+	- use font more to justify 150kb of download!
+	
+Future:
 	- use HoloEverywhere (http://stackoverflow.com/questions/10608539/error-importing-holoeverywhere) to reduce API requirement
-	- can rename players to an existing player
-		- but...user can't see entire list of existing players, so preventing this would be silly...
-
