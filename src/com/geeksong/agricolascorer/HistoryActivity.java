@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.widget.ExpandableListView;
+import android.widget.TextView;
 
 public class HistoryActivity extends Activity {
 	private static final int MENU_DELETE_GAME = 0;
@@ -26,10 +27,21 @@ public class HistoryActivity extends Activity {
         
         historyMapper = new GameHistoryMapper(this);
         historyAdapter = historyMapper.getListAdapter();
+        
+        checkNoHistoryLabelVisibility();
+
         ExpandableListView list = (ExpandableListView) this.findViewById(R.id.historyList);
         list.setAdapter(historyAdapter);
         
         registerForContextMenu(list);
+    }
+    
+    private void checkNoHistoryLabelVisibility() {
+    	if(!historyAdapter.isEmpty())
+    		return;
+    	
+    	TextView noHistoryLabel = (TextView) this.findViewById(R.id.noHistoryLabel);
+    	noHistoryLabel.setVisibility(View.VISIBLE);
     }
     
     @Override
@@ -47,6 +59,7 @@ public class HistoryActivity extends Activity {
     		case MENU_DELETE_GAME:
     			historyMapper.deleteGame(game);
     			historyAdapter.deleteGame(game);
+    			checkNoHistoryLabelVisibility();
     			return true;
     		default:
     	    	return super.onContextItemSelected(item);

@@ -28,18 +28,19 @@
         android:onClick="addPlayer" />
        
 	<Button
-		android:id="@+id/startGame"
+		android:id="@+id/startGameButton"
 		android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/addPlayerButton"
         android:text="@string/start_game"
-        android:onClick="startGame" />
+        android:onClick="startGame"
+        android:visibility="gone" />
 	
 	<Button
 		android:id="@+id/historyButton"
 		android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/startGame"
+        android:layout_below="@+id/startGameButton"
         android:text="@string/history"
         android:onClick="showHistory" />
         

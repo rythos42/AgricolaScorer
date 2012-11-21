@@ -1,6 +1,10 @@
 package com.geeksong.agricolascorer.control;
 
+import com.geeksong.agricolascorer.R;
+
 import android.content.Context;
+import android.content.res.TypedArray;
+import android.graphics.Color;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.Button;
@@ -13,13 +17,17 @@ public class NumberPicker extends LinearLayout {
 	private int minimum = Integer.MIN_VALUE;
 	private EditText editText;
 	
-	public NumberPicker(Context context, AttributeSet attributes) {
-		super(context, attributes);
+	public NumberPicker(Context context, AttributeSet attrs) {
+		super(context, attrs);
 		
 		this.setOrientation(LinearLayout.HORIZONTAL);
 		
+        TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.NumberPicker);
+        int textColour = a.getColor(R.styleable.NumberPicker_android_textColor, Color.WHITE);
+		
 	    editText = new EditText(context);
 	    editText.setText(Integer.toString(number));
+	    editText.setTextColor(textColour);
 	    
 	    Button decrementButton = new Button(context);
 	    decrementButton.setText("-");
@@ -29,9 +37,15 @@ public class NumberPicker extends LinearLayout {
 	    incrementButton.setText("+");
 	    incrementButton.setOnClickListener(new IncrementListener(this, editText));
 	    
-	    addView(decrementButton);
+	    addView(decrementButton, getButtonLayout());
 	    addView(editText);
-	    addView(incrementButton);
+	    addView(incrementButton, getButtonLayout());
+	}
+	
+	private LinearLayout.LayoutParams getButtonLayout() {
+	    LinearLayout.LayoutParams layout = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
+	    layout.weight = 1.0f;
+	    return layout;		
 	}
 	
 	public void setMinimum(int minimum) {

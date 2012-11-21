@@ -24,6 +24,7 @@ public class CreateGameActivity extends ListActivity {
     private final int MENU_RENAME_PLAYER = 1;
     
     private final int MAX_PLAYERS = 5;
+    private final int MIN_PLAYERS = 1;
 	
 	public static final int AddPlayerResultCode = 1;
 	
@@ -51,6 +52,7 @@ public class CreateGameActivity extends ListActivity {
          	adapter.notifyDataSetChanged();
          	
          	checkAddPlayerButtonVisibility();
+         	checkStartGameButtonVisibility();
         }
     }
     
@@ -58,6 +60,12 @@ public class CreateGameActivity extends ListActivity {
     	boolean visible = GameCache.getInstance().getPlayerList().size() < MAX_PLAYERS;
   		Button addPlayerButton = (Button) findViewById(R.id.addPlayerButton);
    		addPlayerButton.setVisibility(visible? View.VISIBLE : View.GONE);
+    }
+    
+    private void checkStartGameButtonVisibility() {
+    	boolean visible = GameCache.getInstance().getPlayerList().size() >= MIN_PLAYERS;
+  		Button startGameButton = (Button) findViewById(R.id.startGameButton);
+  		startGameButton.setVisibility(visible? View.VISIBLE : View.GONE);
     }
     
     public void addPlayer(View source) {
@@ -89,6 +97,7 @@ public class CreateGameActivity extends ListActivity {
     			GameCache.getInstance().removePlayer((int) info.id);
     			adapter.notifyDataSetChanged();
     			checkAddPlayerButtonVisibility();
+    			checkStartGameButtonVisibility();
     			return true;
     		case MENU_RENAME_PLAYER:
     			renamePlayer((int) info.id);
