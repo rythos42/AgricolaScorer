@@ -1,7 +1,6 @@
 package com.geeksong.agricolascorer;
 
 import com.geeksong.agricolascorer.mapper.PlayerMapper;
-import com.geeksong.agricolascorer.model.Player;
 
 import android.net.Uri;
 import android.os.Bundle;
@@ -21,18 +20,16 @@ import android.widget.TextView;
 
 public class AddPlayersActivity extends Activity implements OnItemClickListener {
 	private static final int PICK_CONTACT = 1;
-	
-	private PlayerMapper recentPlayersMapper; 
-	
+	private static final int PICK_DATABASE = 2;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_players);
         
-        recentPlayersMapper = new PlayerMapper(this);
         ListView list = (ListView) this.findViewById(R.id.recentPlayersList);
         list.setOnItemClickListener(this);
-        list.setAdapter(recentPlayersMapper.getListAdapter());
+        list.setAdapter(PlayerMapper.getInstance().getTopPlayersListAdapter());
 	}
        
 	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -53,14 +50,13 @@ public class AddPlayersActivity extends Activity implements OnItemClickListener 
     }
      
     public void addPlayerToGame(View source) {
-    	String name = getInputName();
-    	
-    	if(!name.equals("") && !GameCache.getInstance().isPlayerInGame(name)) {
-    		Player addedPlayer = recentPlayersMapper.addPlayer(name);
-    		GameCache.getInstance().addPlayer(addedPlayer);
-    	}
-    	
+    	String playerName = getInputName();
+    	returnToCreateGame(playerName);
+    }
+    
+    private void returnToCreateGame(String playerName) {
     	Intent backToCreateGame = new Intent();
+    	backToCreateGame.putExtra(CreateGameActivity.AddedPlayerBundleKey, playerName);
     	setResult(CreateGameActivity.AddPlayerResultCode, backToCreateGame);
     	finish();
     }
@@ -73,30 +69,41 @@ public class AddPlayersActivity extends Activity implements OnItemClickListener 
     @Override
     public void onActivityResult(int reqCode, int resultCode, Intent data) {
     	super.onActivityResult(reqCode, resultCode, data);
-	
+			
     	switch (reqCode) {
     		case PICK_CONTACT:
-    			if (resultCode == Activity.RESULT_OK) {
-    				Uri contactData = data.getData();
-    				Cursor c = getContentResolver().query(contactData, null, null, null, null);
+    			if (resultCode != Activity.RESULT_OK)
+    				return;
 
-    				if (c.moveToFirst()) {
-    					String name = c.getString(c.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
-    					putNameIntoInput(name);          
-					}
-    			}
-			break;
+    			Uri contactData = data.getData();
+				Cursor c = getContentResolver().query(contactData, null, null, null, null);
+
+				if (c.moveToFirst()) {
+					String playerName = c.getString(c.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
+					returnToCreateGame(playerName);  
+				}
+    			break;
+    		case PICK_DATABASE:
+    			String playerName = data.getStringExtra(CreateGameActivity.AddedPlayerBundleKey);
+    			returnToCreateGame(playerName);
+    			break;    			
     	}
 	}
     
     
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_add_players, menu);
+        inflater.inflate(R.menu.add_players, menu);
         return true;
     }
     
     public boolean onOptionsItemSelected(MenuItem item) {
+    	switch(item.getItemId()) {
+    		case R.id.fromPlayerList:
+    			Intent intent = new Intent(this, PlayerListActivity.class);
+    			startActivityForResult(intent, PICK_DATABASE);
+    			break;
+    	}
         return true;
     }
 }

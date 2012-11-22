@@ -50,10 +50,8 @@ public class GameCache {
 		return getPlayerByName(playerName) != null;
 	}
 	
-	public Player renamePlayer(int index, String newName) {
-		Player player = players.get(index);
-		player.setName(newName);
-		return player;
+	public Player getPlayer(int position) {
+		return players.get(position);
 	}
 	
 	public Player getPlayerByName(String playerName) {

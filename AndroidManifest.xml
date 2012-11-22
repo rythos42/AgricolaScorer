@@ -10,13 +10,13 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
-        android:icon="@drawable/sheep"
-        android:label="@string/app_name"
         android:name="com.geeksong.agricolascorer.AgricolaApplication"
-        android:theme="@style/GreenTheme" >
+        android:icon="@drawable/sheep"
+        android:label="@string/app_name" >
         <activity
             android:name=".CreateGameActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:theme="@style/GreenTheme_NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,19 +25,24 @@
         </activity>
         <activity
             android:name=".AddPlayersActivity"
-            android:label="@string/title_activity_add_players" >
+            android:label="@string/title_activity_add_players"
+            android:theme="@style/GreenTheme" >
         </activity>
         <activity
             android:name=".ScorePlayersActivity"
-            android:label="@string/title_activity_score_players" >
+            android:theme="@style/GreenTheme_NoActionBar" >
         </activity>
         <activity
             android:name=".FinishedActivity"
-            android:label="@string/title_activity_finished" >
+            android:theme="@style/GreenTheme_NoActionBar" >
         </activity>
         <activity
             android:name=".HistoryActivity"
-            android:label="@string/title_activity_history" >
+            android:theme="@style/GreenTheme_NoActionBar" >
+        </activity>
+        <activity
+            android:name=".PlayerListActivity"
+            android:theme="@style/GreenTheme_NoActionBar" >
         </activity>
     </application>
 

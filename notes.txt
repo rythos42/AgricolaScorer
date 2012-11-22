@@ -1,8 +1,4 @@
 Now:	
-	- list of all players in database
-		- can select from this list
-	- can rename players to an existing player
-	
 	- "in game" note (smaller, grey?) next to "recent players"
 	- put game count when displayed on recent players
 		- "gameCount" is not actually game count, it's the count of times that player has been selected
@@ -17,6 +13,8 @@ Now:
 		- find space at the edges to margin the black transparency?
 	- shrink background a bit in download size
 	- use font more to justify 150kb of download!
+	- start game seems hidden between the other two buttons
+	- pre-populate based on last game? (maybe add an option for it?)
 	
 Future:
 	- use HoloEverywhere (http://stackoverflow.com/questions/10608539/error-importing-holoeverywhere) to reduce API requirement

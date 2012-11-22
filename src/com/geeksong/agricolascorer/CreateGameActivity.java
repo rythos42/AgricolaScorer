@@ -8,7 +8,10 @@ import com.geeksong.agricolascorer.mapper.PlayerMapper;
 import com.geeksong.agricolascorer.model.Player;
 
 import android.os.Bundle;
+import android.app.AlertDialog;
 import android.app.ListActivity;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
@@ -27,6 +30,7 @@ public class CreateGameActivity extends ListActivity {
     private final int MIN_PLAYERS = 1;
 	
 	public static final int AddPlayerResultCode = 1;
+	public static final String AddedPlayerBundleKey = "AddedPlayer";
 	
 	private CurrentPlayersAdapter adapter;
 	
@@ -49,10 +53,15 @@ public class CreateGameActivity extends ListActivity {
         super.onActivityResult(requestCode, resultCode, data);
         
         if(resultCode == AddPlayerResultCode) {
-         	adapter.notifyDataSetChanged();
-         	
-         	checkAddPlayerButtonVisibility();
-         	checkStartGameButtonVisibility();
+        	String playerName = data.getStringExtra(CreateGameActivity.AddedPlayerBundleKey);
+        	if(!playerName.equals("") && !GameCache.getInstance().isPlayerInGame(playerName)) {
+        		Player addedPlayer = PlayerMapper.getInstance().addPlayer(playerName);
+        		GameCache.getInstance().addPlayer(addedPlayer);
+             	adapter.notifyDataSetChanged();
+             	
+             	checkAddPlayerButtonVisibility();
+             	checkStartGameButtonVisibility();
+        	}
         }
     }
     
@@ -114,13 +123,25 @@ public class CreateGameActivity extends ListActivity {
     	dialog.setMessage(R.string.rename_player);
     	
     	final int playerPosition = position;
-    	final ListActivity thisContext = this;
+    	final Context thisContext = this;
     	
     	dialog.setOnClickListener(new OnClickListener() {
-			public void onClick(InputDialog dialog, DialogResult result, String input) {
-		    	if(result == DialogResult.OK && !input.equals("")) {
-					Player renamedPlayer = GameCache.getInstance().renamePlayer(playerPosition, input);
-					new PlayerMapper(thisContext).updatePlayer(renamedPlayer);
+			public void onClick(InputDialog dialog, DialogResult result, String newPlayerName) {
+		    	if(result == DialogResult.OK && !newPlayerName.equals("")) {
+		    		PlayerMapper mapper = PlayerMapper.getInstance();
+		    		if(mapper.playerExists(newPlayerName)) {
+						new AlertDialog.Builder(thisContext)
+							.setTitle(R.string.cannot_rename)
+							.setMessage(R.string.player_already_exists)
+							.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+								public void onClick(DialogInterface dialog, int whichButton) {}})
+							.show();
+						return;
+		    		}
+
+		    		Player renamedPlayer = GameCache.getInstance().getPlayer(playerPosition);
+					renamedPlayer.setName(newPlayerName);
+		    		mapper.updatePlayer(renamedPlayer);
 	    			adapter.notifyDataSetChanged();
 		    	}
 			}

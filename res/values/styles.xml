@@ -3,9 +3,17 @@
     <style name="GreenTheme" parent="android:Theme.Holo.Light">
         <item name="android:buttonStyle">@style/button</item>
         <item name="android:windowBackground">@drawable/grass</item>
-        <item name="android:windowNoTitle">true</item>
         <item name="android:listViewStyle">@style/listView</item>
+    	<item name="android:actionBarStyle">@style/actionBar</item>
     </style>
+            
+    <style name="GreenTheme_NoActionBar" parent="@style/GreenTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+	<style name="actionBar" parent="android:style/Widget.Holo.ActionBar">
+	    <item name="android:titleTextStyle">@style/listTitle</item>
+	</style>
     
     <style name="grassBackground">
         <item name="android:background">@drawable/grass</item>

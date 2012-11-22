@@ -1,5 +1,7 @@
 package com.geeksong.agricolascorer.control;
 
+import com.geeksong.agricolascorer.R;
+
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -16,14 +18,14 @@ public class InputDialog extends AlertDialog.Builder {
 		
 		final InputDialog thisDialog = this;
 
-		setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+		setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
 			public void onClick(DialogInterface dialog, int whichButton) {
 				String input = editText.getText().toString();
 				listener.onClick(thisDialog, DialogResult.OK, input);
 			}
 		});
 
-		setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+		setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
 			public void onClick(DialogInterface dialog, int whichButton) {
 				listener.onClick(thisDialog, DialogResult.CANCEL, "");
 			}
