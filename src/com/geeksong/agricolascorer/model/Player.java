@@ -4,6 +4,7 @@ public class Player {
 	private int id = -1;
 	private String name;
 	private int gameCount;
+	private boolean isInGame;
 	
 	public Player(String name) {
 		this.name = name;
@@ -25,4 +26,7 @@ public class Player {
 	public int getGameCount() { return gameCount; }
 	public void incrementGameCount() { gameCount++; }
 	public void setGameCount(int gameCount) { this.gameCount = gameCount; }
+	
+	public boolean isInGame() { return isInGame; }
+	public void setIsInGame(boolean isInGame) { this.isInGame = isInGame; }
 }

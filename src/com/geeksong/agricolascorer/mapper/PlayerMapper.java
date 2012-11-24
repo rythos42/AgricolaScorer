@@ -1,6 +1,7 @@
 package com.geeksong.agricolascorer.mapper;
 
 import com.geeksong.agricolascorer.R;
+import com.geeksong.agricolascorer.listadapter.AddPlayerAdapter;
 import com.geeksong.agricolascorer.model.Player;
 
 import android.content.ContentValues;
@@ -10,8 +11,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.support.v4.widget.SimpleCursorAdapter;
 
 public class PlayerMapper {
-    private SimpleCursorAdapter topPlayersListAdapter;
-    private SimpleCursorAdapter playersListAdapter;
+    private AddPlayerAdapter topPlayersListAdapter;
+    private AddPlayerAdapter playersListAdapter;
     
     private Context context;
     private Database db;
@@ -62,12 +63,12 @@ public class PlayerMapper {
     	if(topPlayersListAdapter != null)
     		return topPlayersListAdapter;
     	
-        Cursor c = getTopPlayersCursor();
+        Cursor c = getTopPlayersCursor(5);
 
         String[] from = new String[] { Database.KEY_NAME };
         int[] to = new int[] { R.id.name };
         
-        topPlayersListAdapter = new SimpleCursorAdapter(this.context, R.layout.recent_player_list_item, c, from, to, 0);
+        topPlayersListAdapter = new AddPlayerAdapter(this.context, R.layout.recent_player_list_item, c, from, to, 0);
         return topPlayersListAdapter;
     }
     
@@ -80,20 +81,8 @@ public class PlayerMapper {
         String[] from = new String[] { Database.KEY_NAME };
         int[] to = new int[] { R.id.name };
         
-        playersListAdapter = new SimpleCursorAdapter(this.context, R.layout.recent_player_list_item, c, from, to, 0);
+        playersListAdapter = new AddPlayerAdapter(this.context, R.layout.recent_player_list_item, c, from, to, 0);
         return playersListAdapter;
-    }
-    
-    private void notifyAdaptersDataSetChanged() {
-    	if(playersListAdapter != null) {
-    		playersListAdapter.changeCursor(getPlayersCursor());
-    		playersListAdapter.notifyDataSetChanged();
-    	}
-    	
-    	if(topPlayersListAdapter != null) {
-    		topPlayersListAdapter.changeCursor(getTopPlayersCursor());
-    		topPlayersListAdapter.notifyDataSetChanged();
-    	}
     }
     
     private void insertPlayer(Player player) {
@@ -109,20 +98,19 @@ public class PlayerMapper {
     }
     
     public int updatePlayer(Player player) {
+    	if(playerExists(player.getName()))
+    		return -1;
+    	
         SQLiteDatabase sqlDb = db.getWritableDatabase();
      
         ContentValues values = new ContentValues();
         values.put(Database.KEY_NAME, player.getName());
         values.put(Database.KEY_GAMECOUNT, player.getGameCount());
      
-        int id = sqlDb.update(Database.TABLE_RECENTPLAYERS, values, Database.KEY_ID + " = ?", new String[] { String.valueOf(player.getId()) });
-        
-        notifyAdaptersDataSetChanged();
-        
-        return id;
+        return sqlDb.update(Database.TABLE_RECENTPLAYERS, values, Database.KEY_ID + " = ?", new String[] { String.valueOf(player.getId()) });
     }
     
-    private Cursor getTopPlayersCursor() {
+    private Cursor getTopPlayersCursor(int x) {
         String selectQuery = "SELECT " + Database.KEY_ID + " as _id, * FROM " + Database.TABLE_RECENTPLAYERS + " LIMIT 5";
         SQLiteDatabase sqlDb = db.getWritableDatabase();
         return sqlDb.rawQuery(selectQuery, null);

@@ -46,5 +46,6 @@
     <string name="ok">Ok</string>
     <string name="cancel">Cancel</string>
     <string name="player_list">Player List</string>
+    <string name="in_game_label">(in game)</string>
 
 </resources>

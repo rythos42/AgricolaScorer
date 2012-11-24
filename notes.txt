@@ -1,20 +1,28 @@
 Now:	
-	- "in game" note (smaller, grey?) next to "recent players"
 	- put game count when displayed on recent players
 		- "gameCount" is not actually game count, it's the count of times that player has been selected
+		- same on player list
 	- "checked" gradient is solid colour
 	- more rounded corners on buttons
 		- Have to define background styles for each of the buttons states.
 	- Show graph of final scores vs dates for selected players
 	- back-enter old data from old application
 	- number picker numbers are a little to low
-	- scoring screen is a little dark
-		- gradient to a dark brown instead?
-		- find space at the edges to margin the black transparency?
-	- shrink background a bit in download size
 	- use font more to justify 150kb of download!
 	- start game seems hidden between the other two buttons
 	- pre-populate based on last game? (maybe add an option for it?)
+	- history list has an arrow in the middle of the date.
 	
 Future:
 	- use HoloEverywhere (http://stackoverflow.com/questions/10608539/error-importing-holoeverywhere) to reduce API requirement
+
+Change Log:
+	- Added a list of all players in the database. This can be found from the menu in Add Player.
+		- You can add a player to your game from this list by clicking on them.
+	- You can no longer rename players to an existing player name.
+	- Added a margin on the score board so it's a little brighter.
+	- Lightened the darkest colour in the scoring segmented pickers.
+	- Added a note "(in-game)" to player lists to show that a player has been added already.
+	- Added "+" to fields and pastures maximums.
+	- Shrunk background by 150kb.
+	- Swapped sides of increment and decrement buttons for number pickers.

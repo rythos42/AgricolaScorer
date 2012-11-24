@@ -37,9 +37,9 @@ public class NumberPicker extends LinearLayout {
 	    incrementButton.setText("+");
 	    incrementButton.setOnClickListener(new IncrementListener(this, editText));
 	    
-	    addView(decrementButton, getButtonLayout());
-	    addView(editText);
 	    addView(incrementButton, getButtonLayout());
+	    addView(editText);
+	    addView(decrementButton, getButtonLayout());
 	}
 	
 	private LinearLayout.LayoutParams getButtonLayout() {

@@ -33,7 +33,7 @@ public class AddPlayersActivity extends Activity implements OnItemClickListener 
 	}
        
 	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-		TextView item = (TextView) view;
+		TextView item = (TextView) view.findViewById(R.id.name);
 		
 		putNameIntoInput(item.getText().toString().trim());
 		addPlayerToGame(null);
@@ -84,6 +84,9 @@ public class AddPlayersActivity extends Activity implements OnItemClickListener 
 				}
     			break;
     		case PICK_DATABASE:
+    			if(resultCode == Activity.RESULT_CANCELED)
+    				return;
+    			
     			String playerName = data.getStringExtra(CreateGameActivity.AddedPlayerBundleKey);
     			returnToCreateGame(playerName);
     			break;    			

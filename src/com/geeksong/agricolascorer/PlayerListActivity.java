@@ -25,7 +25,7 @@ public class PlayerListActivity extends Activity implements OnItemClickListener 
     }
     
 	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-		TextView item = (TextView) view;
+		TextView item = (TextView) view.findViewById(R.id.name);
 		String playerName = item.getText().toString().trim();
 		
     	Intent backToAddPlayer = new Intent();
