@@ -1,7 +1,6 @@
 Now:	
-	- put game count when displayed on recent players
-		- "gameCount" is not actually game count, it's the count of times that player has been selected
-		- same on player list
+	- put game count when displayed on recent players and player list
+		- not certain where this should go, since "(in-game)" takes up most of the available comment space
 	- "checked" gradient is solid colour
 	- more rounded corners on buttons
 		- Have to define background styles for each of the buttons states.
@@ -12,6 +11,8 @@ Now:
 	- start game seems hidden between the other two buttons
 	- pre-populate based on last game? (maybe add an option for it?)
 	- history list has an arrow in the middle of the date.
+	- rename some of the styles, they don't fit anymore
+	- remove the "gameCount" column from the database, and stop using it everywhere.
 	
 Future:
 	- use HoloEverywhere (http://stackoverflow.com/questions/10608539/error-importing-holoeverywhere) to reduce API requirement
@@ -26,3 +27,4 @@ Change Log:
 	- Added "+" to fields and pastures maximums.
 	- Shrunk background by 150kb.
 	- Swapped sides of increment and decrement buttons for number pickers.
+	- Added a "game count" to the main screen

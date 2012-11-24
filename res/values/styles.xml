@@ -60,6 +60,7 @@
     
     <style name="inGameText">
         <item name="android:padding">10dp</item>
+        <item name="android:textColor">#C0C0C0</item>
     </style>
     
 	<style name="historyDate">

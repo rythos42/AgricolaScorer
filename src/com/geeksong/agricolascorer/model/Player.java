@@ -24,7 +24,6 @@ public class Player {
 	public void setName(String name) { this.name = name; }
 	
 	public int getGameCount() { return gameCount; }
-	public void incrementGameCount() { gameCount++; }
 	public void setGameCount(int gameCount) { this.gameCount = gameCount; }
 	
 	public boolean isInGame() { return isInGame; }

@@ -33,6 +33,10 @@ public class CurrentPlayersAdapter extends ArrayAdapter<Player> {
 	    if (player != null) {
 	            TextView playerNameView = (TextView) v.findViewById(R.id.name);
 	            playerNameView.setText(player.getName());
+	            
+	            TextView gameCountView = (TextView) v.findViewById(R.id.gameCount);
+	            String gameCountText = String.format(this.context.getResources().getString(R.string.games_count), player.getGameCount());
+	            gameCountView.setText(gameCountText);
 	    }
 	    return v;
     }

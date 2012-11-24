@@ -32,7 +32,18 @@ public class PlayerMapper {
     }
     
     public Player addPlayer(String name) {
-        String selectQuery = "SELECT * FROM " + Database.TABLE_RECENTPLAYERS + " WHERE " + Database.KEY_NAME + " = '" + name + "'";
+        String selectQuery =
+        		String.format("SELECT player.%s, COUNT(score.%s) " +
+        				"FROM %s as score " +
+        				"JOIN %s as player on score.%s=player.%s " +
+        				"WHERE player.%s='%s'" +
+        				"GROUP BY score.%s ",
+        				Database.KEY_ID, Database.KEY_PLAYERID,
+        				Database.TABLE_SCORES,
+        				Database.TABLE_RECENTPLAYERS, Database.KEY_PLAYERID, Database.KEY_ID,
+        				Database.KEY_NAME, name,
+        				Database.KEY_PLAYERID);
+        		//"SELECT * FROM " + Database.TABLE_RECENTPLAYERS + " WHERE " + Database.KEY_NAME + " = '" + name + "'";
         SQLiteDatabase sqlDb = db.getReadableDatabase();
         Cursor playerCursor = sqlDb.rawQuery(selectQuery, null);
         
@@ -40,7 +51,7 @@ public class PlayerMapper {
         
         if(playerCursor.moveToNext()) {
         	addedPlayer.setId(playerCursor.getInt(0));
-        	addedPlayer.setGameCount(playerCursor.getInt(2));
+        	addedPlayer.setGameCount(playerCursor.getInt(1));
         }
         sqlDb.close();
         
@@ -51,7 +62,6 @@ public class PlayerMapper {
     
     public void addPlayer(Player player) {
     	if(player.hasId()) {
-    		player.incrementGameCount();
     		updatePlayer(player);
     	} else {
     		insertPlayer(player);
