@@ -100,7 +100,6 @@ public class PlayerMapper {
         
         ContentValues values = new ContentValues();
         values.put(Database.KEY_NAME, player.getName());
-        values.put(Database.KEY_GAMECOUNT, player.getGameCount());
      
         int id = (int) sqlDb.insert(Database.TABLE_RECENTPLAYERS, null, values);
         player.setId(id);
@@ -115,7 +114,6 @@ public class PlayerMapper {
      
         ContentValues values = new ContentValues();
         values.put(Database.KEY_NAME, player.getName());
-        values.put(Database.KEY_GAMECOUNT, player.getGameCount());
      
         return sqlDb.update(Database.TABLE_RECENTPLAYERS, values, Database.KEY_ID + " = ?", new String[] { String.valueOf(player.getId()) });
     }

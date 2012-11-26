@@ -14,7 +14,6 @@ public class Database extends SQLiteOpenHelper {
 	public static final String TABLE_SCORES = "Scores";
     
     public static final String KEY_NAME = "name";
-    public static final String KEY_GAMECOUNT = "gameCount";
 	
 	public static final String KEY_DATE = "playedDate";
 	
@@ -58,8 +57,7 @@ public class Database extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         String CREATE_RECENTPLAYERS_TABLE = "CREATE TABLE " + TABLE_RECENTPLAYERS + "(" +
         		KEY_ID + " INTEGER PRIMARY KEY," +
-        		KEY_NAME + " TEXT, " +
-                KEY_GAMECOUNT + " INTEGER" +
+        		KEY_NAME + " TEXT " +
 				")";
         db.execSQL(CREATE_RECENTPLAYERS_TABLE);
         
@@ -98,5 +96,6 @@ public class Database extends SQLiteOpenHelper {
  
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+    	// KEY_GAMECOUNT on TABLE_RECENTPLAYERS isn't used anymore and could be dropped if SQLite supported it nicely. 
     }
 }

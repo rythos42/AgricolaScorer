@@ -12,7 +12,7 @@ Now:
 	- pre-populate based on last game? (maybe add an option for it?)
 	- history list has an arrow in the middle of the date.
 	- rename some of the styles, they don't fit anymore
-	- remove the "gameCount" column from the database, and stop using it everywhere.
+	- ability to edit previous games
 	
 Future:
 	- use HoloEverywhere (http://stackoverflow.com/questions/10608539/error-importing-holoeverywhere) to reduce API requirement

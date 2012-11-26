@@ -5,6 +5,7 @@
         <item name="android:windowBackground">@drawable/grass</item>
         <item name="android:listViewStyle">@style/listView</item>
     	<item name="android:actionBarStyle">@style/actionBar</item>
+    	<item name="android:expandableListViewStyle">@style/expandableListView</item>
     </style>
             
     <style name="GreenTheme_NoActionBar" parent="@style/GreenTheme">
@@ -66,6 +67,7 @@
 	<style name="historyDate">
 	    <item name="android:textSize">20dp</item>
 		<item name="android:textColor">#DDFFDD</item>
+		<item name="android:paddingLeft">25dp</item>
     </style>
     
     <style name="listView" parent="@android:style/Widget.Holo.Light.ListView">
@@ -145,5 +147,9 @@
 	
     <style name="numberPicker">
         <item name="android:textColor">#DDFFDD</item>
+    </style>
+    
+    <style name="expandableListView">
+        <item name="android:groupIndicator">@drawable/expandable_list_view_indicator</item>
     </style>
 </resources>
