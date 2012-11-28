@@ -7,6 +7,7 @@ import java.util.Hashtable;
 import com.geeksong.agricolascorer.listadapter.GameHistoryAdapter;
 import com.geeksong.agricolascorer.model.Game;
 import com.geeksong.agricolascorer.model.Player;
+import com.geeksong.agricolascorer.model.RoomType;
 import com.geeksong.agricolascorer.model.Score;
 
 import android.content.Context;
@@ -39,7 +40,27 @@ public class GameHistoryMapper {
         	
         	Player player = new Player(c.getString(2));
         	Score score = new Score(player);
-        	score.setTotalScore(c.getInt(3));
+        	
+        	score.setFieldScore(c.getInt(4));
+        	score.setPastureScore(c.getInt(5));
+        	score.setGrainScore(c.getInt(6));
+        	score.setVegetableScore(c.getInt(7));
+        	score.setSheepScore(c.getInt(8));
+        	score.setBoarScore(c.getInt(9));
+        	score.setCattleScore(c.getInt(10));
+        	score.setUnusedSpacesScore(c.getInt(11));
+        	score.setFencedStablesScore(c.getInt(12));
+        	score.setRoomsScore(c.getInt(13));
+        	score.setFamilyMemberScore(c.getInt(14));
+        	score.setPointsForCards(c.getInt(15));
+        	score.setBonusPoints(c.getInt(16));
+        	score.setRoomType(RoomType.values()[c.getInt(17)]);
+        	score.setRoomCount(c.getInt(18));
+        	score.setIsFromDatabase(true);
+        	
+        	if(score.getTotalScore() == 0)
+        		score.setTotalScore(c.getInt(3));
+        	
         	game.addScore(score);
         }
         
@@ -48,11 +69,17 @@ public class GameHistoryMapper {
     }
     
     private Cursor getGames() {
-    	String selectQuery = String.format("SELECT games.%s as _id, games.%s, players.%s, scores.%s " +
+    	String selectQuery = String.format("SELECT games.%s as _id, games.%s, players.%s, scores.%s, " +
+    			"scores.%s, scores.%s, scores.%s, scores.%s, scores.%s, scores.%s, scores.%s, scores.%s, " +
+    			"scores.%s, scores.%s, scores.%s, scores.%s, scores.%s, scores.%s, scores.%s, scores.%s " +
     			"FROM %s as scores " +
     			"JOIN %s as players on players.%s = scores.%s " +
     			"JOIN %s as games on games.%s = scores.%s", 
     			Database.KEY_ID, Database.KEY_DATE, Database.KEY_NAME, Database.KEY_FINALSCORE,
+    			Database.KEY_FIELDSCORE, Database.KEY_PASTURESCORE, Database.KEY_GRAINSCORE, Database.KEY_VEGETABLESCORE, Database.KEY_SHEEPSCORE, 
+    				Database.KEY_WILDBOARSCORE, Database.KEY_CATTLESCORE, Database.KEY_UNUSEDSPACESSCORE, 
+    			Database.KEY_FENCEDSTABLESSCORE, Database.KEY_ROOMSSCORE, Database.KEY_FAMILYMEMBERSCORE, Database.KEY_POINTSFORCARDS, 
+    				Database.KEY_BONUSPOINTS, Database.KEY_BEGGINGCARDSSCORE, Database.KEY_ROOMTYPE, Database.KEY_ROOMCOUNT,
     			Database.TABLE_SCORES,
     			Database.TABLE_RECENTPLAYERS, Database.KEY_ID, Database.KEY_PLAYERID,
     			Database.TABLE_GAMES, Database.KEY_ID, Database.KEY_GAMEID);

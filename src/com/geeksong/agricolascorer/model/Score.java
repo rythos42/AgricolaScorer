@@ -25,7 +25,9 @@ public class Score {
 	private Player player;
 	
 	private int totalScore = -1;
+	
 	private boolean isTotalScoreProvided = false;
+	private boolean isFromDatabase = false;
 	
 	public Score(Player player) {
 		this.player = player;
@@ -116,4 +118,7 @@ public class Score {
 				+ this.roomsScore + this.familyMemberScore + this.unusedSpacesScore + this.fencedStablesScore + this.pointsForCards 
 				+ this.bonusPoints + this.beggingCardsScore;
 	}
+	
+	public boolean isFromDatabase() { return this.isFromDatabase; }
+	public void setIsFromDatabase(boolean isFromDatabase) { this.isFromDatabase = isFromDatabase; }
 }

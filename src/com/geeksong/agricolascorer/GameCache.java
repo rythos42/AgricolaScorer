@@ -2,6 +2,7 @@ package com.geeksong.agricolascorer;
 
 import java.util.ArrayList;
 
+import com.geeksong.agricolascorer.model.Game;
 import com.geeksong.agricolascorer.model.Player;
 import com.geeksong.agricolascorer.model.Score;
 
@@ -23,6 +24,17 @@ public class GameCache {
 	public void clearGame() {
 		scores.clear();
 		players.clear();
+	}
+	
+	public void setGame(Game game) {
+		clearGame();
+		
+		for(int i = 0; i < game.getScoreCount(); i++) {
+			Score score = game.getScore(i);
+			
+			players.add(score.getPlayer());
+			scores.add(score);
+		}
 	}
 	
 	public void addPlayer(Player player) {

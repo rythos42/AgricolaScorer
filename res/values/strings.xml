@@ -48,5 +48,6 @@
     <string name="player_list">Player List</string>
     <string name="in_game_label">(in game)</string>
     <string name="games_count">%d games</string>
+    <string name="edit_game">Edit game</string>
 
 </resources>
