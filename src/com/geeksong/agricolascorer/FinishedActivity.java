@@ -31,7 +31,11 @@ public class FinishedActivity extends Activity {
     }
     
     public void saveGame(View source) {
-    	mapper.save(GameCache.getInstance().getScoreList());
+    	GameCache cache = GameCache.getInstance();
+    	if(cache.isFromDatabase())
+    		mapper.save(cache.getGame());
+    	else
+    		mapper.save(cache.getScoreList());
     	
     	startAgain(source);
     }

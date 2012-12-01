@@ -1,30 +1,49 @@
-Now:	
+Now:
+	- Show graph of final scores vs dates for selected players
+		- http://androidplot.com/
 	- put game count when displayed on recent players and player list
 		- not certain where this should go, since "(in-game)" takes up most of the available comment space
-	- "checked" gradient is solid colour
-	- more rounded corners on buttons
-		- Have to define background styles for each of the buttons states.
-	- Show graph of final scores vs dates for selected players
-	- back-enter old data from old application
-	- number picker numbers are a little to low
-	- use font more to justify 150kb of download!
 	- start game seems hidden between the other two buttons
-	- pre-populate based on last game? (maybe add an option for it?)
-	- history list has an arrow in the middle of the date.
-	- rename some of the styles, they don't fit anymore
-	- ability to edit previous games
+
 	
 Future:
+	- more rounded corners on buttons
+		- Have to define background styles for each of the buttons states.
+		- <item name="android:background">@drawable/button</item>
+			button.xml		
+				<?xml version="1.0" encoding="utf-8"?>
+				<selector xmlns:android="http://schemas.android.com/apk/res/android">
+				    <item android:state_window_focused="false" android:state_enabled="true" android:drawable="@drawable/btn_default_normal_holo_light" />
+				    <item android:state_window_focused="false" android:state_enabled="false" android:drawable="@drawable/btn_default_disabled_holo_light" />
+				    <item android:state_pressed="true" android:drawable="@drawable/btn_default_pressed_holo_light" />
+				    <item android:state_focused="true" android:state_enabled="true" android:drawable="@drawable/btn_default_focused_holo_light" />
+				    <item android:state_enabled="true" android:drawable="@drawable/btn_default_normal_holo_light" />
+				    <item android:state_focused="true" android:drawable="@drawable/btn_default_disabled_focused_holo_light" />
+				    <item android:drawable="@drawable/btn_default_disabled_holo_light" />
+				</selector>
+	- use font more to justify 150kb of download!
+	- back-enter old data from old application
 	- use HoloEverywhere (http://stackoverflow.com/questions/10608539/error-importing-holoeverywhere) to reduce API requirement
+	- "checked" gradient is solid colour
+	- rename some of the styles, they don't fit anymore
+	- pre-populate based on last game? (maybe add an option for it?)
+	- number picker numbers are a little to low in the control
 
 Change Log:
-	- Added a list of all players in the database. This can be found from the menu in Add Player.
-		- You can add a player to your game from this list by clicking on them.
-	- You can no longer rename players to an existing player name.
-	- Added a margin on the score board so it's a little brighter.
-	- Lightened the darkest colour in the scoring segmented pickers.
-	- Added a note "(in-game)" to player lists to show that a player has been added already.
-	- Added "+" to fields and pastures maximums.
-	- Shrunk background by 150kb.
-	- Swapped sides of increment and decrement buttons for number pickers.
-	- Added a "game count" to the main screen
+	Major:
+		- You can now edit previously saved games! Long-press on a game in History!
+		- There is now a list of all players who have played - check the menu in Add Player. You can add a player to your game from this list.
+		- Shrunk background by 150kb.
+	
+	Minor:
+		- History now sorted by date
+		- Added a "game count" to the main screen
+		- You can no longer rename players to an existing player name.
+		- Added a note "(in-game)" to player lists to show that a player has been added already.
+	
+	UI fixes:
+		- Added a margin on the score board so it's a little brighter.
+		- Lightened the darkest colour in the scoring segmented pickers.
+		- Added "+" to fields and pastures maximums.
+		- Swapped sides of increment and decrement buttons for number pickers.
+		- Fixed the show/hide arrow on the History page

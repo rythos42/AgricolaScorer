@@ -50,7 +50,8 @@ public class ScoreTabFactory implements TabHost.TabContentFactory {
 		group.setOnCheckedChangeListener(manager);
 		
 		if(score.isFromDatabase()) {
-			
+			int groupIndex = manager.getIndexForRadioButton(score, id);
+			((RadioButton) group.getChildAt(groupIndex)).setChecked(true);
 		} else {
 			if(id == R.id.family_members)
 				((RadioButton) group.getChildAt(1)).setChecked(true);
@@ -65,7 +66,8 @@ public class ScoreTabFactory implements TabHost.TabContentFactory {
 		picker.setOnValueChangedListener(manager);
 		
 		if(score.isFromDatabase()) {
-			
+			int value = manager.getValueForNumberPicker(score, id);
+			picker.setValue(value);
 		} else {
 			if(id == R.id.rooms_picker)
 				picker.setValue(2);

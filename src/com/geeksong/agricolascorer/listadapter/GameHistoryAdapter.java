@@ -2,7 +2,7 @@ package com.geeksong.agricolascorer.listadapter;
 
 import java.text.Format;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
+import java.util.List;
 
 import com.geeksong.agricolascorer.R;
 import com.geeksong.agricolascorer.model.Game;
@@ -18,9 +18,9 @@ import android.widget.TextView;
 
 public class GameHistoryAdapter extends BaseExpandableListAdapter {
 	private Context context;
-	private ArrayList<Game> games;
+	private List<Game> games;
 	
-	public GameHistoryAdapter(Context context, ArrayList<Game> games) {
+	public GameHistoryAdapter(Context context, List<Game> games) {
 		this.context = context;
 		this.games = games;
 	}

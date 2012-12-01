@@ -92,6 +92,50 @@ public class ScoreManager implements OnCheckedChangeListener, OnValueChangeListe
     		Log.e("com.geeksong.agricolascorer", e.getMessage());
     	}
 	}
+	
+	public int getIndexForRadioButton(Score score, int id) {
+		int scoreValue = Integer.MIN_VALUE;
+    	switch(id) {
+	    	case R.id.fields: scoreValue = score.getFieldScore();
+	    	case R.id.pastures: scoreValue = score.getPastureScore();
+	    	case R.id.grains: scoreValue = score.getGrainScore();
+	    	case R.id.vegetables: scoreValue = score.getVegetableScore();
+	    	case R.id.sheep: scoreValue = score.getSheepScore();
+	    	case R.id.wild_boar: scoreValue = score.getBoarScore();
+	    	case R.id.cattle: scoreValue = score.getCattleScore();
+    	}
+    	if(scoreValue != Integer.MIN_VALUE) {
+    		if(scoreValue == -1) 
+				return 0;
+    		return scoreValue;
+    	}
+    	
+    	if(id == R.id.room_type) {
+    		switch(score.getRoomType()) {
+    			case Wood: return 0;
+    			case Clay: return 1;
+    			case Stone: return 2;
+    		}
+    	}
+    	
+    	if(id == R.id.family_members) {
+    		return (score.getFamilyMemberScore() / 3) - 1;
+    	}
+
+    	return 0;
+	}
+	
+	public int getValueForNumberPicker(Score score, int id) {
+		switch(id) {
+	    	case R.id.unused_spaces_picker: return score.getUnusedSpacesScore() * -1;
+	    	case R.id.fenced_stables_picker: return score.getFencedStablesScore();
+	    	case R.id.rooms_picker: return score.getRoomCount();
+	    	case R.id.points_for_cards_picker: return score.getPointsForCards();
+	    	case R.id.bonus_points_picker: return score.getBonusPoints();
+	    	case R.id.begging_cards_picker: return score.getBeggingCardsScore() / -3;
+		}
+		return 0;
+	}
     		
 	public static int getScoreForFields(CharSequence text) throws Exception {
 		String firstCharacter = text.subSequence(0, 1).toString();

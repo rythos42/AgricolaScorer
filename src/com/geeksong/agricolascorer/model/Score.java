@@ -26,6 +26,7 @@ public class Score {
 	
 	private int totalScore = -1;
 	
+	private int id;
 	private boolean isTotalScoreProvided = false;
 	private boolean isFromDatabase = false;
 	
@@ -52,6 +53,9 @@ public class Score {
     		Log.e("com.geeksong.agricolascorer", e.getMessage());
     	}
 	}
+	
+	public void setId(int id) { this.id = id; }
+	public int getId() { return this.id; }
 	
 	public void setFieldScore(int fieldScore) { this.fieldScore = fieldScore; }
 	public int getFieldScore() { return this.fieldScore; }

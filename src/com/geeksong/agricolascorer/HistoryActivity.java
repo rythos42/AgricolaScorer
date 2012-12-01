@@ -68,13 +68,9 @@ public class HistoryActivity extends Activity {
     			return true;
     		case MENU_EDIT_GAME:
     			GameCache.getInstance().setGame(game);
-    			
-    			// go to scoring intent
     			Intent rescore = new Intent(this, ScorePlayersActivity.class);
     			startActivityForResult(rescore, RESCORE_ACTIVITY);
     			
-    			// how to tell scoring intent that it has to return here instead of going to scoring?
-    			// update this games history after it's been re-written
     			return true;
     		default:
     	    	return super.onContextItemSelected(item);

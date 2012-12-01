@@ -10,6 +10,9 @@ public class GameCache {
 	private ArrayList<Score> scores = new ArrayList<Score>();
 	private ArrayList<Player> players = new ArrayList<Player>();
 	
+	private boolean isFromDatabase = false;
+	private Game savedGame;
+	
 	private static GameCache instance;
 	public static GameCache getInstance() {
 		if(instance == null)
@@ -24,10 +27,15 @@ public class GameCache {
 	public void clearGame() {
 		scores.clear();
 		players.clear();
+		isFromDatabase = false;
+		savedGame = null;
 	}
 	
 	public void setGame(Game game) {
 		clearGame();
+		
+		this.savedGame = game;
+		this.isFromDatabase = true;
 		
 		for(int i = 0; i < game.getScoreCount(); i++) {
 			Score score = game.getScore(i);
@@ -36,6 +44,13 @@ public class GameCache {
 			scores.add(score);
 		}
 	}
+	
+	// This only returns a proper Game object when the game has been loaded from the database
+	public Game getGame() {
+		return savedGame;
+	}
+	
+	public boolean isFromDatabase() { return this.isFromDatabase; }
 	
 	public void addPlayer(Player player) {
 		players.add(player);
