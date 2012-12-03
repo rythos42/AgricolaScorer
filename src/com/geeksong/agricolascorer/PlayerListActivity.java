@@ -12,8 +12,6 @@ import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
 
 public class PlayerListActivity extends Activity implements OnItemClickListener {
-	public static String PICKED_PLAYER = "playerList.pickedPlayer";
-	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +28,7 @@ public class PlayerListActivity extends Activity implements OnItemClickListener 
 		
     	Intent backToAddPlayer = new Intent();
     	backToAddPlayer.putExtra(CreateGameActivity.AddedPlayerBundleKey, playerName);
-    	setResult(CreateGameActivity.AddPlayerResultCode, backToAddPlayer);
+    	setResult(RESULT_OK, backToAddPlayer);
     	finish();
 	}
 }

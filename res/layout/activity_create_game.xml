@@ -3,20 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     style="@style/listContainer" >
-    
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        style="@style/listTitle">
-    </TextView>
 
     <ListView
         android:id="@android:id/list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/title" >
+        android:layout_height="wrap_content" >
 	</ListView>   
     
 	<Button
@@ -35,13 +26,5 @@
         android:text="@string/start_game"
         android:onClick="startGame"
         android:visibility="gone" />
-	
-	<Button
-		android:id="@+id/historyButton"
-		android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/startGameButton"
-        android:text="@string/history"
-        android:onClick="showHistory" />
         
 </RelativeLayout>

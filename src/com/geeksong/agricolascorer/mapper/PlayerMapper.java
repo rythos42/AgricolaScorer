@@ -2,6 +2,7 @@ package com.geeksong.agricolascorer.mapper;
 
 import com.geeksong.agricolascorer.R;
 import com.geeksong.agricolascorer.listadapter.AddPlayerAdapter;
+import com.geeksong.agricolascorer.listadapter.SelectablePlayerAdapter;
 import com.geeksong.agricolascorer.model.Player;
 
 import android.content.ContentValues;
@@ -13,6 +14,7 @@ import android.support.v4.widget.SimpleCursorAdapter;
 public class PlayerMapper {
     private AddPlayerAdapter topPlayersListAdapter;
     private AddPlayerAdapter playersListAdapter;
+    private SelectablePlayerAdapter selectPlayersListAdapter;
     
     private Context context;
     private Database db;
@@ -34,16 +36,15 @@ public class PlayerMapper {
     public Player addPlayer(String name) {
         String selectQuery =
         		String.format("SELECT player.%s, COUNT(score.%s) " +
-        				"FROM %s as score " +
-        				"JOIN %s as player on score.%s=player.%s " +
-        				"WHERE player.%s='%s'" +
-        				"GROUP BY score.%s ",
+        				"FROM %s as player " +
+        				"LEFT JOIN %s as score on player.%s=score.%s " +
+        				"WHERE player.%s='%s' " +
+        				"GROUP BY score.%s",
         				Database.KEY_ID, Database.KEY_PLAYERID,
-        				Database.TABLE_SCORES,
-        				Database.TABLE_RECENTPLAYERS, Database.KEY_PLAYERID, Database.KEY_ID,
+        				Database.TABLE_RECENTPLAYERS,
+        				Database.TABLE_SCORES, Database.KEY_ID, Database.KEY_PLAYERID,
         				Database.KEY_NAME, name,
         				Database.KEY_PLAYERID);
-        		//"SELECT * FROM " + Database.TABLE_RECENTPLAYERS + " WHERE " + Database.KEY_NAME + " = '" + name + "'";
         SQLiteDatabase sqlDb = db.getReadableDatabase();
         Cursor playerCursor = sqlDb.rawQuery(selectQuery, null);
         
@@ -65,8 +66,15 @@ public class PlayerMapper {
     		updatePlayer(player);
     	} else {
     		insertPlayer(player);
+    		
+    		if(playersListAdapter != null)
+    			playersListAdapter.notifyDataSetChanged();
     	}
-    	topPlayersListAdapter.notifyDataSetChanged();
+    	
+    	if(topPlayersListAdapter != null)
+    		topPlayersListAdapter.notifyDataSetChanged();
+    	if(selectPlayersListAdapter != null)
+    		selectPlayersListAdapter.notifyDataSetChanged();
     }
     
     public SimpleCursorAdapter getTopPlayersListAdapter() {
@@ -93,6 +101,19 @@ public class PlayerMapper {
         
         playersListAdapter = new AddPlayerAdapter(this.context, R.layout.recent_player_list_item, c, from, to, 0);
         return playersListAdapter;
+    }
+    
+    public SelectablePlayerAdapter getSelectablePlayersListAdapter() {
+    	if(selectPlayersListAdapter != null)
+    		return selectPlayersListAdapter;
+    	
+        Cursor c = getPlayersCursor();
+
+        String[] from = new String[] { Database.KEY_NAME };
+        int[] to = new int[] { R.id.name };
+
+        selectPlayersListAdapter = new SelectablePlayerAdapter(this.context, R.layout.select_player_list_item, c, from, to, 0);
+        return selectPlayersListAdapter;
     }
     
     private void insertPlayer(Player player) {

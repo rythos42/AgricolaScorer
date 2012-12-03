@@ -7,6 +7,7 @@ import com.geeksong.agricolascorer.model.Game;
 import com.geeksong.agricolascorer.model.Score;
 
 import android.content.ContentValues;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 public class SavedGameMapper {
@@ -70,5 +71,27 @@ public class SavedGameMapper {
         	sqlDb.update(Database.TABLE_SCORES, scoreValues, Database.KEY_ID + " = ?", new String[] { Integer.toString(score.getId()) });
         }
         sqlDb.close();
+    }
+    
+    public ArrayList<Integer> getAvailableSavedGameSizes() {
+        SQLiteDatabase sqlDb = db.getWritableDatabase();
+        
+        String query = String.format("SELECT DISTINCT COUNT(%s) as playerCount " +
+        		"FROM %s as game " +
+        		"JOIN %s as score on game.%s=score.%s " +
+        		"GROUP BY score.%s " +
+        		"ORDER BY playerCount",
+        		Database.KEY_PLAYERID,
+        		Database.TABLE_GAMES,
+        		Database.TABLE_SCORES, Database.KEY_ID, Database.KEY_GAMEID,
+        		Database.KEY_GAMEID);
+        
+        Cursor c = sqlDb.rawQuery(query, null);
+        
+        ArrayList<Integer> gameSizes = new ArrayList<Integer>();
+        while(c.moveToNext())
+        	gameSizes.add(c.getInt(0));
+        
+        return gameSizes;
     }
 }

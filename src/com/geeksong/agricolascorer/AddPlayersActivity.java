@@ -27,11 +27,13 @@ public class AddPlayersActivity extends Activity implements OnItemClickListener 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_players);
         
+        ActionBarHelper.setActionBarTitle(this, R.string.add_player);
+        
         ListView list = (ListView) this.findViewById(R.id.recentPlayersList);
         list.setOnItemClickListener(this);
         list.setAdapter(PlayerMapper.getInstance().getTopPlayersListAdapter());
 	}
-       
+              
 	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 		TextView item = (TextView) view.findViewById(R.id.name);
 		
@@ -57,7 +59,7 @@ public class AddPlayersActivity extends Activity implements OnItemClickListener 
     private void returnToCreateGame(String playerName) {
     	Intent backToCreateGame = new Intent();
     	backToCreateGame.putExtra(CreateGameActivity.AddedPlayerBundleKey, playerName);
-    	setResult(CreateGameActivity.AddPlayerResultCode, backToCreateGame);
+    	setResult(RESULT_OK, backToCreateGame);
     	finish();
     }
     
@@ -92,8 +94,7 @@ public class AddPlayersActivity extends Activity implements OnItemClickListener 
     			break;    			
     	}
 	}
-    
-    
+        
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.add_players, menu);

@@ -49,5 +49,12 @@
     <string name="in_game_label">(in game)</string>
     <string name="games_count">%d games</string>
     <string name="edit_game">Edit game</string>
+    <string name="statistics">Statistics</string>
+    <string name="about">About</string>
+    <string name="about_text">Agricola Scorer by Craig Fleming (rythos42@gmail.com). Dominican font by www.haroldsfonts.com. Chart icon by blog.twg.ca.</string>
+    <string name="title_activity_statistics">StatisticsActivity</string>
+    <string name="title_activity_filter_statistics">FilterStatisticsActivity</string>
+    <string name="filter">Filter</string>
+    <string name="playersLabel">Players:</string>
 
 </resources>

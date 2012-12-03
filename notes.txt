@@ -1,12 +1,21 @@
 Now:
 	- Show graph of final scores vs dates for selected players
 		- http://androidplot.com/
+		- figure out graph
+		- return something from StatisticsMapper.getwhatever
+		- do something with that value
+	- add a title to the statistics activity
+		
 	- put game count when displayed on recent players and player list
 		- not certain where this should go, since "(in-game)" takes up most of the available comment space
-	- start game seems hidden between the other two buttons
-
+		- put it inside the "(...)"? (in-game, 3 games)?
+	- segmented buttons still to dark
+	- make segmented buttons taller
+	- number picker buttons to small
+	- chart icon colour and/or size is wrong
 	
 Future:
+	- use XML plurals for "game count"
 	- more rounded corners on buttons
 		- Have to define background styles for each of the buttons states.
 		- <item name="android:background">@drawable/button</item>
@@ -40,6 +49,7 @@ Change Log:
 		- Added a "game count" to the main screen
 		- You can no longer rename players to an existing player name.
 		- Added a note "(in-game)" to player lists to show that a player has been added already.
+		- fixed a bug whereby adding a player who hadn't played any games added him to the database again
 	
 	UI fixes:
 		- Added a margin on the score board so it's a little brighter.

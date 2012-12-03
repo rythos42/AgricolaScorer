@@ -11,11 +11,14 @@ import android.os.Bundle;
 import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
+import android.text.SpannableString;
+import android.text.method.LinkMovementMethod;
+import android.text.util.Linkify;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView.AdapterContextMenuInfo;
@@ -29,7 +32,7 @@ public class CreateGameActivity extends ListActivity {
     private final int MAX_PLAYERS = 5;
     private final int MIN_PLAYERS = 1;
 	
-	public static final int AddPlayerResultCode = 1;
+	public static final int ADD_PLAYER_REQUEST = 1;
 	public static final String AddedPlayerBundleKey = "AddedPlayer";
 	
 	private CurrentPlayersAdapter adapter;
@@ -39,8 +42,7 @@ public class CreateGameActivity extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_game);
         
-        TextView title = (TextView) findViewById(R.id.title);
-        title.setTypeface(FontManager.getInstance().getDominican());
+        ActionBarHelper.setActionBarTitle(this, R.string.app_name);
         
         registerForContextMenu(getListView());
         
@@ -52,7 +54,7 @@ public class CreateGameActivity extends ListActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         
-        if(resultCode == AddPlayerResultCode) {
+        if(resultCode == RESULT_OK) {
         	String playerName = data.getStringExtra(CreateGameActivity.AddedPlayerBundleKey);
         	if(!playerName.equals("") && !GameCache.getInstance().isPlayerInGame(playerName)) {
         		Player addedPlayer = PlayerMapper.getInstance().addPlayer(playerName);
@@ -79,17 +81,12 @@ public class CreateGameActivity extends ListActivity {
     
     public void addPlayer(View source) {
     	Intent addPlayersIntent = new Intent(source.getContext(), AddPlayersActivity.class);
-    	startActivityForResult(addPlayersIntent, AddPlayerResultCode);
+    	startActivityForResult(addPlayersIntent, ADD_PLAYER_REQUEST);
     }
     
     public void startGame(View source) {
     	Intent startGameIntent = new Intent(source.getContext(), ScorePlayersActivity.class);
     	startActivity(startGameIntent);
-    }
-
-    public void showHistory(View source) {
-    	Intent historyIntent = new Intent(this, HistoryActivity.class);
-    	startActivity(historyIntent);
     }
     
     @Override
@@ -133,8 +130,7 @@ public class CreateGameActivity extends ListActivity {
 						new AlertDialog.Builder(thisContext)
 							.setTitle(R.string.cannot_rename)
 							.setMessage(R.string.player_already_exists)
-							.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-								public void onClick(DialogInterface dialog, int whichButton) {}})
+							.setPositiveButton(R.string.ok, null)
 							.show();
 						return;
 		    		}
@@ -148,5 +144,38 @@ public class CreateGameActivity extends ListActivity {
 		});
     	
     	dialog.show();
+    }
+    
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.create_game, menu);
+        return true;
+    }
+    
+    public boolean onOptionsItemSelected(MenuItem item) {
+    	switch(item.getItemId()) {
+    		case R.id.statistics:
+    	    	Intent statisticsIntent = new Intent(this, StatisticsActivity.class);
+    	    	startActivity(statisticsIntent);
+    			break;
+    		case R.id.history:
+    	    	Intent historyIntent = new Intent(this, HistoryActivity.class);
+    	    	startActivity(historyIntent);
+    			break;
+    		case R.id.about:
+    			String aboutText = getResources().getString(R.string.about_text);
+    			SpannableString string = new SpannableString(aboutText);
+    			Linkify.addLinks(string, Linkify.ALL);
+    			
+    			AlertDialog dialog = new AlertDialog.Builder(this)
+					.setTitle(R.string.about)
+					.setMessage(string)
+					.setPositiveButton(R.string.ok, null)
+					.show();
+    			
+    			((TextView)dialog.findViewById(android.R.id.message)).setMovementMethod(LinkMovementMethod.getInstance());
+    			break;
+    	}
+        return true;
     }
 }
