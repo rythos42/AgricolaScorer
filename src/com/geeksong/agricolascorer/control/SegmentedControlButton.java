@@ -63,6 +63,8 @@ public class SegmentedControlButton extends RadioButton {
         
         checkedGradient = new GradientDrawable(Orientation.TOP_BOTTOM, new int[] { checkedStartColour, checkedEndColour });
         uncheckedGradient = new GradientDrawable(Orientation.TOP_BOTTOM, new int[] { uncheckedStartColour, uncheckedEndColour });
+        
+        setHeight(70);
     }
  
     @Override

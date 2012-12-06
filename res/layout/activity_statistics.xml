@@ -3,12 +3,12 @@
               android:layout_height="fill_parent">
 
     <com.androidplot.xy.XYPlot
-            android:id="@+id/mySimpleXYPlot"
+            android:id="@+id/statsPlot"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            title="A Simple XYPlot Example"/>
+            title="@string/scores" />
 
 </LinearLayout>

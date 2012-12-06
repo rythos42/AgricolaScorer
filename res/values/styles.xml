@@ -81,6 +81,10 @@
         <item name="android:padding">15dp</item>
         <item name="android:gravity">center_horizontal</item>
     </style>
+    
+    <style name="radioGroupStyle">
+        <item name="android:paddingBottom">10dp</item>
+    </style>
 
     <style name="segmentedStyle">
         <item name="checkedTextColour">#FFFFFF</item>
@@ -91,56 +95,56 @@
         <item name="checkedStartColour">#8C4D00</item> <!-- light -->
         <item name="checkedEndColour">#6E3700</item> <!-- to dark -->
 		<item name="uncheckedStartColour">#8C4D00</item> <!-- light -->
-		<item name="uncheckedEndColour">#101010</item> <!-- to really dark -->
+		<item name="uncheckedEndColour">#303030</item> <!-- to really dark -->
 	</style>
 	        
     <style name="pasturesStyle" parent="@style/segmentedStyle">
         <item name="checkedStartColour">#1E7E27</item>
         <item name="checkedEndColour">#176114</item>
 		<item name="uncheckedStartColour">#1E7E27</item>
-		<item name="uncheckedEndColour">#101010</item>
+		<item name="uncheckedEndColour">#303030</item>
 	</style>
 	        
     <style name="grainStyle" parent="@style/segmentedStyle">
         <item name="checkedStartColour">#F4E12D</item>
         <item name="checkedEndColour">#FAC020</item>
 		<item name="uncheckedStartColour">#F4E12D</item>
-		<item name="uncheckedEndColour">#101010</item>
+		<item name="uncheckedEndColour">#303030</item>
 	</style>
 		        
     <style name="vegetableStyle" parent="@style/segmentedStyle">
         <item name="checkedStartColour">#FF960F</item>
         <item name="checkedEndColour">#EA7001</item>
 		<item name="uncheckedStartColour">#FF960F</item>
-		<item name="uncheckedEndColour">#101010</item>
+		<item name="uncheckedEndColour">#303030</item>
 	</style>
 		        
     <style name="sheepStyle" parent="@style/segmentedStyle">
         <item name="checkedStartColour">#E7E1D5</item>
         <item name="checkedEndColour">#C4C1BA</item>
 		<item name="uncheckedStartColour">#E7E1D5</item>
-		<item name="uncheckedEndColour">#101010</item>
+		<item name="uncheckedEndColour">#303030</item>
 	</style>
 		        
     <style name="wildBoarStyle" parent="@style/segmentedStyle">
         <item name="checkedStartColour">#8B8883</item>
         <item name="checkedEndColour">#686663</item>
 		<item name="uncheckedStartColour">#8B8883</item>
-		<item name="uncheckedEndColour">#101010</item>
+		<item name="uncheckedEndColour">#303030</item>
 	</style>
 		        
     <style name="cattleStyle" parent="@style/segmentedStyle">
         <item name="checkedStartColour">#E57411</item>
         <item name="checkedEndColour">#A04F11</item>
 		<item name="uncheckedStartColour">#E57411</item>
-		<item name="uncheckedEndColour">#101010</item>
+		<item name="uncheckedEndColour">#303030</item>
 	</style>
 		        
     <style name="familyMemberStyle" parent="@style/segmentedStyle">
         <item name="checkedStartColour">#3592DB</item>
         <item name="checkedEndColour">#136DB5</item>
 		<item name="uncheckedStartColour">#3592DB</item>
-		<item name="uncheckedEndColour">#101010</item>
+		<item name="uncheckedEndColour">#303030</item>
 	</style>
 		        
     <style name="roomTypeStyle" parent="@style/segmentedStyle">

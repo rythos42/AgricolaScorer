@@ -28,6 +28,7 @@ public class NumberPicker extends LinearLayout {
 	    editText = new EditText(context);
 	    editText.setText(Integer.toString(number));
 	    editText.setTextColor(textColour);
+	    editText.setPadding(editText.getPaddingLeft(), editText.getPaddingTop(), editText.getPaddingRight(), editText.getPaddingBottom() + 15);
 	    
 	    Button decrementButton = new Button(context);
 	    decrementButton.setText("-");

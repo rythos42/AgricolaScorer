@@ -1,77 +1,59 @@
 package com.geeksong.agricolascorer;
 
-import java.util.Arrays;
+import java.text.DecimalFormat;
+import java.text.FieldPosition;
+import java.text.Format;
+import java.text.ParsePosition;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
 
 import com.androidplot.series.XYSeries;
 import com.androidplot.xy.LineAndPointFormatter;
 import com.androidplot.xy.SimpleXYSeries;
 import com.androidplot.xy.XYPlot;
+import com.androidplot.xy.XYStepMode;
 import com.geeksong.agricolascorer.mapper.StatisticsMapper;
+import com.geeksong.agricolascorer.model.PlayerStatistics;
 import com.geeksong.agricolascorer.model.StatisticFilter;
 
-import android.net.Uri;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Intent;
-import android.database.Cursor;
+import android.content.res.Resources;
 import android.graphics.Color;
-import android.text.SpannableString;
-import android.text.method.LinkMovementMethod;
-import android.text.util.Linkify;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 public class StatisticsActivity extends Activity {
 	public static final int GET_STATISTIC_FILTER = 0;
-	
 	public static final String StatisticFilterRequest = "StatisticFilter";
-	
+
+    private int[] graphColours = {Color.RED, Color.BLUE, Color.GREEN, Color.MAGENTA, Color.WHITE};
+    private int[] pointColours = {Color.rgb(139, 0, 0), Color.rgb(0, 0, 139), Color.rgb(0, 139, 0), Color.rgb(139, 0, 139), Color.rgb(220, 220, 220)};
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_statistics);
         
-        /*
-        // initialize our XYPlot reference:
-        XYPlot mySimpleXYPlot = (XYPlot) findViewById(R.id.mySimpleXYPlot);
+        ActionBarHelper.setActionBarTitle(this, R.string.scores);
 
-        // Create a couple arrays of y-values to plot:
-        Number[] series1Numbers = {1, 8, 5, 2, 7, 4};
-        Number[] series2Numbers = {4, 6, 3, 8, 2, 10};
-
-        // Turn the above arrays into XYSeries':
-        XYSeries series1 = new SimpleXYSeries(
-                Arrays.asList(series1Numbers),          // SimpleXYSeries takes a List so turn our array into a List
-                SimpleXYSeries.ArrayFormat.Y_VALS_ONLY, // Y_VALS_ONLY means use the element index as the x value
-                "Series1");                             // Set the display title of the series
-
-        // same as above
-        XYSeries series2 = new SimpleXYSeries(Arrays.asList(series2Numbers), SimpleXYSeries.ArrayFormat.Y_VALS_ONLY, "Series2");
-
-        // Create a formatter to use for drawing a series using LineAndPointRenderer:
-        LineAndPointFormatter series1Format = new LineAndPointFormatter(
-                Color.rgb(0, 200, 0),                   // line color
-                Color.rgb(0, 100, 0),                   // point color
-                null);                                  // fill color (none)
-
-        // add a new series' to the xyplot:
-        mySimpleXYPlot.addSeries(series1, series1Format);
-
-        // same as above:
-        mySimpleXYPlot.addSeries(series2,
-                new LineAndPointFormatter(Color.rgb(0, 0, 200), Color.rgb(0, 0, 100), null));
-
+        XYPlot statsPlot = (XYPlot) findViewById(R.id.statsPlot);
+        Resources res = getResources();
+        statsPlot.setTitle(res.getString(R.string.scores));
+        statsPlot.setDomainValueFormat(new PlotDateFormat());
+        statsPlot.setDomainLabel(res.getString(R.string.date));
+        statsPlot.setRangeLabel(res.getString(R.string.score));
+        statsPlot.setRangeValueFormat(new DecimalFormat("0"));
+        
         // reduce the number of range labels
-        mySimpleXYPlot.setTicksPerRangeLabel(3);
+        //mySimpleXYPlot.setTicksPerRangeLabel(3);
 
         // by default, AndroidPlot displays developer guides to aid in laying out your plot.
         // To get rid of them call disableAllMarkup():
-        mySimpleXYPlot.disableAllMarkup();
-        */
+        statsPlot.disableAllMarkup();
     }
 
     @Override
@@ -96,10 +78,41 @@ public class StatisticsActivity extends Activity {
     	
     	switch (reqCode) {
     		case GET_STATISTIC_FILTER:
-    			new StatisticsMapper().getStatisticsForFilter(StatisticFilter.getInstance());
-    			
-    			// todo, do something with a return value!
+    			ArrayList<PlayerStatistics> statsList = new StatisticsMapper().getStatisticsForFilter(StatisticFilter.getInstance());
+    	        XYPlot statsPlot = (XYPlot) findViewById(R.id.statsPlot);
+    	        statsPlot.clear();
+    	        
+    	        int playerCount = statsList.size();
+    	        if(playerCount == 0)
+    	        	return;
+    	        
+    	        statsPlot.setDomainStep(XYStepMode.SUBDIVIDE, statsList.get(0).getDates().size());
+    	        
+    	        for(int i = 0; i < playerCount; i++ ) {
+    	        	PlayerStatistics stat = statsList.get(i);
+        	        XYSeries series = new SimpleXYSeries(stat.getDates(), stat.getScores(), stat.getName());
+        	        
+        	        statsPlot.addSeries(series, new LineAndPointFormatter(graphColours[i], pointColours[i], null));
+    			}   			
+
     			break;    			
     	}
 	}
+
+    private class PlotDateFormat extends Format {
+		private static final long serialVersionUID = 1L;
+		
+		private SimpleDateFormat dateFormat = new SimpleDateFormat("MMM/dd");
+    	
+    	@Override
+    	public StringBuffer format(Object object, StringBuffer toAppendTo, FieldPosition pos) {
+            Date date = new Date(((Number) object).longValue());
+            return dateFormat.format(date, toAppendTo, pos);
+    	}
+
+    	@Override
+    	public Object parseObject(String string, ParsePosition position) {
+    		return null;
+    	}
+    }
 }

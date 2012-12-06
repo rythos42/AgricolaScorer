@@ -7,16 +7,11 @@ import com.geeksong.agricolascorer.model.StatisticFilter;
 
 import android.os.Bundle;
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.database.Cursor;
-import android.support.v4.widget.CursorAdapter;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.CheckedTextView;
@@ -35,7 +30,7 @@ public class FilterStatisticsActivity extends Activity implements OnItemSelected
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_filter_statistics);
         
-        ActionBarHelper.setActionBarTitle(this, R.id.filter);
+        ActionBarHelper.setActionBarTitle(this, R.string.filter);
         
         mapper = new SavedGameMapper();
         filter = StatisticFilter.getInstance();

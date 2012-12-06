@@ -1,8 +1,11 @@
 package com.geeksong.agricolascorer.mapper;
 
+import java.util.ArrayList;
+
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
+import com.geeksong.agricolascorer.model.PlayerStatistics;
 import com.geeksong.agricolascorer.model.StatisticFilter;
 
 public class StatisticsMapper {
@@ -12,7 +15,7 @@ public class StatisticsMapper {
     	this.db = Database.getInstance();
     }
     
-    public void getStatisticsForFilter(StatisticFilter filter) {
+    public ArrayList<PlayerStatistics> getStatisticsForFilter(StatisticFilter filter) {
     	SQLiteDatabase sqlDb = db.getReadableDatabase();
     	
     	String query = String.format("SELECT game.%s, score.%s, player.%s, playerCount.playerCount " +
@@ -56,7 +59,28 @@ public class StatisticsMapper {
     	}
     	
     	Cursor scoreCursor = sqlDb.rawQuery(query, null);
-
-    	// todo...return something!
+    	
+    	ArrayList<PlayerStatistics> playerScores = new ArrayList<PlayerStatistics>();
+    	while(scoreCursor.moveToNext()) {
+    		String name = scoreCursor.getString(2);
+    		PlayerStatistics stats = getPlayerStats(playerScores, name);
+    		
+    		long dateTicks = scoreCursor.getLong(0);
+    		int score = scoreCursor.getInt(1);
+    		stats.addScore(dateTicks, score);
+    	}
+    	
+    	return playerScores;
+    }
+    
+    private PlayerStatistics getPlayerStats(ArrayList<PlayerStatistics> playerScores, String name) {
+    	for(PlayerStatistics stats : playerScores) {
+    		if(stats.getName().equals(name))
+    			return stats;
+    	}
+    	
+    	PlayerStatistics stats = new PlayerStatistics(name);
+    	playerScores.add(stats);
+    	return stats;
     }
 }

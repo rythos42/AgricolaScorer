@@ -1,20 +1,22 @@
 Now:
 	- Show graph of final scores vs dates for selected players
-		- http://androidplot.com/
-		- figure out graph
-		- return something from StatisticsMapper.getwhatever
-		- do something with that value
-	- add a title to the statistics activity
-		
+
 	- put game count when displayed on recent players and player list
 		- not certain where this should go, since "(in-game)" takes up most of the available comment space
 		- put it inside the "(...)"? (in-game, 3 games)?
-	- segmented buttons still to dark
-	- make segmented buttons taller
-	- number picker buttons to small
+		- selecting 3 players and 3 people doesn't do anything on phone
+		
 	- chart icon colour and/or size is wrong
 	
+	Player count selector:
+		- little tick is a bad colour
+		- "2" is a few pixels to low
+		- drop down items are too small
+	
 Future:
+	- maybe put another title for filter - looks weird when you just click "Ok" and it comes up with a graph
+		 (this graph is of "all games with only 2 players"
+		 - or maybe you must select players, since the dates would be odd otherwise.
 	- use XML plurals for "game count"
 	- more rounded corners on buttons
 		- Have to define background styles for each of the buttons states.
@@ -37,6 +39,7 @@ Future:
 	- rename some of the styles, they don't fit anymore
 	- pre-populate based on last game? (maybe add an option for it?)
 	- number picker numbers are a little to low in the control
+	- make segmented control and number picker use XML for heights and text edit padding
 
 Change Log:
 	Major:

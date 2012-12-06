@@ -56,5 +56,8 @@
     <string name="title_activity_filter_statistics">FilterStatisticsActivity</string>
     <string name="filter">Filter</string>
     <string name="playersLabel">Players:</string>
+    <string name="scores">Scores</string>
+    <string name="score">Score</string>
+    <string name="date">Date</string>
 
 </resources>

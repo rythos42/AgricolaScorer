@@ -28,7 +28,8 @@
 		        android:layout_height="wrap_content"
 				android:orientation="horizontal"
 				android:id="@+id/fields"
-				android:onClick="selectField">
+				android:onClick="selectField"
+				style="@style/radioGroupStyle">
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="0-1" android:layout_weight="5" style="@style/fieldsStyle" />
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="2" android:layout_weight="5" style="@style/fieldsStyle" />
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="3" android:layout_weight="5" style="@style/fieldsStyle" />
@@ -47,7 +48,8 @@
 				android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
 				android:orientation="horizontal"
-				android:id="@+id/pastures">
+				android:id="@+id/pastures"
+				style="@style/radioGroupStyle">
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="0" android:layout_weight="5" style="@style/pasturesStyle" />
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="1" android:layout_weight="5" style="@style/pasturesStyle" />
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="2" android:layout_weight="5" style="@style/pasturesStyle" />
@@ -66,7 +68,8 @@
 				android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
 				android:orientation="horizontal"
-				android:id="@+id/grains">
+				android:id="@+id/grains"
+				style="@style/radioGroupStyle">
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="0" android:layout_weight="1" style="@style/grainStyle" />
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="1-3" android:layout_weight="1" style="@style/grainStyle" />
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="4-5" android:layout_weight="1" style="@style/grainStyle" />
@@ -85,7 +88,8 @@
 				android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
 				android:orientation="horizontal"
-				android:id="@+id/vegetables">
+				android:id="@+id/vegetables"
+				style="@style/radioGroupStyle">
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="0" android:layout_weight="5" style="@style/vegetableStyle" />
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="1" android:layout_weight="5" style="@style/vegetableStyle" />
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="2" android:layout_weight="5" style="@style/vegetableStyle" />
@@ -104,7 +108,8 @@
 				android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
 				android:orientation="horizontal"
-				android:id="@+id/sheep">
+				android:id="@+id/sheep"
+				style="@style/radioGroupStyle">
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="0" android:layout_weight="5" style="@style/sheepStyle" />
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="1-3" android:layout_weight="5" style="@style/sheepStyle" />
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="4-5" android:layout_weight="5" style="@style/sheepStyle" />
@@ -123,7 +128,8 @@
 				android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
 				android:orientation="horizontal"
-				android:id="@+id/wild_boar">
+				android:id="@+id/wild_boar"
+				style="@style/radioGroupStyle">
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="0" android:layout_weight="5" style="@style/wildBoarStyle" />
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="1-2" android:layout_weight="5" style="@style/wildBoarStyle" />
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="3-4" android:layout_weight="5" style="@style/wildBoarStyle" />
@@ -142,7 +148,8 @@
 				android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
 				android:orientation="horizontal"
-				android:id="@+id/cattle">
+				android:id="@+id/cattle"
+				style="@style/radioGroupStyle">
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="0" android:layout_weight="5" style="@style/cattleStyle" />
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="1" android:layout_weight="5" style="@style/cattleStyle" />
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="2-3" android:layout_weight="5" style="@style/cattleStyle" />
@@ -161,7 +168,8 @@
 				android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
 				android:orientation="horizontal"
-				android:id="@+id/family_members">
+				android:id="@+id/family_members"
+				style="@style/radioGroupStyle">
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="1" android:layout_weight="5" style="@style/familyMemberStyle" />
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="2" android:layout_weight="5" style="@style/familyMemberStyle" />
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="3" android:layout_weight="5" style="@style/familyMemberStyle" />
@@ -180,7 +188,8 @@
 				android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
 				android:orientation="horizontal"
-				android:id="@+id/room_type">
+				android:id="@+id/room_type"
+				style="@style/radioGroupStyle">
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/wood" android:layout_weight="3" style="@style/roomTypeStyle" />
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/clay" android:layout_weight="3" style="@style/roomTypeStyle" />
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/stone" android:layout_weight="3" style="@style/roomTypeStyle" />	        
