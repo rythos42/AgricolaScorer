@@ -86,7 +86,11 @@ public class StatisticsActivity extends Activity {
     	        if(playerCount == 0)
     	        	return;
     	        
-    	        statsPlot.setDomainStep(XYStepMode.SUBDIVIDE, statsList.get(0).getDates().size());
+    	        //statsPlot.setDomainStep(XYStepMode.SUBDIVIDE, statsList.get(0).getDates().size());
+    	        // BAD! Figure out what the values we have
+    	        // this gets difficult, probably need to set particular days at the bottom fo the graph - specific values
+    	        statsPlot.setDomainStep(XYStepMode.INCREMENT_BY_VAL, 5000);
+    	        
     	        
     	        for(int i = 0; i < playerCount; i++ ) {
     	        	PlayerStatistics stat = statsList.get(i);
@@ -106,7 +110,7 @@ public class StatisticsActivity extends Activity {
     	
     	@Override
     	public StringBuffer format(Object object, StringBuffer toAppendTo, FieldPosition pos) {
-            Date date = new Date(((Number) object).longValue());
+            Date date = new Date(((Number) object).longValue() * 1000);
             return dateFormat.format(date, toAppendTo, pos);
     	}
 

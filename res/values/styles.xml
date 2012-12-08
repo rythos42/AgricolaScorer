@@ -6,6 +6,7 @@
         <item name="android:listViewStyle">@style/listView</item>
     	<item name="android:actionBarStyle">@style/actionBar</item>
     	<item name="android:expandableListViewStyle">@style/expandableListView</item>
+    	<item name="android:spinnerDropDownItemStyle">@style/spinnerDropDownItem</item>
     </style>
             
     <style name="GreenTheme_NoActionBar" parent="@style/GreenTheme">
@@ -157,4 +158,10 @@
     <style name="expandableListView">
         <item name="android:groupIndicator">@drawable/expandable_list_view_indicator</item>
     </style>
+    
+    <style name="spinnerDropDownItem">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        </style>
 </resources>

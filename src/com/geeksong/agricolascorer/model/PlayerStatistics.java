@@ -20,10 +20,10 @@ public class PlayerStatistics {
 		calendar.setTime(date);
 		calendar.set(Calendar.MILLISECOND, 0);
 		calendar.set(Calendar.SECOND, 0);
-		//calendar.set(Calendar.MINUTE, 0);
-		long less = calendar.getTimeInMillis();
+		calendar.set(Calendar.MINUTE, 0);
+		double less = calendar.getTimeInMillis() / 1000;
 		
-		dates.add((double) less);
+		dates.add(less);
 		scores.add(score);
 	}
 	

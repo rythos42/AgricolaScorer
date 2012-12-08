@@ -9,6 +9,7 @@
 	    android:layout_alignParentLeft="true"
 	    style="@style/listContainerText" >
 	</TextView>
+
 	<TextView 
 	    android:id="@+id/inGame"
 	    android:layout_width="wrap_content"

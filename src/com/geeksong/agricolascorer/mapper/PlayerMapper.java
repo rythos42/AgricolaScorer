@@ -140,13 +140,15 @@ public class PlayerMapper {
     }
     
     private Cursor getTopPlayersCursor(int x) {
-        String selectQuery = "SELECT " + Database.KEY_ID + " as _id, * FROM " + Database.TABLE_RECENTPLAYERS + " LIMIT 5";
+        String selectQuery = String.format("SELECT %s as _id, * FROM %s LIMIT 5",
+        		Database.KEY_ID, Database.TABLE_RECENTPLAYERS);
         SQLiteDatabase sqlDb = db.getWritableDatabase();
         return sqlDb.rawQuery(selectQuery, null);
     }
         
     private Cursor getPlayersCursor() {
-        String selectQuery = "SELECT " + Database.KEY_ID + " as _id, * FROM " + Database.TABLE_RECENTPLAYERS;
+        String selectQuery = String.format("SELECT %s as _id, * FROM %s",
+        		Database.KEY_ID, Database.TABLE_RECENTPLAYERS);
         SQLiteDatabase sqlDb = db.getWritableDatabase();
         return sqlDb.rawQuery(selectQuery, null);
     }

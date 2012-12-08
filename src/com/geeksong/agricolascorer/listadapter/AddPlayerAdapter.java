@@ -10,6 +10,7 @@ import android.widget.TextView;
 import com.geeksong.agricolascorer.GameCache;
 import com.geeksong.agricolascorer.R;
 import com.geeksong.agricolascorer.mapper.Database;
+import com.geeksong.agricolascorer.model.Player;
 
 public class AddPlayerAdapter extends SimpleCursorAdapter {
 	private Context context;

@@ -37,7 +37,7 @@ public class FilterStatisticsActivity extends Activity implements OnItemSelected
         
         Spinner playerCountSpinner = (Spinner) findViewById(R.id.playerCount);
         ArrayAdapter<Integer> playerCountAdapter = new ArrayAdapter<Integer>(this, R.layout.spinner, mapper.getAvailableSavedGameSizes());
-        playerCountAdapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        playerCountAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         playerCountSpinner.setAdapter(playerCountAdapter);
         playerCountSpinner.setOnItemSelectedListener(this);
         

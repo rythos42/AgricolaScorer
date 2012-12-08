@@ -29,7 +29,7 @@ public class CreateGameActivity extends ListActivity {
     private final int MENU_REMOVE_FROM_GAME = 0;
     private final int MENU_RENAME_PLAYER = 1;
     
-    private final int MAX_PLAYERS = 5;
+    private final int MAX_PLAYERS = 6;
     private final int MIN_PLAYERS = 1;
 	
 	public static final int ADD_PLAYER_REQUEST = 1;
