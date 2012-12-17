@@ -1,15 +1,16 @@
-Now:
+Future:
+	- make Farmers check box remember what state it was in last time
+	- add graph back in
+			- <item android:id="@+id/statistics" android:showAsAction="ifRoom|withText" android:title="@string/statistics" android:icon="@drawable/chart_line"></item>
+		    - uncomment code in CreateGameActivity
+	- edit a game, then back until you can select a player, then start game, uses the edited data but doesn't show player on added player list
 	- graph colours are pretty bad
 	- some weird things if you select odd combinations on the filter screen
 	- strange marker placement, likely due to how the Double's are used
 		- should probably normalize the dates returned, such that each date is given a number: 1, 2, 3, 4, 5
 		- then map that number to a particular date for display purposes
 		- then either subdivide or interval_by_val of 1, should allow the graph to display properly
-			
-	
-		
-	
-Future:
+	- shit goes really bad when you portrait/landscape while scoring
 	- put game count when displayed on recent players and player list
 		- cursor doesn't contain game count right now, lots of work to make this happen
 		- not certain where this should go, since "(in-game)" takes up most of the available comment space
@@ -40,23 +41,3 @@ Future:
 	- rename some of the styles, they don't fit anymore
 	- pre-populate based on last game? (maybe add an option for it?)
 	- make segmented control and number picker use XML for heights and text edit padding
-
-Change Log:
-	Major:
-		- You can now edit previously saved games! Long-press on a game in History!
-		- There is now a list of all players who have played - check the menu in Add Player. You can add a player to your game from this list.
-		- Shrunk background by 150kb.
-	
-	Minor:
-		- History now sorted by date
-		- Added a "game count" to the main screen
-		- You can no longer rename players to an existing player name.
-		- Added a note "(in-game)" to player lists to show that a player has been added already.
-		- fixed a bug whereby adding a player who hadn't played any games added him to the database again
-	
-	UI fixes:
-		- Added a margin on the score board so it's a little brighter.
-		- Lightened the darkest colour in the scoring segmented pickers.
-		- Added "+" to fields and pastures maximums.
-		- Swapped sides of increment and decrement buttons for number pickers.
-		- Fixed the show/hide arrow on the History page

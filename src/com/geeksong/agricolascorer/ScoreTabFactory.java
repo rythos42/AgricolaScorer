@@ -5,6 +5,7 @@ import com.geeksong.agricolascorer.model.Score;
 
 import android.app.Activity;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TabHost;
@@ -18,8 +19,9 @@ public class ScoreTabFactory implements TabHost.TabContentFactory {
 	}
 	
 	public View createTabContent(String playerName) {
+		GameCache game = GameCache.getInstance();
 		View scorePlayer = tabHost.getLayoutInflater().inflate(R.layout.score_player, null);
-		Score score = GameCache.getInstance().getScoreByPlayerName(playerName);
+		Score score = game.getScoreByPlayerName(playerName);
 		
 		TextView totalScoreView = (TextView) scorePlayer.findViewById(R.id.score);
 		ScoreManager manager = new ScoreManager(score, totalScoreView);
@@ -41,6 +43,14 @@ public class ScoreTabFactory implements TabHost.TabContentFactory {
 		addValueChangeListener(scorePlayer, score, manager, R.id.points_for_cards_picker);
 		addValueChangeListener(scorePlayer, score, manager, R.id.bonus_points_picker);
 		addValueChangeListener(scorePlayer, score, manager, R.id.begging_cards_picker);
+		
+		if(game.isFarmersOfTheMoor()) {
+			LinearLayout farmersScoringPanel = (LinearLayout) scorePlayer.findViewById(R.id.farmersScoringPanel);
+			farmersScoringPanel.setVisibility(View.VISIBLE);
+			
+			addValueChangeListener(scorePlayer, score, manager, R.id.horses_picker);
+			addValueChangeListener(scorePlayer, score, manager, R.id.in_bed_family_picker);
+		}
 		
 		return scorePlayer;
 	}

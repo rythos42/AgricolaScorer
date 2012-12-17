@@ -26,5 +26,11 @@
         android:text="@string/start_game"
         android:onClick="startGame"
         android:visibility="gone" />
-        
+	
+	<CheckBox
+    	android:id="@+id/farmersCheckBox"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentBottom="true"
+    	android:text="@string/farmersOfTheMoor" />
 </RelativeLayout>

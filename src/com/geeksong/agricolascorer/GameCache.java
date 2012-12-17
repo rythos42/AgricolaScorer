@@ -12,6 +12,7 @@ public class GameCache {
 	
 	private boolean isFromDatabase = false;
 	private Game savedGame;
+	private boolean farmersOfTheMoor = false;
 	
 	private static GameCache instance;
 	public static GameCache getInstance() {
@@ -99,4 +100,12 @@ public class GameCache {
 	
 	public ArrayList<Player> getPlayerList() { return players; }
 	public ArrayList<Score> getScoreList() { return scores; }
+	
+	public void setFarmersOfTheMoor(boolean farmersOfTheMoor) { this.farmersOfTheMoor = farmersOfTheMoor; }
+	public boolean isFarmersOfTheMoor() { 
+		if(this.isFromDatabase)
+			return savedGame.isFarmersOfTheMoor();
+		
+		return this.farmersOfTheMoor; 
+	}
 }

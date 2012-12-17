@@ -39,15 +39,19 @@ public class SavedGameMapper {
         scoreValues.put(Database.KEY_ROOMCOUNT, score.getRoomCount());
         scoreValues.put(Database.KEY_PLAYERID, score.getPlayer().getId());
         scoreValues.put(Database.KEY_GAMEID, gameId);
+        scoreValues.put(Database.KEY_HORSESCORE, score.getHorsesScore());
+        scoreValues.put(Database.KEY_INBEDFAMILYCOUNT, score.getInBedFamilyCount());
+        scoreValues.put(Database.KEY_TOTALFAMILYCOUNT, score.getTotalFamilyCount());
         
         return scoreValues;
     }
     
-    public void save(ArrayList<Score> scores) {
+    public void save(ArrayList<Score> scores, boolean isFarmersOfTheMoor) {
         SQLiteDatabase sqlDb = db.getWritableDatabase();
         
         ContentValues gameValues = new ContentValues();
         gameValues.put(Database.KEY_DATE, new Date().getTime());
+        gameValues.put(Database.KEY_FARMERS, isFarmersOfTheMoor ? 1: 0);
         long gameId = sqlDb.insert(Database.TABLE_GAMES, null, gameValues);
 
         for(Score score : scores) {

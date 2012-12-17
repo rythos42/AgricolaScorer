@@ -19,11 +19,15 @@ public class Score {
 	private int pointsForCards;
 	private int bonusPoints;
 	private int beggingCardsScore;
+	private int horsesScore;
 
 	private RoomType roomType;
 	private int roomCount;
-	private Player player;
+	private int inBedFamilyCount;
+	private int totalFamilyCount = 2;
 	
+	private Player player;
+		
 	private int totalScore = -1;
 	
 	private int id;
@@ -42,13 +46,14 @@ public class Score {
 			setBoarScore(ScoreManager.getScoreForWildBoar("0"));
 			setCattleScore(ScoreManager.getScoreForCattle("0"));
 			setRoomType(RoomType.Wood);
-			setFamilyMemberScore(ScoreManager.getScoreForFamilyMembers("2"));
+			setFamilyMemberScore(ScoreManager.getScoreForFamilyMembers(2, 0));
 			setUnusedSpacesScore(ScoreManager.getScoreForUnusedSpaces(0));
 			setFencedStablesScore(ScoreManager.getScoreForFencedStables(0));
 			setRoomsScore(ScoreManager.getScoreForRooms(2, getRoomType()));
 			setPointsForCards(ScoreManager.getScoreForPointsForCards(0));
 			setBonusPoints(ScoreManager.getScoreForBonusPoints(0));
 			setBeggingCardsScore(ScoreManager.getScoreForBeggingCards(0));
+			setHorsesScore(ScoreManager.getScoreForHorses(0));
 		} catch(Exception e) {
     		Log.e("com.geeksong.agricolascorer", e.getMessage());
     	}
@@ -99,7 +104,16 @@ public class Score {
 	public void setBeggingCardsScore(int beggingCardsScore) { this.beggingCardsScore = beggingCardsScore; }
 	public int getBeggingCardsScore() { return this.beggingCardsScore; }
 	
+	public void setHorsesScore(int horsesScore) { this.horsesScore = horsesScore; }
+	public int getHorsesScore() { return this.horsesScore; }
 	
+	
+	public void setInBedFamilyCount(int inBedFamilyCount) { this.inBedFamilyCount = inBedFamilyCount; }
+	public int getInBedFamilyCount() { return this.inBedFamilyCount; }
+	
+	public void setTotalFamilyCount(int totalFamilyCount) { this.totalFamilyCount = totalFamilyCount; }
+	public int getTotalFamilyCount() { return this.totalFamilyCount; }
+		
 	public int getRoomCount() { return this.roomCount; }
 	public void setRoomCount(int roomCount) { this.roomCount = roomCount; }
 	
@@ -120,7 +134,7 @@ public class Score {
 		
 		return this.fieldScore + this.pastureScore + this.grainScore + this.vegetableScore + this.sheepScore + this.boarScore + this.cattleScore
 				+ this.roomsScore + this.familyMemberScore + this.unusedSpacesScore + this.fencedStablesScore + this.pointsForCards 
-				+ this.bonusPoints + this.beggingCardsScore;
+				+ this.bonusPoints + this.beggingCardsScore + this.horsesScore;
 	}
 	
 	public boolean isFromDatabase() { return this.isFromDatabase; }

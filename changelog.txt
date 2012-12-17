@@ -1,0 +1,20 @@
+Version 1.1
+	Major:
+		- Support for scoring Farmers of the Moor!
+		- You can now edit previously saved games! Long-press on a game in History!
+		- There is now a list of all players who have played - check the menu in Add Player. You can add a player to your game from this list.
+		- Shrunk background by 150kb.
+	
+	Minor:
+		- History now sorted by date
+		- Added a "game count" to the main screen
+		- You can no longer rename players to an existing player name.
+		- Added a note "(in-game)" to player lists to show that a player has been added already.
+		- fixed a bug whereby adding a player who hadn't played any games added him to the database again
+	
+	UI fixes:
+		- Added a margin on the score board so it's a little brighter.
+		- Lightened the darkest colour in the scoring segmented pickers.
+		- Added "+" to fields and pastures maximums.
+		- Swapped sides of increment and decrement buttons for number pickers.
+		- Fixed the show/hide arrow on the History page

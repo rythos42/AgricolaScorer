@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class Database extends SQLiteOpenHelper {
 	private static final String Name = "AgricolaScorer";
-	private static final int Version = 19;
+	private static final int Version = 20;
 	
 	
     public static final String TABLE_RECENTPLAYERS = "RecentPlayers";
@@ -16,6 +16,7 @@ public class Database extends SQLiteOpenHelper {
     public static final String KEY_NAME = "name";
 	
 	public static final String KEY_DATE = "playedDate";
+	public static final String KEY_FARMERS = "farmers";
 	
 	public static final String KEY_ID = "id";
 	public static final String KEY_FINALSCORE = "finalScore";
@@ -34,6 +35,9 @@ public class Database extends SQLiteOpenHelper {
 	public static final String KEY_POINTSFORCARDS = "pointsForCards";
 	public static final String KEY_BONUSPOINTS = "bonusPoints";
 	public static final String KEY_BEGGINGCARDSSCORE = "beggingCardsScore";
+	public static final String KEY_HORSESCORE = "horseScore";
+	public static final String KEY_INBEDFAMILYCOUNT = "inBedFamilyCount";
+	public static final String KEY_TOTALFAMILYCOUNT = "totalFamilyCount";
 	
 	public static final String KEY_ROOMTYPE = "roomType";
 	public static final String KEY_ROOMCOUNT = "roomCount";
@@ -64,6 +68,7 @@ public class Database extends SQLiteOpenHelper {
     	String CREATE_GAMES_TABLE = "CREATE TABLE " + TABLE_GAMES + "(" +
 	    		KEY_ID + " INTEGER PRIMARY KEY," +
 	    		KEY_DATE + " INTEGER " +
+	    		KEY_FARMERS + " INTEGER " +
 			")";
     	db.execSQL(CREATE_GAMES_TABLE);
         	
@@ -88,6 +93,9 @@ public class Database extends SQLiteOpenHelper {
 		    KEY_ROOMCOUNT + " INTEGER, " +
 		    KEY_PLAYERID + " INTEGER, " +
 		    KEY_GAMEID + " INTEGER, " + 
+		    KEY_HORSESCORE + " INTEGER " +
+		    KEY_INBEDFAMILYCOUNT + " INTEGER " +
+		    KEY_TOTALFAMILYCOUNT + " INTEGER " + 
 			"FOREIGN KEY(" + KEY_PLAYERID + ") REFERENCES " + TABLE_RECENTPLAYERS + "(" + KEY_ID + "), " +
 			"FOREIGN KEY(" + KEY_GAMEID + ") REFERENCES " + TABLE_GAMES + "(" + KEY_ID + ")" +
 			")";
@@ -96,6 +104,10 @@ public class Database extends SQLiteOpenHelper {
  
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-    	// KEY_GAMECOUNT on TABLE_RECENTPLAYERS isn't used anymore and could be dropped if SQLite supported it nicely. 
+    	// KEY_GAMECOUNT on TABLE_RECENTPLAYERS isn't used anymore and could be dropped if SQLite supported it nicely.
+    	db.execSQL("ALTER TABLE " + TABLE_GAMES + " ADD COLUMN " + KEY_FARMERS + " INTEGER");
+    	db.execSQL("ALTER TABLE " + TABLE_SCORES + " ADD COLUMN " + KEY_HORSESCORE + " INTEGER");
+    	db.execSQL("ALTER TABLE " + TABLE_SCORES + " ADD COLUMN " + KEY_INBEDFAMILYCOUNT + " INTEGER");
+    	db.execSQL("ALTER TABLE " + TABLE_SCORES + " ADD COLUMN " + KEY_TOTALFAMILYCOUNT + " INTEGER");
     }
 }

@@ -345,6 +345,59 @@
 
 			    </LinearLayout>
 		    </LinearLayout>
+		    
+			<LinearLayout 
+			    android:id="@+id/farmersScoringPanel"
+				android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:baselineAligned="false"
+				android:visibility="gone">
+			    	       
+			    <LinearLayout
+					android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="2"
+					android:orientation="vertical">	
+
+					<TextView
+					    android:id="@+id/horses_label"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:text="@string/horses_label"
+		        		style="@style/smallerText" />
+
+					<com.geeksong.agricolascorer.control.NumberPicker
+					    android:id="@+id/horses_picker"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:orientation="vertical"
+					    style="@style/numberPicker" />
+
+			    </LinearLayout>
+			    
+   			    <LinearLayout
+   			        android:layout_width="match_parent"
+   			        android:layout_height="wrap_content"
+   			        android:layout_weight="2"
+   			        android:orientation="vertical" >
+
+					<TextView
+					    android:id="@+id/inBedFamily"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:text="@string/in_bed_family_label"
+		        		style="@style/smallerText" />
+
+					<com.geeksong.agricolascorer.control.NumberPicker
+					    android:id="@+id/in_bed_family_picker"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:orientation="vertical"
+					    style="@style/numberPicker" />
+
+			    </LinearLayout>
+		    </LinearLayout>
 	    </LinearLayout>
 	</ScrollView>
 	

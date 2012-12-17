@@ -7,6 +7,7 @@ public class Game {
 	private int id;
 	private Date date;
 	private ArrayList<Score> scores = new ArrayList<Score>();
+	private boolean farmersOfTheMoor;
 	
 	public void setId(int id) { this.id = id; }
 	public int getId() { return this.id; }
@@ -30,4 +31,7 @@ public class Game {
 	public int getScoreCount() {
 		return scores.size();
 	}
+	
+	public void setFarmersOfTheMoor(boolean farmersOfTheMoor) { this.farmersOfTheMoor = farmersOfTheMoor; }
+	public boolean isFarmersOfTheMoor() { return this.farmersOfTheMoor; }
 }

@@ -54,7 +54,8 @@ public class ScoreManager implements OnCheckedChangeListener, OnValueChangeListe
 		    		score.setRoomsScore(getScoreForRooms(score.getRoomCount(), score.getRoomType()));
 		    		break;
 		    	case R.id.family_members:
-		    		score.setFamilyMemberScore(getScoreForFamilyMembers(text));
+		    		score.setTotalFamilyCount(Integer.valueOf(text.toString()));
+		    		score.setFamilyMemberScore(getScoreForFamilyMembers(score.getTotalFamilyCount(), score.getInBedFamilyCount()));
 		    		break;
 	    	}
 			
@@ -86,6 +87,12 @@ public class ScoreManager implements OnCheckedChangeListener, OnValueChangeListe
 		    	case R.id.begging_cards_picker:
 		    		score.setBeggingCardsScore(getScoreForBeggingCards(newVal));
 		    		break;
+		    	case R.id.horses_picker:
+		    		score.setHorsesScore(getScoreForHorses(newVal));
+		    		break;
+		    	case R.id.in_bed_family_picker:
+		    		score.setInBedFamilyCount(newVal);
+		    		score.setFamilyMemberScore(getScoreForFamilyMembers(score.getTotalFamilyCount(), score.getInBedFamilyCount()));
 	    	}
 			totalScoreView.setText(Integer.toString(score.getTotalScore()));
     	} catch(Exception e) {
@@ -93,21 +100,22 @@ public class ScoreManager implements OnCheckedChangeListener, OnValueChangeListe
     	}
 	}
 	
+	private int includeNegativeOne(int score) {
+		if(score == -1)
+			return 0;
+		return score;
+	}
+	
 	public int getIndexForRadioButton(Score score, int id) {
 		int scoreValue = Integer.MIN_VALUE;
     	switch(id) {
-	    	case R.id.fields: scoreValue = score.getFieldScore();
-	    	case R.id.pastures: scoreValue = score.getPastureScore();
-	    	case R.id.grains: scoreValue = score.getGrainScore();
-	    	case R.id.vegetables: scoreValue = score.getVegetableScore();
-	    	case R.id.sheep: scoreValue = score.getSheepScore();
-	    	case R.id.wild_boar: scoreValue = score.getBoarScore();
-	    	case R.id.cattle: scoreValue = score.getCattleScore();
-    	}
-    	if(scoreValue != Integer.MIN_VALUE) {
-    		if(scoreValue == -1) 
-				return 0;
-    		return scoreValue;
+	    	case R.id.fields: return includeNegativeOne(score.getFieldScore());
+	    	case R.id.pastures: return includeNegativeOne(score.getPastureScore());
+	    	case R.id.grains: return includeNegativeOne(score.getGrainScore());
+	    	case R.id.vegetables: return includeNegativeOne(score.getVegetableScore());
+	    	case R.id.sheep: return includeNegativeOne(score.getSheepScore());
+	    	case R.id.wild_boar: return includeNegativeOne(score.getBoarScore());
+	    	case R.id.cattle: return includeNegativeOne(score.getCattleScore());
     	}
     	
     	if(id == R.id.room_type) {
@@ -119,6 +127,10 @@ public class ScoreManager implements OnCheckedChangeListener, OnValueChangeListe
     	}
     	
     	if(id == R.id.family_members) {
+    		// Family count wasn't stored before Farmers support, calculate if we don't have any in-bed family
+    		if(score.getInBedFamilyCount() != 0)
+    			return score.getTotalFamilyCount() - 1;
+    		
     		return (score.getFamilyMemberScore() / 3) - 1;
     	}
 
@@ -133,6 +145,8 @@ public class ScoreManager implements OnCheckedChangeListener, OnValueChangeListe
 	    	case R.id.points_for_cards_picker: return score.getPointsForCards();
 	    	case R.id.bonus_points_picker: return score.getBonusPoints();
 	    	case R.id.begging_cards_picker: return score.getBeggingCardsScore() / -3;
+	    	case R.id.horses_picker: return includeNegativeOne(score.getHorsesScore());
+	    	case R.id.in_bed_family_picker: return score.getInBedFamilyCount();
 		}
 		return 0;
 	}
@@ -248,10 +262,9 @@ public class ScoreManager implements OnCheckedChangeListener, OnValueChangeListe
 		throw new Exception("Bad score for rooms: ");
 	}
 	
-	public static int getScoreForFamilyMembers(CharSequence text) {
-		String firstCharacter = text.subSequence(0, 1).toString();
-		int familyMemberCount = Integer.parseInt(firstCharacter);
-		return familyMemberCount * 3;
+	public static int getScoreForFamilyMembers(int totalFamilyCount, int inBedFamilyCount) {
+		int healthyFamilyMemberCount = totalFamilyCount - inBedFamilyCount;
+		return (healthyFamilyMemberCount * 3) + inBedFamilyCount;
 	}
 	
 	public static int getScoreForPointsForCards(int pointsForCards) {
@@ -264,5 +277,12 @@ public class ScoreManager implements OnCheckedChangeListener, OnValueChangeListe
 	
 	public static int getScoreForBeggingCards(int beggingCardCount) {
 		return beggingCardCount * -3;
+	}
+	
+	public static int getScoreForHorses(int horseCount) {
+		if(horseCount == 0)
+			return -1;
+		
+		return horseCount;
 	}
 }

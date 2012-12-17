@@ -38,6 +38,7 @@ public class GameHistoryMapper {
         	Game game = games.get(gameId);
         	game.setId(gameId);
         	game.setDateAsTicks(c.getLong(1));
+        	game.setFarmersOfTheMoor(c.getInt(25) == 1);
         	
         	Player player = new Player(c.getString(2));
         	player.setId(c.getInt(3));
@@ -60,6 +61,9 @@ public class GameHistoryMapper {
         	score.setBeggingCardsScore(c.getInt(19));
         	score.setRoomType(RoomType.values()[c.getInt(20)]);
         	score.setRoomCount(c.getInt(21));
+        	score.setHorsesScore(c.getInt(22));
+        	score.setInBedFamilyCount(c.getInt(23));
+        	score.setTotalFamilyCount(c.getInt(24));
         	score.setIsFromDatabase(true);
         	
         	if(score.getTotalScore() == 0)
@@ -80,7 +84,8 @@ public class GameHistoryMapper {
     private Cursor getGames() {
     	String selectQuery = String.format("SELECT games.%s as _id, games.%s, players.%s, players.%s, scores.%s, " +
     			"scores.%s, scores.%s, scores.%s, scores.%s, scores.%s, scores.%s, scores.%s, scores.%s, scores.%s, " +
-    			"scores.%s, scores.%s, scores.%s, scores.%s, scores.%s, scores.%s, scores.%s, scores.%s " +
+    			"scores.%s, scores.%s, scores.%s, scores.%s, scores.%s, scores.%s, scores.%s, scores.%s, scores.%s, " +
+    			"scores.%s, scores.%s, games.%s " +
     			"FROM %s as scores " +
     			"JOIN %s as players on players.%s = scores.%s " +
     			"JOIN %s as games on games.%s = scores.%s", 
@@ -88,7 +93,8 @@ public class GameHistoryMapper {
     			Database.KEY_ID, Database.KEY_FIELDSCORE, Database.KEY_PASTURESCORE, Database.KEY_GRAINSCORE, Database.KEY_VEGETABLESCORE, 
     				Database.KEY_SHEEPSCORE, Database.KEY_WILDBOARSCORE, Database.KEY_CATTLESCORE, Database.KEY_UNUSEDSPACESSCORE, 
     			Database.KEY_FENCEDSTABLESSCORE, Database.KEY_ROOMSSCORE, Database.KEY_FAMILYMEMBERSCORE, Database.KEY_POINTSFORCARDS, 
-    				Database.KEY_BONUSPOINTS, Database.KEY_BEGGINGCARDSSCORE, Database.KEY_ROOMTYPE, Database.KEY_ROOMCOUNT,
+    				Database.KEY_BONUSPOINTS, Database.KEY_BEGGINGCARDSSCORE, Database.KEY_ROOMTYPE, Database.KEY_ROOMCOUNT, Database.KEY_HORSESCORE,
+    			Database.KEY_INBEDFAMILYCOUNT, Database.KEY_TOTALFAMILYCOUNT, Database.KEY_FARMERS,
     			Database.TABLE_SCORES,
     			Database.TABLE_RECENTPLAYERS, Database.KEY_ID, Database.KEY_PLAYERID,
     			Database.TABLE_GAMES, Database.KEY_ID, Database.KEY_GAMEID);

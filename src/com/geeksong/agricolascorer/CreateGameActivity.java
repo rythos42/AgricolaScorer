@@ -23,6 +23,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 public class CreateGameActivity extends ListActivity {
@@ -85,6 +86,9 @@ public class CreateGameActivity extends ListActivity {
     }
     
     public void startGame(View source) {
+    	CheckBox farmersCheckBox = (CheckBox) findViewById(R.id.farmersCheckBox);
+    	GameCache.getInstance().setFarmersOfTheMoor(farmersCheckBox.isChecked());
+    	
     	Intent startGameIntent = new Intent(source.getContext(), ScorePlayersActivity.class);
     	startActivity(startGameIntent);
     }
@@ -154,10 +158,10 @@ public class CreateGameActivity extends ListActivity {
     
     public boolean onOptionsItemSelected(MenuItem item) {
     	switch(item.getItemId()) {
-    		case R.id.statistics:
+    		/*case R.id.statistics:
     	    	Intent statisticsIntent = new Intent(this, StatisticsActivity.class);
     	    	startActivity(statisticsIntent);
-    			break;
+    			break;*/
     		case R.id.history:
     	    	Intent historyIntent = new Intent(this, HistoryActivity.class);
     	    	startActivity(historyIntent);

@@ -35,7 +35,7 @@ public class FinishedActivity extends Activity {
     	if(cache.isFromDatabase())
     		mapper.save(cache.getGame());
     	else
-    		mapper.save(cache.getScoreList());
+    		mapper.save(cache.getScoreList(), cache.isFarmersOfTheMoor());
     	
     	startAgain(source);
     }
