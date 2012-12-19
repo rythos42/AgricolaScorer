@@ -93,9 +93,9 @@ public class Database extends SQLiteOpenHelper {
 		    KEY_ROOMCOUNT + " INTEGER, " +
 		    KEY_PLAYERID + " INTEGER, " +
 		    KEY_GAMEID + " INTEGER, " + 
-		    KEY_HORSESCORE + " INTEGER " +
-		    KEY_INBEDFAMILYCOUNT + " INTEGER " +
-		    KEY_TOTALFAMILYCOUNT + " INTEGER " + 
+		    KEY_HORSESCORE + " INTEGER, " +
+		    KEY_INBEDFAMILYCOUNT + " INTEGER, " +
+		    KEY_TOTALFAMILYCOUNT + " INTEGER, " + 
 			"FOREIGN KEY(" + KEY_PLAYERID + ") REFERENCES " + TABLE_RECENTPLAYERS + "(" + KEY_ID + "), " +
 			"FOREIGN KEY(" + KEY_GAMEID + ") REFERENCES " + TABLE_GAMES + "(" + KEY_ID + ")" +
 			")";
