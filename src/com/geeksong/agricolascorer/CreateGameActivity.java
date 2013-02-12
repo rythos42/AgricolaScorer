@@ -5,6 +5,7 @@ import com.geeksong.agricolascorer.control.InputDialog;
 import com.geeksong.agricolascorer.control.OnClickListener;
 import com.geeksong.agricolascorer.listadapter.CurrentPlayersAdapter;
 import com.geeksong.agricolascorer.mapper.PlayerMapper;
+import com.geeksong.agricolascorer.mapper.SettingsMapper;
 import com.geeksong.agricolascorer.model.Player;
 
 import android.os.Bundle;
@@ -49,6 +50,9 @@ public class CreateGameActivity extends ListActivity {
         
         adapter = new CurrentPlayersAdapter(this, R.layout.current_players_list_item, GameCache.getInstance().getPlayerList());
         setListAdapter(adapter);
+        
+    	CheckBox farmersCheckBox = (CheckBox) findViewById(R.id.farmersCheckBox);
+    	farmersCheckBox.setChecked(SettingsMapper.getInstance().wasLastGameFarmers());
     }
     
     @Override
@@ -87,7 +91,10 @@ public class CreateGameActivity extends ListActivity {
     
     public void startGame(View source) {
     	CheckBox farmersCheckBox = (CheckBox) findViewById(R.id.farmersCheckBox);
-    	GameCache.getInstance().setFarmersOfTheMoor(farmersCheckBox.isChecked());
+    	boolean isFarmers = farmersCheckBox.isChecked();
+    	
+    	GameCache.getInstance().setFarmersOfTheMoor(isFarmers);
+    	SettingsMapper.getInstance().setLastGameWasFarmers(isFarmers);
     	
     	Intent startGameIntent = new Intent(source.getContext(), ScorePlayersActivity.class);
     	startActivity(startGameIntent);

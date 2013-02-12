@@ -6,12 +6,13 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class Database extends SQLiteOpenHelper {
 	private static final String Name = "AgricolaScorer";
-	private static final int Version = 20;
+	private static final int Version = 21;
 	
 	
     public static final String TABLE_RECENTPLAYERS = "RecentPlayers";
 	public static final String TABLE_GAMES = "Games";
 	public static final String TABLE_SCORES = "Scores";
+	public static final String TABLE_SETTINGS = "Settings";
     
     public static final String KEY_NAME = "name";
 	
@@ -44,6 +45,8 @@ public class Database extends SQLiteOpenHelper {
 	public static final String KEY_PLAYERID = "playerId";
 	public static final String KEY_GAMEID = "gameId";
 	
+	public static final String KEY_REMEMBER_FARMERS = "rememberFarmers";
+	
 	private static Database instance;
 	public static Database getInstance() {
 		return instance;
@@ -73,7 +76,7 @@ public class Database extends SQLiteOpenHelper {
     	db.execSQL(CREATE_GAMES_TABLE);
         	
 	    String CREATE_SCORES_TABLE = "CREATE TABLE " + TABLE_SCORES + "(" +
-		    KEY_ID + " INTEGER PRIMARY KEY," +
+		    KEY_ID + " INTEGER PRIMARY KEY, " +
 		    KEY_FINALSCORE + " INTEGER, " +
 		    KEY_FIELDSCORE + " INTEGER, " +
 		    KEY_PASTURESCORE + " INTEGER, " +
@@ -100,14 +103,21 @@ public class Database extends SQLiteOpenHelper {
 			"FOREIGN KEY(" + KEY_GAMEID + ") REFERENCES " + TABLE_GAMES + "(" + KEY_ID + ")" +
 			")";
 	    db.execSQL(CREATE_SCORES_TABLE);
+	    
+	    String CREATE_SETTINGS_TABLE = "CREATE TABLE " + TABLE_SETTINGS + "(" +
+	    		KEY_ID + " INTEGER PRIMARY KEY, " +
+	    		KEY_REMEMBER_FARMERS + " INTEGER " + 
+	    		")";
+	    db.execSQL(CREATE_SETTINGS_TABLE);
     }
  
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
     	// KEY_GAMECOUNT on TABLE_RECENTPLAYERS isn't used anymore and could be dropped if SQLite supported it nicely.
-    	db.execSQL("ALTER TABLE " + TABLE_GAMES + " ADD COLUMN " + KEY_FARMERS + " INTEGER");
-    	db.execSQL("ALTER TABLE " + TABLE_SCORES + " ADD COLUMN " + KEY_HORSESCORE + " INTEGER");
-    	db.execSQL("ALTER TABLE " + TABLE_SCORES + " ADD COLUMN " + KEY_INBEDFAMILYCOUNT + " INTEGER");
-    	db.execSQL("ALTER TABLE " + TABLE_SCORES + " ADD COLUMN " + KEY_TOTALFAMILYCOUNT + " INTEGER");
+    	String CREATE_SETTINGS_TABLE = "CREATE TABLE " + TABLE_SETTINGS + "(" +
+	    		KEY_ID + " INTEGER PRIMARY KEY, " +
+	    		KEY_REMEMBER_FARMERS + " INTEGER " + 
+	    		")";
+	    db.execSQL(CREATE_SETTINGS_TABLE);
     }
 }

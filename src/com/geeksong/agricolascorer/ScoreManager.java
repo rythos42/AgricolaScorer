@@ -107,7 +107,6 @@ public class ScoreManager implements OnCheckedChangeListener, OnValueChangeListe
 	}
 	
 	public int getIndexForRadioButton(Score score, int id) {
-		int scoreValue = Integer.MIN_VALUE;
     	switch(id) {
 	    	case R.id.fields: return includeNegativeOne(score.getFieldScore());
 	    	case R.id.pastures: return includeNegativeOne(score.getPastureScore());
