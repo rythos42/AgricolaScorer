@@ -32,7 +32,13 @@ public class Score {
 	
 	private int id;
 	private boolean isTotalScoreProvided = false;
-	private boolean isFromDatabase = false;
+	
+	private static int emptyScorePoints;
+	
+	static {
+		Score blankScore = new Score(null);
+		emptyScorePoints = blankScore.getTotalScore();
+	}
 	
 	public Score(Player player) {
 		this.player = player;
@@ -137,6 +143,7 @@ public class Score {
 				+ this.bonusPoints + this.beggingCardsScore + this.horsesScore;
 	}
 	
-	public boolean isFromDatabase() { return this.isFromDatabase; }
-	public void setIsFromDatabase(boolean isFromDatabase) { this.isFromDatabase = isFromDatabase; }
+	public boolean isEmpty() {
+		return this.getTotalScore() == emptyScorePoints;
+	}
 }

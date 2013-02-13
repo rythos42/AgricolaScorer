@@ -1,6 +1,8 @@
 Version 1.2
 	Minor:
 		- Farmers of the Moor checkbox state now remembered between games
+		- UI state on starting screen and scoring screen now maintained between rotation and sleep.
+		
 
 Version 1.1
 	Major:

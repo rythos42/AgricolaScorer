@@ -64,7 +64,6 @@ public class GameHistoryMapper {
         	score.setHorsesScore(c.getInt(22));
         	score.setInBedFamilyCount(c.getInt(23));
         	score.setTotalFamilyCount(c.getInt(24));
-        	score.setIsFromDatabase(true);
         	
         	if(score.getTotalScore() == 0)
         		score.setTotalScore(c.getInt(4));

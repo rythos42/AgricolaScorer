@@ -1,8 +1,6 @@
 Future:
-	- cloud storage of history?
 	- add button to expand/collapse all in History
 	- edit a game, then hit back until you can select a player, then start game, uses the edited data but doesn't show player on added player list
-	- shit goes really bad when you portrait/landscape while scoring
 	- put game count when displayed on recent players and player list
 		- cursor doesn't contain game count right now, lots of work to make this happen
 		- not certain where this should go, since "(in-game)" takes up most of the available comment space

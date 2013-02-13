@@ -59,7 +59,7 @@ public class ScoreTabFactory implements TabHost.TabContentFactory {
 		RadioGroup group = (RadioGroup) scorePlayer.findViewById(id);
 		group.setOnCheckedChangeListener(manager);
 		
-		if(score.isFromDatabase()) {
+		if(!score.isEmpty()) {
 			int groupIndex = manager.getIndexForRadioButton(score, id);
 			((RadioButton) group.getChildAt(groupIndex)).setChecked(true);
 		} else {
@@ -75,7 +75,7 @@ public class ScoreTabFactory implements TabHost.TabContentFactory {
 		picker.setMinimum(0);
 		picker.setOnValueChangedListener(manager);
 		
-		if(score.isFromDatabase()) {
+		if(!score.isEmpty()) {
 			int value = manager.getValueForNumberPicker(score, id);
 			picker.setValue(value);
 		} else {

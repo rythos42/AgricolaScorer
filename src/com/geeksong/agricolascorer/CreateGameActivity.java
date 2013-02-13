@@ -37,6 +37,8 @@ public class CreateGameActivity extends ListActivity {
 	public static final int ADD_PLAYER_REQUEST = 1;
 	public static final String AddedPlayerBundleKey = "AddedPlayer";
 	
+	private static final String FARMERS_CHECKED_STATE = "Farmers_Checked";
+	
 	private CurrentPlayersAdapter adapter;
 	
     @Override
@@ -66,10 +68,14 @@ public class CreateGameActivity extends ListActivity {
         		GameCache.getInstance().addPlayer(addedPlayer);
              	adapter.notifyDataSetChanged();
              	
-             	checkAddPlayerButtonVisibility();
-             	checkStartGameButtonVisibility();
+             	checkButtonsVisibility();
         	}
         }
+    }
+    
+    private void checkButtonsVisibility() {
+     	checkAddPlayerButtonVisibility();
+     	checkStartGameButtonVisibility();
     }
     
     private void checkAddPlayerButtonVisibility() {
@@ -82,6 +88,20 @@ public class CreateGameActivity extends ListActivity {
     	boolean visible = GameCache.getInstance().getPlayerList().size() >= MIN_PLAYERS;
   		Button startGameButton = (Button) findViewById(R.id.startGameButton);
   		startGameButton.setVisibility(visible? View.VISIBLE : View.GONE);
+    }
+    
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+    	CheckBox farmersCheckBox = (CheckBox) findViewById(R.id.farmersCheckBox);
+    	savedInstanceState.putBoolean(FARMERS_CHECKED_STATE, farmersCheckBox.isChecked());
+    }
+    
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+    	checkButtonsVisibility();
+    	
+    	CheckBox farmersCheckBox = (CheckBox) findViewById(R.id.farmersCheckBox);
+    	farmersCheckBox.setChecked(savedInstanceState.getBoolean(FARMERS_CHECKED_STATE));
     }
     
     public void addPlayer(View source) {
