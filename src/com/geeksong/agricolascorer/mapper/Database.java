@@ -69,8 +69,8 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL(CREATE_RECENTPLAYERS_TABLE);
         
     	String CREATE_GAMES_TABLE = "CREATE TABLE " + TABLE_GAMES + "(" +
-	    		KEY_ID + " INTEGER PRIMARY KEY," +
-	    		KEY_DATE + " INTEGER " +
+	    		KEY_ID + " INTEGER PRIMARY KEY, " +
+	    		KEY_DATE + " INTEGER, " +
 	    		KEY_FARMERS + " INTEGER " +
 			")";
     	db.execSQL(CREATE_GAMES_TABLE);
@@ -114,10 +114,20 @@ public class Database extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
     	// KEY_GAMECOUNT on TABLE_RECENTPLAYERS isn't used anymore and could be dropped if SQLite supported it nicely.
-    	String CREATE_SETTINGS_TABLE = "CREATE TABLE " + TABLE_SETTINGS + "(" +
-	    		KEY_ID + " INTEGER PRIMARY KEY, " +
-	    		KEY_REMEMBER_FARMERS + " INTEGER " + 
-	    		")";
-	    db.execSQL(CREATE_SETTINGS_TABLE);
+	    
+    	if(oldVersion <= 19) {
+	    	db.execSQL("ALTER TABLE " + TABLE_GAMES + " ADD COLUMN " + KEY_FARMERS + " INTEGER");
+	    	db.execSQL("ALTER TABLE " + TABLE_SCORES + " ADD COLUMN " + KEY_HORSESCORE + " INTEGER");
+	    	db.execSQL("ALTER TABLE " + TABLE_SCORES + " ADD COLUMN " + KEY_INBEDFAMILYCOUNT + " INTEGER");
+	    	db.execSQL("ALTER TABLE " + TABLE_SCORES + " ADD COLUMN " + KEY_TOTALFAMILYCOUNT + " INTEGER");
+    	}
+    	
+    	if(oldVersion <= 20) { 
+	    	String CREATE_SETTINGS_TABLE = "CREATE TABLE " + TABLE_SETTINGS + "(" +
+		    		KEY_ID + " INTEGER PRIMARY KEY, " +
+		    		KEY_REMEMBER_FARMERS + " INTEGER " + 
+		    		")";
+		    db.execSQL(CREATE_SETTINGS_TABLE);
+    	}	    
     }
 }

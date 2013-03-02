@@ -1,6 +1,7 @@
 Future:
 	- add button to expand/collapse all in History
 	- edit a game, then hit back until you can select a player, then start game, uses the edited data but doesn't show player on added player list
+		- need to clear the game state when you hit Back from an Edit.
 	- put game count when displayed on recent players and player list
 		- cursor doesn't contain game count right now, lots of work to make this happen
 		- not certain where this should go, since "(in-game)" takes up most of the available comment space
@@ -19,14 +20,13 @@ Future:
 				    <item android:state_focused="true" android:state_enabled="true" android:drawable="@drawable/btn_default_focused_holo_light" />
 				    <item android:state_enabled="true" android:drawable="@drawable/btn_default_normal_holo_light" />
 				    <item android:state_focused="true" android:drawable="@drawable/btn_default_disabled_focused_holo_light" />
-				    <item android:drawable="@drawable/btn_default_disabled_holo_light" />
 				</selector>
-	- back-enter old data from old application
 	- use HoloEverywhere (http://stackoverflow.com/questions/10608539/error-importing-holoeverywhere) to reduce API requirement
 	- "checked" gradient is solid colour (maybe just accept this...)
 	- rename some of the styles, they don't fit anymore
 	- pre-populate based on last game? (maybe add an option for it?)
 	- make segmented control and number picker use XML for heights and text edit padding
+	- "can't edit games that have no score information" ...like those I added in afterwards
 	
 	Graph:
 		- add graph back in
@@ -42,4 +42,6 @@ Future:
 		- maybe put another title for filter - looks weird when you just click "Ok" and it comes up with a graph
 			 (this graph is of "all games with only 2 players"
 			 - or maybe you must select players, since the dates would be odd otherwise.
+		
+	
 	

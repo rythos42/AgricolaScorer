@@ -1,4 +1,6 @@
 Version 1.2
+	Major:
+		- fixed a brutal bug for new users where the games database table wasn't being created properly.  
 	Minor:
 		- Farmers of the Moor checkbox state now remembered between games
 		- UI state on starting screen and scoring screen now maintained between rotation and sleep.
