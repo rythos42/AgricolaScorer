@@ -1,5 +1,6 @@
 package com.geeksong.agricolascorer;
 
+import com.geeksong.agricolascorer.R.string;
 import com.geeksong.agricolascorer.listadapter.GameHistoryAdapter;
 import com.geeksong.agricolascorer.mapper.GameHistoryMapper;
 import com.geeksong.agricolascorer.model.Game;
@@ -12,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ContextMenu.ContextMenuInfo;
+import android.widget.Button;
 import android.widget.ExpandableListView;
 import android.widget.TextView;
 
@@ -75,5 +77,23 @@ public class HistoryActivity extends Activity {
     		default:
     	    	return super.onContextItemSelected(item);
     	}
+    }
+    
+    public void expandCollapseAll(View source) {
+    	Button expandCollapseAll = (Button) source;
+    	String text = expandCollapseAll.getText().toString();
+    	ExpandableListView list = (ExpandableListView) this.findViewById(R.id.historyList);
+    	String expandAll = getResources().getString(R.string.expand_all);
+    	String collapseAll = getResources().getString(R.string.collapse_all);
+		boolean expanding = text.equals(expandAll);
+
+		for(int i = 0; i < historyAdapter.getGroupCount(); i++) {
+    		if(expanding)
+	    		list.expandGroup(i);
+    		else
+	    		list.collapseGroup(i);
+    	}
+    			
+	    expandCollapseAll.setText(expanding ? collapseAll : expandAll);
     }
 }

@@ -3,19 +3,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     style="@style/listContainer" >
+    
+    <Button
+        android:id="@+id/expandCollapseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/expand_all"
+        android:onClick="expandCollapseAll">
+    </Button>
 
-	<ExpandableListView 
-	    android:id="@+id/historyList"
-	    android:layout_width="match_parent"
-	    android:layout_height="match_parent">
-	</ExpandableListView>
+    <RelativeLayout
+        android:id="@+id/historyContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expandCollapseButton">
+        
+		<ExpandableListView 
+		    android:id="@+id/historyList"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent">
+		</ExpandableListView>
+		
+		<TextView
+		    android:id="@+id/noHistoryLabel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/no_history"
+		    android:visibility="gone"
+		    style="@style/listContainerText" />
+
+    </RelativeLayout>
 	
-	<TextView
-	    android:id="@+id/noHistoryLabel"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:text="@string/no_history"
-	    android:visibility="gone"
-	    style="@style/listContainerText" />
-
 </RelativeLayout>
