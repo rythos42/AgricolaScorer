@@ -81,10 +81,10 @@ public class PlayerMapper {
     	if(topPlayersListAdapter != null)
     		return topPlayersListAdapter;
     	
-        Cursor c = getTopPlayersCursor(5);
+        Cursor c = getPlayersCursor(5);
 
-        String[] from = new String[] { Database.KEY_NAME };
-        int[] to = new int[] { R.id.name };
+        String[] from = new String[] { Database.KEY_NAME, Database.KEY_GAMECOUNT };
+        int[] to = new int[] { R.id.name, R.id.hintLabel };
         
         topPlayersListAdapter = new AddPlayerAdapter(this.context, R.layout.recent_player_list_item, c, from, to, 0);
         return topPlayersListAdapter;
@@ -96,8 +96,8 @@ public class PlayerMapper {
     	
         Cursor c = getPlayersCursor();
 
-        String[] from = new String[] { Database.KEY_NAME };
-        int[] to = new int[] { R.id.name };
+        String[] from = new String[] { Database.KEY_NAME, Database.KEY_GAMECOUNT };
+        int[] to = new int[] { R.id.name, R.id.hintLabel };
         
         playersListAdapter = new AddPlayerAdapter(this.context, R.layout.recent_player_list_item, c, from, to, 0);
         return playersListAdapter;
@@ -139,16 +139,23 @@ public class PlayerMapper {
         return sqlDb.update(Database.TABLE_RECENTPLAYERS, values, Database.KEY_ID + " = ?", new String[] { String.valueOf(player.getId()) });
     }
     
-    private Cursor getTopPlayersCursor(int x) {
-        String selectQuery = String.format("SELECT %s as _id, * FROM %s LIMIT 5",
-        		Database.KEY_ID, Database.TABLE_RECENTPLAYERS);
-        SQLiteDatabase sqlDb = db.getWritableDatabase();
-        return sqlDb.rawQuery(selectQuery, null);
-    }
-        
     private Cursor getPlayersCursor() {
-        String selectQuery = String.format("SELECT %s as _id, * FROM %s",
-        		Database.KEY_ID, Database.TABLE_RECENTPLAYERS);
+    	return getPlayersCursor(-1);
+    }
+            
+    private Cursor getPlayersCursor(int top) {
+        String selectQuery = String.format("SELECT player.%s as _id, player.*, COUNT(score.%s) as %s " + 
+				"FROM %s as player " +
+				"LEFT JOIN %s as score on player.%s=score.%s " +
+				"GROUP BY score.%s",
+        		Database.KEY_ID, Database.KEY_PLAYERID, Database.KEY_GAMECOUNT,
+        		Database.TABLE_RECENTPLAYERS,
+        		Database.TABLE_SCORES, Database.KEY_ID, Database.KEY_PLAYERID,
+				Database.KEY_PLAYERID);
+        
+        if(top > 0)
+        	selectQuery += " LIMIT " + top;
+        
         SQLiteDatabase sqlDb = db.getWritableDatabase();
         return sqlDb.rawQuery(selectQuery, null);
     }

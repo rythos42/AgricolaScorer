@@ -1,6 +1,5 @@
 package com.geeksong.agricolascorer;
 
-import com.geeksong.agricolascorer.R.string;
 import com.geeksong.agricolascorer.listadapter.GameHistoryAdapter;
 import com.geeksong.agricolascorer.mapper.GameHistoryMapper;
 import com.geeksong.agricolascorer.model.Game;

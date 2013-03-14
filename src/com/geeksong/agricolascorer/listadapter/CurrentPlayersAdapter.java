@@ -3,6 +3,7 @@ package com.geeksong.agricolascorer.listadapter;
 import java.util.ArrayList;
 
 import com.geeksong.agricolascorer.R;
+import com.geeksong.agricolascorer.formatter.GameCountFormatter;
 import com.geeksong.agricolascorer.model.Player;
 
 import android.app.Activity;
@@ -34,9 +35,8 @@ public class CurrentPlayersAdapter extends ArrayAdapter<Player> {
 	            TextView playerNameView = (TextView) v.findViewById(R.id.name);
 	            playerNameView.setText(player.getName());
 	            
-	            TextView gameCountView = (TextView) v.findViewById(R.id.gameCount);
-	            String gameCountText = String.format(this.context.getResources().getString(R.string.games_count), player.getGameCount());
-	            gameCountView.setText(gameCountText);
+	            TextView gameCountView = (TextView) v.findViewById(R.id.gameCount);	
+	            gameCountView.setText(GameCountFormatter.format(player.getGameCount(), context));
 	    }
 	    return v;
     }

@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.geeksong.agricolascorer.GameCache;
 import com.geeksong.agricolascorer.R;
+import com.geeksong.agricolascorer.formatter.GameCountFormatter;
 import com.geeksong.agricolascorer.mapper.Database;
 
 public class AddPlayerAdapter extends SimpleCursorAdapter {
@@ -28,10 +29,15 @@ public class AddPlayerAdapter extends SimpleCursorAdapter {
 		String playerName = playerCursor.getString(playerCursor.getColumnIndex(Database.KEY_NAME));
 		
 		boolean isInGame = GameCache.getInstance().isPlayerInGame(playerName);
-
-		TextView inGameView = (TextView) v.findViewById(R.id.inGame);
-		String inGameLabel = context.getResources().getString(R.string.in_game_label);
-		inGameView.setText(isInGame ? inGameLabel : "" );
+		TextView hintLabel = (TextView) v.findViewById(R.id.hintLabel);
+		
+		if(isInGame) {
+			String inGameLabel = context.getResources().getString(R.string.in_game_label);
+			hintLabel.setText(inGameLabel);
+		} else {
+			int gameCount = playerCursor.getInt(playerCursor.getColumnIndex(Database.KEY_GAMECOUNT));
+			hintLabel.setText(GameCountFormatter.format(gameCount, context));
+		}
 		
 		return v;
 	}

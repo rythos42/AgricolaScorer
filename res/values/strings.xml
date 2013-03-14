@@ -64,5 +64,23 @@
     <string name="horses_label">Horses:</string>
     <string name="expand_all">Expand All</string>
     <string name="collapse_all">Collapse All</string>
-    
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="four_plus">4+</string>
+    <string name="five_plus">5+</string>
+    <string name="six_plus">6+</string>
+    <string name="seven_plus">7+</string>
+    <string name="eight_plus">8+</string>
+    <string name="zero_to_one">0&#8211;1</string>
+    <string name="one_to_two">1&#8211;2</string>
+    <string name="one_to_three">1&#8211;3</string>
+    <string name="two_to_three">2&#8211;3</string>
+    <string name="three_to_four">3&#8211;4</string>
+    <string name="four_to_five">4&#8211;5</string>
+    <string name="five_to_six">5&#8211;6</string>
+    <string name="six_to_seven">6&#8211;7</string>
 </resources>

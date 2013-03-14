@@ -1,3 +1,9 @@
+Version 1.24
+	Minor:
+		- Added Expand All/Collapse All button
+		- Changed score_player.xml to use R.string for numeric scoring values
+		- Add Top Player and Add From Database now show game count
+
 Version 1.23
 	Major:
 		- fixed a brutal bug for new users where the games database table wasn't being created properly.  

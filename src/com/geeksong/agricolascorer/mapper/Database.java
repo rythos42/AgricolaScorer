@@ -15,6 +15,7 @@ public class Database extends SQLiteOpenHelper {
 	public static final String TABLE_SETTINGS = "Settings";
     
     public static final String KEY_NAME = "name";
+    public static final String KEY_GAMECOUNT = "gameCount";
 	
 	public static final String KEY_DATE = "playedDate";
 	public static final String KEY_FARMERS = "farmers";
