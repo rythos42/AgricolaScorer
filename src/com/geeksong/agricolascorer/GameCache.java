@@ -74,6 +74,10 @@ public class GameCache {
 		players.remove(index);
 	}
 	
+	public boolean hasPlayers() {
+		return !players.isEmpty();
+	}
+	
 	public boolean isPlayerInGame(String playerName) {
 		return getPlayerByName(playerName) != null;
 	}

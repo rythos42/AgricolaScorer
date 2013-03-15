@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <string name="app_name">Agricola Scorer</string>
@@ -83,4 +84,9 @@
     <string name="four_to_five">4&#8211;5</string>
     <string name="five_to_six">5&#8211;6</string>
     <string name="six_to_seven">6&#8211;7</string>
+    <string name="randomize">Randomize</string>
+    <string name="title_activity_randomize">Randomize</string>
+    <string name="action_settings">Settings</string>
+    <string name="randomize_player">Starting Player</string>
+
 </resources>

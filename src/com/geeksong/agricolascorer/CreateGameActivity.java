@@ -206,6 +206,10 @@ public class CreateGameActivity extends ListActivity {
     			
     			((TextView)dialog.findViewById(android.R.id.message)).setMovementMethod(LinkMovementMethod.getInstance());
     			break;
+    		case R.id.randomize:
+    			Intent randomizeIntent = new Intent(this, RandomizationActivity.class);
+    			startActivity(randomizeIntent);
+    			break;
     	}
         return true;
     }

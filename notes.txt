@@ -2,6 +2,8 @@ Future:
 	- edit a game, then hit back until you can select a player, then start game, uses the edited data but doesn't show player on added player list
 		- need to clear the game state when you hit Back from an Edit.
 	- randomization feature (randomize a resource, a farmyard square)
+		- get icons for all of the resources
+		- get a farm board photo. Can I draw on top of a drawable in a specific spot?
 	- use XML plurals for "game count"
 	- more rounded corners on buttons
 		- Have to define background styles for each of the buttons states.

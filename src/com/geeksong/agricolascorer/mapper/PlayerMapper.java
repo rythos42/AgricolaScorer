@@ -1,5 +1,7 @@
 package com.geeksong.agricolascorer.mapper;
 
+import java.util.ArrayList;
+
 import com.geeksong.agricolascorer.R;
 import com.geeksong.agricolascorer.listadapter.AddPlayerAdapter;
 import com.geeksong.agricolascorer.listadapter.SelectablePlayerAdapter;
@@ -101,6 +103,17 @@ public class PlayerMapper {
         
         playersListAdapter = new AddPlayerAdapter(this.context, R.layout.recent_player_list_item, c, from, to, 0);
         return playersListAdapter;
+    }
+    
+    public ArrayList<String> getPlayerNames() {
+    	ArrayList<String> playerNames = new ArrayList<String>();
+    	Cursor c = getPlayersCursor();
+    	
+    	while(c.moveToNext()) {
+    		String playerName = c.getString(c.getColumnIndex(Database.KEY_NAME));
+    		playerNames.add(playerName);
+    	}
+    	return playerNames;    	
     }
     
     public SelectablePlayerAdapter getSelectablePlayersListAdapter() {

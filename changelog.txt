@@ -1,4 +1,7 @@
-Version 1.24
+Version 1.3
+	Major:
+		- Randomization feature:
+			- Starting player (from database, or from added players)
 	Minor:
 		- Added Expand All/Collapse All button
 		- Changed score_player.xml to use R.string for numeric scoring values
