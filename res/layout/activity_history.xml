@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    style="@style/listContainer" >
+    style="@style/content" >
     
     <Button
         android:id="@+id/expandCollapseButton"
@@ -30,7 +30,7 @@
 		    android:layout_height="wrap_content"
 		    android:text="@string/no_history"
 		    android:visibility="gone"
-		    style="@style/listContainerText" />
+		    style="@style/biggerText" />
 
     </RelativeLayout>
 	

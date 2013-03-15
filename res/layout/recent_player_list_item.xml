@@ -7,7 +7,7 @@
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
 	    android:layout_alignParentLeft="true"
-	    style="@style/listContainerText" >
+	    style="@style/biggerText" >
 	</TextView>
 
 	<TextView 
@@ -15,6 +15,6 @@
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
 	    android:layout_alignParentRight="true"
-	    style="@style/inGameText">
+	    style="@style/hint">
 	</TextView>
 </RelativeLayout>

@@ -6,6 +6,6 @@ import com.geeksong.agricolascorer.R;
 
 public class GameCountFormatter {
 	public static String format(int count, Context context) {
-        return String.format(context.getResources().getString(R.string.games_count), count);
+        return context.getResources().getQuantityString(R.plurals.games_count, count, count);
 	}
 }

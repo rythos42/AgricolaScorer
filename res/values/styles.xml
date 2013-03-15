@@ -15,7 +15,7 @@
     </style>
     
 	<style name="actionBar" parent="android:style/Widget.Holo.ActionBar">
-	    <item name="android:titleTextStyle">@style/listTitle</item>
+	    <item name="android:titleTextStyle">@style/title</item>
 	    <item name="android:displayOptions">showCustom</item>
 	</style>
     
@@ -26,9 +26,45 @@
     <style name="button" parent="android:style/Widget.Holo.Light.Button">
         <item name="android:textColor">#BBFFBB</item>
     </style>
+            
+    <style name="spinnerDropDownItem">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+	</style>
+	
+    <style name="checkBox" parent="@android:style/Widget.Holo.Light.CompoundButton.CheckBox">
+        <item name="android:textColor">#BBFFBB</item>
+        <item name="android:textSize">20dp</item>
+    </style>
     
     <style name="text">
         <item name="android:textColor">#BBFFBB</item>
+    </style>
+    
+    <style name="biggerText" parent="@style/text">
+        <item name="android:textSize">20dp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    
+    <style name="smallerText" parent="@style/biggerText">
+        <item name="android:textSize">16dp</item>
+    </style>
+        
+    <style name="title" parent="@android:style/TextAppearance.Large.Inverse">
+        <item name="android:textColor">#DDFFDD</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+    
+    <style name="hint">
+        <item name="android:textColor">#C0C0C0</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    
+	<style name="historyDate">
+		<item name="android:textColor">#DDFFDD</item>
+	    	    <item name="android:textSize">20dp</item>
+		<item name="android:paddingLeft">30dp</item>
     </style>
     
 	<style name="scoreTabContainer">
@@ -41,38 +77,12 @@
         <item name="android:padding">2dp</item>
     </style>
         
-    <style name="listContainer">
+    <style name="content">
         <item name="android:background">@drawable/primary_list_shape</item>
         <item name="android:layout_margin">10dp</item>
         <item name="android:padding">10dp</item>
     </style>
-    
-    <style name="listContainerText">
-        <item name="android:textColor">#BBFFBB</item>
-        <item name="android:textSize">20dp</item>
-        <item name="android:padding">5dp</item>
-    </style>
-    
-    <style name="smallerText" parent="@style/listContainerText">
-        <item name="android:textSize">16dp</item>
-    </style>
-        
-    <style name="listTitle" parent="@android:style/TextAppearance.Large.Inverse">
-        <item name="android:paddingBottom">10dp</item>
-        <item name="android:textColor">#DDFFDD</item>
-    </style>
-    
-    <style name="inGameText">
-        <item name="android:padding">10dp</item>
-        <item name="android:textColor">#C0C0C0</item>
-    </style>
-    
-	<style name="historyDate">
-	    <item name="android:textSize">20dp</item>
-		<item name="android:textColor">#DDFFDD</item>
-		<item name="android:paddingLeft">30dp</item>
-    </style>
-    
+       
     <style name="listView" parent="@android:style/Widget.Holo.Light.ListView">
         <item name="android:layout_marginBottom">10dp</item>
     </style>
@@ -158,16 +168,5 @@
     
     <style name="expandableListView">
         <item name="android:groupIndicator">@drawable/expandable_list_view_indicator</item>
-    </style>
-    
-    <style name="spinnerDropDownItem">
-        <item name="android:textColor">#FFFFFF</item>
-        <item name="android:paddingTop">10dp</item>
-        <item name="android:paddingLeft">10dp</item>
-	</style>
-	
-    <style name="checkBox" parent="@android:style/Widget.Holo.Light.CompoundButton.CheckBox">
-        <item name="android:textColor">#BBFFBB</item>
-        <item name="android:textSize">20dp</item>
     </style>
 </resources>

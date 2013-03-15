@@ -417,13 +417,13 @@
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:text="@string/score_label"
-			    style="@style/listContainerText" />
+			    style="@style/biggerText" />
 			
 			<TextView android:id="@+id/score"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:textIsSelectable="true"
-			    style="@style/listContainerText" />
+			    style="@style/biggerText" />
 	        	        
 	    </LinearLayout>
 	        		

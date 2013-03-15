@@ -48,7 +48,10 @@
     <string name="cancel">Cancel</string>
     <string name="player_list">Player List</string>
     <string name="in_game_label">(in game)</string>
-    <string name="games_count">%d games</string>
+    <plurals name="games_count">
+        <item quantity="one">1 game</item>
+        <item quantity="other">%d games</item>
+    </plurals>
     <string name="edit_game">Edit game</string>
     <string name="statistics">Statistics</string>
     <string name="about">About</string>
