@@ -91,5 +91,6 @@
     <string name="title_activity_randomize">Randomize</string>
     <string name="action_settings">Settings</string>
     <string name="randomize_player">Starting Player</string>
-
+	<string name="can_not_edit">Can\'t edit game</string>
+	<string name="no_detail_scores">You can\'t edit this game because it doesn\'t have any score details!</string>
 </resources>

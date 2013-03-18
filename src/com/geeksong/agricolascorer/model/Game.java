@@ -32,6 +32,14 @@ public class Game {
 		return scores.size();
 	}
 	
+	public boolean hasScoresWithOnlyTotalScore() {
+		for(Score score : scores) {
+			if(score.isOnlyTotalScore())
+				return true;
+		}
+		return false;
+	}
+	
 	public void setFarmersOfTheMoor(boolean farmersOfTheMoor) { this.farmersOfTheMoor = farmersOfTheMoor; }
 	public boolean isFarmersOfTheMoor() { return this.farmersOfTheMoor; }
 }

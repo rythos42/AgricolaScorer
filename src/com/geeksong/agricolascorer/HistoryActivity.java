@@ -6,6 +6,7 @@ import com.geeksong.agricolascorer.model.Game;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -68,6 +69,15 @@ public class HistoryActivity extends Activity {
     			checkNoHistoryLabelVisibility();
     			return true;
     		case MENU_EDIT_GAME:
+    			if(game.hasScoresWithOnlyTotalScore()) {
+    				new AlertDialog.Builder(this)
+    					.setTitle(R.string.can_not_edit)
+    					.setMessage(R.string.no_detail_scores)
+    					.setPositiveButton(R.string.ok, null)
+    					.show();
+    				return true;
+    			}
+    			
     			GameCache.getInstance().setGame(game);
     			Intent rescore = new Intent(this, ScorePlayersActivity.class);
     			startActivityForResult(rescore, RESCORE_ACTIVITY);

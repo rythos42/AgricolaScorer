@@ -134,16 +134,28 @@ public class Score {
 		this.isTotalScoreProvided = true;
 	}
 	
-	public int getTotalScore() {
-		if(this.isTotalScoreProvided)
-			return this.totalScore;
-		
+	private int getCalculatedTotalScore() {
 		return this.fieldScore + this.pastureScore + this.grainScore + this.vegetableScore + this.sheepScore + this.boarScore + this.cattleScore
 				+ this.roomsScore + this.familyMemberScore + this.unusedSpacesScore + this.fencedStablesScore + this.pointsForCards 
 				+ this.bonusPoints + this.beggingCardsScore + this.horsesScore;
 	}
 	
+	public int getTotalScore() {
+		if(this.isTotalScoreProvided)
+			return this.totalScore;
+		
+		return getCalculatedTotalScore();
+	}
+	
 	public boolean isEmpty() {
 		return this.getTotalScore() == emptyScorePoints;
+	}
+	
+	public boolean isOnlyTotalScore() {
+		if(!this.isTotalScoreProvided)
+			return false;
+		
+		int calculatedTotalScore = getCalculatedTotalScore();
+		return calculatedTotalScore == emptyScorePoints || calculatedTotalScore == 0;
 	}
 }
