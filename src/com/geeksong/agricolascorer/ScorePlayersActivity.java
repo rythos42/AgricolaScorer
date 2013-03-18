@@ -40,6 +40,11 @@ public class ScorePlayersActivity extends Activity {
         }
     }
     
+    @Override
+    public void onBackPressed(){
+        finish();
+    }
+    
 	public void finishScoring(View source) {
 		Intent finishGameIntent = new Intent(this, FinishedActivity.class);
 		startActivity(finishGameIntent);

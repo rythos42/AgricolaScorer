@@ -69,6 +69,7 @@ public class HistoryActivity extends Activity {
     			checkNoHistoryLabelVisibility();
     			return true;
     		case MENU_EDIT_GAME:
+    			// Some games are entered manually in the database, with only a final score. We can't edit those here.
     			if(game.hasScoresWithOnlyTotalScore()) {
     				new AlertDialog.Builder(this)
     					.setTitle(R.string.can_not_edit)
@@ -87,6 +88,19 @@ public class HistoryActivity extends Activity {
     	    	return super.onContextItemSelected(item);
     	}
     }
+    
+    @Override
+    public void onActivityResult(int reqCode, int resultCode, Intent data) {
+    	super.onActivityResult(reqCode, resultCode, data);
+		
+    	switch (reqCode) {
+    	// If we come back here from editing, clear the game
+    		case RESCORE_ACTIVITY:
+    			GameCache.getInstance().clearGame();    			
+    			
+    			break;
+    	}
+	}
     
     public void expandCollapseAll(View source) {
     	Button expandCollapseAll = (Button) source;
