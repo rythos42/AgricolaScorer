@@ -10,16 +10,8 @@ public class StatisticFilter {
 		return instance;
 	}	
 	
-	private static final int ALL_PLAYER_COUNT = -1;
-	
-	private int playerCount = ALL_PLAYER_COUNT;
 	private ArrayList<String> playerNames = new ArrayList<String>();
-	
-	public void setPlayerCount(int playerCount) { this.playerCount = playerCount; }
-	public int getPlayerCount() { return this.playerCount; }
-	public void clearPlayerCount() { this.playerCount = ALL_PLAYER_COUNT; }
-	public boolean hasPlayerCount() { return this.playerCount != ALL_PLAYER_COUNT; }
-	
+
 	public ArrayList<String> getSelectedPlayers() { return playerNames; }
 	public boolean hasSelectedPlayers() { return playerNames.size() != 0; }
 	
@@ -30,4 +22,7 @@ public class StatisticFilter {
 			playerNames.add(playerName);
 	}
 	
+	public boolean isPlayerSelected(String playerName) {
+		return playerNames.contains(playerName);
+	}	
 }

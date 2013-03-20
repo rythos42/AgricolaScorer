@@ -17,22 +17,11 @@ Future:
 				</selector>
 	- pre-populate based on last game? (maybe add an option for it?)
 	- make segmented control and number picker use XML for heights and text edit padding
-	
-	Graph:
-		- add graph back in
-				- <item android:id="@+id/statistics" android:showAsAction="ifRoom|withText" android:title="@string/statistics" android:icon="@drawable/chart_line"></item>
-			    - uncomment code in CreateGameActivity
-		- graph colours are pretty bad
-		- some weird things if you select odd combinations on the filter screen
-		- strange marker placement, likely due to how the Double's are used
-			- should probably normalize the dates returned, such that each date is given a number: 1, 2, 3, 4, 5
-			- then map that number to a particular date for display purposes
-			- then either subdivide or interval_by_val of 1, should allow the graph to display properly
-		- chart icon is a little brighter than it should be
-		- maybe put another title for filter - looks weird when you just click "Ok" and it comes up with a graph
-			 (this graph is of "all games with only 2 players"
-			 - or maybe you must select players, since the dates would be odd otherwise.
-		
+	- chart icon is a little brighter than it should be
+				
+	Filter:
+		- optional: select by date range
+		- optional: Farmers or not
 	
 Pipe dream:
 	- use HoloEverywhere (http://stackoverflow.com/questions/10608539/error-importing-holoeverywhere) to reduce API requirement

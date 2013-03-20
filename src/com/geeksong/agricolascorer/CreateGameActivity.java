@@ -185,10 +185,10 @@ public class CreateGameActivity extends ListActivity {
     
     public boolean onOptionsItemSelected(MenuItem item) {
     	switch(item.getItemId()) {
-    		/*case R.id.statistics:
+    		case R.id.statistics:
     	    	Intent statisticsIntent = new Intent(this, StatisticsActivity.class);
     	    	startActivity(statisticsIntent);
-    			break;*/
+    			break;
     		case R.id.history:
     	    	Intent historyIntent = new Intent(this, HistoryActivity.class);
     	    	startActivity(historyIntent);

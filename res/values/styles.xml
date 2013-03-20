@@ -82,6 +82,11 @@
         <item name="android:layout_margin">10dp</item>
         <item name="android:padding">10dp</item>
     </style>
+        
+    <style name="black">
+        <item name="android:background">@drawable/graph_shape</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
        
     <style name="listView" parent="@android:style/Widget.Holo.Light.ListView">
         <item name="android:layout_marginBottom">10dp</item>

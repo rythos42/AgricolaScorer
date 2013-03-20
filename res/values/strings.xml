@@ -56,8 +56,6 @@
     <string name="statistics">Statistics</string>
     <string name="about">About</string>
     <string name="about_text">Agricola Scorer by Craig Fleming (rythos42@gmail.com). Dominican font by www.haroldsfonts.com. Chart icon by blog.twg.ca.</string>
-    <string name="title_activity_statistics">StatisticsActivity</string>
-    <string name="title_activity_filter_statistics">FilterStatisticsActivity</string>
     <string name="filter">Filter</string>
     <string name="playersLabel">Players:</string>
     <string name="scores">Scores</string>
@@ -93,4 +91,6 @@
     <string name="randomize_player">Starting Player</string>
 	<string name="can_not_edit">Can\'t edit game</string>
 	<string name="no_detail_scores">You can\'t edit this game because it doesn\'t have any score details!</string>
+	<string name="graph_of_scores">Graph of scores</string>
+	<string name="search_to_create_graph">Click search to show a graph!</string>
 </resources>

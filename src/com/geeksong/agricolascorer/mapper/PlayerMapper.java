@@ -120,7 +120,8 @@ public class PlayerMapper {
     	if(selectPlayersListAdapter != null)
     		return selectPlayersListAdapter;
     	
-        Cursor c = getPlayersCursor();
+    	boolean requireGame = true;
+        Cursor c = getPlayersCursor(requireGame);
 
         String[] from = new String[] { Database.KEY_NAME };
         int[] to = new int[] { R.id.name };
@@ -153,19 +154,42 @@ public class PlayerMapper {
     }
     
     private Cursor getPlayersCursor() {
-    	return getPlayersCursor(-1);
+    	return getPlayersCursor(-1, false);
+    }
+    
+    private Cursor getPlayersCursor(int top) {
+    	return getPlayersCursor(top, false);
+    }
+    
+    private Cursor getPlayersCursor(boolean requireGame) {
+    	return getPlayersCursor(-1, requireGame);
     }
             
-    private Cursor getPlayersCursor(int top) {
-        String selectQuery = String.format("SELECT player.%s as _id, player.*, COUNT(score.%s) as %s " + 
-				"FROM %s as player " +
-				"LEFT JOIN %s as score on player.%s=score.%s " +
-				"GROUP BY score.%s",
-        		Database.KEY_ID, Database.KEY_PLAYERID, Database.KEY_GAMECOUNT,
-        		Database.TABLE_RECENTPLAYERS,
-        		Database.TABLE_SCORES, Database.KEY_ID, Database.KEY_PLAYERID,
-				Database.KEY_PLAYERID);
-        
+    private Cursor getPlayersCursor(int top, boolean requireGame) {
+    	String selectQuery;
+    	if(requireGame) {
+    		// Select from score, then player, to ensure no players without a game.
+    		selectQuery = String.format("SELECT player.%s as _id, player.%s, COUNT(score.%s) as %s " +
+    				"FROM %s as score " +
+    				"JOIN %s as player on score.%s=player.%s " +
+    				"GROUP BY score.%s ",
+    				Database.KEY_ID, Database.KEY_NAME, Database.KEY_PLAYERID, Database.KEY_GAMECOUNT,
+    				Database.TABLE_SCORES,
+    				Database.TABLE_RECENTPLAYERS, Database.KEY_PLAYERID, Database.KEY_ID,
+    				Database.KEY_PLAYERID);
+    	}
+    	else {
+    		// Select from player, then score, to get all players.
+            selectQuery = String.format("SELECT player.%s as _id, player.*, COUNT(score.%s) as %s " + 
+    				"FROM %s as player " +
+    				"LEFT JOIN %s as score on player.%s=score.%s " +
+    				" GROUP BY score.%s ",
+            		Database.KEY_ID, Database.KEY_PLAYERID, Database.KEY_GAMECOUNT,
+            		Database.TABLE_RECENTPLAYERS,
+            		Database.TABLE_SCORES, Database.KEY_ID, Database.KEY_PLAYERID,
+            		Database.KEY_PLAYERID);
+    	}
+               
         if(top > 0)
         	selectQuery += " LIMIT " + top;
         

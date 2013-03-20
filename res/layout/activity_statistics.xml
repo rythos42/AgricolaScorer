@@ -1,12 +1,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-              style="@style/content" >
-
-    <com.androidplot.xy.XYPlot
-            android:id="@+id/statsPlot"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            title="@string/scores" />
+    android:id="@+id/chartActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/content" >
+    
+    <TextView 
+	     android:id="@+id/noDataLabel"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     style="@style/biggerText"
+	     android:text="@string/search_to_create_graph" />
+    
+    <LinearLayout
+        android:id="@+id/chart"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		style="@style/black"
+		android:visibility="gone">
+        
+   	</LinearLayout>
 
 </LinearLayout>
