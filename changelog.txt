@@ -2,6 +2,9 @@ Version 1.3
 	Major:
 		- Randomization feature:
 			- Starting player (from database, or from added players)
+		- Graph of scores
+			- Search by all players in database
+			- Search by date range
 	Minor:
 		- Added Expand All/Collapse All button
 		- Changed score_player.xml to use R.string for numeric scoring values
