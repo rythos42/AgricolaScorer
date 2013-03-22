@@ -2,7 +2,7 @@ package com.geeksong.agricolascorer.listadapter;
 
 import com.geeksong.agricolascorer.R;
 import com.geeksong.agricolascorer.mapper.Database;
-import com.geeksong.agricolascorer.model.StatisticFilter;
+import com.geeksong.agricolascorer.model.StatisticSearch;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -49,7 +49,7 @@ public class SelectablePlayerAdapter extends SimpleCursorAdapter {
         
         // Calls check change listener, so remove it before setting the checked status.
         playerCheckBox.setOnCheckedChangeListener(null);
-		playerCheckBox.setChecked(StatisticFilter.getInstance().isPlayerSelected(playerName));
+		playerCheckBox.setChecked(StatisticSearch.getInstance().isPlayerSelected(playerName));
 		playerCheckBox.setOnCheckedChangeListener(onCheckChange);
 	}
 }

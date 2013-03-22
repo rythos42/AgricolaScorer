@@ -12,7 +12,7 @@ import org.achartengine.renderer.XYSeriesRenderer;
 
 import com.geeksong.agricolascorer.mapper.StatisticsMapper;
 import com.geeksong.agricolascorer.model.PlayerStatistics;
-import com.geeksong.agricolascorer.model.StatisticFilter;
+import com.geeksong.agricolascorer.model.StatisticSearch;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -25,7 +25,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class StatisticsActivity extends Activity {
-	public static final int GET_STATISTIC_FILTER = 0;
+	public static final int GET_STATISTIC_SEARCH = 0;
 
 	private int[] Colours = { Color.RED, Color.BLUE, Color.GREEN, Color.MAGENTA, Color.WHITE };
 	
@@ -41,9 +41,9 @@ public class StatisticsActivity extends Activity {
     
     public boolean onOptionsItemSelected(MenuItem item) {
     	switch(item.getItemId()) {
-    		case R.id.filter:
-    	    	Intent filterIntent = new Intent(this, FilterStatisticsActivity.class);
-    	    	startActivityForResult(filterIntent, GET_STATISTIC_FILTER);
+    		case R.id.search:
+    	    	Intent searchIntent = new Intent(this, SearchStatisticsActivity.class);
+    	    	startActivityForResult(searchIntent, GET_STATISTIC_SEARCH);
     			break;
     	}
         return true;
@@ -54,7 +54,7 @@ public class StatisticsActivity extends Activity {
     	super.onActivityResult(reqCode, resultCode, data);
     	
     	switch (reqCode) {
-    		case GET_STATISTIC_FILTER:
+    		case GET_STATISTIC_SEARCH:
     			clearData();    			
     			addData();
     			chart.repaint();
@@ -88,7 +88,7 @@ public class StatisticsActivity extends Activity {
     }
 
     private void addData() {
-		ArrayList<PlayerStatistics> statsList = new StatisticsMapper().getStatisticsForFilter(StatisticFilter.getInstance());
+		ArrayList<PlayerStatistics> statsList = StatisticsMapper.getInstance().getStatisticsForSearch(StatisticSearch.getInstance());
         int playerCount = statsList.size();
         if(playerCount == 0)
         	return;

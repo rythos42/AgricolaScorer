@@ -19,7 +19,7 @@ public class RandomizationActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_randomization);
 		
-        ActionBarHelper.setActionBarTitle(this, R.string.title_activity_randomize);
+        ActionBarHelper.setActionBarTitle(this, R.string.randomize);
 	}
 	
 	public void randomizePlayer(View source) {

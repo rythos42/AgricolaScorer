@@ -1,5 +1,5 @@
 Future:
-	- randomization feature (randomize a resource, a farmyard square)
+	- randomization (randomize a resource, a farmyard square)
 		- get icons for all of the resources
 		- get a farm board photo. Can I draw on top of a drawable in a specific spot?
 	- more rounded corners on buttons
@@ -18,9 +18,10 @@ Future:
 	- pre-populate based on last game? (maybe add an option for it?)
 	- make segmented control and number picker use XML for heights and text edit padding
 	- chart icon is a little brighter than it should be
+	- menu icon is for wrong theme
 				
-	Filter:
-		- optional: select by date range
+	Search:
+		- error message if you try to search with no players selected
 		- optional: Farmers or not
 	
 Pipe dream:

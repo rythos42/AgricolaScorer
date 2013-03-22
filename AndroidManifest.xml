@@ -47,12 +47,11 @@
             android:theme="@style/GreenTheme_NoActionBar" >
         </activity>
         <activity
-            android:name="com.geeksong.agricolascorer.FilterStatisticsActivity"
+            android:name="com.geeksong.agricolascorer.SearchStatisticsActivity"
             android:theme="@style/GreenTheme" >
         </activity>
         <activity
             android:name="com.geeksong.agricolascorer.RandomizationActivity"
-            android:label="@string/title_activity_randomize"
             android:theme="@style/GreenTheme" >
         </activity>
         <activity
