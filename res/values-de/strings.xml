@@ -55,7 +55,7 @@
     <string name="edit_game">Spiel ändern</string>
     <string name="statistics">Statistik</string>
     <string name="about">Über</string>
-    <string name="about_text">Agricola Scorer von Craig Fleming (rythos42@gmail.com). Dominican font von www.haroldsfonts.com. Chart icon von blog.twg.ca.</string>
+    <string name="about_text">Agricola Scorer von Craig Fleming (rythos42@gmail.com). Dominican font von www.haroldsfonts.com. Chart icon von blog.twg.ca. Deutsche Übersetzung von Fred Baumgarten (dc6iq@gmx.de)</string>
     <string name="search">Suche</string>
     <string name="playersLabel">Spieler:</string>
     <string name="scores">Ergebnisse</string>
