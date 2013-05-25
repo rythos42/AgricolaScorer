@@ -50,7 +50,13 @@ public class ScoreManager implements OnCheckedChangeListener, OnValueChangeListe
 		    		score.setCattleScore(getScoreForCattle(text));
 		    		break;
 		    	case R.id.room_type:
-		    		score.setRoomType(RoomType.valueOf(text.toString()));
+		    		RoomType type = RoomType.Wood;
+		    		switch(checked.getId()) {
+		    			case R.id.woodButton: type = RoomType.Wood; break;
+		    			case R.id.clayButton: type = RoomType.Clay; break;
+		    			case R.id.stoneButton: type = RoomType.Stone; break;
+		    		}
+		    		score.setRoomType(type);
 		    		score.setRoomsScore(getScoreForRooms(score.getRoomCount(), score.getRoomType()));
 		    		break;
 		    	case R.id.family_members:
@@ -279,6 +285,9 @@ public class ScoreManager implements OnCheckedChangeListener, OnValueChangeListe
 	}
 	
 	public static int getScoreForHorses(int horseCount) {
+		if(!GameCache.getInstance().isFarmersOfTheMoor())
+			return 0;
+		
 		if(horseCount == 0)
 			return -1;
 		

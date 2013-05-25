@@ -47,7 +47,7 @@ public class CreateGameActivity extends ListActivity {
         setContentView(R.layout.activity_create_game);
         
         ActionBarHelper.setActionBarTitle(this, R.string.app_name);
-        
+
         registerForContextMenu(getListView());
         
         adapter = new CurrentPlayersAdapter(this, R.layout.current_players_list_item, GameCache.getInstance().getPlayerList());
@@ -55,6 +55,8 @@ public class CreateGameActivity extends ListActivity {
         
     	CheckBox farmersCheckBox = (CheckBox) findViewById(R.id.farmersCheckBox);
     	farmersCheckBox.setChecked(SettingsMapper.getInstance().wasLastGameFarmers());
+    	
+    	checkButtonsVisibility();
     }
     
     @Override

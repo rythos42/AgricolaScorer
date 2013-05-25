@@ -19,11 +19,13 @@ Future:
 	- make segmented control and number picker use XML for heights and text edit padding
 	- chart icon is a little brighter than it should be
 	- menu icon is for wrong theme
+	- ability to edit game date
 	
 	Search:
 		- error message if you try to search with no players selected
 		- optional: Farmers or not
-
+		- search by date defaults: end date is today, start date is start of this month (or something similar)
+	
 Pipe dream:
 	- use HoloEverywhere (http://stackoverflow.com/questions/10608539/error-importing-holoeverywhere) to reduce API requirement
 	- "checked" gradient is solid colour (maybe just accept this...)

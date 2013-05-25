@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
 	android:layout_height="wrap_content"
-	>
+	xmlns:app="http://schemas.android.com/apk/res/com.geeksong.agricolascorer">
     
 	<ScrollView 
 	    android:id="@+id/scrollView"
@@ -190,9 +190,9 @@
 				android:orientation="horizontal"
 				android:id="@+id/room_type"
 				style="@style/radioGroupStyle">
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/wood" android:layout_weight="3" style="@style/roomTypeStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/clay" android:layout_weight="3" style="@style/roomTypeStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/stone" android:layout_weight="3" style="@style/roomTypeStyle" />	        
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:id="@+id/woodButton" android:text="@string/wood" android:layout_weight="3" style="@style/roomTypeStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:id="@+id/clayButton" android:text="@string/clay" android:layout_weight="3" style="@style/roomTypeStyle" />
+				<com.geeksong.agricolascorer.control.SegmentedControlButton android:id="@+id/stoneButton" android:text="@string/stone" android:layout_weight="3" style="@style/roomTypeStyle" />	        
 		    </RadioGroup>
 	       
 			<LinearLayout 
