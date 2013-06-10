@@ -9,6 +9,7 @@ Future:
 	- chart icon is a little brighter than it should be
 	- set the action bar to have a "back" button on it in some situations.
 	- set different colour of checkbox "border"
+	- settings first checkbox, when you click it a blue background flashes which is outside of the black border. Put it inside the black border.
 	
 	Search:
 		- error message if you try to search with no players selected

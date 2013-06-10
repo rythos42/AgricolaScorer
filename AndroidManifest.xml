@@ -60,7 +60,7 @@
             android:theme="@style/GreenTheme" >
         </activity>
         <activity android:name="com.geeksong.agricolascorer.SettingsActivity"
-            android:theme="@style/GreenTheme" >
+            android:theme="@style/GreenTheme_Settings" >
         </activity>
     </application>
 </manifest>

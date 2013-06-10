@@ -8,14 +8,15 @@
     	<item name="android:expandableListViewStyle">@style/expandableListView</item>
     	<item name="android:spinnerDropDownItemStyle">@style/spinnerDropDownItem</item>
     	<item name="android:checkboxStyle">@style/checkBox</item>
-    	<item name="android:textColor">#BBFFBB</item>
 	    <item name="android:actionOverflowButtonStyle">@android:style/Widget.Holo.ActionButton.Overflow</item>
-	    <item name="android:popupMenuStyle">@style/overflowMenu</item>
-	    <item name="android:actionMenuTextColor">#BBFFBB</item>
     </style>
             
     <style name="GreenTheme_NoActionBar" parent="@style/GreenTheme">
         <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="GreenTheme_Settings" parent="@style/GreenTheme">
+    	<item name="android:textColor">#BBFFBB</item>
     </style>
     
 	<style name="actionBar" parent="android:style/Widget.Holo.ActionBar">
