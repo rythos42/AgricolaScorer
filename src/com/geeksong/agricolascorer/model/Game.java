@@ -16,6 +16,10 @@ public class Game {
 		date = new Date(ticks);
 	}
 	
+	public void setDate(Date date) {
+		this.date = date;
+	}
+	
 	public Date getDate() {
 		return date;
 	}

@@ -8,6 +8,7 @@
     	<item name="android:expandableListViewStyle">@style/expandableListView</item>
     	<item name="android:spinnerDropDownItemStyle">@style/spinnerDropDownItem</item>
     	<item name="android:checkboxStyle">@style/checkBox</item>
+    	<item name="android:textColor">#BBFFBB</item>
     </style>
             
     <style name="GreenTheme_NoActionBar" parent="@style/GreenTheme">
