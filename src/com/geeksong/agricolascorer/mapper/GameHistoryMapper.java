@@ -11,6 +11,7 @@ import com.geeksong.agricolascorer.model.Player;
 import com.geeksong.agricolascorer.model.RoomType;
 import com.geeksong.agricolascorer.model.Score;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -107,5 +108,15 @@ public class GameHistoryMapper {
     	
     	sqlDb.delete(Database.TABLE_SCORES, Database.KEY_GAMEID + " = ?", new String[] { gameId });    	
     	sqlDb.delete(Database.TABLE_GAMES, Database.KEY_ID + " = ?", new String[] { gameId });
+    }
+    
+    public void updateGameDate(Game game) {
+    	SQLiteDatabase sqlDb = db.getWritableDatabase();
+    	String gameId = Integer.toString(game.getId());
+    	
+    	ContentValues values = new ContentValues();
+    	values.put(Database.KEY_DATE, game.getDate().getTime());
+    	
+    	sqlDb.update(Database.TABLE_GAMES, values, Database.KEY_ID + " = ?", new String[] { gameId });
     }
 }

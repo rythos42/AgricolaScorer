@@ -1,5 +1,8 @@
 package com.geeksong.agricolascorer;
 
+import java.util.Calendar;
+
+import com.geeksong.agricolascorer.control.DatePickerFragment;
 import com.geeksong.agricolascorer.listadapter.GameHistoryAdapter;
 import com.geeksong.agricolascorer.mapper.GameHistoryMapper;
 import com.geeksong.agricolascorer.model.Game;
@@ -7,6 +10,7 @@ import com.geeksong.agricolascorer.model.Game;
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.DatePickerDialog.OnDateSetListener;
 import android.content.Intent;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -14,12 +18,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.ExpandableListView;
 import android.widget.TextView;
 
 public class HistoryActivity extends Activity {
 	private static final int MENU_DELETE_GAME = 0;
 	private static final int MENU_EDIT_GAME = 1;
+	private static final int MENU_EDIT_GAME_DATE = 2;
 	
 	private static final int RESCORE_ACTIVITY = 0;
 	
@@ -54,13 +60,14 @@ public class HistoryActivity extends Activity {
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
     	menu.add(Menu.NONE, MENU_DELETE_GAME, Menu.NONE, R.string.delete_game);
     	menu.add(Menu.NONE, MENU_EDIT_GAME, Menu.NONE, R.string.edit_game);
+    	menu.add(Menu.NONE, MENU_EDIT_GAME_DATE, Menu.NONE, R.string.edit_game_date);
     }
     
     @Override
     public boolean onContextItemSelected(MenuItem item) {
     	ExpandableListView.ExpandableListContextMenuInfo info = (ExpandableListView.ExpandableListContextMenuInfo) item.getMenuInfo();
     	int position = (int) info.id;
-    	Game game = (Game) historyAdapter.getGroup(position);
+    	final Game game = (Game) historyAdapter.getGroup(position);
     	
     	switch(item.getItemId()) {
     		case MENU_DELETE_GAME:
@@ -82,6 +89,22 @@ public class HistoryActivity extends Activity {
     			GameCache.getInstance().setGame(game);
     			Intent rescore = new Intent(this, ScorePlayersActivity.class);
     			startActivityForResult(rescore, RESCORE_ACTIVITY);
+    			
+    			return true;
+    		case MENU_EDIT_GAME_DATE:
+    			DatePickerFragment datePickerFragment = new DatePickerFragment();
+    			datePickerFragment.setDefault(game.getDate());
+    			datePickerFragment.setOnDateSetListener(new OnDateSetListener() {
+    				public void onDateSet(DatePicker datePicker, int year, int month, int day) { 
+    					Calendar cal = Calendar.getInstance();
+    					cal.set(year, month, day); 
+    					game.setDate(cal.getTime()); 
+    					
+    					historyMapper.updateGameDate(game);
+    					historyAdapter.notifyDataSetChanged();
+    				}
+    			});
+    			datePickerFragment.show(getFragmentManager(), "datePicker");
     			
     			return true;
     		default:

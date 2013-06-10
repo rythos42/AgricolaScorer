@@ -59,10 +59,8 @@
             android:name="com.geeksong.agricolascorer.StatisticsActivity"
             android:theme="@style/GreenTheme" >
         </activity>
-        <activity 
-            android:name="com.geeksong.agricolascorer.SettingsActivity"
-            android:parentActivityName="com.geeksong.agricolascorer.CreateGameActivity">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.geeksong.agricolascorer.CreateGameActivity" />
+        <activity android:name="com.geeksong.agricolascorer.SettingsActivity"
+            android:theme="@style/GreenTheme" >
         </activity>
     </application>
 </manifest>

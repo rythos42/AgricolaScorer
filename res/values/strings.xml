@@ -100,5 +100,6 @@
     <string name="remove_end_date">Remove end date</string>
     <string name="limit_number_of_players">Limit number of players</string>
     <string name="settings">Settings</string>
+    <string name="edit_game_date">Edit game date</string>
 
 </resources>

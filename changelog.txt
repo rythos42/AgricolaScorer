@@ -3,6 +3,7 @@ Version NEXT
 		- Added preferences screen
 		- Added preferences ability to ignore the maximum number of players
 		- Set the default maximum to 5, where it should be.
+		- Ability to edit the date of a saved game.
 
 Version 1.32
 	Minor:
