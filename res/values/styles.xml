@@ -35,7 +35,7 @@
 	
     <style name="checkBox" parent="@android:style/Widget.Holo.Light.CompoundButton.CheckBox">
         <item name="android:textColor">#BBFFBB</item>
-        <item name="android:textSize">20dp</item>
+        <item name="android:textSize">20sp</item>
     </style>
     
     <style name="text">
@@ -43,12 +43,12 @@
     </style>
     
     <style name="biggerText" parent="@style/text">
-        <item name="android:textSize">20dp</item>
+        <item name="android:textSize">20sp</item>
         <item name="android:padding">5dp</item>
     </style>
     
     <style name="smallerText" parent="@style/biggerText">
-        <item name="android:textSize">16dp</item>
+        <item name="android:textSize">16sp</item>
     </style>
         
     <style name="title" parent="@android:style/TextAppearance.Large.Inverse">
@@ -63,7 +63,7 @@
     
 	<style name="historyDate">
 		<item name="android:textColor">#DDFFDD</item>
-	    	    <item name="android:textSize">20dp</item>
+   	    <item name="android:textSize">20sp</item>
 		<item name="android:paddingLeft">30dp</item>
     </style>
     

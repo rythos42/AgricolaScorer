@@ -48,10 +48,12 @@
     <string name="cancel">Cancel</string>
     <string name="player_list">Player List</string>
     <string name="in_game_label">(in game)</string>
+
     <plurals name="games_count">
         <item quantity="one">1 game</item>
         <item quantity="other">%d games</item>
     </plurals>
+
     <string name="edit_game">Edit game</string>
     <string name="statistics">Statistics</string>
     <string name="about">About</string>
@@ -88,12 +90,15 @@
     <string name="randomize">Randomize</string>
     <string name="action_settings">Settings</string>
     <string name="randomize_player">Starting Player</string>
-	<string name="can_not_edit">Can\'t edit game</string>
-	<string name="no_detail_scores">You can\'t edit this game because it doesn\'t have any score details!</string>
-	<string name="graph_of_scores">Graph of scores</string>
-	<string name="search_to_create_graph">Click search to show a graph!</string>
-	<string name="search_by_start_date">Search By Start Date</string>
-	<string name="search_by_end_date">Search By End Date</string>
-	<string name="remove_start_date">Remove start date</string>
-	<string name="remove_end_date">Remove end date</string>
+    <string name="can_not_edit">Can\'t edit game</string>
+    <string name="no_detail_scores">You can\'t edit this game because it doesn\'t have any score details!</string>
+    <string name="graph_of_scores">Graph of scores</string>
+    <string name="search_to_create_graph">Click search to show a graph!</string>
+    <string name="search_by_start_date">Search By Start Date</string>
+    <string name="search_by_end_date">Search By End Date</string>
+    <string name="remove_start_date">Remove start date</string>
+    <string name="remove_end_date">Remove end date</string>
+    <string name="limit_number_of_players">Limit number of players</string>
+    <string name="settings">Settings</string>
+
 </resources>

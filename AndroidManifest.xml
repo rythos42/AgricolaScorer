@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="11"
-        android:targetSdkVersion="15" />
+        android:targetSdkVersion="22" />
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
@@ -14,7 +14,8 @@
         android:name="com.geeksong.agricolascorer.AgricolaApplication"
         android:hardwareAccelerated="false"
         android:icon="@drawable/sheep"
-        android:label="@string/app_name" >
+        android:label="@string/app_name"
+        android:allowBackup="true">
         <activity
             android:name="com.geeksong.agricolascorer.CreateGameActivity"
             android:label="@string/app_name"
@@ -58,6 +59,10 @@
             android:name="com.geeksong.agricolascorer.StatisticsActivity"
             android:theme="@style/GreenTheme" >
         </activity>
+        <activity 
+            android:name="com.geeksong.agricolascorer.SettingsActivity"
+            android:parentActivityName="com.geeksong.agricolascorer.CreateGameActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.geeksong.agricolascorer.CreateGameActivity" />
+        </activity>
     </application>
-
 </manifest>

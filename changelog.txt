@@ -1,3 +1,9 @@
+Version NEXT
+	Minor:
+		- Added preferences screen
+		- Added preferences ability to ignore the maximum number of players
+		- Set the default maximum to 5, where it should be.
+
 Version 1.32
 	Minor:
 		- Horses are no longer scored if you aren't playing Farmers!

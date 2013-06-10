@@ -4,4 +4,5 @@
     <item android:id="@+id/randomize" android:showAsAction="ifRoom|withText" android:title="@string/randomize" android:icon="@drawable/action_help"></item>
     <item android:id="@+id/statistics" android:showAsAction="ifRoom|withText" android:title="@string/statistics" android:icon="@drawable/chart_line"></item>
     <item android:id="@+id/about" android:showAsAction="ifRoom|withText" android:title="@string/about" android:icon="@drawable/action_about"></item>
+    <item android:id="@+id/settings" android:showAsAction="ifRoom|withText" android:title="@string/settings" android:icon="@drawable/action_settings"></item>
 </menu>

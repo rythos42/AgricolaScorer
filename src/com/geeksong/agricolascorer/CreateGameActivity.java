@@ -9,10 +9,12 @@ import com.geeksong.agricolascorer.mapper.SettingsMapper;
 import com.geeksong.agricolascorer.model.Player;
 
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.text.SpannableString;
 import android.text.method.LinkMovementMethod;
 import android.text.util.Linkify;
@@ -31,7 +33,7 @@ public class CreateGameActivity extends ListActivity {
     private final int MENU_REMOVE_FROM_GAME = 0;
     private final int MENU_RENAME_PLAYER = 1;
     
-    private final int MAX_PLAYERS = 6;
+    private final int MAX_PLAYERS = 5;
     private final int MIN_PLAYERS = 1;
 	
 	public static final int ADD_PLAYER_REQUEST = 1;
@@ -81,7 +83,10 @@ public class CreateGameActivity extends ListActivity {
     }
     
     private void checkAddPlayerButtonVisibility() {
-    	boolean visible = GameCache.getInstance().getPlayerList().size() < MAX_PLAYERS;
+    	SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
+    	boolean limitNumberOfPlayers = sharedPref.getBoolean(SettingsActivity.Pref_LimitNumberOfPlayers, true);
+    	
+    	boolean visible = !limitNumberOfPlayers || GameCache.getInstance().getPlayerList().size() < MAX_PLAYERS;
   		Button addPlayerButton = (Button) findViewById(R.id.addPlayerButton);
    		addPlayerButton.setVisibility(visible? View.VISIBLE : View.GONE);
     }
@@ -212,6 +217,9 @@ public class CreateGameActivity extends ListActivity {
     			Intent randomizeIntent = new Intent(this, RandomizationActivity.class);
     			startActivity(randomizeIntent);
     			break;
+    		case R.id.settings:
+    			Intent settingsActivity = new Intent(this, SettingsActivity.class);
+    			startActivity(settingsActivity);
     	}
         return true;
     }
