@@ -1,11 +1,12 @@
 Future:
+	- score for All Creatures
+
 	- randomization (randomize a resource, a farmyard square)
 	- get icons for all of the resources
 	- get a farm board photo. Can I draw on top of a drawable in a specific spot?
 	- pre-populate based on last game? (maybe add an option for it?)
 	- make segmented control and number picker use XML for heights and text edit padding
 	- chart icon is a little brighter than it should be
-	- menu icon is for wrong theme
 	- set the action bar to have a "back" button on it in some situations.
 	- set different colour of checkbox "border"
 	
