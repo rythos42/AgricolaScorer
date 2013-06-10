@@ -96,4 +96,7 @@
 	<string name="search_by_end_date">Suche nach Endedatum</string>
 	<string name="remove_start_date">Entferne Startdatum</string>
 	<string name="remove_end_date">Entferne Endedatum</string>
+    <string name="limit_number_of_players">Limit number of players</string>
+    <string name="settings">Settings</string>
+    <string name="edit_game_date">Edit game date</string>
 </resources>
