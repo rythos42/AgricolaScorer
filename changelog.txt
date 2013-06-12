@@ -1,4 +1,5 @@
 Version NEXT
+	- already updated database version for this release
 	Minor:
 		- Added preferences screen
 		- Added preferences ability to ignore the maximum number of players

@@ -12,10 +12,10 @@
 
     <application
         android:name="com.geeksong.agricolascorer.AgricolaApplication"
+        android:allowBackup="true"
         android:hardwareAccelerated="false"
         android:icon="@drawable/sheep"
-        android:label="@string/app_name"
-        android:allowBackup="true">
+        android:label="@string/app_name" >
         <activity
             android:name="com.geeksong.agricolascorer.CreateGameActivity"
             android:label="@string/app_name"
@@ -59,8 +59,10 @@
             android:name="com.geeksong.agricolascorer.StatisticsActivity"
             android:theme="@style/GreenTheme" >
         </activity>
-        <activity android:name="com.geeksong.agricolascorer.SettingsActivity"
+        <activity
+            android:name="com.geeksong.agricolascorer.SettingsActivity"
             android:theme="@style/GreenTheme_Settings" >
         </activity>
     </application>
+
 </manifest>

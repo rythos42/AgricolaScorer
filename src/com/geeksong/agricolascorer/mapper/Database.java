@@ -6,19 +6,20 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class Database extends SQLiteOpenHelper {
 	private static final String Name = "AgricolaScorer";
-	private static final int Version = 21;
+	private static final int Version = 23;
 	
 	
     public static final String TABLE_RECENTPLAYERS = "RecentPlayers";
 	public static final String TABLE_GAMES = "Games";
 	public static final String TABLE_SCORES = "Scores";
 	public static final String TABLE_SETTINGS = "Settings";
+	public static final String TABLE_ALL_CREATURES_SCORES = "AllCreaturesScores";
     
     public static final String KEY_NAME = "name";
     public static final String KEY_GAMECOUNT = "gameCount";
 	
 	public static final String KEY_DATE = "playedDate";
-	public static final String KEY_FARMERS = "farmers";
+	public static final String KEY_GAME_TYPE = "gameType";
 	
 	public static final String KEY_ID = "id";
 	public static final String KEY_FINALSCORE = "finalScore";
@@ -48,6 +49,13 @@ public class Database extends SQLiteOpenHelper {
 	
 	public static final String KEY_REMEMBER_FARMERS = "rememberFarmers";
 	
+	public static final String KEY_SHEEP_COUNT = "sheepCount";
+	public static final String KEY_WILD_BOAR_COUNT = "wildBoarCount";
+	public static final String KEY_CATTLE_COUNT = "cattleCount";
+	public static final String KEY_HORSE_COUNT = "horseCount";
+	public static final String KEY_FULL_EXPANSION_COUNT = "fullExpansionCount";
+	public static final String KEY_BUILDING_POINTS = "buildingPoints";
+	
 	private static Database instance;
 	public static Database getInstance() {
 		return instance;
@@ -72,7 +80,7 @@ public class Database extends SQLiteOpenHelper {
     	String CREATE_GAMES_TABLE = "CREATE TABLE " + TABLE_GAMES + "(" +
 	    		KEY_ID + " INTEGER PRIMARY KEY, " +
 	    		KEY_DATE + " INTEGER, " +
-	    		KEY_FARMERS + " INTEGER " +
+	    		KEY_GAME_TYPE + " INTEGER " + 
 			")";
     	db.execSQL(CREATE_GAMES_TABLE);
         	
@@ -105,30 +113,53 @@ public class Database extends SQLiteOpenHelper {
 			")";
 	    db.execSQL(CREATE_SCORES_TABLE);
 	    
+	    createSettingsTable(db);
+	    createAllCreaturesScoreTable(db);
+    }
+    
+    private void createSettingsTable(SQLiteDatabase db) {
 	    String CREATE_SETTINGS_TABLE = "CREATE TABLE " + TABLE_SETTINGS + "(" +
 	    		KEY_ID + " INTEGER PRIMARY KEY, " +
 	    		KEY_REMEMBER_FARMERS + " INTEGER " + 
 	    		")";
 	    db.execSQL(CREATE_SETTINGS_TABLE);
     }
- 
+    
+    private void createAllCreaturesScoreTable(SQLiteDatabase db) {
+	    String CREATE_ALL_CREATURES_SCORE_TABLE = "CREATE TABLE " + TABLE_ALL_CREATURES_SCORES + "(" +
+	    		KEY_ID + " INTEGER PRIMARY KEY, " +
+	    		KEY_SHEEP_COUNT + " INTEGER, " +
+	    		KEY_WILD_BOAR_COUNT + " INTEGER, " +
+	    		KEY_CATTLE_COUNT + " INTEGER, " +
+	    		KEY_HORSE_COUNT + " INTEGER, " +
+	    		KEY_FULL_EXPANSION_COUNT + " INTEGER, " +
+	    		KEY_BUILDING_POINTS + " INTEGER, " +
+	    		KEY_GAMEID + " INTEGER, " + 
+	    		KEY_PLAYERID + " INTEGER, " +
+				"FOREIGN KEY(" + KEY_PLAYERID + ") REFERENCES " + TABLE_RECENTPLAYERS + "(" + KEY_ID + "), " +
+				"FOREIGN KEY(" + KEY_GAMEID + ") REFERENCES " + TABLE_GAMES + "(" + KEY_ID + ")" +
+	    		")";
+	    db.execSQL(CREATE_ALL_CREATURES_SCORE_TABLE);
+    }
+     
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
     	// KEY_GAMECOUNT on TABLE_RECENTPLAYERS isn't used anymore and could be dropped if SQLite supported it nicely.
+    	// "farmers" on TABLE_GAMES can be dropped.
 	    
     	if(oldVersion <= 19) {
-	    	db.execSQL("ALTER TABLE " + TABLE_GAMES + " ADD COLUMN " + KEY_FARMERS + " INTEGER");
 	    	db.execSQL("ALTER TABLE " + TABLE_SCORES + " ADD COLUMN " + KEY_HORSESCORE + " INTEGER");
 	    	db.execSQL("ALTER TABLE " + TABLE_SCORES + " ADD COLUMN " + KEY_INBEDFAMILYCOUNT + " INTEGER");
 	    	db.execSQL("ALTER TABLE " + TABLE_SCORES + " ADD COLUMN " + KEY_TOTALFAMILYCOUNT + " INTEGER");
     	}
     	
-    	if(oldVersion <= 20) { 
-	    	String CREATE_SETTINGS_TABLE = "CREATE TABLE " + TABLE_SETTINGS + "(" +
-		    		KEY_ID + " INTEGER PRIMARY KEY, " +
-		    		KEY_REMEMBER_FARMERS + " INTEGER " + 
-		    		")";
-		    db.execSQL(CREATE_SETTINGS_TABLE);
-    	}	    
+    	if(oldVersion <= 20)
+    	    createSettingsTable(db);
+   	
+    	if(oldVersion <= 22) {
+    		createAllCreaturesScoreTable(db);
+
+    		db.execSQL("ALTER TABLE " + TABLE_GAMES + " ADD COLUMN " + KEY_GAME_TYPE + " INTEGER");
+    	}
     }
 }

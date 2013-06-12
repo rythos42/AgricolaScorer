@@ -3,6 +3,7 @@ package com.geeksong.agricolascorer;
 import java.util.ArrayList;
 
 import com.geeksong.agricolascorer.model.Game;
+import com.geeksong.agricolascorer.model.GameType;
 import com.geeksong.agricolascorer.model.Player;
 import com.geeksong.agricolascorer.model.Score;
 
@@ -12,7 +13,7 @@ public class GameCache {
 	
 	private boolean isFromDatabase = false;
 	private Game savedGame;
-	private boolean farmersOfTheMoor = false;
+	private GameType gameType;
 	
 	private static GameCache instance;
 	public static GameCache getInstance() {
@@ -55,7 +56,6 @@ public class GameCache {
 	
 	public void addPlayer(Player player) {
 		players.add(player);
-		scores.add(new Score(player));
 	}
 	
 	public void removePlayer(int index) {
@@ -102,14 +102,17 @@ public class GameCache {
 		return null;
 	}
 	
+	public boolean hasScoreForPlayer(String playerName) {
+		return getScoreByPlayerName(playerName) != null;
+	}
+	
 	public ArrayList<Player> getPlayerList() { return players; }
 	public ArrayList<Score> getScoreList() { return scores; }
 	
-	public void setFarmersOfTheMoor(boolean farmersOfTheMoor) { this.farmersOfTheMoor = farmersOfTheMoor; }
-	public boolean isFarmersOfTheMoor() { 
-		if(this.isFromDatabase)
-			return savedGame.isFarmersOfTheMoor();
-		
-		return this.farmersOfTheMoor; 
+	public void setGameType(GameType gameType) { this.gameType = gameType; }
+	public GameType getGameType() {
+		if(isFromDatabase())
+			return savedGame.getGameType();
+		return gameType; 
 	}
 }

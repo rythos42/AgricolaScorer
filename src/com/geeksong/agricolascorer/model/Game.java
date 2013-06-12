@@ -7,7 +7,7 @@ public class Game {
 	private int id;
 	private Date date;
 	private ArrayList<Score> scores = new ArrayList<Score>();
-	private boolean farmersOfTheMoor;
+	private GameType gameType;
 	
 	public void setId(int id) { this.id = id; }
 	public int getId() { return this.id; }
@@ -44,6 +44,6 @@ public class Game {
 		return false;
 	}
 	
-	public void setFarmersOfTheMoor(boolean farmersOfTheMoor) { this.farmersOfTheMoor = farmersOfTheMoor; }
-	public boolean isFarmersOfTheMoor() { return this.farmersOfTheMoor; }
+	public GameType getGameType() { return gameType; }
+	public void setGameType(GameType gameType) { this.gameType = gameType; }
 }

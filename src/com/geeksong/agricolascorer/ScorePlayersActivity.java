@@ -2,6 +2,7 @@ package com.geeksong.agricolascorer;
 
 import java.util.ArrayList;
 
+import com.geeksong.agricolascorer.managers.GameTypeManager;
 import com.geeksong.agricolascorer.model.Player;
 
 import android.os.Bundle;
@@ -18,16 +19,22 @@ public class ScorePlayersActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score_players);
-
+        
         TabHost tabs = (TabHost) findViewById(android.R.id.tabhost);
         tabs.setup();
         
-        ScoreTabFactory factory = new ScoreTabFactory(this);
+        TabHost.TabContentFactory factory = GameTypeManager.getTabContentFactory(this);
         LayoutInflater inflater = getLayoutInflater();
         
-        ArrayList<Player> playerList = GameCache.getInstance().getPlayerList();
+        GameCache cache = GameCache.getInstance();
+        ArrayList<Player> playerList = cache.getPlayerList();
         for(int i = 0; i < playerList.size(); i++ ) {
-        	String playerName = playerList.get(i).getName();
+        	Player player = playerList.get(i);
+        	String playerName = player.getName();
+        	
+        	if(!cache.hasScoreForPlayer(playerName))
+        		cache.getScoreList().add(GameTypeManager.createScore(player));
+        	
             TabSpec tab = tabs.newTabSpec(playerName);
             
             View tabButtonView = inflater.inflate(R.layout.score_tab_button, null);

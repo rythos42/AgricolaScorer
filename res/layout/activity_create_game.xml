@@ -26,7 +26,15 @@
         android:text="@string/start_game"
         android:onClick="startGame"
         android:visibility="gone" />
-	
+		       
+	<Button
+		android:id="@+id/startAllCreaturesGameButton"
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startGameButton"
+        android:text="@string/start_all_creatures_game"
+        android:onClick="startAllCreaturesGame" />
+		
 	<CheckBox
     	android:id="@+id/farmersCheckBox"
     	android:layout_width="match_parent"

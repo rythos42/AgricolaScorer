@@ -1,8 +1,11 @@
-package com.geeksong.agricolascorer;
+package com.geeksong.agricolascorer.managers;
 
+import com.geeksong.agricolascorer.GameCache;
+import com.geeksong.agricolascorer.R;
 import com.geeksong.agricolascorer.control.NumberPicker;
-import com.geeksong.agricolascorer.control.OnValueChangeListener;
+import com.geeksong.agricolascorer.model.GameType;
 import com.geeksong.agricolascorer.model.RoomType;
+import com.geeksong.agricolascorer.model.AgricolaScore;
 import com.geeksong.agricolascorer.model.Score;
 
 import android.util.Log;
@@ -11,21 +14,22 @@ import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TextView;
 
-public class ScoreManager implements OnCheckedChangeListener, OnValueChangeListener {
-	private Score score;
+public class AgricolaScoreManager extends ScoreManager implements OnCheckedChangeListener {
 	private TextView totalScoreView;
 	
-	public ScoreManager(Score score, TextView totalScoreView) {
-		this.score = score;
+	public AgricolaScoreManager(AgricolaScore score, TextView totalScoreView) {
+		super(score);
+
 		this.totalScoreView = totalScoreView;
 		
 		totalScoreView.setText(Integer.toString(score.getTotalScore()));
 	}
-	
+
     public void onCheckedChanged(RadioGroup group, int checkedId) {
     	try {
 	    	RadioButton checked = (RadioButton) group.findViewById(checkedId);
 	    	CharSequence text = checked.getText();
+	    	AgricolaScore score = (AgricolaScore) getScore();
 	    	
 	    	switch(group.getId()) {
 		    	case R.id.fields:
@@ -73,6 +77,8 @@ public class ScoreManager implements OnCheckedChangeListener, OnValueChangeListe
     
 	public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
 		try {
+	    	AgricolaScore score = (AgricolaScore) getScore();
+			
 	    	switch(picker.getId()) {
 		    	case R.id.unused_spaces_picker:
 		    		score.setUnusedSpacesScore(getScoreForUnusedSpaces(newVal));
@@ -112,7 +118,7 @@ public class ScoreManager implements OnCheckedChangeListener, OnValueChangeListe
 		return score;
 	}
 	
-	public int getIndexForRadioButton(Score score, int id) {
+	public int getIndexForRadioButton(AgricolaScore score, int id) {
     	switch(id) {
 	    	case R.id.fields: return includeNegativeOne(score.getFieldScore());
 	    	case R.id.pastures: return includeNegativeOne(score.getPastureScore());
@@ -142,7 +148,9 @@ public class ScoreManager implements OnCheckedChangeListener, OnValueChangeListe
     	return 0;
 	}
 	
-	public int getValueForNumberPicker(Score score, int id) {
+	public int getValueForNumberPicker(Score baseScore, int id) {
+		AgricolaScore score = (AgricolaScore) baseScore;
+		
 		switch(id) {
 	    	case R.id.unused_spaces_picker: return score.getUnusedSpacesScore() * -1;
 	    	case R.id.fenced_stables_picker: return score.getFencedStablesScore();
@@ -285,7 +293,7 @@ public class ScoreManager implements OnCheckedChangeListener, OnValueChangeListe
 	}
 	
 	public static int getScoreForHorses(int horseCount) {
-		if(!GameCache.getInstance().isFarmersOfTheMoor())
+		if(GameCache.getInstance().getGameType() != GameType.Farmers)
 			return 0;
 		
 		if(horseCount == 0)

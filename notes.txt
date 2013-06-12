@@ -1,5 +1,15 @@
 Future:
 	- score for All Creatures
+		- what to do about the graph?
+			- currently only displays Agricola scores
+			- force selection of game type for graph?
+		- game count also only counts Agricola, from PlayerMapper
+		
+	- show/hide all creatures start button
+	- maybe make 3 buttons and use "Start %s" -- start_all_creatures_game resource
+	- "Start Farmers of the Moor" button?
+		- could make FarmersScore to store Farmers only things
+	
 
 	- randomization (randomize a resource, a farmyard square)
 	- get icons for all of the resources

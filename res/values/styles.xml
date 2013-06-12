@@ -66,10 +66,13 @@
         <item name="android:padding">10dp</item>
     </style>
     
+    <style name="historyGroupItem">
+		<item name="android:paddingLeft">30dp</item>
+    </style>
+    
 	<style name="historyDate">
 		<item name="android:textColor">#DDFFDD</item>
    	    <item name="android:textSize">20sp</item>
-		<item name="android:paddingLeft">30dp</item>
     </style>
     
 	<style name="scoreTabContainer">
