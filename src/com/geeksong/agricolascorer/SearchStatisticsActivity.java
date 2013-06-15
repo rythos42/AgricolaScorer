@@ -7,6 +7,7 @@ import com.geeksong.agricolascorer.control.DatePickerFragment;
 import com.geeksong.agricolascorer.listadapter.SelectablePlayerAdapter;
 import com.geeksong.agricolascorer.mapper.PlayerMapper;
 import com.geeksong.agricolascorer.mapper.StatisticsMapper;
+import com.geeksong.agricolascorer.model.GameType;
 import com.geeksong.agricolascorer.model.StatisticSearch;
 
 import android.os.Bundle;
@@ -18,14 +19,17 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckedTextView;
 import android.widget.CompoundButton;
 import android.widget.DatePicker;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.ListView;
+import android.widget.Spinner;
 
-public class SearchStatisticsActivity extends Activity implements OnCheckedChangeListener {
+public class SearchStatisticsActivity extends Activity implements OnCheckedChangeListener, OnItemSelectedListener {
 	private StatisticSearch search;
 	
     @Override
@@ -45,6 +49,13 @@ public class SearchStatisticsActivity extends Activity implements OnCheckedChang
         SelectablePlayerAdapter selectablePlayerAdapter = PlayerMapper.getInstance().getSelectablePlayersListAdapter();
         selectablePlayerAdapter.setOnCheckedChangeListener(this);
         playersListView.setAdapter(selectablePlayerAdapter);
+        
+        Spinner gameTypeSpinner = (Spinner) findViewById(R.id.gameTypeSpinner);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.game_type_array, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        gameTypeSpinner.setAdapter(adapter);
+        gameTypeSpinner.setSelection(search.getGameType().ordinal()); // TODO: relies on order of resources
+        gameTypeSpinner.setOnItemSelectedListener(this);
     }
     
     private void setStartingStartDate(StatisticsMapper mapper) {
@@ -151,5 +162,15 @@ public class SearchStatisticsActivity extends Activity implements OnCheckedChang
 		
 	    Button openEndDateDialogButton = (Button) findViewById(R.id.endDate);
 	    openEndDateDialogButton.setText(R.string.search_by_end_date);
+	}
+
+	public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
+		// TODO: relies on order of resources
+		GameType gameType = GameType.values()[pos];
+		StatisticSearch.getInstance().setGameType(gameType);
+	}
+
+	public void onNothingSelected(AdapterView<?> arg0) {
+		StatisticSearch.getInstance().setGameType(GameType.Agricola);		
 	}
 }

@@ -1,12 +1,16 @@
 package com.geeksong.agricolascorer.mapper;
 
+import java.util.Locale;
+
+import com.geeksong.agricolascorer.model.GameType;
+
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class Database extends SQLiteOpenHelper {
 	private static final String Name = "AgricolaScorer";
-	private static final int Version = 23;
+	private static final int Version = 26;
 	
 	
     public static final String TABLE_RECENTPLAYERS = "RecentPlayers";
@@ -16,6 +20,7 @@ public class Database extends SQLiteOpenHelper {
 	public static final String TABLE_ALL_CREATURES_SCORES = "AllCreaturesScores";
     
     public static final String KEY_NAME = "name";
+    public static final String KEY_FARMERS = "farmers";
     public static final String KEY_GAMECOUNT = "gameCount";
 	
 	public static final String KEY_DATE = "playedDate";
@@ -112,17 +117,8 @@ public class Database extends SQLiteOpenHelper {
 			"FOREIGN KEY(" + KEY_GAMEID + ") REFERENCES " + TABLE_GAMES + "(" + KEY_ID + ")" +
 			")";
 	    db.execSQL(CREATE_SCORES_TABLE);
-	    
-	    createSettingsTable(db);
+
 	    createAllCreaturesScoreTable(db);
-    }
-    
-    private void createSettingsTable(SQLiteDatabase db) {
-	    String CREATE_SETTINGS_TABLE = "CREATE TABLE " + TABLE_SETTINGS + "(" +
-	    		KEY_ID + " INTEGER PRIMARY KEY, " +
-	    		KEY_REMEMBER_FARMERS + " INTEGER " + 
-	    		")";
-	    db.execSQL(CREATE_SETTINGS_TABLE);
     }
     
     private void createAllCreaturesScoreTable(SQLiteDatabase db) {
@@ -152,14 +148,22 @@ public class Database extends SQLiteOpenHelper {
 	    	db.execSQL("ALTER TABLE " + TABLE_SCORES + " ADD COLUMN " + KEY_INBEDFAMILYCOUNT + " INTEGER");
 	    	db.execSQL("ALTER TABLE " + TABLE_SCORES + " ADD COLUMN " + KEY_TOTALFAMILYCOUNT + " INTEGER");
     	}
-    	
-    	if(oldVersion <= 20)
-    	    createSettingsTable(db);
    	
-    	if(oldVersion <= 22) {
+    	if(oldVersion <= 24) {
+    		// TODO: merge this into 25
     		createAllCreaturesScoreTable(db);
 
     		db.execSQL("ALTER TABLE " + TABLE_GAMES + " ADD COLUMN " + KEY_GAME_TYPE + " INTEGER");
+
+    		// Make GameType column populated for all previous games.
+    		db.execSQL(String.format(Locale.US, "UPDATE %s SET %s=%d WHERE %s=%d AND (%s IS NULL OR %s ='')", 
+    				TABLE_GAMES, KEY_GAME_TYPE, GameType.Farmers.ordinal(), KEY_FARMERS, 1, KEY_GAME_TYPE, KEY_GAME_TYPE));
+    		db.execSQL(String.format(Locale.US, "UPDATE %s SET %s=%d WHERE (%s=%d OR %s IS NULL) AND (%s IS NULL OR %s = '')", 
+    				TABLE_GAMES, KEY_GAME_TYPE, GameType.Agricola.ordinal(), KEY_FARMERS, 0, KEY_FARMERS, KEY_GAME_TYPE, KEY_GAME_TYPE));
+    	}
+    	
+    	if(oldVersion <= 25) {
+    		db.execSQL("DROP TABLE " + TABLE_SETTINGS);
     	}
     }
 }

@@ -12,6 +12,7 @@ import com.geeksong.agricolascorer.model.Game;
 import com.geeksong.agricolascorer.model.GameType;
 import com.geeksong.agricolascorer.model.Player;
 import com.geeksong.agricolascorer.model.Score;
+import com.geeksong.agricolascorer.model.StatisticSearch;
 
 public class AllCreaturesScoreMapper extends BaseScoreMapper {
 	public ContentValues toDatabase(Score baseScore, long gameId) {
@@ -72,5 +73,61 @@ public class AllCreaturesScoreMapper extends BaseScoreMapper {
     	
     	sqlDb.delete(Database.TABLE_ALL_CREATURES_SCORES, Database.KEY_GAMEID + " = ?", new String[] { gameId });    	
     	sqlDb.delete(Database.TABLE_GAMES, Database.KEY_ID + " = ?", new String[] { gameId });
+	}
+
+	public int getGameCount(Database db, int playerId) {
+    	SQLiteDatabase sqlDb = db.getReadableDatabase();
+		String selectGames = String.format(Locale.US, "SELECT count(*) as number " +
+				"FROM %s as scores " +
+				"JOIN %s as players on players.%s = scores.%s " +
+				"WHERE players.%s = %d " +
+				"GROUP BY players.%s ",
+				Database.TABLE_ALL_CREATURES_SCORES,
+				Database.TABLE_RECENTPLAYERS, Database.KEY_ID, Database.KEY_PLAYERID,
+				Database.KEY_ID, playerId,
+				Database.KEY_ID);
+		Cursor gamesCursor = sqlDb.rawQuery(selectGames, null);
+		
+		boolean hasGame = gamesCursor.moveToNext();
+		return hasGame ? gamesCursor.getInt(0) : 0;
+	}
+	
+	@Override
+	protected Cursor getScoreCursor(SQLiteDatabase sqlDb, StatisticSearch search) {
+		String query = String.format(Locale.US, "SELECT game.%s, player.%s, player.%s, " +
+				"score.%s, score.%s, score.%s, score.%s, score.%s, score.%s " +
+    			"FROM %s as score " +
+    			"JOIN %s as game on score.%s=game.%s " +
+    			"JOIN %s as player on score.%s=player.%s ",
+    			Database.KEY_DATE, Database.KEY_NAME, Database.KEY_ID, 
+    			Database.KEY_SHEEP_COUNT, Database.KEY_WILD_BOAR_COUNT, Database.KEY_CATTLE_COUNT, Database.KEY_HORSE_COUNT, Database.KEY_FULL_EXPANSION_COUNT, Database.KEY_BUILDING_POINTS,
+    			Database.TABLE_ALL_CREATURES_SCORES,
+    			Database.TABLE_GAMES, Database.KEY_GAMEID, Database.KEY_ID,
+    			Database.TABLE_RECENTPLAYERS, Database.KEY_PLAYERID, Database.KEY_ID);
+    	    	
+    	query += getPlayerSearchSql(search);
+   		query += getDateSearchSql(search);
+   		query += getGameTypeSearchSql(search);
+    	
+    	return sqlDb.rawQuery(query, null);
+    }
+	
+	@Override
+	protected int getTotalScoreFromCursor(Cursor scoreCursor) {
+		int sheepCount = scoreCursor.getInt(3),
+				wildBoarCount = scoreCursor.getInt(4),
+				cattleCount = scoreCursor.getInt(5),
+				horseCount = scoreCursor.getInt(6);
+		
+		return AllCreaturesScoreManager.getScoreForSheep(sheepCount)
+				+ AllCreaturesScoreManager.getBonusScoreForSheep(sheepCount)
+				+ AllCreaturesScoreManager.getScoreForWildBoar(wildBoarCount)
+				+ AllCreaturesScoreManager.getBonusScoreForWildBoar(wildBoarCount)
+				+ AllCreaturesScoreManager.getScoreForCattle(cattleCount)
+				+ AllCreaturesScoreManager.getBonusScoreForCattle(cattleCount)
+				+ AllCreaturesScoreManager.getScoreForHorse(horseCount)
+				+ AllCreaturesScoreManager.getBonusScoreForHorse(horseCount)
+				+ AllCreaturesScoreManager.getScoreForFullExpansion(scoreCursor.getInt(7))
+				+ AllCreaturesScoreManager.getScoreForBuildings(scoreCursor.getInt(8));
 	}
 }

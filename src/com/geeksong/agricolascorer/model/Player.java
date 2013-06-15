@@ -28,4 +28,9 @@ public class Player {
 	
 	public boolean isInGame() { return isInGame; }
 	public void setIsInGame(boolean isInGame) { this.isInGame = isInGame; }
+	
+	@Override
+	public String toString() {
+		return getName();
+	}
 }

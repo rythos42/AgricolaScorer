@@ -5,7 +5,6 @@ import com.geeksong.agricolascorer.control.InputDialog;
 import com.geeksong.agricolascorer.control.OnClickListener;
 import com.geeksong.agricolascorer.listadapter.CurrentPlayersAdapter;
 import com.geeksong.agricolascorer.mapper.PlayerMapper;
-import com.geeksong.agricolascorer.mapper.SettingsMapper;
 import com.geeksong.agricolascorer.model.GameType;
 import com.geeksong.agricolascorer.model.Player;
 
@@ -27,7 +26,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.TextView;
 
 public class CreateGameActivity extends ListActivity {
@@ -39,8 +37,6 @@ public class CreateGameActivity extends ListActivity {
 	
 	public static final int ADD_PLAYER_REQUEST = 1;
 	public static final String AddedPlayerBundleKey = "AddedPlayer";
-	
-	private static final String FARMERS_CHECKED_STATE = "Farmers_Checked";
 	
 	private CurrentPlayersAdapter adapter;
 	
@@ -55,9 +51,6 @@ public class CreateGameActivity extends ListActivity {
         
         adapter = new CurrentPlayersAdapter(this, R.layout.current_players_list_item, GameCache.getInstance().getPlayerList());
         setListAdapter(adapter);
-        
-    	CheckBox farmersCheckBox = (CheckBox) findViewById(R.id.farmersCheckBox);
-    	farmersCheckBox.setChecked(SettingsMapper.getInstance().wasLastGameFarmers());
     	
     	checkButtonsVisibility();
     }
@@ -80,7 +73,7 @@ public class CreateGameActivity extends ListActivity {
     
     private void checkButtonsVisibility() {
      	checkAddPlayerButtonVisibility();
-     	checkStartGameButtonVisibility();
+     	checkScoreGameButtonVisibility();
     }
     
     private void checkAddPlayerButtonVisibility() {
@@ -92,24 +85,23 @@ public class CreateGameActivity extends ListActivity {
    		addPlayerButton.setVisibility(visible? View.VISIBLE : View.GONE);
     }
     
-    private void checkStartGameButtonVisibility() {
-    	boolean visible = GameCache.getInstance().getPlayerList().size() >= MIN_PLAYERS;
-  		Button startGameButton = (Button) findViewById(R.id.startGameButton);
-  		startGameButton.setVisibility(visible? View.VISIBLE : View.GONE);
-    }
-    
-    @Override
-    public void onSaveInstanceState(Bundle savedInstanceState) {
-    	CheckBox farmersCheckBox = (CheckBox) findViewById(R.id.farmersCheckBox);
-    	savedInstanceState.putBoolean(FARMERS_CHECKED_STATE, farmersCheckBox.isChecked());
+    private void checkScoreGameButtonVisibility() {
+    	int visible = GameCache.getInstance().getPlayerList().size() >= MIN_PLAYERS ? View.VISIBLE : View.GONE;
+    	
+    	
+  		Button scoreAgricola = (Button) findViewById(R.id.scoreAgricolaButton);
+  		scoreAgricola.setVisibility(visible);
+  		
+  		Button scoreFarmers = (Button) findViewById(R.id.scoreFarmersButton);
+  		scoreFarmers.setVisibility(visible);
+  		
+  		Button scoreAllCreatures = (Button) findViewById(R.id.scoreAllCreaturesButton);
+  		scoreAllCreatures.setVisibility(visible);
     }
     
     @Override
     public void onRestoreInstanceState(Bundle savedInstanceState) {
     	checkButtonsVisibility();
-    	
-    	CheckBox farmersCheckBox = (CheckBox) findViewById(R.id.farmersCheckBox);
-    	farmersCheckBox.setChecked(savedInstanceState.getBoolean(FARMERS_CHECKED_STATE));
     }
     
     public void addPlayer(View source) {
@@ -117,22 +109,36 @@ public class CreateGameActivity extends ListActivity {
     	startActivityForResult(addPlayersIntent, ADD_PLAYER_REQUEST);
     }
     
-    public void startGame(View source) {
-    	CheckBox farmersCheckBox = (CheckBox) findViewById(R.id.farmersCheckBox);
-    	boolean isFarmers = farmersCheckBox.isChecked();
-    	SettingsMapper.getInstance().setLastGameWasFarmers(isFarmers);
+    private void clearScoreIfChanging(GameType newGameType) {
+    	GameCache game = GameCache.getInstance();
     	
-    	if(isFarmers)
-    		GameCache.getInstance().setGameType(GameType.Farmers);
-    	else
-    		GameCache.getInstance().setGameType(GameType.Agricola);
+    	if((newGameType == GameType.Agricola || newGameType == GameType.Farmers) && game.getGameType() == GameType.AllCreatures)
+    		game.clearScores();
+    	
+    	if(newGameType == GameType.AllCreatures && (game.getGameType() == GameType.Agricola || game.getGameType() == GameType.Farmers))
+    		game.clearScores();
+    }
+    
+    public void scoreAgricola(View source) {
+  		clearScoreIfChanging(GameType.Agricola);
+  		GameCache.getInstance().setGameType(GameType.Agricola);
     	
     	Intent startGameIntent = new Intent(source.getContext(), ScorePlayersActivity.class);
     	startActivity(startGameIntent);
     }
     
-    public void startAllCreaturesGame(View source) {
+    public void scoreFarmers(View source) {
+  		clearScoreIfChanging(GameType.Farmers);
+		GameCache.getInstance().setGameType(GameType.Farmers);
+		
+    	Intent startGameIntent = new Intent(source.getContext(), ScorePlayersActivity.class);
+    	startActivity(startGameIntent);
+    }
+    
+    public void scoreAllCreatures(View source) {
+  		clearScoreIfChanging(GameType.AllCreatures);
     	GameCache.getInstance().setGameType(GameType.AllCreatures);
+    	
     	Intent startGameIntent = new Intent(source.getContext(), ScorePlayersActivity.class);
     	startActivity(startGameIntent);
     }
@@ -151,7 +157,7 @@ public class CreateGameActivity extends ListActivity {
     			GameCache.getInstance().removePlayer((int) info.id);
     			adapter.notifyDataSetChanged();
     			checkAddPlayerButtonVisibility();
-    			checkStartGameButtonVisibility();
+    			checkScoreGameButtonVisibility();
     			return true;
     		case MENU_RENAME_PLAYER:
     			renamePlayer((int) info.id);

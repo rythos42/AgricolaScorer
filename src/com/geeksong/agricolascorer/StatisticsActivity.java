@@ -1,6 +1,6 @@
 package com.geeksong.agricolascorer;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import org.achartengine.ChartFactory;
 import org.achartengine.GraphicalView;
@@ -88,7 +88,7 @@ public class StatisticsActivity extends Activity {
     }
 
     private void addData() {
-		ArrayList<PlayerStatistics> statsList = StatisticsMapper.getInstance().getStatisticsForSearch(StatisticSearch.getInstance());
+		List<PlayerStatistics> statsList = StatisticsMapper.getInstance().getStatisticsForSearch(StatisticSearch.getInstance());
         int playerCount = statsList.size();
         if(playerCount == 0)
         	return;

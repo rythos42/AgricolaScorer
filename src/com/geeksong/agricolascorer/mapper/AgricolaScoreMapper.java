@@ -8,6 +8,7 @@ import com.geeksong.agricolascorer.model.GameType;
 import com.geeksong.agricolascorer.model.Player;
 import com.geeksong.agricolascorer.model.RoomType;
 import com.geeksong.agricolascorer.model.Score;
+import com.geeksong.agricolascorer.model.StatisticSearch;
 
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -103,5 +104,45 @@ public class AgricolaScoreMapper extends BaseScoreMapper {
     	
     	sqlDb.delete(Database.TABLE_SCORES, Database.KEY_GAMEID + " = ?", new String[] { gameId });    	
     	sqlDb.delete(Database.TABLE_GAMES, Database.KEY_ID + " = ?", new String[] { gameId });
+	}
+
+	public int getGameCount(Database db, int playerId) {
+    	SQLiteDatabase sqlDb = db.getReadableDatabase();
+		String selectGames = String.format(Locale.US, "SELECT count(*) as number " +
+				"FROM %s as scores " +
+				"JOIN %s as players on players.%s = scores.%s " +
+				"WHERE players.%s = %d " +
+				"GROUP BY players.%s ",
+				Database.TABLE_SCORES,
+				Database.TABLE_RECENTPLAYERS, Database.KEY_ID, Database.KEY_PLAYERID,
+				Database.KEY_ID, playerId,
+				Database.KEY_ID);
+		Cursor gamesCursor = sqlDb.rawQuery(selectGames, null);
+		
+		boolean hasGame = gamesCursor.moveToNext();
+		return hasGame ? gamesCursor.getInt(0) : 0;
+	}
+	
+	@Override
+	protected Cursor getScoreCursor(SQLiteDatabase sqlDb, StatisticSearch search) {
+    	String query = String.format(Locale.US, "SELECT game.%s, player.%s, player.%s, score.%s " +
+    			"FROM %s as score " +
+    			"JOIN %s as game on score.%s=game.%s " +
+    			"JOIN %s as player on score.%s=player.%s ",
+    			Database.KEY_DATE, Database.KEY_NAME, Database.KEY_ID, Database.KEY_FINALSCORE,
+    			Database.TABLE_SCORES,
+    			Database.TABLE_GAMES, Database.KEY_GAMEID, Database.KEY_ID,
+    			Database.TABLE_RECENTPLAYERS, Database.KEY_PLAYERID, Database.KEY_ID);
+    	    	
+    	query += getPlayerSearchSql(search);
+   		query += getDateSearchSql(search);
+   		query += getGameTypeSearchSql(search);
+    	
+    	return sqlDb.rawQuery(query, null);
+    }
+	
+	@Override
+	protected int getTotalScoreFromCursor(Cursor scoreCursor) {
+		return scoreCursor.getInt(3);
 	}
 }

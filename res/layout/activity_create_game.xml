@@ -19,26 +19,29 @@
         android:onClick="addPlayer" />
        
 	<Button
-		android:id="@+id/startGameButton"
+		android:id="@+id/scoreAgricolaButton"
 		android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/addPlayerButton"
-        android:text="@string/start_game"
-        android:onClick="startGame"
+        android:text="@string/score_agricola"
+        android:onClick="scoreAgricola"
+        android:visibility="gone" />
+	
+	<Button
+		android:id="@+id/scoreFarmersButton"
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scoreAgricolaButton"
+        android:text="@string/score_farmers"
+        android:onClick="scoreFarmers"
         android:visibility="gone" />
 		       
 	<Button
-		android:id="@+id/startAllCreaturesGameButton"
+		android:id="@+id/scoreAllCreaturesButton"
 		android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/startGameButton"
-        android:text="@string/start_all_creatures_game"
-        android:onClick="startAllCreaturesGame" />
-		
-	<CheckBox
-    	android:id="@+id/farmersCheckBox"
-    	android:layout_width="match_parent"
-    	android:layout_height="wrap_content"
-    	android:layout_alignParentBottom="true"
-    	android:text="@string/farmersOfTheMoor" />
+        android:layout_below="@+id/scoreFarmersButton"
+        android:text="@string/score_all_creatures"
+        android:onClick="scoreAllCreatures"
+        android:visibility="gone" />
 </RelativeLayout>

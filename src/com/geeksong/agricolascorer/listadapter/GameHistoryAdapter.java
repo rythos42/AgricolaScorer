@@ -85,7 +85,7 @@ public class GameHistoryAdapter extends BaseExpandableListAdapter {
 		
 		TextView gameTypeView = (TextView) convertView.findViewById(R.id.gameType);
 		String[] gameTypeNames = convertView.getResources().getStringArray(R.array.game_type_array);
-		gameTypeView.setText(gameTypeNames[game.getGameType().ordinal()]);
+		gameTypeView.setText(gameTypeNames[game.getGameType().ordinal()]); // TODO: relies on order of resources
 		
 		TextView gameTimeView = (TextView) convertView.findViewById(R.id.gameTime);
 		gameTimeView.setText(SimpleDateFormat.getTimeInstance(SimpleDateFormat.SHORT).format(gameDate));

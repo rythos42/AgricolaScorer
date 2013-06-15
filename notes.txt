@@ -1,30 +1,28 @@
 Future:
-	- score for All Creatures
-		- what to do about the graph?
-			- currently only displays Agricola scores
-			- force selection of game type for graph?
-		- game count also only counts Agricola, from PlayerMapper
-		
-	- show/hide all creatures start button
-	- maybe make 3 buttons and use "Start %s" -- start_all_creatures_game resource
-	- "Start Farmers of the Moor" button?
-		- could make FarmersScore to store Farmers only things
+	- Settings table wasn't dropping in emulator
+	- enter old data from score sheets
+	- test on phone
 	
 
+	- game count doesn't update right away if you don't close the app and restart it
 	- randomization (randomize a resource, a farmyard square)
 	- get icons for all of the resources
 	- get a farm board photo. Can I draw on top of a drawable in a specific spot?
-	- pre-populate based on last game? (maybe add an option for it?)
+	- pre-populate players based on last game? (maybe add an option for it?)
 	- make segmented control and number picker use XML for heights and text edit padding
 	- chart icon is a little brighter than it should be
 	- set the action bar to have a "back" button on it in some situations.
 	- set different colour of checkbox "border"
 	- settings first checkbox, when you click it a blue background flashes which is outside of the black border. Put it inside the black border.
-	
-	Search:
-		- error message if you try to search with no players selected
-		- optional: Farmers or not
-		- search by date defaults: end date is today, start date is start of this month (or something similar)
+	- a couple places where resources are linked to enums by virtue of positioning, see if this can't be fixed
+		- // TODO: relies on order of resources
+	- add down arrow back to spinner on SearchStatisticsActivity
+	- could make FarmersScore to store Farmers only things
+	- Requested: search by date defaults: end date is today, start date is start of this month (or something similar)
+	- error message if you try to search with no players selected
+	- game type spinner isn't as wide as I would have preferred
+		- need to modify the 9-patch files to remove left and right padding
+
 	
 Pipe dream:
 	- use HoloEverywhere (http://stackoverflow.com/questions/10608539/error-importing-holoeverywhere) to reduce API requirement

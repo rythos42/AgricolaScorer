@@ -33,6 +33,12 @@ public class GameCache {
 		savedGame = null;
 	}
 	
+	public void clearScores() {
+		scores.clear();
+		isFromDatabase = false;
+		savedGame = null;
+	}
+	
 	public void setGame(Game game) {
 		clearGame();
 		

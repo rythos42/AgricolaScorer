@@ -14,6 +14,7 @@ public class StatisticSearch {
 	private ArrayList<String> playerNames = new ArrayList<String>();
 	private Date endDate = new Date(0);
 	private Date startDate = new Date(0);
+	private GameType gameType = GameType.Agricola;
 
 	public ArrayList<String> getSelectedPlayers() { return playerNames; }
 	public boolean hasSelectedPlayers() { return playerNames.size() != 0; }
@@ -38,4 +39,7 @@ public class StatisticSearch {
 	public void setStartDate(Date startDate) { this.startDate = startDate;	}
 	public boolean hasStartDate() { return startDate.getTime() != 0L; }
 	public void clearStartDate() { startDate = new Date(0L); }
+	
+	public GameType getGameType() { return gameType; }
+	public void setGameType(GameType gameType) { this.gameType = gameType; }
 }
