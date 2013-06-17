@@ -9,7 +9,6 @@
     <string name="add">Dazu</string>
     <string name="address_book">vom Adressbuch</string>
     <string name="recent_label">aktuell:</string>
-    <string name="start_game">Spiel starten</string>
     <string name="fields_label">Äcker:</string>
     <string name="pastures_label">Weiden:</string>
     <string name="grain_label">Getreide:</string>
@@ -40,8 +39,6 @@
     <string name="add_player_prompt">Zum Start Spieler hinzufügen!</string>
     <string name="no_history">Keine Historie vorhanden, spiele ein Spiel!</string>
     <string name="from_player_list">Aus Spielerliste</string>
-    <string name="hello_world">Hallo Welt!</string>
-    <string name="title_activity_player_list">PlayerListActivity</string>
     <string name="cannot_rename">Umbenennen fehlgeschlagen!</string>
     <string name="player_already_exists">Dieser Spielername ist schon da!</string>
     <string name="ok">OK</string>
@@ -95,7 +92,18 @@
 	<string name="search_by_end_date">Suche nach Endedatum</string>
 	<string name="remove_start_date">Entferne Startdatum</string>
 	<string name="remove_end_date">Entferne Endedatum</string>
+	
     <string name="limit_number_of_players">Limit number of players</string>
     <string name="settings">Settings</string>
     <string name="edit_game_date">Edit game date</string>
+    <string name="score_agricola">Score Agricola</string>
+    <string name="score_farmers">Score Farmers</string>
+    <string name="score_all_creatures">Score All Creatures</string>
+    <string name="full_expansion_count_label">Full expansions: </string>
+    <string name="building_score_label">Building score: </string>
+    <string-array name="game_type_array">
+        <item>Agricola</item>
+        <item>Farmers of the Moor</item>
+        <item>All Creatures</item>
+    </string-array>
 </resources>

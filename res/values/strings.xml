@@ -39,8 +39,6 @@
     <string name="add_player_prompt">Add a player to get started!</string>
     <string name="no_history">No history available. Go play some games!</string>
     <string name="from_player_list">From Player List</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="title_activity_player_list">PlayerListActivity</string>
     <string name="cannot_rename">Cannot rename!</string>
     <string name="player_already_exists">Can\'t rename to that, that player already exists!</string>
     <string name="ok">OK</string>
@@ -102,7 +100,6 @@
     <string name="score_agricola">Score Agricola</string>
     <string name="score_farmers">Score Farmers</string>
     <string name="score_all_creatures">Score All Creatures</string>
-    <string name="title_activity_score_all_creatures">ScoreAllCreaturesActivity</string>
     <string name="full_expansion_count_label">Full expansions: </string>
     <string name="building_score_label">Building score: </string>
     <string-array name="game_type_array">

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
-	android:layout_height="wrap_content"
-	xmlns:app="http://schemas.android.com/apk/res/com.geeksong.agricolascorer">
+	android:layout_height="wrap_content">
     
 	<ScrollView 
 	    android:id="@+id/scrollView"
@@ -28,7 +27,6 @@
 		        android:layout_height="wrap_content"
 				android:orientation="horizontal"
 				android:id="@+id/fields"
-				android:onClick="selectField"
 				style="@style/radioGroupStyle">
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/zero_to_one" android:layout_weight="5" style="@style/fieldsStyle" />
 				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/two" android:layout_weight="5" style="@style/fieldsStyle" />

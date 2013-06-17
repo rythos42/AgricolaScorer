@@ -149,8 +149,7 @@ public class Database extends SQLiteOpenHelper {
 	    	db.execSQL("ALTER TABLE " + TABLE_SCORES + " ADD COLUMN " + KEY_TOTALFAMILYCOUNT + " INTEGER");
     	}
    	
-    	if(oldVersion <= 24) {
-    		// TODO: merge this into 25
+    	if(oldVersion <= 25) {
     		createAllCreaturesScoreTable(db);
 
     		db.execSQL("ALTER TABLE " + TABLE_GAMES + " ADD COLUMN " + KEY_GAME_TYPE + " INTEGER");
@@ -160,9 +159,7 @@ public class Database extends SQLiteOpenHelper {
     				TABLE_GAMES, KEY_GAME_TYPE, GameType.Farmers.ordinal(), KEY_FARMERS, 1, KEY_GAME_TYPE, KEY_GAME_TYPE));
     		db.execSQL(String.format(Locale.US, "UPDATE %s SET %s=%d WHERE (%s=%d OR %s IS NULL) AND (%s IS NULL OR %s = '')", 
     				TABLE_GAMES, KEY_GAME_TYPE, GameType.Agricola.ordinal(), KEY_FARMERS, 0, KEY_FARMERS, KEY_GAME_TYPE, KEY_GAME_TYPE));
-    	}
-    	
-    	if(oldVersion <= 25) {
+    		
     		db.execSQL("DROP TABLE " + TABLE_SETTINGS);
     	}
     }
