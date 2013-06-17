@@ -16,10 +16,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 public class PlayerMapper {
-    private AddPlayerAdapter topPlayersListAdapter;
-    private AddPlayerAdapter playersListAdapter;
-    private SelectablePlayerAdapter selectPlayersListAdapter;
-    
     private Context context;
     private Database db;
     
@@ -66,37 +62,20 @@ public class PlayerMapper {
     }
     
     public void addPlayer(Player player) {
-    	if(player.hasId()) {
+    	if(player.hasId())
     		updatePlayer(player);
-    	} else {
+    	else
     		insertPlayer(player);
-    		
-    		if(playersListAdapter != null)
-    			playersListAdapter.notifyDataSetChanged();
-    	}
-    	
-    	if(topPlayersListAdapter != null)
-    		topPlayersListAdapter.notifyDataSetChanged();
-    	if(selectPlayersListAdapter != null)
-    		selectPlayersListAdapter.notifyDataSetChanged();
     }
     
     public AddPlayerAdapter getTopPlayersListAdapter() {
-    	if(topPlayersListAdapter != null)
-    		return topPlayersListAdapter;
-    	
         List<Player> playerList = getPlayers(true);
-        topPlayersListAdapter = new AddPlayerAdapter(this.context, R.layout.recent_player_list_item, R.id.name, playerList);
-        return topPlayersListAdapter;
+        return new AddPlayerAdapter(this.context, R.layout.recent_player_list_item, R.id.name, playerList);
     }
     
     public AddPlayerAdapter getPlayersListAdapter() {
-    	if(playersListAdapter != null)
-    		return playersListAdapter;
-    	       
         List<Player> playerList = getPlayers(true);
-        playersListAdapter = new AddPlayerAdapter(this.context, R.layout.recent_player_list_item, R.id.name, playerList);
-        return playersListAdapter;
+        return new AddPlayerAdapter(this.context, R.layout.recent_player_list_item, R.id.name, playerList);
     }
     
     public ArrayList<String> getPlayerNames() {
@@ -108,12 +87,8 @@ public class PlayerMapper {
     }
     
     public SelectablePlayerAdapter getSelectablePlayersListAdapter() {
-    	if(selectPlayersListAdapter != null)
-    		return selectPlayersListAdapter;
-    	
         List<Player> playerList = getPlayers(false);
-        selectPlayersListAdapter = new SelectablePlayerAdapter(this.context, R.layout.select_player_list_item, R.id.playerName, playerList);
-        return selectPlayersListAdapter;
+        return new SelectablePlayerAdapter(this.context, R.layout.select_player_list_item, R.id.playerName, playerList);
     }
     
     private void insertPlayer(Player player) {

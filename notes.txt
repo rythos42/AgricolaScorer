@@ -1,5 +1,4 @@
 Future:
-	- Settings table wasn't dropping in emulator
 	- enter old data from score sheets
 	- test on phone
 	
