@@ -1,5 +1,5 @@
 Future:
-	- "who won" in case of ties
+	- update "who won" of tied games I input from paper
 	- need some new UI images
 	- is there anything else I need to update on the Google dev listing?
 
@@ -19,11 +19,12 @@ Future:
 	- add down arrow back to spinner on SearchStatisticsActivity
 	- could make FarmersScore to store Farmers only things
 	- Requested: search by date defaults: end date is today, start date is start of this month (or something similar)
-	- error message if you try to search with no players selected
+	- make an error message if you try to search with no players selected
 	- game type spinner isn't as wide as I would have preferred
 		- need to modify the 9-patch files to remove left and right padding
 	- Create Game Screen doesn't update game count after playing (needs to update internal Player game count after saving)
 	- Maybe have a dropdown to select game...and then a Settings table to store which was last selected.
+	- UI to select who won in the case of a tie
 
 	
 Pipe dream:
