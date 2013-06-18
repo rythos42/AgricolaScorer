@@ -3,7 +3,6 @@ Version 1.4
 		- All Creatures Big and Small scoring!
 			- Has support for all other app functionality, including graphing and editing of saved games!
 	Minor:
-		- Added preferences screen
 		- Added preferences ability to ignore the maximum number of players
 		- Set the default maximum to 5, where it should be.
 		- Ability to edit the date of a saved game.

@@ -7,7 +7,6 @@ import com.geeksong.agricolascorer.model.GameType;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
 
 public class Database extends SQLiteOpenHelper {
 	private static final String Name = "AgricolaScorer";

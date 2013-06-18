@@ -1,9 +1,4 @@
 Future:
-	- update "who won" of tied games I input from paper
-	- need some new UI images
-	- is there anything else I need to update on the Google dev listing?
-
-
 	- game count doesn't update right away if you don't close the app and restart it
 	- randomization (randomize a resource, a farmyard square)
 	- get icons for all of the resources
