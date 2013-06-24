@@ -93,17 +93,17 @@
 	<string name="remove_start_date">Entferne Startdatum</string>
 	<string name="remove_end_date">Entferne Endedatum</string>
 	
-    <string name="limit_number_of_players">Limit number of players</string>
-    <string name="settings">Settings</string>
-    <string name="edit_game_date">Edit game date</string>
-    <string name="score_agricola">Score Agricola</string>
-    <string name="score_farmers">Score Farmers</string>
-    <string name="score_all_creatures">Score All Creatures</string>
-    <string name="full_expansion_count_label">Full expansions: </string>
-    <string name="building_score_label">Building score: </string>
+    <string name="limit_number_of_players">maximale Spielerzahl</string>
+    <string name="settings">Einstellungen</string>
+    <string name="edit_game_date">Spieldatum ändern</string>
+    <string name="score_agricola">Punkte Agricola</string>
+    <string name="score_farmers">Punkte Moorbauern</string>
+    <string name="score_all_creatures">Punkte Die Bauern und das liebe Vieh</string>
+    <string name="full_expansion_count_label">alle Erweiterungen:</string>
+    <string name="building_score_label">Gebäudepunkte:</string>
     <string-array name="game_type_array">
         <item>Agricola</item>
-        <item>Farmers of the Moor</item>
-        <item>All Creatures</item>
+        <item>Die Moorbauern</item>
+        <item>Die Bauern und das liebe Vieh</item>
     </string-array>
 </resources>
