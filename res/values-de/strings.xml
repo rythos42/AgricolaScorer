@@ -93,7 +93,7 @@
 	<string name="remove_start_date">Entferne Startdatum</string>
 	<string name="remove_end_date">Entferne Endedatum</string>
 	
-    <string name="limit_number_of_players">maximale Spielerzahl</string>
+    <string name="limit_number_of_players">Spielerzahl auf 5 begrenzen</string>
     <string name="settings">Einstellungen</string>
     <string name="edit_game_date">Spieldatum ändern</string>
     <string name="score_agricola">Punkte Agricola</string>
