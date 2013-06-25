@@ -19,6 +19,13 @@ Next:
 		- could also put the "action buttons" for this inside the drop-down when you short-press
 	- can I shrink the Create Game title to get more actions on the action bar?
 	- Finish button for All Creatures is over top of scoring buttons when put into landscape mode
+	
+	
+    - sending a single game or all game data to another android device
+    - If you try to add 12 players on an HTC Desire X, you cannot scroll down to the buttons, just to the last added name
+    - If you toggle between unlimited and limited players while having more than 5 players in the game (in the adding state) 
+    	the (non-)appearance of the "add" Button is unpredicted. You have to remove a player first to make the Button appear correctly.
+	
 
 
 Future:
