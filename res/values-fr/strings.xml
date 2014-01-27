@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Agricola Scorer</string>
+    <string name="add_player">Nouveau joueur</string>
+    <string name="menu_settings">Réglages</string>
+    <string name="title_activity_add_players">Ajout de joueurs</string>
+    <string name="input_player_name">Nom du joueur</string>
+    <string name="add">Ajout</string>
+    <string name="address_book">Ajout à partir des contacts</string>
+    <string name="recent_label">Récent :</string>
+    <string name="fields_label">Champs :</string>
+    <string name="pastures_label">Pâturages :</string>
+    <string name="grain_label">Céréales :</string>
+    <string name="vegetables_label">Légumes :</string>
+    <string name="sheep_label">Moutons :</string>
+    <string name="wild_boar_label">Sangliers :</string>
+    <string name="cattle_label">Boeufs :</string>
+    <string name="unused_spaces_label">Cases inutilisées :</string>
+    <string name="fenced_stables_label">Etables clôturées :</string>
+    <string name="room_type_label">Habitation :</string>
+    <string name="rooms_label">Pièces :</string>
+    <string name="family_members_label">Personnes :</string>
+    <string name="points_for_cards_label">Cartes :</string>
+    <string name="bonus_points_label">Bonus :</string>
+    <string name="begging_cards_label">Mendicités :</string>
+    <string name="score_label">Score :</string>
+    <string name="wood">Bois</string>
+    <string name="clay">Argile</string>
+    <string name="stone">Pierre</string>
+    <string name="finish">Valider</string>
+    <string name="save_game">Sauver la partie</string>
+    <string name="start_again">Recommencer</string>
+    <string name="history">Historique</string>
+    <string name="remove_from_game">Supprimer de la partie</string>
+    <string name="rename_player">Renommer le joueur</string>
+    <string name="rename">Renommer</string>
+    <string name="delete_game">Supprimer la partie</string>
+    <string name="add_player_prompt">Ajouter un joueur pour commencer !</string>
+    <string name="no_history">Aucun historique. Allez donc jouer !</string>
+    <string name="from_player_list">A partir de la liste de joueurs</string>
+    <string name="cannot_rename">Renommage impossible !</string>
+    <string name="player_already_exists">Le nom a déjà été attribué à un autre joueur !</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Annuler</string>
+    <string name="player_list">Liste des joueurs</string>
+    <string name="in_game_label">(dans la partie)</string>
+
+    <plurals name="games_count">
+        <item quantity="one">Une partie</item>
+        <item quantity="other">%d parties</item>
+    </plurals>
+
+    <string name="edit_game">Modifier la partie</string>
+    <string name="statistics">Statistiques</string>
+    <string name="about">A propos</string>
+    <string name="about_text">Agricola Scorer par Craig Fleming (rythos42@gmail.com). Fonte Dominican par www.haroldsfonts.com. Icône du graphique par by blog.twg.ca. Traduction française par Sylvain FRANCOIS (syllant@gmail.com).</string>
+    <string name="search">Rechercher</string>
+    <string name="playersLabel">Joueurs :</string>
+    <string name="scores">Scores</string>
+    <string name="score">Score</string>
+    <string name="date">Date</string>
+    <string name="in_bed_family_label">Lit :</string>
+    <string name="horses_label">Chevaux :</string>
+    <string name="expand_all">Tout développer</string>
+    <string name="collapse_all">Tout réduire</string>
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="four_plus">4+</string>
+    <string name="five_plus">5+</string>
+    <string name="six_plus">6+</string>
+    <string name="seven_plus">7+</string>
+    <string name="eight_plus">8+</string>
+    <string name="zero_to_one">0&#8211;1</string>
+    <string name="one_to_two">1&#8211;2</string>
+    <string name="one_to_three">1&#8211;3</string>
+    <string name="two_to_three">2&#8211;3</string>
+    <string name="three_to_four">3&#8211;4</string>
+    <string name="four_to_five">4&#8211;5</string>
+    <string name="five_to_six">5&#8211;6</string>
+    <string name="six_to_seven">6&#8211;7</string>
+    <string name="randomize">Premier joueur</string>
+    <string name="action_settings">Réglages</string>
+    <string name="randomize_player">Choisir le premier joueur</string>
+    <string name="can_not_edit">Impossible de modifier la partie</string>
+    <string name="no_detail_scores">La partie ne peut pas être modifiée, elle ne contient aucun score !</string>
+    <string name="graph_of_scores">Graphique des scores</string>
+    <string name="search_to_create_graph">Lancez une recherche pour afficher le graphique !</string>
+    <string name="search_by_start_date">Par date de début</string>
+    <string name="search_by_end_date">Par date de fin</string>
+    <string name="remove_start_date">Supprimer la date de début</string>
+    <string name="remove_end_date">Supprimer la date de fin</string>
+    <string name="limit_number_of_players">Limiter le nombre de joueurs</string>
+    <string name="settings">Réglages</string>
+    <string name="edit_game_date">Modifier la date de la partie</string>
+    <string name="score_agricola">Agricola</string>
+    <string name="score_farmers">Les Fermiers de la Lande</string>
+    <string name="score_all_creatures">Terre d\'Elevage</string>
+    <string name="full_expansion_count_label">Agrandissement : </string>
+    <string name="building_score_label">Bâtiments : </string>
+    <string-array name="game_type_array">
+        <item>Agricola</item>
+        <item>Les Fermiers de la Lande</item>
+        <item>Terre d\'Elevage</item>
+    </string-array>
+
+</resources>
