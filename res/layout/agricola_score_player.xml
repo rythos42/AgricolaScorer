@@ -1,437 +1,432 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="match_parent"
-	android:layout_height="wrap_content">
-    
-	<ScrollView 
-	    android:id="@+id/scrollView"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_above="@+id/score_footer"
-		style="@style/scoreContainer">
-		
-		<LinearLayout 
-		    android:layout_width="match_parent"
-		    android:layout_height="wrap_content"
-		    android:orientation="vertical" >
-	
-		    <TextView
-		        android:id="@+id/fields_label"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:text="@string/fields_label"
-		        style="@style/smallerText" />
-		    
-		    <RadioGroup
-				android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-				android:orientation="horizontal"
-				android:id="@+id/fields"
-				style="@style/radioGroupStyle">
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/zero_to_one" android:layout_weight="5" style="@style/fieldsStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/two" android:layout_weight="5" style="@style/fieldsStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/three" android:layout_weight="5" style="@style/fieldsStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/four" android:layout_weight="5" style="@style/fieldsStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/five_plus" android:layout_weight="5" style="@style/fieldsStyle" />		        
-		    </RadioGroup>
-				    
-			<TextView
-		        android:id="@+id/pastures_label"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:text="@string/pastures_label"
-		        style="@style/smallerText"  />
-			
-			<RadioGroup
-				android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-				android:orientation="horizontal"
-				android:id="@+id/pastures"
-				style="@style/radioGroupStyle">
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/zero" android:layout_weight="5" style="@style/pasturesStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/one" android:layout_weight="5" style="@style/pasturesStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/two" android:layout_weight="5" style="@style/pasturesStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/three" android:layout_weight="5" style="@style/pasturesStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/four_plus" android:layout_weight="5" style="@style/pasturesStyle" />		        
-		    </RadioGroup>
-		
-			<TextView
-		        android:id="@+id/grain_label"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:text="@string/grain_label"
-		        style="@style/smallerText"  />
-			
-			<RadioGroup
-				android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-				android:orientation="horizontal"
-				android:id="@+id/grains"
-				style="@style/radioGroupStyle">
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/zero" android:layout_weight="1" style="@style/grainStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/one_to_three" android:layout_weight="1" style="@style/grainStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/four_to_five" android:layout_weight="1" style="@style/grainStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/six_to_seven" android:layout_weight="1" style="@style/grainStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/eight_plus" android:layout_weight="1" style="@style/grainStyle" />		        
-		    </RadioGroup>
-		    
-			<TextView
-		        android:id="@+id/vegetables_label"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:text="@string/vegetables_label"
-		        style="@style/smallerText"  />
-			
-			<RadioGroup
-				android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-				android:orientation="horizontal"
-				android:id="@+id/vegetables"
-				style="@style/radioGroupStyle">
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/zero" android:layout_weight="5" style="@style/vegetableStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/one" android:layout_weight="5" style="@style/vegetableStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/two" android:layout_weight="5" style="@style/vegetableStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/three" android:layout_weight="5" style="@style/vegetableStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/four_plus" android:layout_weight="5" style="@style/vegetableStyle" />		        
-		    </RadioGroup>
-		
-			<TextView
-		        android:id="@+id/sheep_label"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:text="@string/sheep_label"
-		        style="@style/smallerText"  />
-			
-			<RadioGroup
-				android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-				android:orientation="horizontal"
-				android:id="@+id/sheep"
-				style="@style/radioGroupStyle">
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/zero" android:layout_weight="5" style="@style/sheepStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/one_to_three" android:layout_weight="5" style="@style/sheepStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/four_to_five" android:layout_weight="5" style="@style/sheepStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/six_to_seven" android:layout_weight="5" style="@style/sheepStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/eight_plus" android:layout_weight="5" style="@style/sheepStyle" />		        
-		    </RadioGroup>  
-			
-			<TextView
-		        android:id="@+id/wild_boar_label"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:text="@string/wild_boar_label"
-		        style="@style/smallerText"  />
-			
-			<RadioGroup
-				android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-				android:orientation="horizontal"
-				android:id="@+id/wild_boar"
-				style="@style/radioGroupStyle">
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/zero" android:layout_weight="5" style="@style/wildBoarStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/one_to_two" android:layout_weight="5" style="@style/wildBoarStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/three_to_four" android:layout_weight="5" style="@style/wildBoarStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/five_to_six" android:layout_weight="5" style="@style/wildBoarStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/seven_plus" android:layout_weight="5" style="@style/wildBoarStyle" />		        
-		    </RadioGroup>
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-		   	<TextView
-		        android:id="@+id/cattle_label"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:text="@string/cattle_label"
-		        style="@style/smallerText"  />
-		   	
-			<RadioGroup
-				android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-				android:orientation="horizontal"
-				android:id="@+id/cattle"
-				style="@style/radioGroupStyle">
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/zero" android:layout_weight="5" style="@style/cattleStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/one" android:layout_weight="5" style="@style/cattleStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/two_to_three" android:layout_weight="5" style="@style/cattleStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/four_to_five" android:layout_weight="5" style="@style/cattleStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/six_plus" android:layout_weight="5" style="@style/cattleStyle" />		        
-		    </RadioGroup>
-			    
-   		   	<TextView
-		        android:id="@+id/family_members_label"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:text="@string/family_members_label"
-		        style="@style/smallerText"  />
-   		   	
-			<RadioGroup
-				android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-				android:orientation="horizontal"
-				android:id="@+id/family_members"
-				style="@style/radioGroupStyle">
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/one" android:layout_weight="5" style="@style/familyMemberStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/two" android:layout_weight="5" style="@style/familyMemberStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/three" android:layout_weight="5" style="@style/familyMemberStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/four" android:layout_weight="5" style="@style/familyMemberStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/five" android:layout_weight="5" style="@style/familyMemberStyle" />		        
-		    </RadioGroup>
-		    					       
-   		   	<TextView
-		        android:id="@+id/room_type_label"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:text="@string/room_type_label"
-		        style="@style/smallerText"  />
-   		   	
-			<RadioGroup
-				android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-				android:orientation="horizontal"
-				android:id="@+id/room_type"
-				style="@style/radioGroupStyle">
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:id="@+id/woodButton" android:text="@string/wood" android:layout_weight="3" style="@style/roomTypeStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:id="@+id/clayButton" android:text="@string/clay" android:layout_weight="3" style="@style/roomTypeStyle" />
-				<com.geeksong.agricolascorer.control.SegmentedControlButton android:id="@+id/stoneButton" android:text="@string/stone" android:layout_weight="3" style="@style/roomTypeStyle" />	        
-		    </RadioGroup>
-	       
-			<LinearLayout 
-				android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-				android:orientation="horizontal"
-				android:baselineAligned="false">
-				
-  			    <LinearLayout
-					android:layout_width="match_parent"
-					android:layout_weight="2"
-			        android:layout_height="wrap_content"
-					android:orientation="vertical">	
+    <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/score_footer"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            style="@style/scoreContainer">
 
-					<TextView
-					    android:id="@+id/rooms_label"
-					    android:layout_width="match_parent"
-					    android:layout_height="wrap_content"
-					    android:text="@string/rooms_label"
-		        		style="@style/smallerText"  />
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-					<com.geeksong.agricolascorer.control.NumberPicker
-					    android:id="@+id/rooms_picker"
-					    android:layout_width="match_parent"
-					    android:layout_height="wrap_content"
-					    android:orientation="vertical"
-					    style="@style/numberPicker" />
+            <TextView
+                    android:id="@+id/fields_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/fields_label"
+                    style="@style/smallerText"
+                    />
 
-			    </LinearLayout>
-				<LinearLayout
-			        android:layout_width="match_parent"
-					android:layout_weight="2"
-			        android:layout_height="wrap_content"
-			        android:orientation="vertical" >
+            <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fields_label"
+                    android:orientation="horizontal"
+                    android:id="@+id/fields"
+                    style="@style/radioGroupStyle"
+                    >
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/zero_to_one" android:layout_weight="5" style="@style/fieldsStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/two" android:layout_weight="5" style="@style/fieldsStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/three" android:layout_weight="5" style="@style/fieldsStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/four" android:layout_weight="5" style="@style/fieldsStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/five_plus" android:layout_weight="5" style="@style/fieldsStyle"/>
+            </RadioGroup>
 
-					<TextView
-					    android:id="@+id/unused_spaces_label"
-					    android:layout_width="match_parent"
-					    android:layout_height="wrap_content"
-					    android:text="@string/unused_spaces_label"
-		        		style="@style/smallerText" />
+            <TextView
+                    android:id="@+id/pastures_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fields"
+                    android:text="@string/pastures_label"
+                    style="@style/smallerText"/>
 
-					<com.geeksong.agricolascorer.control.NumberPicker
-					    android:id="@+id/unused_spaces_picker"
-					    android:layout_width="match_parent"
-					    android:layout_height="wrap_content"
-					    android:orientation="vertical"
-					    style="@style/numberPicker" />
+            <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pastures_label"
+                    android:orientation="horizontal"
+                    android:id="@+id/pastures"
+                    style="@style/radioGroupStyle">
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/zero" android:layout_weight="5" style="@style/pasturesStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/one" android:layout_weight="5" style="@style/pasturesStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/two" android:layout_weight="5" style="@style/pasturesStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/three" android:layout_weight="5" style="@style/pasturesStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/four_plus" android:layout_weight="5" style="@style/pasturesStyle"/>
+            </RadioGroup>
 
-			    </LinearLayout>
-			</LinearLayout>
-			
-			<LinearLayout 
-				android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-				android:orientation="horizontal"
-				android:baselineAligned="false">
-				
-			    <LinearLayout
-					android:layout_width="match_parent"
-			        android:layout_height="wrap_content"
-			        android:layout_weight="2"
-					android:orientation="vertical">	
+            <TextView
+                    android:id="@+id/grain_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pastures"
+                    android:text="@string/grain_label"
+                    style="@style/smallerText"/>
 
-					<TextView
-					    android:id="@+id/fenced_stables_label"
-					    android:layout_width="match_parent"
-					    android:layout_height="wrap_content"
-					    android:text="@string/fenced_stables_label"
-		        		style="@style/smallerText" />
+            <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/grain_label"
+                    android:orientation="horizontal"
+                    android:id="@+id/grains"
+                    style="@style/radioGroupStyle">
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/zero" android:layout_weight="1" style="@style/grainStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/one_to_three" android:layout_weight="1" style="@style/grainStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/four_to_five" android:layout_weight="1" style="@style/grainStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/six_to_seven" android:layout_weight="1" style="@style/grainStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/eight_plus" android:layout_weight="1" style="@style/grainStyle"/>
+            </RadioGroup>
 
-					<com.geeksong.agricolascorer.control.NumberPicker
-					    android:id="@+id/fenced_stables_picker"
-					    android:layout_width="match_parent"
-					    android:layout_height="wrap_content"
-					    android:orientation="vertical"
-					    style="@style/numberPicker" />
+            <TextView
+                    android:id="@+id/vegetables_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/grains"
+                    android:text="@string/vegetables_label"
+                    style="@style/smallerText"/>
 
-			    </LinearLayout>
-			    
-			    <LinearLayout
-			        android:layout_width="match_parent"
-			        android:layout_height="wrap_content"
-			        android:layout_weight="2"
-			        android:orientation="vertical" >
+            <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/vegetables_label"
+                    android:orientation="horizontal"
+                    android:id="@+id/vegetables"
+                    style="@style/radioGroupStyle">
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/zero" android:layout_weight="5" style="@style/vegetableStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/one" android:layout_weight="5" style="@style/vegetableStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/two" android:layout_weight="5" style="@style/vegetableStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/three" android:layout_weight="5" style="@style/vegetableStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/four_plus" android:layout_weight="5" style="@style/vegetableStyle"/>
+            </RadioGroup>
 
-					<TextView
-					    android:id="@+id/points_for_cards_label"
-					    android:layout_width="match_parent"
-					    android:layout_height="wrap_content"
-					    android:text="@string/points_for_cards_label"
-		        		style="@style/smallerText" />
+            <TextView
+                    android:id="@+id/sheep_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/vegetables"
+                    android:text="@string/sheep_label"
+                    style="@style/smallerText"/>
 
-					<com.geeksong.agricolascorer.control.NumberPicker
-					    android:id="@+id/points_for_cards_picker"
-					    android:layout_width="match_parent"
-					    android:layout_height="wrap_content"
-					    android:orientation="vertical"
-					    style="@style/numberPicker" />
+            <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sheep_label"
+                    android:orientation="horizontal"
+                    android:id="@+id/sheep"
+                    style="@style/radioGroupStyle">
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/zero" android:layout_weight="5" style="@style/sheepStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/one_to_three" android:layout_weight="5" style="@style/sheepStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/four_to_five" android:layout_weight="5" style="@style/sheepStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/six_to_seven" android:layout_weight="5" style="@style/sheepStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/eight_plus" android:layout_weight="5" style="@style/sheepStyle"/>
+            </RadioGroup>
 
-			    </LinearLayout>
-			</LinearLayout> 		    	
-			<LinearLayout 
-				android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-				android:orientation="horizontal"
-				android:baselineAligned="false">
-			    	       
-			    <LinearLayout
-					android:layout_width="match_parent"
-			        android:layout_height="wrap_content"
-			        android:layout_weight="2"
-					android:orientation="vertical">	
+            <TextView
+                    android:id="@+id/wild_boar_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sheep"
+                    android:text="@string/wild_boar_label"
+                    style="@style/smallerText"/>
 
-					<TextView
-					    android:id="@+id/bonus_points_label"
-					    android:layout_width="match_parent"
-					    android:layout_height="wrap_content"
-					    android:text="@string/bonus_points_label"
-		        		style="@style/smallerText" />
+            <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/wild_boar_label"
+                    android:orientation="horizontal"
+                    android:id="@+id/wild_boar"
+                    style="@style/radioGroupStyle">
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/zero" android:layout_weight="5" style="@style/wildBoarStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/one_to_two" android:layout_weight="5" style="@style/wildBoarStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/three_to_four" android:layout_weight="5" style="@style/wildBoarStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/five_to_six" android:layout_weight="5" style="@style/wildBoarStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/seven_plus" android:layout_weight="5" style="@style/wildBoarStyle"/>
+            </RadioGroup>
 
-					<com.geeksong.agricolascorer.control.NumberPicker
-					    android:id="@+id/bonus_points_picker"
-					    android:layout_width="match_parent"
-					    android:layout_height="wrap_content"
-					    android:orientation="vertical"
-					    style="@style/numberPicker" />
+            <TextView
+                    android:id="@+id/cattle_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/wild_boar"
+                    android:text="@string/cattle_label"
+                    style="@style/smallerText"/>
 
-			    </LinearLayout>
-			    
-   			    <LinearLayout
-   			        android:layout_width="match_parent"
-   			        android:layout_height="wrap_content"
-   			        android:layout_weight="2"
-   			        android:orientation="vertical" >
+            <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cattle_label"
+                    android:orientation="horizontal"
+                    android:id="@+id/cattle"
+                    style="@style/radioGroupStyle">
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/zero" android:layout_weight="5" style="@style/cattleStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/one" android:layout_weight="5" style="@style/cattleStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/two_to_three" android:layout_weight="5" style="@style/cattleStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/four_to_five" android:layout_weight="5" style="@style/cattleStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/six_plus" android:layout_weight="5" style="@style/cattleStyle"/>
+            </RadioGroup>
 
-					<TextView
-					    android:id="@+id/begging_cards_label"
-					    android:layout_width="match_parent"
-					    android:layout_height="wrap_content"
-					    android:text="@string/begging_cards_label"
-		        		style="@style/smallerText" />
+            <TextView
+                    android:id="@+id/family_members_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cattle"
+                    android:text="@string/family_members_label"
+                    style="@style/smallerText"/>
 
-					<com.geeksong.agricolascorer.control.NumberPicker
-					    android:id="@+id/begging_cards_picker"
-					    android:layout_width="match_parent"
-					    android:layout_height="wrap_content"
-					    android:orientation="vertical"
-					    style="@style/numberPicker" />
+            <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/family_members_label"
+                    android:orientation="horizontal"
+                    android:id="@+id/family_members"
+                    style="@style/radioGroupStyle">
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/one" android:layout_weight="5" style="@style/familyMemberStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/two" android:layout_weight="5" style="@style/familyMemberStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/three" android:layout_weight="5" style="@style/familyMemberStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/four" android:layout_weight="5" style="@style/familyMemberStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:text="@string/five" android:layout_weight="5" style="@style/familyMemberStyle"/>
+            </RadioGroup>
 
-			    </LinearLayout>
-		    </LinearLayout>
-		    
-			<LinearLayout 
-			    android:id="@+id/farmersScoringPanel"
-				android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-				android:orientation="horizontal"
-				android:baselineAligned="false"
-				android:visibility="gone">
-			    	       
-			    <LinearLayout
-					android:layout_width="match_parent"
-			        android:layout_height="wrap_content"
-			        android:layout_weight="2"
-					android:orientation="vertical">	
+            <TextView
+                    android:id="@+id/room_type_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/family_members"
+                    android:text="@string/room_type_label"
+                    style="@style/smallerText"/>
 
-					<TextView
-					    android:id="@+id/horses_label"
-					    android:layout_width="match_parent"
-					    android:layout_height="wrap_content"
-					    android:text="@string/horses_label"
-		        		style="@style/smallerText" />
+            <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/room_type_label"
+                    android:orientation="horizontal"
+                    android:id="@+id/room_type"
+                    style="@style/radioGroupStyle">
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:id="@+id/woodButton" android:text="@string/wood" android:layout_weight="3" style="@style/roomTypeStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:id="@+id/clayButton" android:text="@string/clay" android:layout_weight="3" style="@style/roomTypeStyle"/>
+                <com.geeksong.agricolascorer.control.SegmentedControlButton android:id="@+id/stoneButton" android:text="@string/stone" android:layout_weight="3" style="@style/roomTypeStyle"/>
+            </RadioGroup>
 
-					<com.geeksong.agricolascorer.control.NumberPicker
-					    android:id="@+id/horses_picker"
-					    android:layout_width="match_parent"
-					    android:layout_height="wrap_content"
-					    android:orientation="vertical"
-					    style="@style/numberPicker" />
+            <!-- Invisible element acting as separator -->
+            <View
+                    android:id="@+id/center_separator"
+                    android:layout_width="50dp"
+                    android:layout_height="0dp"
+                    android:layout_below="@id/room_type"
+                    android:layout_centerHorizontal="true"/>
 
-			    </LinearLayout>
-			    
-   			    <LinearLayout
-   			        android:layout_width="match_parent"
-   			        android:layout_height="wrap_content"
-   			        android:layout_weight="2"
-   			        android:orientation="vertical" >
+            <!-- Picker row #1 -->
+            <TextView
+                    android:id="@+id/rooms_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/room_type"
+                    android:layout_toLeftOf="@id/center_separator"
+                    android:text="@string/rooms_label"
+                    style="@style/smallerText"/>
 
-					<TextView
-					    android:id="@+id/inBedFamily"
-					    android:layout_width="match_parent"
-					    android:layout_height="wrap_content"
-					    android:text="@string/in_bed_family_label"
-		        		style="@style/smallerText" />
+            <TextView
+                    android:id="@+id/unused_spaces_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/room_type"
+                    android:layout_toRightOf="@id/center_separator"
+                    android:text="@string/unused_spaces_label"
+                    style="@style/smallerText"/>
 
-					<com.geeksong.agricolascorer.control.NumberPicker
-					    android:id="@+id/in_bed_family_picker"
-					    android:layout_width="match_parent"
-					    android:layout_height="wrap_content"
-					    android:orientation="vertical"
-					    style="@style/numberPicker" />
+            <com.geeksong.agricolascorer.control.NumberPicker
+                    android:id="@+id/rooms_picker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rooms_label"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/center_separator"
+                    android:orientation="vertical"
+                    style="@style/numberPicker"/>
 
-			    </LinearLayout>
-		    </LinearLayout>
-	    </LinearLayout>
-	</ScrollView>
-	
-	<LinearLayout
-	    android:id="@+id/score_footer"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_alignParentBottom="true">
-		
-	    <LinearLayout
-	        android:id="@+id/left"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_weight="1">
-			
-			<TextView android:id="@+id/score_label"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="@string/score_label"
-			    style="@style/biggerText" />
-			
-			<TextView android:id="@+id/score"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:textIsSelectable="true"
-			    style="@style/biggerText" />
-	        	        
-	    </LinearLayout>
-	        		
-		<Button
-		    android:id="@+id/finishButton"
-		    android:text="@string/finish"
-		    android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:onClick="finishScoring"
-			android:layout_weight="1" >
-		</Button>
-	</LinearLayout>
+            <com.geeksong.agricolascorer.control.NumberPicker
+                    android:id="@+id/unused_spaces_picker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/unused_spaces_label"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignLeft="@+id/unused_spaces_label"
+                    android:orientation="vertical"
+                    style="@style/numberPicker"/>
+
+            <!-- Picker row #2 -->
+            <TextView
+                    android:id="@+id/fenced_stables_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rooms_picker"
+                    android:layout_toLeftOf="@id/center_separator"
+                    android:text="@string/fenced_stables_label"
+                    style="@style/smallerText"/>
+
+            <TextView
+                    android:id="@+id/points_for_cards_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rooms_picker"
+                    android:layout_toRightOf="@id/center_separator"
+                    android:text="@string/points_for_cards_label"
+                    style="@style/smallerText"/>
+
+            <com.geeksong.agricolascorer.control.NumberPicker
+                    android:id="@+id/fenced_stables_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fenced_stables_label"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/center_separator"
+                    android:orientation="vertical"
+                    style="@style/numberPicker"/>
+
+            <com.geeksong.agricolascorer.control.NumberPicker
+                    android:id="@+id/points_for_cards_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/points_for_cards_label"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignLeft="@+id/points_for_cards_label"
+                    android:orientation="vertical"
+                    style="@style/numberPicker"/>
+
+            <!-- Picker row #3 -->
+            <TextView
+                    android:id="@+id/bonus_points_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fenced_stables_picker"
+                    android:layout_toLeftOf="@id/center_separator"
+                    android:text="@string/bonus_points_label"
+                    style="@style/smallerText"/>
+
+            <TextView
+                    android:id="@+id/begging_cards_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fenced_stables_picker"
+                    android:layout_toRightOf="@id/center_separator"
+                    android:text="@string/begging_cards_label"
+                    style="@style/smallerText"/>
+
+            <com.geeksong.agricolascorer.control.NumberPicker
+                    android:id="@+id/bonus_points_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bonus_points_label"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/center_separator"
+                    android:orientation="vertical"
+                    style="@style/numberPicker"/>
+
+            <com.geeksong.agricolascorer.control.NumberPicker
+                    android:id="@+id/begging_cards_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/begging_cards_label"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignLeft="@+id/begging_cards_label"
+                    android:orientation="vertical"
+                    style="@style/numberPicker"/>
+
+            <!-- Picker row #4 -->
+            <TextView
+                    android:id="@+id/horses_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bonus_points_picker"
+                    android:layout_toLeftOf="@id/center_separator"
+                    android:text="@string/horses_label"
+                    style="@style/smallerText"/>
+
+            <TextView
+                    android:id="@+id/inBedFamily"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/begging_cards_picker"
+                    android:layout_toRightOf="@id/center_separator"
+                    android:text="@string/in_bed_family_label"
+                    style="@style/smallerText"/>
+
+            <com.geeksong.agricolascorer.control.NumberPicker
+                    android:id="@+id/horses_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/horses_label"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/center_separator"
+                    android:orientation="vertical"
+                    style="@style/numberPicker"/>
+
+            <com.geeksong.agricolascorer.control.NumberPicker
+                    android:id="@+id/in_bed_family_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/inBedFamily"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignLeft="@id/inBedFamily"
+                    android:orientation="vertical"
+                    style="@style/numberPicker"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+            android:id="@+id/score_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+        <!-- Invisible element acting as separator -->
+        <View
+                android:id="@+id/footer_center_separator"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"/>
+
+        <TextView
+                android:id="@+id/score_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/score_label"
+                style="@style/biggerText"/>
+
+        <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/score_label"
+                android:layout_toLeftOf="@id/footer_center_separator"
+                android:layout_centerVertical="true"
+                android:textIsSelectable="true"
+                style="@style/biggerText"/>
+
+        <Button
+                android:id="@+id/finishButton"
+                android:text="@string/finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/footer_center_separator"
+                android:layout_centerVertical="true"
+                style="@style/biggerText"
+                android:onClick="finishScoring"/>
+    </RelativeLayout>
 </RelativeLayout>
