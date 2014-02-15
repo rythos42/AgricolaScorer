@@ -18,6 +18,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+// SuppressWarnings: for generic around Score, because Score is not parameterized outside this class
+@SuppressWarnings("unchecked")
 public class FinishedActivity extends Activity {
     private static final Map<GameType, GameTypeHandler> GAME_TYPE_HANDLERS = new HashMap<GameType, GameTypeHandler>();
     static {
