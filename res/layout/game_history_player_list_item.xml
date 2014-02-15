@@ -18,6 +18,6 @@
 	    android:layout_height="wrap_content"
 	    android:layout_toRightOf="@+id/name"
 	    android:layout_alignBaseline="@+id/name"
-	    style="@style/smallerText" />
+	    style="@style/unitScoreValue" />
 
 </RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            style="@style/smallerText"/>
+
+    <TextView
+            android:id="@+id/unit_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@id/label"
+            style="@style/unitScoreValue"/>
+
+    <com.geeksong.agricolascorer.control.NumberPicker
+            android:id="@+id/picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/center_separator"
+            android:orientation="vertical"
+            style="@style/numberPicker"/>
+
+</merge> 

@@ -1,20 +1,18 @@
 package com.geeksong.agricolascorer.managers;
 
-import com.geeksong.agricolascorer.GameCache;
-import com.geeksong.agricolascorer.R;
-import com.geeksong.agricolascorer.control.NumberPicker;
-import com.geeksong.agricolascorer.model.GameType;
-import com.geeksong.agricolascorer.model.RoomType;
-import com.geeksong.agricolascorer.model.AgricolaScore;
-import com.geeksong.agricolascorer.model.Score;
-
 import android.util.Log;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TextView;
+import com.geeksong.agricolascorer.GameCache;
+import com.geeksong.agricolascorer.R;
+import com.geeksong.agricolascorer.control.PickerUnitScoreView;
+import com.geeksong.agricolascorer.control.SegmentedUnitScoreView;
+import com.geeksong.agricolascorer.model.AgricolaScore;
+import com.geeksong.agricolascorer.model.GameType;
+import com.geeksong.agricolascorer.model.RoomType;
+import com.geeksong.agricolascorer.model.Score;
 
-public class AgricolaScoreManager extends ScoreManager implements OnCheckedChangeListener {
+public class AgricolaScoreManager extends ScoreManager {
 	private TextView totalScoreView;
 	
 	public AgricolaScoreManager(AgricolaScore score, TextView totalScoreView) {
@@ -25,13 +23,13 @@ public class AgricolaScoreManager extends ScoreManager implements OnCheckedChang
 		totalScoreView.setText(Integer.toString(score.getTotalScore()));
 	}
 
-    public void onCheckedChanged(RadioGroup group, int checkedId) {
+    public void onSegmentedScoreChange(SegmentedUnitScoreView unitScoreView, int checkedId) {
     	try {
-	    	RadioButton checked = (RadioButton) group.findViewById(checkedId);
+            RadioButton checked = (RadioButton) unitScoreView.findViewById(checkedId);
 	    	CharSequence text = checked.getText();
 	    	AgricolaScore score = (AgricolaScore) getScore();
 	    	
-	    	switch(group.getId()) {
+	    	switch(unitScoreView.getId()) {
 		    	case R.id.fields:
 		    		score.setFieldScore(getScoreForFields(text));
 		    		break;
@@ -75,11 +73,11 @@ public class AgricolaScoreManager extends ScoreManager implements OnCheckedChang
     	}
     }
     
-	public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
+	public void onPickerScoreChange(PickerUnitScoreView unitScoreView, int newVal) {
 		try {
 	    	AgricolaScore score = (AgricolaScore) getScore();
 			
-	    	switch(picker.getId()) {
+	    	switch(unitScoreView.getId()) {
 		    	case R.id.unused_spaces_picker:
 		    		score.setUnusedSpacesScore(getScoreForUnusedSpaces(newVal));
 		    		break;
@@ -163,7 +161,7 @@ public class AgricolaScoreManager extends ScoreManager implements OnCheckedChang
 		}
 		return 0;
 	}
-    		
+
 	public static int getScoreForFields(CharSequence text) throws Exception {
 		String firstCharacter = text.subSequence(0, 1).toString();
 		int fieldCount = Integer.parseInt(firstCharacter);
@@ -301,4 +299,58 @@ public class AgricolaScoreManager extends ScoreManager implements OnCheckedChang
 		
 		return horseCount;
 	}
+
+    @Override
+    public int getUnitScore(Score score, SegmentedUnitScoreView unitScoreView) throws Exception {
+        AgricolaScore agricolaScore = (AgricolaScore) score;
+
+        switch(unitScoreView.getId()) {
+  		    	case R.id.fields:
+  		    		return agricolaScore.getFieldScore();
+  		    	case R.id.pastures:
+                    return agricolaScore.getPastureScore();
+  		    	case R.id.grains:
+                    return agricolaScore.getGrainScore();
+  		    	case R.id.vegetables:
+                    return agricolaScore.getVegetableScore();
+  		    	case R.id.sheep:
+                    return agricolaScore.getSheepScore();
+  		    	case R.id.wild_boar:
+                    return agricolaScore.getBoarScore();
+  		    	case R.id.cattle:
+                    return agricolaScore.getCattleScore();
+  		    	case R.id.room_type:
+                    return agricolaScore.getRoomsScore();
+  		    	case R.id.family_members:
+                    return agricolaScore.getFamilyMemberScore();
+                default:
+                    throw new IllegalArgumentException("Unkown score view: " + unitScoreView + "!?");
+  	    	}
+    }
+
+    @Override
+    public int getUnitScore(Score score, PickerUnitScoreView unitScoreView) throws Exception {
+        AgricolaScore agricolaScore = (AgricolaScore) score;
+
+        switch(unitScoreView.getId()) {
+  		    	case R.id.unused_spaces_picker:
+                    return agricolaScore.getUnusedSpacesScore();
+  		    	case R.id.fenced_stables_picker:
+                    return agricolaScore.getFencedStablesScore();
+  		    	case R.id.rooms_picker:
+                    return agricolaScore.getRoomsScore();
+  		    	case R.id.points_for_cards_picker:
+                    return agricolaScore.getPointsForCards();
+  		    	case R.id.bonus_points_picker:
+                    return agricolaScore.getBonusPoints();
+  		    	case R.id.begging_cards_picker:
+                    return agricolaScore.getBeggingCardsScore();
+  		    	case R.id.horses_picker:
+                    return agricolaScore.getHorsesScore();
+  		    	case R.id.in_bed_family_picker:
+                    return agricolaScore.getFamilyMemberScore();
+                default:
+                    throw new IllegalArgumentException("Unkown score view: " + unitScoreView + "!?");
+  	    	}
+    }
 }

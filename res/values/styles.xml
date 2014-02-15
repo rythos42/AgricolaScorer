@@ -191,4 +191,32 @@
         <item name="android:paddingTop">10dp</item>
         <item name="android:paddingBottom">10dp</item>
 	</style>
+
+    <style name="totalScore">
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@drawable/total_score_footer</item>
+    </style>
+
+    <style name="unitScoreValue" parent="@style/text">
+        <item name="android:ems">2</item>
+        <item name="android:text">0</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:paddingBottom">1dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:background">@drawable/unit_score_value</item>
+        <item name="android:textColor">#ff313739</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <style name="globalScoreValue" parent="@style/unitScoreValue">
+        <item name="android:text">-1</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
 </resources>

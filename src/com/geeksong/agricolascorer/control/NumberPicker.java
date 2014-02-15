@@ -1,7 +1,5 @@
 package com.geeksong.agricolascorer.control;
 
-import com.geeksong.agricolascorer.R;
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
@@ -10,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import com.geeksong.agricolascorer.R;
 
 public class NumberPicker extends LinearLayout {
 	private int number;
@@ -56,8 +55,12 @@ public class NumberPicker extends LinearLayout {
 	int getMinimum() {
 		return this.minimum;
 	}
-	
-	public void setValue(int number) {
+
+    public int getValue() {
+        return number;
+    }
+
+    public void setValue(int number) {
 		int oldVal = this.number;
 		this.number = number;
 		editText.setText(Integer.toString(number));
