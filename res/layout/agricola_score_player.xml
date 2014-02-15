@@ -141,7 +141,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/family_members"
                     custom:label="@string/room_type_label"
-                    custom:hide_score="true"
+                    custom:hideScore="true"
                     custom:segmentCount="3"
                     >
                 <com.geeksong.agricolascorer.control.SegmentedControlButton android:id="@+id/woodButton" android:text="@string/wood" style="@style/roomTypeStyle"/>
