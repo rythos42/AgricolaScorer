@@ -280,13 +280,13 @@ public class FinishedActivity extends Activity {
         public int getUnitScoreForRow(AllCreaturesScore score, int scoreIndex) {
             switch (scoreIndex) {
                 case 0:
-                    return score.getSheepScore();
+                    return score.getSheepScore() + score.getSheepBonusScore();
                 case 1:
-                    return score.getWildBoarScore();
+                    return score.getWildBoarScore() + score.getWildBoarBonusScore();
                 case 2:
-                    return score.getCattleScore();
+                    return score.getCattleScore() + score.getCattleBonusScore();
                 case 3:
-                    return score.getHorseScore();
+                    return score.getHorseScore() + score.getHorseBonusScore();
                 case 4:
                     return score.getFullExpansionScore();
                 case 5:
