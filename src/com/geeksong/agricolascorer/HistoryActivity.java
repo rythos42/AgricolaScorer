@@ -1,31 +1,31 @@
 package com.geeksong.agricolascorer;
 
-import java.util.Calendar;
-
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.DatePickerDialog.OnDateSetListener;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.ContextMenu;
+import android.view.ContextMenu.ContextMenuInfo;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.DatePicker;
+import android.widget.ExpandableListView;
+import android.widget.TextView;
 import com.geeksong.agricolascorer.control.DatePickerFragment;
 import com.geeksong.agricolascorer.listadapter.GameHistoryAdapter;
 import com.geeksong.agricolascorer.mapper.GameHistoryMapper;
 import com.geeksong.agricolascorer.model.Game;
 
-import android.os.Bundle;
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.DatePickerDialog.OnDateSetListener;
-import android.content.Intent;
-import android.view.ContextMenu;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.ContextMenu.ContextMenuInfo;
-import android.widget.Button;
-import android.widget.DatePicker;
-import android.widget.ExpandableListView;
-import android.widget.TextView;
+import java.util.Calendar;
 
 public class HistoryActivity extends Activity {
-	private static final int MENU_DELETE_GAME = 0;
-	private static final int MENU_EDIT_GAME = 1;
-	private static final int MENU_EDIT_GAME_DATE = 2;
+	private static final int MENU_VIEW_GAME = 0;
+	private static final int MENU_DELETE_GAME = 1;
+	private static final int MENU_EDIT_GAME = 2;
+	private static final int MENU_EDIT_GAME_DATE = 3;
 	
 	private static final int RESCORE_ACTIVITY = 0;
 	
@@ -58,6 +58,7 @@ public class HistoryActivity extends Activity {
     
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
+    	menu.add(Menu.NONE, MENU_VIEW_GAME, Menu.NONE, R.string.view_game);
     	menu.add(Menu.NONE, MENU_DELETE_GAME, Menu.NONE, R.string.delete_game);
     	menu.add(Menu.NONE, MENU_EDIT_GAME, Menu.NONE, R.string.edit_game);
     	menu.add(Menu.NONE, MENU_EDIT_GAME_DATE, Menu.NONE, R.string.edit_game_date);
@@ -70,6 +71,11 @@ public class HistoryActivity extends Activity {
     	final Game game = (Game) historyAdapter.getGroup(position);
     	
     	switch(item.getItemId()) {
+    		case MENU_VIEW_GAME:
+                GameCache.getInstance().setGame(game);
+                Intent rescore = new Intent(this, FinishedActivity.class);
+                startActivityForResult(rescore, RESCORE_ACTIVITY);
+    			return true;
     		case MENU_DELETE_GAME:
     			historyMapper.deleteGame(game);
     			historyAdapter.deleteGame(game);
@@ -87,7 +93,7 @@ public class HistoryActivity extends Activity {
     			}
     			
     			GameCache.getInstance().setGame(game);
-    			Intent rescore = new Intent(this, ScorePlayersActivity.class);
+    			rescore = new Intent(this, ScorePlayersActivity.class);
     			startActivityForResult(rescore, RESCORE_ACTIVITY);
     			
     			return true;

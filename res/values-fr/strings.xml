@@ -35,6 +35,7 @@
     <string name="remove_from_game">Supprimer de la partie</string>
     <string name="rename_player">Renommer le joueur</string>
     <string name="rename">Renommer</string>
+    <string name="view_game">Voir les scores</string>
     <string name="delete_game">Supprimer la partie</string>
     <string name="add_player_prompt">Ajouter un joueur pour commencer !</string>
     <string name="no_history">Aucun historique. Allez donc jouer !</string>

@@ -219,4 +219,88 @@
         <item name="android:textSize">20sp</item>
     </style>
 
+    <!-- Finished table -->
+    <style name="finishedTableAbstractCell">
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:paddingBottom">1dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingLeft">2dp</item>
+    </style>
+
+    <style name="finishedTableHeaderRow" parent="@style/finishedTableAbstractCell">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="finishedTableRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="finishedTableRowFooter" parent="@style/finishedTableRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="finishedTableFirstCol" parent="@style/finishedTableAbstractCell">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="finishedTableHeaderCorner" parent="@style/finishedTableFirstCol">
+        <item name="android:layout_weight">0</item>
+    </style>
+
+    <style name="finishedTableHeaderCol" parent="@style/finishedTableAbstractCell">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="finishedTableUnitScore" parent="@style/finishedTableAbstractCell">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/table_body_border</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="finishedTableUnitScoreMax" parent="@style/finishedTableUnitScore">
+        <item name="android:background">@drawable/table_body_border_max</item>
+    </style>
+
+    <style name="finishedTableUnitScoreMin" parent="@style/finishedTableUnitScore">
+        <item name="android:background">@drawable/table_body_border_min</item>
+    </style>
+
+    <style name="finishedTableTotalScoreHeader" parent="@style/finishedTableFirstCol">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="finishedTableTotalScore" parent="@style/finishedTableAbstractCell">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/table_body_border</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="finishedTableTotalScoreMax" parent="@finishedTableTotalScore">
+        <item name="android:background">@drawable/table_body_border_max</item>
+    </style>
+
+    <style name="finishedTableTotalScoreMin" parent="@finishedTableTotalScore">
+        <item name="android:background">@drawable/table_body_border_min</item>
+    </style>
+
 </resources>
