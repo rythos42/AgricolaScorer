@@ -55,15 +55,20 @@ public class AgricolaScoreTabFactory extends BaseScoreTabFactory {
 		addValueChangeListener(scorePlayer, manager, R.id.begging_cards_picker);
 	}
 	
-	protected void addCheckedChangeListener(View scorePlayer, final AgricolaScoreManager manager, int id) {
+	protected void addCheckedChangeListener(final View scorePlayer, final AgricolaScoreManager manager, final int id) {
 		final SegmentedUnitScoreView unitScoreView = (SegmentedUnitScoreView) scorePlayer.findViewById(id);
 		RadioGroup group = unitScoreView.getRadioGroup();
 		group.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 manager.onSegmentedScoreChange(unitScoreView, checkedId);
                 try {
                     unitScoreView.updateScore(manager.getUnitScore(manager.getScore(), unitScoreView));
+                    
+        			// Room Count is the only field that needs score updated based on two inputs
+        			if(id == R.id.room_type) {
+        				final PickerUnitScoreView roomCountScoreView = (PickerUnitScoreView) scorePlayer.findViewById(R.id.rooms_picker);
+        				roomCountScoreView.updateScore(manager.getUnitScore(manager.getScore(), unitScoreView));
+        			}
                 } catch (Exception e) {
                     Log.e("com.geeksong.agricolascorer", e.getMessage());
                 }

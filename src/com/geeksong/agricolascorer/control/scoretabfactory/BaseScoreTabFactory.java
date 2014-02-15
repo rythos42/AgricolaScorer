@@ -15,17 +15,17 @@ public abstract class BaseScoreTabFactory implements TabHost.TabContentFactory {
         NumberPicker picker = unitScoreView.getNumberPicker();
 
 		picker.setMinimum(0);
-          picker.setOnValueChangedListener(new OnValueChangeListener() {
-              @Override
-              public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
-                  try {
-                      manager.onPickerScoreChange(unitScoreView, newVal);
-                      unitScoreView.updateScore(manager.getUnitScore(manager.getScore(), unitScoreView));
-                  } catch (Exception e) {
-                      Log.e("com.geeksong.agricolascorer", e.getMessage());
-                  }
-              }
-          });
+		
+	    picker.setOnValueChangedListener(new OnValueChangeListener() {
+	    	public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
+	    		try {
+	            	manager.onPickerScoreChange(unitScoreView, newVal);
+	            	unitScoreView.updateScore(manager.getUnitScore(manager.getScore(), unitScoreView));
+	            } catch (Exception e) {
+            		Log.e("com.geeksong.agricolascorer", e.getMessage());
+	            }
+	    	}
+	    });
 
 		Score score = manager.getScore();
 		if(!score.isEmpty()) {
