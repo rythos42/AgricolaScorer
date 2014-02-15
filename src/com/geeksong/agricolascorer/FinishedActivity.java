@@ -236,6 +236,8 @@ public class FinishedActivity extends Activity {
 
         public static final int[] SCORE_LABEL_IDS = new int[AgricolaHandler.SCORE_LABEL_IDS.length + 2];
         static {
+            System.arraycopy(AgricolaHandler.SCORE_LABEL_IDS, 0, SCORE_LABEL_IDS, 0,
+                    AgricolaHandler.SCORE_LABEL_IDS.length);
             SCORE_LABEL_IDS[AgricolaHandler.SCORE_LABEL_IDS.length] = R.string.horses_label;
             SCORE_LABEL_IDS[AgricolaHandler.SCORE_LABEL_IDS.length + 1] = R.string.in_bed_family_label;
         }
