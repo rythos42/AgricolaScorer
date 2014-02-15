@@ -1,3 +1,9 @@
+Version 1.5-1.52
+	Major:
+		- French language translation.
+		- Broken-down scores shown as you score.
+		- Final screen shows broken-down scores.
+
 Version 1.4
 	Major:
 		- All Creatures Big and Small scoring!

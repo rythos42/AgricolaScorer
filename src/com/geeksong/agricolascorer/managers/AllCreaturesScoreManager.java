@@ -159,13 +159,13 @@ public class AllCreaturesScoreManager extends ScoreManager {
 
         switch(unitScoreView.getId()) {
   		    	case R.id.sheep_picker:
-  		    		return getScoreForSheep(value);
+  		    		return getScoreForSheep(value) + getBonusScoreForSheep(value);
   		    	case R.id.wild_boar_picker:
-                    return getScoreForWildBoar(value);
+                    return getScoreForWildBoar(value) + getBonusScoreForWildBoar(value);
   		    	case R.id.cattle_picker:
-                    return getScoreForCattle(value);
+                    return getScoreForCattle(value) + getBonusScoreForCattle(value);
   		    	case R.id.horse_picker:
-                    return getScoreForHorse(value);
+                    return getScoreForHorse(value) + getBonusScoreForHorse(value);
   		    	case R.id.full_expansion_count_picker:
                     return getScoreForFullExpansion(value);
   		    	case R.id.building_score_picker:
