@@ -35,6 +35,7 @@
     <string name="remove_from_game">Remove from game</string>
     <string name="rename_player">Rename player</string>
     <string name="rename">Rename</string>
+    <string name="view_game">Show scores</string>
     <string name="delete_game">Delete game</string>
     <string name="add_player_prompt">Add a player to get started!</string>
     <string name="no_history">No history available. Go play some games!</string>
