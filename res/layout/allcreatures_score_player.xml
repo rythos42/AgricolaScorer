@@ -1,197 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+                xmlns:custom="http://schemas.android.com/apk/res/com.geeksong.agricolascorer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
     
-	<LinearLayout 
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:orientation="vertical" >
-	
-		<LinearLayout 
-			android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-			android:orientation="horizontal"
-			android:baselineAligned="false">
-		    	       
-		    <LinearLayout
-				android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-		        android:layout_weight="2"
-				android:orientation="vertical">	
+    <!-- Invisible element acting as separator -->
+    <View
+            android:id="@+id/center_separator"
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"/>
 
-				<TextView
-				    android:id="@+id/sheep_label"
-				    android:layout_width="match_parent"
-				    android:layout_height="wrap_content"
-				    android:text="@string/sheep_label"
-	        		style="@style/smallerText" />
+    <!-- Picker row #1 -->
+    <com.geeksong.agricolascorer.control.PickerUnitScoreView
+            android:id="@+id/sheep_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/center_separator"
+            custom:label="@string/sheep_label"
+            />
 
-				<com.geeksong.agricolascorer.control.NumberPicker
-				    android:id="@+id/sheep_picker"
-				    android:layout_width="match_parent"
-				    android:layout_height="wrap_content"
-				    android:orientation="vertical"
-				    style="@style/numberPicker" />
-		    </LinearLayout>
-		    
-		    <LinearLayout
-		        android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-		        android:layout_weight="2"
-		        android:orientation="vertical" >
+    <com.geeksong.agricolascorer.control.PickerUnitScoreView
+            android:id="@+id/wild_boar_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/center_separator"
+            custom:label="@string/wild_boar_label"
+            />
 
-				<TextView
-				    android:id="@+id/wild_boar_label"
-				    android:layout_width="match_parent"
-				    android:layout_height="wrap_content"
-				    android:text="@string/wild_boar_label"
-	        		style="@style/smallerText" />
+    <!-- Picker row #2 -->
+    <com.geeksong.agricolascorer.control.PickerUnitScoreView
+            android:id="@+id/cattle_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sheep_picker"
+            android:layout_toLeftOf="@id/center_separator"
+            custom:label="@string/cattle_label"
+            />
 
-				<com.geeksong.agricolascorer.control.NumberPicker
-				    android:id="@+id/wild_boar_picker"
-				    android:layout_width="match_parent"
-				    android:layout_height="wrap_content"
-				    android:orientation="vertical"
-				    style="@style/numberPicker" />
+    <com.geeksong.agricolascorer.control.PickerUnitScoreView
+            android:id="@+id/horse_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sheep_picker"
+            android:layout_toRightOf="@id/center_separator"
+            custom:label="@string/horses_label"
+            />
 
-		    </LinearLayout>
-	    </LinearLayout>
-		<LinearLayout 
-			android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-			android:orientation="horizontal"
-			android:baselineAligned="false">
-		    	       
-		    <LinearLayout
-				android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-		        android:layout_weight="2"
-				android:orientation="vertical">	
+    <!-- Picker row #3 -->
+    <com.geeksong.agricolascorer.control.PickerUnitScoreView
+            android:id="@+id/full_expansion_count_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cattle_picker"
+            android:layout_toLeftOf="@id/center_separator"
+            custom:label="@string/full_expansion_count_label"
+            />
 
-				<TextView
-				    android:id="@+id/cattle_label"
-				    android:layout_width="match_parent"
-				    android:layout_height="wrap_content"
-				    android:text="@string/cattle_label"
-	        		style="@style/smallerText" />
+    <com.geeksong.agricolascorer.control.PickerUnitScoreView
+            android:id="@+id/building_score_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cattle_picker"
+            android:layout_toRightOf="@id/center_separator"
+            custom:label="@string/building_score_label"
+            />
 
-				<com.geeksong.agricolascorer.control.NumberPicker
-				    android:id="@+id/cattle_picker"
-				    android:layout_width="match_parent"
-				    android:layout_height="wrap_content"
-				    android:orientation="vertical"
-				    style="@style/numberPicker" />
+    <!-- Footer -->
+    <include android:id="@+id/score_footer"
+             layout="@layout/score_player_footer"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"/>
 
-		    </LinearLayout>
-		    
-		    <LinearLayout
-		        android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-		        android:layout_weight="2"
-		        android:orientation="vertical" >
-
-				<TextView
-				    android:id="@+id/horse_label"
-				    android:layout_width="match_parent"
-				    android:layout_height="wrap_content"
-				    android:text="@string/horses_label"
-	        		style="@style/smallerText" />
-
-				<com.geeksong.agricolascorer.control.NumberPicker
-				    android:id="@+id/horse_picker"
-				    android:layout_width="match_parent"
-				    android:layout_height="wrap_content"
-				    android:orientation="vertical"
-				    style="@style/numberPicker" />
-
-		    </LinearLayout>
-	    </LinearLayout>
-		<LinearLayout 
-			android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-			android:orientation="horizontal"
-			android:baselineAligned="false">
-		    	       
-		    <LinearLayout
-				android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-		        android:layout_weight="2"
-				android:orientation="vertical">	
-
-				<TextView
-				    android:id="@+id/full_expansion_count_label"
-				    android:layout_width="match_parent"
-				    android:layout_height="wrap_content"
-				    android:text="@string/full_expansion_count_label"
-	        		style="@style/smallerText" />
-
-				<com.geeksong.agricolascorer.control.NumberPicker
-				    android:id="@+id/full_expansion_count_picker"
-				    android:layout_width="match_parent"
-				    android:layout_height="wrap_content"
-				    android:orientation="vertical"
-				    style="@style/numberPicker" />
-
-		    </LinearLayout>
-		    
-		    <LinearLayout
-		        android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-		        android:layout_weight="2"
-		        android:orientation="vertical" >
-
-				<TextView
-				    android:id="@+id/building_score_label"
-				    android:layout_width="match_parent"
-				    android:layout_height="wrap_content"
-				    android:text="@string/building_score_label"
-	        		style="@style/smallerText" />
-
-				<com.geeksong.agricolascorer.control.NumberPicker
-				    android:id="@+id/building_score_picker"
-				    android:layout_width="match_parent"
-				    android:layout_height="wrap_content"
-				    android:orientation="vertical"
-				    style="@style/numberPicker" />
-
-		    </LinearLayout>
-		</LinearLayout>
-    </LinearLayout>
-	
-	<LinearLayout
-	    android:id="@+id/score_footer"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_alignParentBottom="true">
-		
-	    <LinearLayout
-	        android:id="@+id/left"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_weight="1">
-			
-			<TextView android:id="@+id/score_label"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="@string/score_label"
-			    style="@style/biggerText" />
-			
-			<TextView android:id="@+id/score"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:textIsSelectable="true"
-			    style="@style/biggerText" />
-	        	        
-	    </LinearLayout>
-	        		
-		<Button
-		    android:id="@+id/finishButton"
-		    android:text="@string/finish"
-		    android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:onClick="finishScoring"
-			android:layout_weight="1" >
-		</Button>
-	</LinearLayout>
 </RelativeLayout>

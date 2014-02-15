@@ -1,12 +1,12 @@
 package com.geeksong.agricolascorer.managers;
 
-import com.geeksong.agricolascorer.R;
-import com.geeksong.agricolascorer.control.NumberPicker;
-import com.geeksong.agricolascorer.model.AllCreaturesScore;
-import com.geeksong.agricolascorer.model.Score;
-
 import android.util.Log;
 import android.widget.TextView;
+import com.geeksong.agricolascorer.R;
+import com.geeksong.agricolascorer.control.PickerUnitScoreView;
+import com.geeksong.agricolascorer.control.SegmentedUnitScoreView;
+import com.geeksong.agricolascorer.model.AllCreaturesScore;
+import com.geeksong.agricolascorer.model.Score;
 
 public class AllCreaturesScoreManager extends ScoreManager {
 	private TextView totalScoreView;
@@ -19,11 +19,11 @@ public class AllCreaturesScoreManager extends ScoreManager {
 		totalScoreView.setText(Integer.toString(score.getTotalScore()));
 	}
 	
-	public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
+	public  void onPickerScoreChange(PickerUnitScoreView unitScoreView, int newVal) {
 		try {
 			AllCreaturesScore score = (AllCreaturesScore) getScore();
 			
-	    	switch(picker.getId()) {
+	    	switch(unitScoreView.getId()) {
 		    	case R.id.sheep_picker:
 		    		score.setSheepScore(getScoreForSheep(newVal));
 		    		score.setSheepBonusScore(getBonusScoreForSheep(newVal));
@@ -147,4 +147,31 @@ public class AllCreaturesScoreManager extends ScoreManager {
 	public static int getScoreForBuildings(int score) {
 		return score;
 	}
+
+    @Override
+    public int getUnitScore(Score score, SegmentedUnitScoreView unitScoreView) throws Exception {
+        throw new IllegalArgumentException("Unkown score view: " + unitScoreView.getId() + "!?");
+    }
+
+    @Override
+    public int getUnitScore(Score score, PickerUnitScoreView unitScoreView) throws Exception {
+        int value = unitScoreView.getNumberPicker().getValue();
+
+        switch(unitScoreView.getId()) {
+  		    	case R.id.sheep_picker:
+  		    		return getScoreForSheep(value);
+  		    	case R.id.wild_boar_picker:
+                    return getScoreForWildBoar(value);
+  		    	case R.id.cattle_picker:
+                    return getScoreForCattle(value);
+  		    	case R.id.horse_picker:
+                    return getScoreForHorse(value);
+  		    	case R.id.full_expansion_count_picker:
+                    return getScoreForFullExpansion(value);
+  		    	case R.id.building_score_picker:
+                    return getScoreForBuildings(value);
+                default:
+                    throw new IllegalArgumentException("Unkown score view: " + unitScoreView + "!?");
+  	    	}
+    }
 }

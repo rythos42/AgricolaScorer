@@ -1,11 +1,9 @@
 package com.geeksong.agricolascorer.control.scoretabfactory;
 
-import com.geeksong.agricolascorer.R;
-import com.geeksong.agricolascorer.managers.AgricolaScoreManager;
-
 import android.app.Activity;
 import android.view.View;
-import android.widget.LinearLayout;
+import com.geeksong.agricolascorer.R;
+import com.geeksong.agricolascorer.managers.AgricolaScoreManager;
 
 public class FarmersScoreTabFactory extends AgricolaScoreTabFactory {
 	public FarmersScoreTabFactory(Activity tabHost) {
@@ -15,7 +13,7 @@ public class FarmersScoreTabFactory extends AgricolaScoreTabFactory {
 	@Override
 	public View createTabContent(String tag) {
 		View scorePlayer = super.createTabContent(tag);
-		LinearLayout farmersScoringPanel = (LinearLayout) scorePlayer.findViewById(R.id.farmersScoringPanel);
+		View farmersScoringPanel = scorePlayer.findViewById(R.id.farmersScoringPanel);
 		farmersScoringPanel.setVisibility(View.VISIBLE);
 		
 		return scorePlayer;
