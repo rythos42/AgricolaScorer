@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.geeksong.agricolascorer"
     android:versionCode="14"
-    android:versionName="1.53" >
+    android:versionName="1.54" >
 
     <uses-sdk
         android:minSdkVersion="11"
@@ -34,6 +34,11 @@
         <activity
             android:name="com.geeksong.agricolascorer.ScorePlayersActivity"
             android:theme="@style/GreenTheme_NoActionBar" >
+            <intent-filter>
+				<action android:name="android.intent.action.SEND" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="*/*" />
+		    </intent-filter>
         </activity>
         <activity
             android:name="com.geeksong.agricolascorer.FinishedActivity"

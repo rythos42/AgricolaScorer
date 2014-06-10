@@ -1,10 +1,14 @@
 package com.geeksong.agricolascorer.model;
 
+import java.io.Serializable;
+
 import com.geeksong.agricolascorer.managers.AgricolaScoreManager;
 
 import android.util.Log;
 
-public class AgricolaScore implements Score {
+public class AgricolaScore implements Score, Serializable {
+	private static final long serialVersionUID = 1L;
+	
 	private int fieldScore;
 	private int pastureScore;
 	private int grainScore;
@@ -116,9 +120,11 @@ public class AgricolaScore implements Score {
 	
 	public void setInBedFamilyCount(int inBedFamilyCount) { this.inBedFamilyCount = inBedFamilyCount; }
 	public int getInBedFamilyCount() { return this.inBedFamilyCount; }
+	public int getInBedFamilyScore() { return this.inBedFamilyCount * -2; }
 	
 	public void setTotalFamilyCount(int totalFamilyCount) { this.totalFamilyCount = totalFamilyCount; }
 	public int getTotalFamilyCount() { return this.totalFamilyCount; }
+	public int getFamilyScoreWithoutInBedFamily() { return this.totalFamilyCount * 3; }
 		
 	public int getRoomCount() { return this.roomCount; }
 	public void setRoomCount(int roomCount) { this.roomCount = roomCount; }

@@ -1,10 +1,14 @@
 package com.geeksong.agricolascorer.model;
 
+import java.io.Serializable;
+
 import android.util.Log;
 
 import com.geeksong.agricolascorer.managers.AllCreaturesScoreManager;
 
-public class AllCreaturesScore implements Score {
+public class AllCreaturesScore implements Score, Serializable {
+	private static final long serialVersionUID = 1L;
+	
 	private int id;
 	private Player player;
 	

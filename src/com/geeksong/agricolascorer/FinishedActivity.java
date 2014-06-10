@@ -8,9 +8,12 @@ import android.view.ViewGroup;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+
+import com.geeksong.agricolascorer.gametypehandler.AgricolaHandler;
+import com.geeksong.agricolascorer.gametypehandler.AllCreaturesHandler;
+import com.geeksong.agricolascorer.gametypehandler.FarmersHandler;
+import com.geeksong.agricolascorer.gametypehandler.IGameTypeHandler;
 import com.geeksong.agricolascorer.mapper.SavedGameMapper;
-import com.geeksong.agricolascorer.model.AgricolaScore;
-import com.geeksong.agricolascorer.model.AllCreaturesScore;
 import com.geeksong.agricolascorer.model.GameType;
 import com.geeksong.agricolascorer.model.Score;
 
@@ -21,7 +24,7 @@ import java.util.Map;
 // SuppressWarnings: for generic around Score, because Score is not parameterized outside this class
 @SuppressWarnings("unchecked")
 public class FinishedActivity extends Activity {
-    private static final Map<GameType, GameTypeHandler> GAME_TYPE_HANDLERS = new HashMap<GameType, GameTypeHandler>();
+    private static final Map<GameType, IGameTypeHandler> GAME_TYPE_HANDLERS = new HashMap<GameType, IGameTypeHandler>();
     static {
         GAME_TYPE_HANDLERS.put(GameType.Agricola, new AgricolaHandler());
         GAME_TYPE_HANDLERS.put(GameType.Farmers, new FarmersHandler());
@@ -29,7 +32,7 @@ public class FinishedActivity extends Activity {
     }
 
     private SavedGameMapper mapper;
-
+    
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +42,7 @@ public class FinishedActivity extends Activity {
 
         ArrayList<Score> scores = GameCache.getInstance().getScoreList();
         GameType gameType = GameCache.getInstance().getGameType();
-        GameTypeHandler gameTypeHandler = GAME_TYPE_HANDLERS.get(gameType);
+        IGameTypeHandler gameTypeHandler = GAME_TYPE_HANDLERS.get(gameType);
 
         createHeaderRow(scores);
         createBodyRows(gameTypeHandler, scores);
@@ -53,7 +56,7 @@ public class FinishedActivity extends Activity {
         }
     }
 
-    private void createBodyRows(GameTypeHandler gameTypeHandler, ArrayList<Score> scores) {
+    private void createBodyRows(IGameTypeHandler gameTypeHandler, ArrayList<Score> scores) {
         TableLayout table = (TableLayout) findViewById(R.id.finishedTable);
 
         int[] scoreLabelIds = gameTypeHandler.getScoreLabelIds();
@@ -115,8 +118,7 @@ public class FinishedActivity extends Activity {
         return textView;
     }
 
-    private View createUnitScoreCell(GameTypeHandler gameTypeHandler, int scoreIndex, Score score, int minUnitScore,
-                                     int maxUnitScore) {
+    private View createUnitScoreCell(IGameTypeHandler gameTypeHandler, int scoreIndex, Score score, int minUnitScore, int maxUnitScore) {
         int unitScore = gameTypeHandler.getUnitScoreForRow(score, scoreIndex);
 
         int layout;
@@ -164,136 +166,5 @@ public class FinishedActivity extends Activity {
 
         Intent createGameIntent = new Intent(source.getContext(), CreateGameActivity.class);
         startActivity(createGameIntent);
-    }
-
-    private static interface GameTypeHandler<T extends Score> {
-        int[] getScoreLabelIds();
-        int getUnitScoreForRow(T score, int rowNum);
-    }
-
-    private static class AgricolaHandler implements GameTypeHandler<AgricolaScore> {
-
-        public static final int[] SCORE_LABEL_IDS = new int[]{
-                R.string.fields_label,
-                R.string.pastures_label,
-                R.string.grain_label,
-                R.string.vegetables_label,
-                R.string.sheep_label,
-                R.string.wild_boar_label,
-                R.string.cattle_label,
-                R.string.family_members_label,
-                R.string.rooms_label,
-                R.string.unused_spaces_label,
-                R.string.points_for_cards_label,
-                R.string.fenced_stables_label,
-                R.string.bonus_points_label,
-                R.string.begging_cards_label
-        };
-
-        @Override
-        public int[] getScoreLabelIds() {
-            return SCORE_LABEL_IDS;
-        }
-
-        @Override
-        public int getUnitScoreForRow(AgricolaScore score, int scoreIndex) {
-            switch (scoreIndex) {
-                case 0:
-                    return score.getFieldScore();
-                case 1:
-                    return score.getPastureScore();
-                case 2:
-                    return score.getGrainScore();
-                case 3:
-                    return score.getVegetableScore();
-                case 4:
-                    return score.getSheepScore();
-                case 5:
-                    return score.getBoarScore();
-                case 6:
-                    return score.getCattleScore();
-                case 7:
-                    return score.getFamilyMemberScore();
-                case 8:
-                    return score.getRoomsScore();
-                case 9:
-                    return score.getUnusedSpacesScore();
-                case 10:
-                    return score.getPointsForCards();
-                case 11:
-                    return score.getFencedStablesScore();
-                case 12:
-                    return score.getBonusPoints();
-                case 13:
-                    return score.getBeggingCardsScore();
-                default:
-                    throw new IllegalArgumentException("No score defined at row " + scoreIndex + "!?");
-            }
-        }
-    }
-
-    private static class FarmersHandler extends AgricolaHandler {
-
-        public static final int[] SCORE_LABEL_IDS = new int[AgricolaHandler.SCORE_LABEL_IDS.length + 2];
-        static {
-            System.arraycopy(AgricolaHandler.SCORE_LABEL_IDS, 0, SCORE_LABEL_IDS, 0,
-                    AgricolaHandler.SCORE_LABEL_IDS.length);
-            SCORE_LABEL_IDS[AgricolaHandler.SCORE_LABEL_IDS.length] = R.string.horses_label;
-            SCORE_LABEL_IDS[AgricolaHandler.SCORE_LABEL_IDS.length + 1] = R.string.in_bed_family_label;
-        }
-
-        @Override
-        public int[] getScoreLabelIds() {
-            return SCORE_LABEL_IDS;
-        }
-
-        @Override
-        public int getUnitScoreForRow(AgricolaScore score, int scoreIndex) {
-            switch (scoreIndex) {
-                case 14:
-                    return score.getHorsesScore();
-                case 15:
-                    return score.getInBedFamilyCount();
-                default:
-                    return super.getUnitScoreForRow(score, scoreIndex);
-            }
-        }
-    }
-
-    private static class AllCreaturesHandler implements GameTypeHandler<AllCreaturesScore> {
-
-        public static final int[] SCORE_LABEL_IDS = new int[]{
-                R.string.sheep_label,
-                R.string.wild_boar_label,
-                R.string.cattle_label,
-                R.string.horses_label,
-                R.string.full_expansion_count_label,
-                R.string.building_score_label
-        };
-
-        @Override
-        public int[] getScoreLabelIds() {
-            return SCORE_LABEL_IDS;
-        }
-
-        @Override
-        public int getUnitScoreForRow(AllCreaturesScore score, int scoreIndex) {
-            switch (scoreIndex) {
-                case 0:
-                    return score.getSheepScore() + score.getSheepBonusScore();
-                case 1:
-                    return score.getWildBoarScore() + score.getWildBoarBonusScore();
-                case 2:
-                    return score.getCattleScore() + score.getCattleBonusScore();
-                case 3:
-                    return score.getHorseScore() + score.getHorseBonusScore();
-                case 4:
-                    return score.getFullExpansionScore();
-                case 5:
-                    return score.getBuildingScore();
-                default:
-                    throw new IllegalArgumentException("No score defined at row " + scoreIndex + "!?");
-            }
-        }
     }
 }

@@ -322,7 +322,7 @@ public class AgricolaScoreManager extends ScoreManager {
   		    	case R.id.room_type:
                     return agricolaScore.getRoomsScore();
   		    	case R.id.family_members:
-                    return agricolaScore.getFamilyMemberScore();
+                    return agricolaScore.getFamilyScoreWithoutInBedFamily();
                 default:
                     throw new IllegalArgumentException("Unkown score view: " + unitScoreView + "!?");
   	    	}
@@ -348,7 +348,7 @@ public class AgricolaScoreManager extends ScoreManager {
   		    	case R.id.horses_picker:
                     return agricolaScore.getHorsesScore();
   		    	case R.id.in_bed_family_picker:
-                    return agricolaScore.getFamilyMemberScore();
+                    return agricolaScore.getInBedFamilyScore();
                 default:
                     throw new IllegalArgumentException("Unkown score view: " + unitScoreView + "!?");
   	    	}

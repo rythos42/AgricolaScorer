@@ -1,3 +1,8 @@
+Version 1.54
+	Minor:
+		- Fixed bug in display of family and in-bed family scores.
+		- Changed "?" icon for randomization to a pair of dice.
+
 Version 1.5-1.52
 	Major:
 		- French language translation.

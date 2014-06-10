@@ -1,4 +1,16 @@
 Next:
+	- sending a single game or all game data to another android device
+		- ScorePlayersActivity and HistoryActivity have commented out code for this.
+		- two alerts for serialization failure
+		- Game/Score/Players are sent with IDs from original device, need to...
+			- Load Players and IDs if they exist exactly on the new device.
+			- Create new Players if they don't exist and save to database.
+			- Replace new Players in shared Game.
+			- Set GameCache.isFromDatabase to false.
+			- Should work with existing workflow from there - Edit -> Finish -> Save
+			
+
+
 	- randomization (randomize a resource, a farmyard square)
 		- get a farm board photo. Can I draw on top of a drawable in a specific spot?
 		- get icons for all of the resources
@@ -15,13 +27,15 @@ Next:
 		- http://www.doubleencore.com/2013/05/layout-inflation-as-intended/
 	- check to see how it looks on Nexus 7 (10% of installs)
 		- maybe grab a few screenshots for it
-	- use a "spinner drop down icon" on game history, instead of long-press. Long-press is now used for selection, which I'm not doing in the history.
-		- could also put the "action buttons" for this inside the drop-down when you short-press
 	- can I shrink the Create Game title to get more actions on the action bar?
 	- Finish button for All Creatures is over top of scoring buttons when put into landscape mode
+	- use a "spinner drop down icon" on game history, instead of long-press. 
+		- Long-press is now used for selection, which I'm not doing in the history.
+		- could also put the "action buttons" for this inside the drop-down when you short-press
+		- Short-press is used to expand the child though...
 	
 	
-    - sending a single game or all game data to another android device
+
     - If you try to add 12 players on an HTC Desire X, you cannot scroll down to the buttons, just to the last added name
     - If you toggle between unlimited and limited players while having more than 5 players in the game (in the adding state) 
     	the (non-)appearance of the "add" Button is unpredicted. You have to remove a player first to make the Button appear correctly.
@@ -29,7 +43,6 @@ Next:
 
 
 Future:
-
 	- game count doesn't update right away if you don't close the app and restart it
 	- make segmented control and number picker use XML for heights and text edit padding
 	- chart icon is a little brighter than it should be
@@ -40,7 +53,6 @@ Future:
 	- Create Game Screen doesn't update game count after playing (needs to update internal Player game count after saving)
 	- Maybe have a dropdown to select game...and then a Settings table to store which was last selected.
 	- UI to select who won in the case of a tie
-	- "Share" game results?
 
 	
 Pipe dream:

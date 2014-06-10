@@ -9,9 +9,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import com.geeksong.agricolascorer.R;
 
-/**
- * Base view for segmented and pickers controls
- */
 public abstract class AbstractUnitScoreView extends RelativeLayout {
 
     private final TextView scoreTextView;
@@ -34,9 +31,6 @@ public abstract class AbstractUnitScoreView extends RelativeLayout {
         scoreTextView.setText(String.valueOf(score));
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public LayoutParams generateLayoutParams(AttributeSet attrs) {
         return new LayoutParams(getContext(), attrs);
@@ -48,8 +42,7 @@ public abstract class AbstractUnitScoreView extends RelativeLayout {
         }
 
         @Override
-        protected void setBaseAttributes(TypedArray a,
-                                         int widthAttr, int heightAttr) {
+        protected void setBaseAttributes(TypedArray a, int widthAttr, int heightAttr) {
 
             if (a.hasValue(widthAttr)) {
                 width = a.getLayoutDimension(widthAttr, "layout_width");

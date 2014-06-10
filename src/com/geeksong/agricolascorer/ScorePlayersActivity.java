@@ -3,6 +3,8 @@ package com.geeksong.agricolascorer;
 import java.util.ArrayList;
 
 import com.geeksong.agricolascorer.managers.GameTypeManager;
+import com.geeksong.agricolascorer.mapper.GameSerializationMapper;
+import com.geeksong.agricolascorer.model.Game;
 import com.geeksong.agricolascorer.model.Player;
 
 import android.os.Bundle;
@@ -20,6 +22,20 @@ public class ScorePlayersActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score_players);
         
+        Intent intent = getIntent();
+        String action = intent.getAction();
+        String type = intent.getType();
+
+        //if (Intent.ACTION_SEND.equals(action) && type != null && "*/*".equals(type)) {
+        //	try {
+	    //		byte[] gameBytes = intent.getByteArrayExtra(Intent.EXTRA_STREAM);
+	    //		Game game = GameSerializationMapper.deserialize(gameBytes);
+	    //		GameCache.getInstance().setGame(game);
+        //	} catch(Exception e) {
+        		//TODO: dialog for exception
+        //	}
+        //} 
+                
         TabHost tabs = (TabHost) findViewById(android.R.id.tabhost);
         tabs.setup();
         

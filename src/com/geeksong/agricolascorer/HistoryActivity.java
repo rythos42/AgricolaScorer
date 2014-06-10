@@ -17,8 +17,10 @@ import android.widget.TextView;
 import com.geeksong.agricolascorer.control.DatePickerFragment;
 import com.geeksong.agricolascorer.listadapter.GameHistoryAdapter;
 import com.geeksong.agricolascorer.mapper.GameHistoryMapper;
+import com.geeksong.agricolascorer.mapper.GameSerializationMapper;
 import com.geeksong.agricolascorer.model.Game;
 
+import java.io.IOException;
 import java.util.Calendar;
 
 public class HistoryActivity extends Activity {
@@ -26,6 +28,7 @@ public class HistoryActivity extends Activity {
 	private static final int MENU_DELETE_GAME = 1;
 	private static final int MENU_EDIT_GAME = 2;
 	private static final int MENU_EDIT_GAME_DATE = 3;
+	private static final int MENU_SHARE_GAME = 4;
 	
 	private static final int RESCORE_ACTIVITY = 0;
 	
@@ -62,6 +65,7 @@ public class HistoryActivity extends Activity {
     	menu.add(Menu.NONE, MENU_DELETE_GAME, Menu.NONE, R.string.delete_game);
     	menu.add(Menu.NONE, MENU_EDIT_GAME, Menu.NONE, R.string.edit_game);
     	menu.add(Menu.NONE, MENU_EDIT_GAME_DATE, Menu.NONE, R.string.edit_game_date);
+    	//menu.add(Menu.NONE, MENU_SHARE_GAME, Menu.NONE, R.string.share_game);
     }
     
     @Override
@@ -113,6 +117,19 @@ public class HistoryActivity extends Activity {
     			datePickerFragment.show(getFragmentManager(), "datePicker");
     			
     			return true;
+    			
+    		case MENU_SHARE_GAME:
+    			try {
+	    			Intent shareIntent = new Intent();
+	    			shareIntent.setAction(Intent.ACTION_SEND);
+	    			shareIntent.putExtra(Intent.EXTRA_STREAM, GameSerializationMapper.serialize(game));
+	    			shareIntent.setType("*/*");
+	    			startActivity(shareIntent);
+	    			return true;
+    			} catch(IOException e) {
+					// TODO: dialog here for error/log it
+    			}
+    			
     		default:
     	    	return super.onContextItemSelected(item);
     	}
