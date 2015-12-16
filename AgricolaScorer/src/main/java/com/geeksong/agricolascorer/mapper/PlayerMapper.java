@@ -35,16 +35,14 @@ public class PlayerMapper {
     
     public Player addPlayer(String name) {
         String selectQuery =
-        		String.format(Locale.US, "SELECT player.%s, COUNT(score.%s) " +
-        				"FROM %s as player " +
-        				"LEFT JOIN %s as score on player.%s=score.%s " +
-        				"WHERE player.%s='%s' " +
-        				"GROUP BY score.%s",
-        				Database.KEY_ID, Database.KEY_PLAYERID,
-        				Database.TABLE_RECENTPLAYERS,
-        				Database.TABLE_SCORES, Database.KEY_ID, Database.KEY_PLAYERID,
-        				Database.KEY_NAME, name,
-        				Database.KEY_PLAYERID);
+        		String.format(Locale.US, "SELECT " +
+                            "(SELECT %s from %s as players WHERE players.%s='%s'), " +
+                            "(SELECT COUNT(*) FROM %s as scores JOIN %s as players on players.id=scores.playerId WHERE players.%s='%s') + " +
+                            "(SELECT COUNT(*) FROM %s as scores JOIN %s as players on players.id=scores.playerId WHERE players.%s='%s')",
+                        Database.KEY_ID, Database.TABLE_RECENTPLAYERS, Database.KEY_NAME, name,
+                        Database.TABLE_SCORES, Database.TABLE_RECENTPLAYERS, Database.KEY_NAME, name,
+                        Database.TABLE_ALL_CREATURES_SCORES, Database.TABLE_RECENTPLAYERS, Database.KEY_NAME, name
+                );
         SQLiteDatabase sqlDb = db.getReadableDatabase();
         Cursor playerCursor = sqlDb.rawQuery(selectQuery, null);
         

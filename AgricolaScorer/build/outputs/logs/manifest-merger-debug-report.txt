@@ -6,7 +6,7 @@ ADDED from C:\work\Local\AgricolaScorer-Studio\AgricolaScorer\src\main\AndroidMa
 		INJECTED from C:\work\Local\AgricolaScorer-Studio\AgricolaScorer\src\main\AndroidManifest.xml
 		INJECTED from C:\work\Local\AgricolaScorer-Studio\AgricolaScorer\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from C:\work\Local\AgricolaScorer-Studio\AgricolaScorer\src\main\AndroidManifest.xml:5:5-31
+		ADDED from C:\work\Local\AgricolaScorer-Studio\AgricolaScorer\src\main\AndroidManifest.xml:5:5-30
 		INJECTED from C:\work\Local\AgricolaScorer-Studio\AgricolaScorer\src\main\AndroidManifest.xml
 		INJECTED from C:\work\Local\AgricolaScorer-Studio\AgricolaScorer\src\main\AndroidManifest.xml
 	android:versionCode

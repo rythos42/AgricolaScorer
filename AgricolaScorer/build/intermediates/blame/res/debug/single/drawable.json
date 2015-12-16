@@ -4,50 +4,6 @@
         "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable\\grass.jpg"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_selected.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\drawable\\tab_selected.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\spinner.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\drawable\\spinner.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_indicator.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable\\tab_indicator.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_unselected.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\drawable\\tab_unselected.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\table_body_border_max.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\drawable\\table_body_border_max.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\unit_score_value.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\drawable\\unit_score_value.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_unselected.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable\\tab_unselected.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\table_body_border_min.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\drawable\\table_body_border_min.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_press.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable\\tab_press.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\primary_list_shape.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\drawable\\primary_list_shape.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\total_score_footer.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\drawable\\total_score_footer.xml"
-    },
-    {
         "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable\\table_body_border_min.xml",
         "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable\\table_body_border_min.xml"
     },
@@ -56,36 +12,20 @@
         "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable\\unit_score_value.xml"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_indicator.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\drawable\\tab_indicator.xml"
-    },
-    {
         "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable\\expandable_list_view_indicator.xml",
         "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable\\expandable_list_view_indicator.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_press.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\drawable\\tab_press.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\graph_shape.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\drawable\\graph_shape.xml"
     },
     {
         "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable\\spinner.xml",
         "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable\\spinner.xml"
     },
     {
+        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_indicator.xml",
+        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable\\tab_indicator.xml"
+    },
+    {
         "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_selected.xml",
         "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable\\tab_selected.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sheep.png",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\drawable\\sheep.png"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\grass.jpg",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\drawable\\grass.jpg"
     },
     {
         "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable\\table_body_border.xml",
@@ -104,8 +44,8 @@
         "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable\\table_body_border_max.xml"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\expandable_list_view_indicator.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\drawable\\expandable_list_view_indicator.xml"
+        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_unselected.xml",
+        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable\\tab_unselected.xml"
     },
     {
         "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable\\graph_shape.xml",
@@ -116,7 +56,7 @@
         "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable\\sheep.png"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\table_body_border.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\drawable\\table_body_border.xml"
+        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_press.xml",
+        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable\\tab_press.xml"
     }
 ]

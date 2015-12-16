@@ -1,127 +1,19 @@
 [
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\activity_randomization.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\activity_randomization.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\finished_cell_player.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\finished_cell_player.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\finished_row.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\finished_row.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\agricola_score_player_farmers.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\agricola_score_player_farmers.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\allcreatures_score_player.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\allcreatures_score_player.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\finished_cell_unit_score.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\finished_cell_unit_score.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\finished_cell_unit_score_min.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\finished_cell_unit_score_min.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\finished_cell_total_score.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\finished_cell_total_score.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\finished_cell_score.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\finished_cell_score.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\finished_cell_total_score.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\finished_cell_total_score.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\finished_cell_total_score_min.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\finished_cell_total_score_min.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\score_tab_button.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\score_tab_button.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\finished_player_list_item.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\finished_player_list_item.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\action_bar.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\action_bar.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_score_players.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\activity_score_players.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\picker_unit_score_view.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\picker_unit_score_view.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\finished_cell_unit_score.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\finished_cell_unit_score.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\recent_player_list_item.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\recent_player_list_item.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\select_player_list_item.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\select_player_list_item.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_history.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\activity_history.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\score_player_footer.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\score_player_footer.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\segmented_unit_score_view.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\segmented_unit_score_view.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_history_list_item.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\game_history_list_item.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\activity_player_list.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\activity_player_list.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\action_bar.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\action_bar.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_statistics.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\activity_statistics.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\current_players_list_item.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\current_players_list_item.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\activity_finished.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\activity_finished.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\game_history_player_list_item.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\game_history_player_list_item.xml"
-    },
-    {
         "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\activity_statistics.xml",
         "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\activity_statistics.xml"
     },
     {
+        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\activity_randomization.xml",
+        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\activity_randomization.xml"
+    },
+    {
         "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\activity_history.xml",
         "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\activity_history.xml"
+    },
+    {
+        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\finished_cell_player.xml",
+        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\finished_cell_player.xml"
     },
     {
         "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_players.xml",
@@ -132,28 +24,20 @@
         "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\finished_cell_score.xml"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\finished_cell_unit_score_max.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\finished_cell_unit_score_max.xml"
+        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\agricola_score_player_farmers.xml",
+        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\agricola_score_player_farmers.xml"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\segmented_unit_score_view.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\segmented_unit_score_view.xml"
+        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\finished_cell_unit_score_max.xml",
+        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\finished_cell_unit_score_max.xml"
     },
     {
         "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\finished_player_list_item.xml",
         "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\finished_player_list_item.xml"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\finished_cell_total_score_max.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\finished_cell_total_score_max.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\agricola_score_player.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\agricola_score_player.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_settings.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\activity_settings.xml"
+        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\finished_cell_unit_score.xml",
+        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\finished_cell_unit_score.xml"
     },
     {
         "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\game_history_player_list_item.xml",
@@ -164,32 +48,24 @@
         "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\activity_score_players.xml"
     },
     {
+        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\finished_cell_total_score.xml",
+        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\finished_cell_total_score.xml"
+    },
+    {
         "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\finished_cell_total_score_min.xml",
         "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\finished_cell_total_score_min.xml"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_add_players.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\activity_add_players.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\agricola_score_player_farmers.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\agricola_score_player_farmers.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\score_tab_button.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\score_tab_button.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\finished_cell_unit_score_max.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\finished_cell_unit_score_max.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_finished.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\activity_finished.xml"
+        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\score_tab_button.xml",
+        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\score_tab_button.xml"
     },
     {
         "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\finished_cell_total_score_max.xml",
         "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\finished_cell_total_score_max.xml"
+    },
+    {
+        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\picker_unit_score_view.xml",
+        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\picker_unit_score_view.xml"
     },
     {
         "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\game_history_list_item.xml",
@@ -198,14 +74,6 @@
     {
         "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\activity_settings.xml",
         "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\activity_settings.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_player_list_item.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\select_player_list_item.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_player_list.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\activity_player_list.xml"
     },
     {
         "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\activity_search_statistics.xml",
@@ -232,32 +100,32 @@
         "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\current_players_list_item.xml"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_randomization.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\activity_randomization.xml"
+        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\select_player_list_item.xml",
+        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\select_player_list_item.xml"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_search_statistics.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\activity_search_statistics.xml"
+        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\score_player_footer.xml",
+        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\score_player_footer.xml"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\picker_unit_score_view.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\picker_unit_score_view.xml"
+        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\segmented_unit_score_view.xml",
+        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\segmented_unit_score_view.xml"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\finished_cell_player.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\finished_cell_player.xml"
+        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\activity_player_list.xml",
+        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\activity_player_list.xml"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_create_game.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\activity_create_game.xml"
+        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\action_bar.xml",
+        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\action_bar.xml"
+    },
+    {
+        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\activity_finished.xml",
+        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\activity_finished.xml"
     },
     {
         "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\agricola_score_player.xml",
         "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\layout\\agricola_score_player.xml"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\layout\\score_player_footer.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\layout\\score_player_footer.xml"
     },
     {
         "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\layout\\allcreatures_score_player.xml",

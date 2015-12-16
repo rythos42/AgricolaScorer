@@ -2,6 +2,7 @@ package com.geeksong.agricolascorer;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.graphics.Typeface;
 import android.view.View;
 import android.widget.TextView;
 
@@ -10,10 +11,10 @@ public class ActionBarHelper {
         ActionBar actionBar = activity.getActionBar();
         View actionBarView = activity.getLayoutInflater().inflate(R.layout.action_bar, null);
         TextView title = (TextView) actionBarView.findViewById(R.id.title);
-        
-        title.setTypeface(FontManager.getInstance().getDominican());
+
+        title.setTypeface(FontManager.getInstance().getDominican(), Typeface.NORMAL);
         title.setText(textResource);
-        
+
         actionBar.setCustomView(actionBarView);
     }
 }

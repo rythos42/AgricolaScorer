@@ -1,9 +1,5 @@
 [
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\xml\\preferences.xml"
-    },
-    {
         "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
         "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\xml\\preferences.xml"
     }
