@@ -1,0 +1,3744 @@
+[
+    {
+        "outputFile": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\values-fr\\values-fr.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 6,
+                    "endColumn": 19,
+                    "endOffset": 226
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 105,
+                        "startColumn": 4,
+                        "startOffset": 5805,
+                        "endLine": 109,
+                        "endColumn": 19,
+                        "endOffset": 5980
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 231,
+                    "endLine": 10,
+                    "endColumn": 14,
+                    "endOffset": 370
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 49,
+                        "startColumn": 4,
+                        "startOffset": 2641,
+                        "endLine": 52,
+                        "endColumn": 14,
+                        "endOffset": 2783
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 375,
+                    "endColumn": 42,
+                    "endOffset": 413
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 56,
+                        "startColumn": 4,
+                        "startOffset": 2902,
+                        "endColumn": 42,
+                        "endOffset": 2940
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 418,
+                    "endColumn": 238,
+                    "endOffset": 652
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 57,
+                        "startColumn": 4,
+                        "startOffset": 2946,
+                        "endColumn": 238,
+                        "endOffset": 3180
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 657,
+                    "endColumn": 52,
+                    "endOffset": 705
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 87,
+                        "startColumn": 4,
+                        "startOffset": 4519,
+                        "endColumn": 52,
+                        "endOffset": 4567
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 710,
+                    "endColumn": 37,
+                    "endOffset": 743
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 354,
+                        "endColumn": 37,
+                        "endOffset": 387
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 748,
+                    "endColumn": 53,
+                    "endOffset": 797
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 113,
+                        "endColumn": 53,
+                        "endOffset": 162
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 802,
+                    "endColumn": 80,
+                    "endOffset": 878
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 4,
+                        "startOffset": 2040,
+                        "endColumn": 80,
+                        "endOffset": 2116
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 883,
+                    "endColumn": 68,
+                    "endOffset": 947
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 393,
+                        "endColumn": 68,
+                        "endOffset": 457
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 952,
+                    "endColumn": 52,
+                    "endOffset": 1000
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 59,
+                        "endColumn": 52,
+                        "endOffset": 107
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1005,
+                    "endColumn": 60,
+                    "endOffset": 1061
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1314,
+                        "endColumn": 60,
+                        "endOffset": 1370
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1066,
+                    "endColumn": 54,
+                    "endOffset": 1116
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1258,
+                        "endColumn": 54,
+                        "endOffset": 1308
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1121,
+                    "endColumn": 61,
+                    "endOffset": 1178
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 104,
+                        "startColumn": 4,
+                        "startOffset": 5742,
+                        "endColumn": 61,
+                        "endOffset": 5799
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1183,
+                    "endColumn": 73,
+                    "endOffset": 1252
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 89,
+                        "startColumn": 4,
+                        "startOffset": 4645,
+                        "endColumn": 73,
+                        "endOffset": 4714
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1257,
+                    "endColumn": 42,
+                    "endOffset": 1295
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 45,
+                        "startColumn": 4,
+                        "startOffset": 2476,
+                        "endColumn": 42,
+                        "endOffset": 2514
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1300,
+                    "endColumn": 64,
+                    "endOffset": 1360
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 42,
+                        "startColumn": 4,
+                        "startOffset": 2277,
+                        "endColumn": 64,
+                        "endOffset": 2337
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1365,
+                    "endColumn": 49,
+                    "endOffset": 1410
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 837,
+                        "endColumn": 49,
+                        "endOffset": 882
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1415,
+                    "endColumn": 39,
+                    "endOffset": 1450
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 1464,
+                        "endColumn": 39,
+                        "endOffset": 1499
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 1455,
+                    "endColumn": 53,
+                    "endOffset": 1504
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 66,
+                        "startColumn": 4,
+                        "startOffset": 3571,
+                        "endColumn": 53,
+                        "endOffset": 3620
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 1509,
+                    "endColumn": 37,
+                    "endOffset": 1542
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 62,
+                        "startColumn": 4,
+                        "startOffset": 3369,
+                        "endColumn": 37,
+                        "endOffset": 3402
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 1547,
+                    "endColumn": 59,
+                    "endOffset": 1602
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 1979,
+                        "endColumn": 59,
+                        "endOffset": 2034
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 1607,
+                    "endColumn": 56,
+                    "endOffset": 1659
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 54,
+                        "startColumn": 4,
+                        "startOffset": 2791,
+                        "endColumn": 56,
+                        "endOffset": 2843
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 1664,
+                    "endColumn": 72,
+                    "endOffset": 1732
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 99,
+                        "startColumn": 4,
+                        "startOffset": 5407,
+                        "endColumn": 72,
+                        "endOffset": 5475
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 1737,
+                    "endColumn": 41,
+                    "endOffset": 1774
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 77,
+                        "startColumn": 4,
+                        "startOffset": 4009,
+                        "endColumn": 41,
+                        "endOffset": 4046
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 1779,
+                    "endColumn": 54,
+                    "endOffset": 1829
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 65,
+                        "startColumn": 4,
+                        "startOffset": 3515,
+                        "endColumn": 54,
+                        "endOffset": 3565
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 1834,
+                    "endColumn": 60,
+                    "endOffset": 1890
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1135,
+                        "endColumn": 60,
+                        "endOffset": 1191
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 1895,
+                    "endColumn": 68,
+                    "endOffset": 1959
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 957,
+                        "endColumn": 68,
+                        "endOffset": 1021
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 1964,
+                    "endColumn": 49,
+                    "endOffset": 2009
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 514,
+                        "endColumn": 49,
+                        "endOffset": 559
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 2014,
+                    "endColumn": 42,
+                    "endOffset": 2052
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 1547,
+                        "endColumn": 42,
+                        "endOffset": 1585
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 2057,
+                    "endColumn": 34,
+                    "endOffset": 2087
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 72,
+                        "startColumn": 4,
+                        "startOffset": 3805,
+                        "endColumn": 34,
+                        "endOffset": 3835
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 2092,
+                    "endColumn": 40,
+                    "endOffset": 2128
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 74,
+                        "startColumn": 4,
+                        "startOffset": 3883,
+                        "endColumn": 40,
+                        "endOffset": 3919
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 2133,
+                    "endColumn": 43,
+                    "endOffset": 2172
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 84,
+                        "startColumn": 4,
+                        "startOffset": 4362,
+                        "endColumn": 49,
+                        "endOffset": 4407
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 2177,
+                    "endColumn": 34,
+                    "endOffset": 2207
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 71,
+                        "startColumn": 4,
+                        "startOffset": 3769,
+                        "endColumn": 34,
+                        "endOffset": 3799
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 2212,
+                    "endColumn": 40,
+                    "endOffset": 2248
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 73,
+                        "startColumn": 4,
+                        "startOffset": 3841,
+                        "endColumn": 40,
+                        "endOffset": 3877
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 2253,
+                    "endColumn": 44,
+                    "endOffset": 2293
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 83,
+                        "startColumn": 4,
+                        "startOffset": 4310,
+                        "endColumn": 50,
+                        "endOffset": 4356
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 2298,
+                    "endColumn": 76,
+                    "endOffset": 2370
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 41,
+                        "startColumn": 4,
+                        "startOffset": 2199,
+                        "endColumn": 76,
+                        "endOffset": 2271
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 45,
+                    "startColumn": 4,
+                    "startOffset": 2375,
+                    "endColumn": 72,
+                    "endOffset": 2443
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 103,
+                        "startColumn": 4,
+                        "startOffset": 5668,
+                        "endColumn": 72,
+                        "endOffset": 5736
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 46,
+                    "startColumn": 4,
+                    "startOffset": 2448,
+                    "endColumn": 50,
+                    "endOffset": 2494
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 621,
+                        "endColumn": 50,
+                        "endOffset": 667
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 47,
+                    "startColumn": 4,
+                    "startOffset": 2499,
+                    "endColumn": 64,
+                    "endOffset": 2559
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 91,
+                        "startColumn": 4,
+                        "startOffset": 4834,
+                        "endColumn": 64,
+                        "endOffset": 4894
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 48,
+                    "startColumn": 4,
+                    "startOffset": 2564,
+                    "endColumn": 46,
+                    "endOffset": 2606
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 4,
+                        "startOffset": 1700,
+                        "endColumn": 46,
+                        "endOffset": 1742
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 49,
+                    "startColumn": 4,
+                    "startOffset": 2611,
+                    "endColumn": 50,
+                    "endOffset": 2657
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 64,
+                        "startColumn": 4,
+                        "startOffset": 3463,
+                        "endColumn": 50,
+                        "endOffset": 3509
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 2662,
+                    "endColumn": 53,
+                    "endOffset": 2711
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 63,
+                        "startColumn": 4,
+                        "startOffset": 3408,
+                        "endColumn": 53,
+                        "endOffset": 3457
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 51,
+                    "startColumn": 4,
+                    "startOffset": 2716,
+                    "endColumn": 58,
+                    "endOffset": 2770
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 47,
+                        "startColumn": 4,
+                        "startOffset": 2579,
+                        "endColumn": 58,
+                        "endOffset": 2633
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 52,
+                    "startColumn": 4,
+                    "startOffset": 2775,
+                    "endColumn": 59,
+                    "endOffset": 2830
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 293,
+                        "endColumn": 59,
+                        "endOffset": 348
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 53,
+                    "startColumn": 4,
+                    "startOffset": 2835,
+                    "endColumn": 80,
+                    "endOffset": 2911
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 97,
+                        "startColumn": 4,
+                        "startOffset": 5278,
+                        "endColumn": 80,
+                        "endOffset": 5354
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 54,
+                    "startColumn": 4,
+                    "startOffset": 2916,
+                    "endColumn": 50,
+                    "endOffset": 2962
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 168,
+                        "endColumn": 50,
+                        "endOffset": 214
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 55,
+                    "startColumn": 4,
+                    "startOffset": 2967,
+                    "endColumn": 112,
+                    "endOffset": 3075
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 90,
+                        "startColumn": 4,
+                        "startOffset": 4720,
+                        "endColumn": 112,
+                        "endOffset": 4828
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 56,
+                    "startColumn": 4,
+                    "startOffset": 3080,
+                    "endColumn": 75,
+                    "endOffset": 3151
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 40,
+                        "startColumn": 4,
+                        "startOffset": 2122,
+                        "endColumn": 75,
+                        "endOffset": 2193
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 57,
+                    "startColumn": 4,
+                    "startOffset": 3156,
+                    "endColumn": 33,
+                    "endOffset": 3185
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 44,
+                        "startColumn": 4,
+                        "startOffset": 2441,
+                        "endColumn": 33,
+                        "endOffset": 2470
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 58,
+                    "startColumn": 4,
+                    "startOffset": 3190,
+                    "endColumn": 33,
+                    "endOffset": 3219
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 68,
+                        "startColumn": 4,
+                        "startOffset": 3662,
+                        "endColumn": 33,
+                        "endOffset": 3691
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 59,
+                    "startColumn": 4,
+                    "startOffset": 3224,
+                    "endColumn": 44,
+                    "endOffset": 3264
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 80,
+                        "startColumn": 4,
+                        "startOffset": 4153,
+                        "endColumn": 50,
+                        "endOffset": 4199
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 60,
+                    "startColumn": 4,
+                    "startOffset": 3269,
+                    "endColumn": 42,
+                    "endOffset": 3307
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 79,
+                        "startColumn": 4,
+                        "startOffset": 4103,
+                        "endColumn": 48,
+                        "endOffset": 4147
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 61,
+                    "startColumn": 4,
+                    "startOffset": 3312,
+                    "endColumn": 54,
+                    "endOffset": 3362
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 565,
+                        "endColumn": 54,
+                        "endOffset": 615
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 62,
+                    "startColumn": 4,
+                    "startOffset": 3367,
+                    "endColumn": 96,
+                    "endOffset": 3459
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 43,
+                        "startColumn": 4,
+                        "startOffset": 2343,
+                        "endColumn": 96,
+                        "endOffset": 2435
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 63,
+                    "startColumn": 4,
+                    "startOffset": 3464,
+                    "endColumn": 57,
+                    "endOffset": 3517
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 46,
+                        "startColumn": 4,
+                        "startOffset": 2520,
+                        "endColumn": 57,
+                        "endOffset": 2573
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 64,
+                    "startColumn": 4,
+                    "startOffset": 3522,
+                    "endColumn": 50,
+                    "endOffset": 3568
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 59,
+                        "startColumn": 4,
+                        "startOffset": 3233,
+                        "endColumn": 50,
+                        "endOffset": 3279
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 65,
+                    "startColumn": 4,
+                    "startOffset": 3573,
+                    "endColumn": 59,
+                    "endOffset": 3628
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1197,
+                        "endColumn": 59,
+                        "endOffset": 1252
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 66,
+                    "startColumn": 4,
+                    "startOffset": 3633,
+                    "endColumn": 52,
+                    "endOffset": 3681
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 86,
+                        "startColumn": 4,
+                        "startOffset": 4465,
+                        "endColumn": 52,
+                        "endOffset": 4513
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 67,
+                    "startColumn": 4,
+                    "startOffset": 3686,
+                    "endColumn": 70,
+                    "endOffset": 3752
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 88,
+                        "startColumn": 4,
+                        "startOffset": 4573,
+                        "endColumn": 70,
+                        "endOffset": 4639
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 68,
+                    "startColumn": 4,
+                    "startOffset": 3757,
+                    "endColumn": 49,
+                    "endOffset": 3802
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 463,
+                        "endColumn": 49,
+                        "endOffset": 508
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 69,
+                    "startColumn": 4,
+                    "startOffset": 3807,
+                    "endColumn": 68,
+                    "endOffset": 3871
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 96,
+                        "startColumn": 4,
+                        "startOffset": 5208,
+                        "endColumn": 68,
+                        "endOffset": 5272
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 70,
+                    "startColumn": 4,
+                    "startOffset": 3876,
+                    "endColumn": 67,
+                    "endOffset": 3939
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 1748,
+                        "endColumn": 67,
+                        "endOffset": 1811
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 71,
+                    "startColumn": 4,
+                    "startOffset": 3944,
+                    "endColumn": 72,
+                    "endOffset": 4012
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 95,
+                        "startColumn": 4,
+                        "startOffset": 5134,
+                        "endColumn": 72,
+                        "endOffset": 5202
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 72,
+                    "startColumn": 4,
+                    "startOffset": 4017,
+                    "endColumn": 43,
+                    "endOffset": 4056
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 4,
+                        "startOffset": 1879,
+                        "endColumn": 43,
+                        "endOffset": 1918
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 73,
+                    "startColumn": 4,
+                    "startOffset": 4061,
+                    "endColumn": 60,
+                    "endOffset": 4117
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 4,
+                        "startOffset": 1817,
+                        "endColumn": 60,
+                        "endOffset": 1873
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 74,
+                    "startColumn": 4,
+                    "startOffset": 4122,
+                    "endColumn": 56,
+                    "endOffset": 4174
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1027,
+                        "endColumn": 56,
+                        "endOffset": 1079
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 75,
+                    "startColumn": 4,
+                    "startOffset": 4179,
+                    "endColumn": 48,
+                    "endOffset": 4223
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1085,
+                        "endColumn": 48,
+                        "endOffset": 1129
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 76,
+                    "startColumn": 4,
+                    "startOffset": 4228,
+                    "endColumn": 54,
+                    "endOffset": 4278
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 1591,
+                        "endColumn": 54,
+                        "endOffset": 1641
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 77,
+                    "startColumn": 4,
+                    "startOffset": 4283,
+                    "endColumn": 39,
+                    "endOffset": 4318
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 4,
+                        "startOffset": 3328,
+                        "endColumn": 39,
+                        "endOffset": 3363
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 78,
+                    "startColumn": 4,
+                    "startOffset": 4323,
+                    "endColumn": 51,
+                    "endOffset": 4370
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 100,
+                        "startColumn": 4,
+                        "startOffset": 5481,
+                        "endColumn": 51,
+                        "endOffset": 5528
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 79,
+                    "startColumn": 4,
+                    "startOffset": 4375,
+                    "endColumn": 64,
+                    "endOffset": 4435
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 102,
+                        "startColumn": 4,
+                        "startOffset": 5602,
+                        "endColumn": 64,
+                        "endOffset": 5662
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 80,
+                    "startColumn": 4,
+                    "startOffset": 4440,
+                    "endColumn": 66,
+                    "endOffset": 4502
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 101,
+                        "startColumn": 4,
+                        "startOffset": 5534,
+                        "endColumn": 66,
+                        "endOffset": 5596
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 81,
+                    "startColumn": 4,
+                    "startOffset": 4507,
+                    "endColumn": 47,
+                    "endOffset": 4550
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1376,
+                        "endColumn": 47,
+                        "endOffset": 1419
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 82,
+                    "startColumn": 4,
+                    "startOffset": 4555,
+                    "endColumn": 41,
+                    "endOffset": 4592
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 60,
+                        "startColumn": 4,
+                        "startOffset": 3285,
+                        "endColumn": 41,
+                        "endOffset": 3322
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 83,
+                    "startColumn": 4,
+                    "startOffset": 4597,
+                    "endColumn": 45,
+                    "endOffset": 4638
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 58,
+                        "startColumn": 4,
+                        "startOffset": 3186,
+                        "endColumn": 45,
+                        "endOffset": 3227
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 84,
+                    "startColumn": 4,
+                    "startOffset": 4643,
+                    "endColumn": 62,
+                    "endOffset": 4701
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 94,
+                        "startColumn": 4,
+                        "startOffset": 5070,
+                        "endColumn": 62,
+                        "endOffset": 5128
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 85,
+                    "startColumn": 4,
+                    "startOffset": 4706,
+                    "endColumn": 66,
+                    "endOffset": 4768
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 93,
+                        "startColumn": 4,
+                        "startOffset": 5002,
+                        "endColumn": 66,
+                        "endOffset": 5064
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 86,
+                    "startColumn": 4,
+                    "startOffset": 4773,
+                    "endColumn": 100,
+                    "endOffset": 4869
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 92,
+                        "startColumn": 4,
+                        "startOffset": 4900,
+                        "endColumn": 100,
+                        "endOffset": 4996
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 87,
+                    "startColumn": 4,
+                    "startOffset": 4874,
+                    "endColumn": 45,
+                    "endOffset": 4915
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 98,
+                        "startColumn": 4,
+                        "startOffset": 5360,
+                        "endColumn": 45,
+                        "endOffset": 5401
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 88,
+                    "startColumn": 4,
+                    "startOffset": 4920,
+                    "endColumn": 41,
+                    "endOffset": 4957
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 76,
+                        "startColumn": 4,
+                        "startOffset": 3966,
+                        "endColumn": 41,
+                        "endOffset": 4003
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 89,
+                    "startColumn": 4,
+                    "startOffset": 4962,
+                    "endColumn": 49,
+                    "endOffset": 5007
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 729,
+                        "endColumn": 49,
+                        "endOffset": 774
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 90,
+                    "startColumn": 4,
+                    "startOffset": 5012,
+                    "endColumn": 39,
+                    "endOffset": 5047
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 75,
+                        "startColumn": 4,
+                        "startOffset": 3925,
+                        "endColumn": 39,
+                        "endOffset": 3960
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 91,
+                    "startColumn": 4,
+                    "startOffset": 5052,
+                    "endColumn": 44,
+                    "endOffset": 5092
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 85,
+                        "startColumn": 4,
+                        "startOffset": 4413,
+                        "endColumn": 50,
+                        "endOffset": 4459
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 92,
+                    "startColumn": 4,
+                    "startOffset": 5097,
+                    "endColumn": 51,
+                    "endOffset": 5144
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 1647,
+                        "endColumn": 51,
+                        "endOffset": 1694
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 93,
+                    "startColumn": 4,
+                    "startOffset": 5149,
+                    "endColumn": 51,
+                    "endOffset": 5196
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 55,
+                        "startColumn": 4,
+                        "startOffset": 2849,
+                        "endColumn": 51,
+                        "endOffset": 2896
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 94,
+                    "startColumn": 4,
+                    "startOffset": 5201,
+                    "endColumn": 40,
+                    "endOffset": 5237
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 1505,
+                        "endColumn": 40,
+                        "endOffset": 1541
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 95,
+                    "startColumn": 4,
+                    "startOffset": 5242,
+                    "endColumn": 35,
+                    "endOffset": 5273
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 70,
+                        "startColumn": 4,
+                        "startOffset": 3732,
+                        "endColumn": 35,
+                        "endOffset": 3763
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 96,
+                    "startColumn": 4,
+                    "startOffset": 5278,
+                    "endColumn": 45,
+                    "endOffset": 5319
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 82,
+                        "startColumn": 4,
+                        "startOffset": 4257,
+                        "endColumn": 51,
+                        "endOffset": 4304
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 97,
+                    "startColumn": 4,
+                    "startOffset": 5324,
+                    "endColumn": 71,
+                    "endOffset": 5391
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 220,
+                        "endColumn": 71,
+                        "endOffset": 287
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 98,
+                    "startColumn": 4,
+                    "startOffset": 5396,
+                    "endColumn": 33,
+                    "endOffset": 5425
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 69,
+                        "startColumn": 4,
+                        "startOffset": 3697,
+                        "endColumn": 33,
+                        "endOffset": 3726
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 99,
+                    "startColumn": 4,
+                    "startOffset": 5430,
+                    "endColumn": 44,
+                    "endOffset": 5470
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 81,
+                        "startColumn": 4,
+                        "startOffset": 4205,
+                        "endColumn": 50,
+                        "endOffset": 4251
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 100,
+                    "startColumn": 4,
+                    "startOffset": 5475,
+                    "endColumn": 67,
+                    "endOffset": 5538
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 888,
+                        "endColumn": 67,
+                        "endOffset": 951
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 101,
+                    "startColumn": 4,
+                    "startOffset": 5543,
+                    "endColumn": 54,
+                    "endOffset": 5593
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 673,
+                        "endColumn": 54,
+                        "endOffset": 723
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 102,
+                    "startColumn": 4,
+                    "startOffset": 5598,
+                    "endColumn": 53,
+                    "endOffset": 5647
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 4,
+                        "startOffset": 1924,
+                        "endColumn": 53,
+                        "endOffset": 1973
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 103,
+                    "startColumn": 4,
+                    "startOffset": 5652,
+                    "endColumn": 55,
+                    "endOffset": 5703
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 780,
+                        "endColumn": 55,
+                        "endOffset": 831
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 104,
+                    "startColumn": 4,
+                    "startOffset": 5708,
+                    "endColumn": 37,
+                    "endOffset": 5741
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 1425,
+                        "endColumn": 37,
+                        "endOffset": 1458
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 105,
+                    "startColumn": 4,
+                    "startOffset": 5746,
+                    "endColumn": 34,
+                    "endOffset": 5776
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 67,
+                        "startColumn": 4,
+                        "startOffset": 3626,
+                        "endColumn": 34,
+                        "endOffset": 3656
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 106,
+                    "startColumn": 4,
+                    "startOffset": 5781,
+                    "endColumn": 43,
+                    "endOffset": 5820
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 78,
+                        "startColumn": 4,
+                        "startOffset": 4052,
+                        "endColumn": 49,
+                        "endOffset": 4097
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\values-fr\\values-fr.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 6,
+                    "endColumn": 19,
+                    "endOffset": 226
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 105,
+                        "startColumn": 4,
+                        "startOffset": 5805,
+                        "endLine": 109,
+                        "endColumn": 19,
+                        "endOffset": 5980
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 231,
+                    "endLine": 10,
+                    "endColumn": 14,
+                    "endOffset": 370
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 49,
+                        "startColumn": 4,
+                        "startOffset": 2641,
+                        "endLine": 52,
+                        "endColumn": 14,
+                        "endOffset": 2783
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 375,
+                    "endColumn": 42,
+                    "endOffset": 413
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 56,
+                        "startColumn": 4,
+                        "startOffset": 2902,
+                        "endColumn": 42,
+                        "endOffset": 2940
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 418,
+                    "endColumn": 238,
+                    "endOffset": 652
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 57,
+                        "startColumn": 4,
+                        "startOffset": 2946,
+                        "endColumn": 238,
+                        "endOffset": 3180
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 657,
+                    "endColumn": 52,
+                    "endOffset": 705
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 87,
+                        "startColumn": 4,
+                        "startOffset": 4519,
+                        "endColumn": 52,
+                        "endOffset": 4567
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 710,
+                    "endColumn": 37,
+                    "endOffset": 743
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 354,
+                        "endColumn": 37,
+                        "endOffset": 387
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 748,
+                    "endColumn": 53,
+                    "endOffset": 797
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 113,
+                        "endColumn": 53,
+                        "endOffset": 162
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 802,
+                    "endColumn": 80,
+                    "endOffset": 878
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 4,
+                        "startOffset": 2040,
+                        "endColumn": 80,
+                        "endOffset": 2116
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 883,
+                    "endColumn": 68,
+                    "endOffset": 947
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 393,
+                        "endColumn": 68,
+                        "endOffset": 457
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 952,
+                    "endColumn": 52,
+                    "endOffset": 1000
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 59,
+                        "endColumn": 52,
+                        "endOffset": 107
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1005,
+                    "endColumn": 60,
+                    "endOffset": 1061
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1314,
+                        "endColumn": 60,
+                        "endOffset": 1370
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1066,
+                    "endColumn": 54,
+                    "endOffset": 1116
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1258,
+                        "endColumn": 54,
+                        "endOffset": 1308
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1121,
+                    "endColumn": 61,
+                    "endOffset": 1178
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 104,
+                        "startColumn": 4,
+                        "startOffset": 5742,
+                        "endColumn": 61,
+                        "endOffset": 5799
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1183,
+                    "endColumn": 73,
+                    "endOffset": 1252
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 89,
+                        "startColumn": 4,
+                        "startOffset": 4645,
+                        "endColumn": 73,
+                        "endOffset": 4714
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1257,
+                    "endColumn": 42,
+                    "endOffset": 1295
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 45,
+                        "startColumn": 4,
+                        "startOffset": 2476,
+                        "endColumn": 42,
+                        "endOffset": 2514
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1300,
+                    "endColumn": 64,
+                    "endOffset": 1360
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 42,
+                        "startColumn": 4,
+                        "startOffset": 2277,
+                        "endColumn": 64,
+                        "endOffset": 2337
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1365,
+                    "endColumn": 49,
+                    "endOffset": 1410
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 837,
+                        "endColumn": 49,
+                        "endOffset": 882
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1415,
+                    "endColumn": 39,
+                    "endOffset": 1450
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 1464,
+                        "endColumn": 39,
+                        "endOffset": 1499
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 1455,
+                    "endColumn": 53,
+                    "endOffset": 1504
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 66,
+                        "startColumn": 4,
+                        "startOffset": 3571,
+                        "endColumn": 53,
+                        "endOffset": 3620
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 1509,
+                    "endColumn": 37,
+                    "endOffset": 1542
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 62,
+                        "startColumn": 4,
+                        "startOffset": 3369,
+                        "endColumn": 37,
+                        "endOffset": 3402
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 1547,
+                    "endColumn": 59,
+                    "endOffset": 1602
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 1979,
+                        "endColumn": 59,
+                        "endOffset": 2034
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 1607,
+                    "endColumn": 56,
+                    "endOffset": 1659
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 54,
+                        "startColumn": 4,
+                        "startOffset": 2791,
+                        "endColumn": 56,
+                        "endOffset": 2843
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 1664,
+                    "endColumn": 72,
+                    "endOffset": 1732
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 99,
+                        "startColumn": 4,
+                        "startOffset": 5407,
+                        "endColumn": 72,
+                        "endOffset": 5475
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 1737,
+                    "endColumn": 41,
+                    "endOffset": 1774
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 77,
+                        "startColumn": 4,
+                        "startOffset": 4009,
+                        "endColumn": 41,
+                        "endOffset": 4046
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 1779,
+                    "endColumn": 54,
+                    "endOffset": 1829
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 65,
+                        "startColumn": 4,
+                        "startOffset": 3515,
+                        "endColumn": 54,
+                        "endOffset": 3565
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 1834,
+                    "endColumn": 60,
+                    "endOffset": 1890
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1135,
+                        "endColumn": 60,
+                        "endOffset": 1191
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 1895,
+                    "endColumn": 68,
+                    "endOffset": 1959
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 957,
+                        "endColumn": 68,
+                        "endOffset": 1021
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 1964,
+                    "endColumn": 49,
+                    "endOffset": 2009
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 514,
+                        "endColumn": 49,
+                        "endOffset": 559
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 2014,
+                    "endColumn": 42,
+                    "endOffset": 2052
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 1547,
+                        "endColumn": 42,
+                        "endOffset": 1585
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 2057,
+                    "endColumn": 34,
+                    "endOffset": 2087
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 72,
+                        "startColumn": 4,
+                        "startOffset": 3805,
+                        "endColumn": 34,
+                        "endOffset": 3835
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 2092,
+                    "endColumn": 40,
+                    "endOffset": 2128
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 74,
+                        "startColumn": 4,
+                        "startOffset": 3883,
+                        "endColumn": 40,
+                        "endOffset": 3919
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 2133,
+                    "endColumn": 43,
+                    "endOffset": 2172
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 84,
+                        "startColumn": 4,
+                        "startOffset": 4362,
+                        "endColumn": 49,
+                        "endOffset": 4407
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 2177,
+                    "endColumn": 34,
+                    "endOffset": 2207
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 71,
+                        "startColumn": 4,
+                        "startOffset": 3769,
+                        "endColumn": 34,
+                        "endOffset": 3799
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 2212,
+                    "endColumn": 40,
+                    "endOffset": 2248
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 73,
+                        "startColumn": 4,
+                        "startOffset": 3841,
+                        "endColumn": 40,
+                        "endOffset": 3877
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 2253,
+                    "endColumn": 44,
+                    "endOffset": 2293
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 83,
+                        "startColumn": 4,
+                        "startOffset": 4310,
+                        "endColumn": 50,
+                        "endOffset": 4356
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 2298,
+                    "endColumn": 76,
+                    "endOffset": 2370
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 41,
+                        "startColumn": 4,
+                        "startOffset": 2199,
+                        "endColumn": 76,
+                        "endOffset": 2271
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 45,
+                    "startColumn": 4,
+                    "startOffset": 2375,
+                    "endColumn": 72,
+                    "endOffset": 2443
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 103,
+                        "startColumn": 4,
+                        "startOffset": 5668,
+                        "endColumn": 72,
+                        "endOffset": 5736
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 46,
+                    "startColumn": 4,
+                    "startOffset": 2448,
+                    "endColumn": 50,
+                    "endOffset": 2494
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 621,
+                        "endColumn": 50,
+                        "endOffset": 667
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 47,
+                    "startColumn": 4,
+                    "startOffset": 2499,
+                    "endColumn": 64,
+                    "endOffset": 2559
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 91,
+                        "startColumn": 4,
+                        "startOffset": 4834,
+                        "endColumn": 64,
+                        "endOffset": 4894
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 48,
+                    "startColumn": 4,
+                    "startOffset": 2564,
+                    "endColumn": 46,
+                    "endOffset": 2606
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 4,
+                        "startOffset": 1700,
+                        "endColumn": 46,
+                        "endOffset": 1742
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 49,
+                    "startColumn": 4,
+                    "startOffset": 2611,
+                    "endColumn": 50,
+                    "endOffset": 2657
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 64,
+                        "startColumn": 4,
+                        "startOffset": 3463,
+                        "endColumn": 50,
+                        "endOffset": 3509
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 2662,
+                    "endColumn": 53,
+                    "endOffset": 2711
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 63,
+                        "startColumn": 4,
+                        "startOffset": 3408,
+                        "endColumn": 53,
+                        "endOffset": 3457
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 51,
+                    "startColumn": 4,
+                    "startOffset": 2716,
+                    "endColumn": 58,
+                    "endOffset": 2770
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 47,
+                        "startColumn": 4,
+                        "startOffset": 2579,
+                        "endColumn": 58,
+                        "endOffset": 2633
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 52,
+                    "startColumn": 4,
+                    "startOffset": 2775,
+                    "endColumn": 59,
+                    "endOffset": 2830
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 293,
+                        "endColumn": 59,
+                        "endOffset": 348
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 53,
+                    "startColumn": 4,
+                    "startOffset": 2835,
+                    "endColumn": 80,
+                    "endOffset": 2911
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 97,
+                        "startColumn": 4,
+                        "startOffset": 5278,
+                        "endColumn": 80,
+                        "endOffset": 5354
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 54,
+                    "startColumn": 4,
+                    "startOffset": 2916,
+                    "endColumn": 50,
+                    "endOffset": 2962
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 168,
+                        "endColumn": 50,
+                        "endOffset": 214
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 55,
+                    "startColumn": 4,
+                    "startOffset": 2967,
+                    "endColumn": 112,
+                    "endOffset": 3075
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 90,
+                        "startColumn": 4,
+                        "startOffset": 4720,
+                        "endColumn": 112,
+                        "endOffset": 4828
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 56,
+                    "startColumn": 4,
+                    "startOffset": 3080,
+                    "endColumn": 75,
+                    "endOffset": 3151
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 40,
+                        "startColumn": 4,
+                        "startOffset": 2122,
+                        "endColumn": 75,
+                        "endOffset": 2193
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 57,
+                    "startColumn": 4,
+                    "startOffset": 3156,
+                    "endColumn": 33,
+                    "endOffset": 3185
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 44,
+                        "startColumn": 4,
+                        "startOffset": 2441,
+                        "endColumn": 33,
+                        "endOffset": 2470
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 58,
+                    "startColumn": 4,
+                    "startOffset": 3190,
+                    "endColumn": 33,
+                    "endOffset": 3219
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 68,
+                        "startColumn": 4,
+                        "startOffset": 3662,
+                        "endColumn": 33,
+                        "endOffset": 3691
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 59,
+                    "startColumn": 4,
+                    "startOffset": 3224,
+                    "endColumn": 44,
+                    "endOffset": 3264
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 80,
+                        "startColumn": 4,
+                        "startOffset": 4153,
+                        "endColumn": 50,
+                        "endOffset": 4199
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 60,
+                    "startColumn": 4,
+                    "startOffset": 3269,
+                    "endColumn": 42,
+                    "endOffset": 3307
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 79,
+                        "startColumn": 4,
+                        "startOffset": 4103,
+                        "endColumn": 48,
+                        "endOffset": 4147
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 61,
+                    "startColumn": 4,
+                    "startOffset": 3312,
+                    "endColumn": 54,
+                    "endOffset": 3362
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 565,
+                        "endColumn": 54,
+                        "endOffset": 615
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 62,
+                    "startColumn": 4,
+                    "startOffset": 3367,
+                    "endColumn": 96,
+                    "endOffset": 3459
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 43,
+                        "startColumn": 4,
+                        "startOffset": 2343,
+                        "endColumn": 96,
+                        "endOffset": 2435
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 63,
+                    "startColumn": 4,
+                    "startOffset": 3464,
+                    "endColumn": 57,
+                    "endOffset": 3517
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 46,
+                        "startColumn": 4,
+                        "startOffset": 2520,
+                        "endColumn": 57,
+                        "endOffset": 2573
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 64,
+                    "startColumn": 4,
+                    "startOffset": 3522,
+                    "endColumn": 50,
+                    "endOffset": 3568
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 59,
+                        "startColumn": 4,
+                        "startOffset": 3233,
+                        "endColumn": 50,
+                        "endOffset": 3279
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 65,
+                    "startColumn": 4,
+                    "startOffset": 3573,
+                    "endColumn": 59,
+                    "endOffset": 3628
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1197,
+                        "endColumn": 59,
+                        "endOffset": 1252
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 66,
+                    "startColumn": 4,
+                    "startOffset": 3633,
+                    "endColumn": 52,
+                    "endOffset": 3681
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 86,
+                        "startColumn": 4,
+                        "startOffset": 4465,
+                        "endColumn": 52,
+                        "endOffset": 4513
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 67,
+                    "startColumn": 4,
+                    "startOffset": 3686,
+                    "endColumn": 70,
+                    "endOffset": 3752
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 88,
+                        "startColumn": 4,
+                        "startOffset": 4573,
+                        "endColumn": 70,
+                        "endOffset": 4639
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 68,
+                    "startColumn": 4,
+                    "startOffset": 3757,
+                    "endColumn": 49,
+                    "endOffset": 3802
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 463,
+                        "endColumn": 49,
+                        "endOffset": 508
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 69,
+                    "startColumn": 4,
+                    "startOffset": 3807,
+                    "endColumn": 68,
+                    "endOffset": 3871
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 96,
+                        "startColumn": 4,
+                        "startOffset": 5208,
+                        "endColumn": 68,
+                        "endOffset": 5272
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 70,
+                    "startColumn": 4,
+                    "startOffset": 3876,
+                    "endColumn": 67,
+                    "endOffset": 3939
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 1748,
+                        "endColumn": 67,
+                        "endOffset": 1811
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 71,
+                    "startColumn": 4,
+                    "startOffset": 3944,
+                    "endColumn": 72,
+                    "endOffset": 4012
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 95,
+                        "startColumn": 4,
+                        "startOffset": 5134,
+                        "endColumn": 72,
+                        "endOffset": 5202
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 72,
+                    "startColumn": 4,
+                    "startOffset": 4017,
+                    "endColumn": 43,
+                    "endOffset": 4056
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 4,
+                        "startOffset": 1879,
+                        "endColumn": 43,
+                        "endOffset": 1918
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 73,
+                    "startColumn": 4,
+                    "startOffset": 4061,
+                    "endColumn": 60,
+                    "endOffset": 4117
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 4,
+                        "startOffset": 1817,
+                        "endColumn": 60,
+                        "endOffset": 1873
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 74,
+                    "startColumn": 4,
+                    "startOffset": 4122,
+                    "endColumn": 56,
+                    "endOffset": 4174
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1027,
+                        "endColumn": 56,
+                        "endOffset": 1079
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 75,
+                    "startColumn": 4,
+                    "startOffset": 4179,
+                    "endColumn": 48,
+                    "endOffset": 4223
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1085,
+                        "endColumn": 48,
+                        "endOffset": 1129
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 76,
+                    "startColumn": 4,
+                    "startOffset": 4228,
+                    "endColumn": 54,
+                    "endOffset": 4278
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 1591,
+                        "endColumn": 54,
+                        "endOffset": 1641
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 77,
+                    "startColumn": 4,
+                    "startOffset": 4283,
+                    "endColumn": 39,
+                    "endOffset": 4318
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 4,
+                        "startOffset": 3328,
+                        "endColumn": 39,
+                        "endOffset": 3363
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 78,
+                    "startColumn": 4,
+                    "startOffset": 4323,
+                    "endColumn": 51,
+                    "endOffset": 4370
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 100,
+                        "startColumn": 4,
+                        "startOffset": 5481,
+                        "endColumn": 51,
+                        "endOffset": 5528
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 79,
+                    "startColumn": 4,
+                    "startOffset": 4375,
+                    "endColumn": 64,
+                    "endOffset": 4435
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 102,
+                        "startColumn": 4,
+                        "startOffset": 5602,
+                        "endColumn": 64,
+                        "endOffset": 5662
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 80,
+                    "startColumn": 4,
+                    "startOffset": 4440,
+                    "endColumn": 66,
+                    "endOffset": 4502
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 101,
+                        "startColumn": 4,
+                        "startOffset": 5534,
+                        "endColumn": 66,
+                        "endOffset": 5596
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 81,
+                    "startColumn": 4,
+                    "startOffset": 4507,
+                    "endColumn": 47,
+                    "endOffset": 4550
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1376,
+                        "endColumn": 47,
+                        "endOffset": 1419
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 82,
+                    "startColumn": 4,
+                    "startOffset": 4555,
+                    "endColumn": 41,
+                    "endOffset": 4592
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 60,
+                        "startColumn": 4,
+                        "startOffset": 3285,
+                        "endColumn": 41,
+                        "endOffset": 3322
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 83,
+                    "startColumn": 4,
+                    "startOffset": 4597,
+                    "endColumn": 45,
+                    "endOffset": 4638
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 58,
+                        "startColumn": 4,
+                        "startOffset": 3186,
+                        "endColumn": 45,
+                        "endOffset": 3227
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 84,
+                    "startColumn": 4,
+                    "startOffset": 4643,
+                    "endColumn": 62,
+                    "endOffset": 4701
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 94,
+                        "startColumn": 4,
+                        "startOffset": 5070,
+                        "endColumn": 62,
+                        "endOffset": 5128
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 85,
+                    "startColumn": 4,
+                    "startOffset": 4706,
+                    "endColumn": 66,
+                    "endOffset": 4768
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 93,
+                        "startColumn": 4,
+                        "startOffset": 5002,
+                        "endColumn": 66,
+                        "endOffset": 5064
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 86,
+                    "startColumn": 4,
+                    "startOffset": 4773,
+                    "endColumn": 100,
+                    "endOffset": 4869
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 92,
+                        "startColumn": 4,
+                        "startOffset": 4900,
+                        "endColumn": 100,
+                        "endOffset": 4996
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 87,
+                    "startColumn": 4,
+                    "startOffset": 4874,
+                    "endColumn": 45,
+                    "endOffset": 4915
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 98,
+                        "startColumn": 4,
+                        "startOffset": 5360,
+                        "endColumn": 45,
+                        "endOffset": 5401
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 88,
+                    "startColumn": 4,
+                    "startOffset": 4920,
+                    "endColumn": 41,
+                    "endOffset": 4957
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 76,
+                        "startColumn": 4,
+                        "startOffset": 3966,
+                        "endColumn": 41,
+                        "endOffset": 4003
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 89,
+                    "startColumn": 4,
+                    "startOffset": 4962,
+                    "endColumn": 49,
+                    "endOffset": 5007
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 729,
+                        "endColumn": 49,
+                        "endOffset": 774
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 90,
+                    "startColumn": 4,
+                    "startOffset": 5012,
+                    "endColumn": 39,
+                    "endOffset": 5047
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 75,
+                        "startColumn": 4,
+                        "startOffset": 3925,
+                        "endColumn": 39,
+                        "endOffset": 3960
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 91,
+                    "startColumn": 4,
+                    "startOffset": 5052,
+                    "endColumn": 44,
+                    "endOffset": 5092
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 85,
+                        "startColumn": 4,
+                        "startOffset": 4413,
+                        "endColumn": 50,
+                        "endOffset": 4459
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 92,
+                    "startColumn": 4,
+                    "startOffset": 5097,
+                    "endColumn": 51,
+                    "endOffset": 5144
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 1647,
+                        "endColumn": 51,
+                        "endOffset": 1694
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 93,
+                    "startColumn": 4,
+                    "startOffset": 5149,
+                    "endColumn": 51,
+                    "endOffset": 5196
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 55,
+                        "startColumn": 4,
+                        "startOffset": 2849,
+                        "endColumn": 51,
+                        "endOffset": 2896
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 94,
+                    "startColumn": 4,
+                    "startOffset": 5201,
+                    "endColumn": 40,
+                    "endOffset": 5237
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 1505,
+                        "endColumn": 40,
+                        "endOffset": 1541
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 95,
+                    "startColumn": 4,
+                    "startOffset": 5242,
+                    "endColumn": 35,
+                    "endOffset": 5273
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 70,
+                        "startColumn": 4,
+                        "startOffset": 3732,
+                        "endColumn": 35,
+                        "endOffset": 3763
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 96,
+                    "startColumn": 4,
+                    "startOffset": 5278,
+                    "endColumn": 45,
+                    "endOffset": 5319
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 82,
+                        "startColumn": 4,
+                        "startOffset": 4257,
+                        "endColumn": 51,
+                        "endOffset": 4304
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 97,
+                    "startColumn": 4,
+                    "startOffset": 5324,
+                    "endColumn": 71,
+                    "endOffset": 5391
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 220,
+                        "endColumn": 71,
+                        "endOffset": 287
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 98,
+                    "startColumn": 4,
+                    "startOffset": 5396,
+                    "endColumn": 33,
+                    "endOffset": 5425
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 69,
+                        "startColumn": 4,
+                        "startOffset": 3697,
+                        "endColumn": 33,
+                        "endOffset": 3726
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 99,
+                    "startColumn": 4,
+                    "startOffset": 5430,
+                    "endColumn": 44,
+                    "endOffset": 5470
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 81,
+                        "startColumn": 4,
+                        "startOffset": 4205,
+                        "endColumn": 50,
+                        "endOffset": 4251
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 100,
+                    "startColumn": 4,
+                    "startOffset": 5475,
+                    "endColumn": 67,
+                    "endOffset": 5538
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 888,
+                        "endColumn": 67,
+                        "endOffset": 951
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 101,
+                    "startColumn": 4,
+                    "startOffset": 5543,
+                    "endColumn": 54,
+                    "endOffset": 5593
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 673,
+                        "endColumn": 54,
+                        "endOffset": 723
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 102,
+                    "startColumn": 4,
+                    "startOffset": 5598,
+                    "endColumn": 53,
+                    "endOffset": 5647
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 4,
+                        "startOffset": 1924,
+                        "endColumn": 53,
+                        "endOffset": 1973
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 103,
+                    "startColumn": 4,
+                    "startOffset": 5652,
+                    "endColumn": 55,
+                    "endOffset": 5703
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 780,
+                        "endColumn": 55,
+                        "endOffset": 831
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 104,
+                    "startColumn": 4,
+                    "startOffset": 5708,
+                    "endColumn": 37,
+                    "endOffset": 5741
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 1425,
+                        "endColumn": 37,
+                        "endOffset": 1458
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 105,
+                    "startColumn": 4,
+                    "startOffset": 5746,
+                    "endColumn": 34,
+                    "endOffset": 5776
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 67,
+                        "startColumn": 4,
+                        "startOffset": 3626,
+                        "endColumn": 34,
+                        "endOffset": 3656
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 106,
+                    "startColumn": 4,
+                    "startOffset": 5781,
+                    "endColumn": 43,
+                    "endOffset": 5820
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-fr\\strings.xml",
+                    "position": {
+                        "startLine": 78,
+                        "startColumn": 4,
+                        "startOffset": 4052,
+                        "endColumn": 49,
+                        "endOffset": 4097
+                    }
+                }
+            }
+        ]
+    }
+]

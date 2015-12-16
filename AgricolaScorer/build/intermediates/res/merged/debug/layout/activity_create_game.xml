@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/content" >
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+	</ListView>   
+    
+	<Button
+        android:id="@+id/addPlayerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@android:id/list"
+        android:text="@string/add_player"
+        android:onClick="addPlayer"
+        android:layout_marginBottom="10dp"
+        style="@style/moreSpaceOnBottom" />
+       
+	<Button
+		android:id="@+id/scoreAgricolaButton"
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addPlayerButton"
+        android:text="@string/score_agricola"
+        android:onClick="scoreAgricola"
+        android:visibility="gone" />
+	
+	<Button
+		android:id="@+id/scoreFarmersButton"
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scoreAgricolaButton"
+        android:text="@string/score_farmers"
+        android:onClick="scoreFarmers"
+        android:visibility="gone" />
+		       
+	<Button
+		android:id="@+id/scoreAllCreaturesButton"
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scoreFarmersButton"
+        android:text="@string/score_all_creatures"
+        android:onClick="scoreAllCreatures"
+        android:visibility="gone" />
+</RelativeLayout>

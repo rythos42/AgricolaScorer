@@ -1,0 +1,50 @@
+[
+    {
+        "outputFile": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\values-v14\\values-v14.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 76,
+                    "endOffset": 127
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-v14\\styles.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 19,
+                        "endColumn": 77,
+                        "endOffset": 92
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\build\\intermediates\\res\\merged\\debug\\values-v14\\values-v14.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 76,
+                    "endOffset": 127
+                },
+                "from": {
+                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\app\\src\\main\\res\\values-v14\\styles.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 19,
+                        "endColumn": 77,
+                        "endOffset": 92
+                    }
+                }
+            }
+        ]
+    }
+]

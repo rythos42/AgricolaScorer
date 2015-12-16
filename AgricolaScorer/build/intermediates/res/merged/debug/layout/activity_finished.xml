@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                style="@style/content"
+                tools:ignore="HardcodedText">
+
+    <ScrollView
+            android:id="@+id/finishedTableScroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/footer"
+            >
+        <TableLayout android:id="@+id/finishedTable"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                >
+            <TableRow android:id="@+id/finishedTableHeader"
+                      style="@style/finishedTableHeaderRow">
+                <View style="@style/finishedTableHeaderCorner"/>
+            </TableRow>
+
+            <!-- Table rows for unit scores will be added dynamically -->
+
+            <TableRow android:id="@+id/finishedTableFooter"
+                      style="@style/finishedTableRowFooter">
+                <TextView style="@style/finishedTableTotalScoreHeader" android:text="Total"/>
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+    <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            >
+
+        <!-- Invisible element acting as separator -->
+        <View
+                android:id="@+id/center_separator"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"/>
+
+        <Button
+                android:id="@+id/startAgainButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/center_separator"
+                android:text="@string/start_again"
+                android:onClick="startAgain"/>
+
+        <Button
+                android:id="@+id/saveGameButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/center_separator"
+                android:text="@string/save_game"
+                android:onClick="saveGame"/>
+    </RelativeLayout>
+</RelativeLayout>

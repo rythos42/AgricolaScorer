@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.geeksong.agricolascorer"
+    android:versionCode="15"
+    android:versionName="1.54" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name="com.geeksong.agricolascorer.AgricolaApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/sheep"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.geeksong.agricolascorer.CreateGameActivity"
+            android:label="@string/app_name"
+            android:theme="@style/GreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.geeksong.agricolascorer.AddPlayersActivity"
+            android:label="@string/title_activity_add_players"
+            android:theme="@style/GreenTheme" >
+        </activity>
+        <activity
+            android:name="com.geeksong.agricolascorer.ScorePlayersActivity"
+            android:theme="@style/GreenTheme_NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.geeksong.agricolascorer.FinishedActivity"
+            android:theme="@style/GreenTheme_NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.geeksong.agricolascorer.HistoryActivity"
+            android:theme="@style/GreenTheme_NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.geeksong.agricolascorer.PlayerListActivity"
+            android:theme="@style/GreenTheme_NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.geeksong.agricolascorer.SearchStatisticsActivity"
+            android:theme="@style/GreenTheme" >
+        </activity>
+        <activity
+            android:name="com.geeksong.agricolascorer.RandomizationActivity"
+            android:theme="@style/GreenTheme" >
+        </activity>
+        <activity
+            android:name="com.geeksong.agricolascorer.StatisticsActivity"
+            android:theme="@style/GreenTheme" >
+        </activity>
+        <activity
+            android:name="com.geeksong.agricolascorer.SettingsActivity"
+            android:theme="@style/GreenTheme_Settings" >
+        </activity>
+    </application>
+
+</manifest>

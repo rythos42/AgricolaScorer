@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/content"
+    android:orientation="vertical"
+    android:focusable="true"
+	android:focusableInTouchMode="true" >
+
+    <RelativeLayout 
+		android:layout_width="match_parent"
+    	android:layout_height="wrap_content">
+    	
+	    <EditText
+	        android:id="@+id/inputPlayerName"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="@string/input_player_name"
+	 		android:layout_toLeftOf = "@+id/doneAddingPlayerButton"
+	 		style="@style/text" >
+	   	</EditText>
+	   	
+	 	<Button
+	        android:id="@+id/doneAddingPlayerButton"
+	        android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/add"
+	        android:layout_alignParentRight = "true"
+	        android:onClick="addPlayerToGame" />
+	 	
+	</RelativeLayout>
+	
+	<Button
+        android:id="@+id/addressBookButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/address_book"
+        android:onClick="searchAddressBook"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+	
+	<TextView
+	    android:id="@+id/recentPlayersLabel"
+	    android:text="@string/recent_label" 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" 
+	    style="@style/title" />
+       
+    <ListView
+        android:id="@+id/recentPlayersList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+</LinearLayout>

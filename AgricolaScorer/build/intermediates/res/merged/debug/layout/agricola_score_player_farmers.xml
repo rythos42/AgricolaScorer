@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:custom="http://schemas.android.com/apk/res/com.geeksong.agricolascorer"
+                android:id="@+id/farmersScoringPanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/begging_cards_picker">
+
+    <!-- Invisible element acting as separator -->
+    <View
+            android:id="@+id/center_separator_farmers"
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"/>
+
+    <com.geeksong.agricolascorer.control.PickerUnitScoreView
+            android:id="@+id/horses_picker"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/points_for_cards_picker"
+            android:layout_toLeftOf="@id/center_separator_farmers"
+            custom:label="@string/horses_label"
+            />
+
+    <com.geeksong.agricolascorer.control.PickerUnitScoreView
+            android:id="@+id/in_bed_family_picker"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/points_for_cards_picker"
+            android:layout_toRightOf="@id/center_separator_farmers"
+            custom:label="@string/in_bed_family_label"
+            />
+
+</RelativeLayout>
