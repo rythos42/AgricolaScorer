@@ -105,11 +105,11 @@ public class HistoryActivity extends Activity {
     			DatePickerFragment datePickerFragment = new DatePickerFragment();
     			datePickerFragment.setDefault(game.getDate());
     			datePickerFragment.setOnDateSetListener(new OnDateSetListener() {
-    				public void onDateSet(DatePicker datePicker, int year, int month, int day) { 
+    				public void onDateSet(DatePicker datePicker, int year, int month, int day) {
     					Calendar cal = Calendar.getInstance();
-    					cal.set(year, month, day); 
-    					game.setDate(cal.getTime()); 
-    					
+    					cal.set(year, month, day);
+    					game.setDate(cal.getTime());
+
     					historyMapper.updateGameDate(game);
     					historyAdapter.notifyDataSetChanged();
     				}

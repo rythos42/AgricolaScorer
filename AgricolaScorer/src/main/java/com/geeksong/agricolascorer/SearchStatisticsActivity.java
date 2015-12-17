@@ -106,10 +106,10 @@ public class SearchStatisticsActivity extends Activity implements OnCheckedChang
 		search.togglePlayer(buttonView.getText().toString());
 	}
 	
-	private Date putDateIntoButton(Date date, int buttonId) {
+	private void putDateIntoButton(Date date, int buttonId) {
     	Calendar endDate = Calendar.getInstance();
     	endDate.setTime(date);
-    	return putDateIntoButton(endDate.get(Calendar.YEAR), endDate.get(Calendar.MONTH), endDate.get(Calendar.DAY_OF_MONTH), buttonId);
+    	putDateIntoButton(endDate.get(Calendar.YEAR), endDate.get(Calendar.MONTH), endDate.get(Calendar.DAY_OF_MONTH), buttonId);
 	}
 	
 	private Date putDateIntoButton(int year, int month, int day, int buttonId) {
@@ -128,8 +128,8 @@ public class SearchStatisticsActivity extends Activity implements OnCheckedChang
 		DatePickerFragment startDatePickerFragment = new DatePickerFragment();
 		startDatePickerFragment.setDefault(StatisticSearch.getInstance().getStartDate());
 		startDatePickerFragment.setOnDateSetListener(new OnDateSetListener() {
-			public void onDateSet(DatePicker datePicker, int year, int month, int day) { 
-				Date startDate = putDateIntoButton(year, month, day, R.id.startDate); 
+			public void onDateSet(DatePicker datePicker, int year, int month, int day) {
+				Date startDate = putDateIntoButton(year, month, day, R.id.startDate);
 			    StatisticSearch.getInstance().setStartDate(startDate);
 			}
 		});
@@ -140,8 +140,8 @@ public class SearchStatisticsActivity extends Activity implements OnCheckedChang
 		DatePickerFragment endDatePickerFragment = new DatePickerFragment();
 		endDatePickerFragment.setDefault(StatisticSearch.getInstance().getEndDate());
 		endDatePickerFragment.setOnDateSetListener(new OnDateSetListener() {
-			public void onDateSet(DatePicker datePicker, int year, int month, int day) { 
-				Date endDate = putDateIntoButton(year, month, day, R.id.endDate); 
+			public void onDateSet(DatePicker datePicker, int year, int month, int day) {
+				Date endDate = putDateIntoButton(year, month, day, R.id.endDate);
 			    StatisticSearch.getInstance().setEndDate(endDate);
 			}
 		});

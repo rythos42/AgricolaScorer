@@ -5,7 +5,7 @@ import com.geeksong.agricolascorer.R;
 import com.geeksong.agricolascorer.model.AgricolaScore;
 
 public class AgricolaHandler implements IGameTypeHandler<AgricolaScore> {
-    public static final int[] SCORE_LABEL_IDS = new int[]{
+    static final int[] SCORE_LABEL_IDS = new int[]{
             R.string.fields_label,
             R.string.pastures_label,
             R.string.grain_label,

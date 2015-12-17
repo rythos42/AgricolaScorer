@@ -22,7 +22,7 @@ public abstract class BaseScoreMapper implements ScoreMapper {
 	
 	public List<Game> getGamesList(Database db) {
         Cursor cursor = getGamesCursor(db);
-        Hashtable<Integer, Game> games = new Hashtable<Integer, Game>();
+        Hashtable<Integer, Game> games = new Hashtable<>();
         
         while(cursor.moveToNext()) {
         	int gameId = cursor.getInt(0);
@@ -53,7 +53,7 @@ public abstract class BaseScoreMapper implements ScoreMapper {
 	}
 	
     private ArrayList<PlayerStatistics> getPlayerStatisticsFromCursor(Cursor scoreCursor) {
-    	Hashtable<Integer, PlayerStatistics> players = new Hashtable<Integer, PlayerStatistics>();
+    	Hashtable<Integer, PlayerStatistics> players = new Hashtable<>();
     	
     	while(scoreCursor.moveToNext()) {
     		String playerName = scoreCursor.getString(1);
@@ -73,10 +73,10 @@ public abstract class BaseScoreMapper implements ScoreMapper {
     		stats.addScore(dateTicks, score);
     	}
     	
-    	return new ArrayList<PlayerStatistics>(players.values());
+    	return new ArrayList<>(players.values());
     }
     
-    protected String getPlayerSearchSql(StatisticSearch search) {
+    String getPlayerSearchSql(StatisticSearch search) {
     	String query = String.format(Locale.US, "WHERE player.%s in (", Database.KEY_NAME);
    		String prefix = "";
    		for(String playerName : search.getSelectedPlayers()) {
@@ -87,11 +87,11 @@ public abstract class BaseScoreMapper implements ScoreMapper {
    		return query;
     }
     
-    protected String getDateSearchSql(StatisticSearch search) {
+    String getDateSearchSql(StatisticSearch search) {
     	return String.format(Locale.US, " AND game.playedDate BETWEEN %d AND %d ", search.getStartDate().getTime(), search.getEndDate().getTime());
     }
     
-    protected String getGameTypeSearchSql(StatisticSearch search) {
+    String getGameTypeSearchSql(StatisticSearch search) {
     	return String.format(Locale.US, " AND game.%s=%d ", Database.KEY_GAME_TYPE, search.getGameType().ordinal());
     }
 }

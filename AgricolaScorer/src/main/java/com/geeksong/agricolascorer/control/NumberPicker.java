@@ -13,19 +13,19 @@ import com.geeksong.agricolascorer.R;
 public class NumberPicker extends LinearLayout {
 	private int number;
 	private OnValueChangeListener listener;
-	private int minimum = Integer.MIN_VALUE;
-	private EditText editText;
+	private final EditText editText;
 	
 	public NumberPicker(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		
 		this.setOrientation(LinearLayout.HORIZONTAL);
 		
-        TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.NumberPicker);
-        int textColour = a.getColor(R.styleable.NumberPicker_android_textColor, Color.WHITE);
+        TypedArray attributes = getContext().obtainStyledAttributes(attrs, R.styleable.NumberPicker);
+        int textColour = attributes.getColor(R.styleable.NumberPicker_android_textColor, Color.WHITE);
+		attributes.recycle();
 		
 	    editText = new EditText(context);
-	    editText.setText(Integer.toString(number));
+	    editText.setText(String.format("%d", number));
 	    editText.setTextColor(textColour);
 	    editText.setPadding(editText.getPaddingLeft(), editText.getPaddingTop(), editText.getPaddingRight(), editText.getPaddingBottom() + 15);
 	    
@@ -48,67 +48,56 @@ public class NumberPicker extends LinearLayout {
 	    return layout;		
 	}
 	
-	public void setMinimum(int minimum) {
-		this.minimum = minimum;
-	}
-	
-	int getMinimum() {
-		return this.minimum;
-	}
-
     public int getValue() {
         return number;
     }
 
     public void setValue(int number) {
-		int oldVal = this.number;
 		this.number = number;
-		editText.setText(Integer.toString(number));
-		listener.onValueChange(this, oldVal, this.number);
+		editText.setText(String.format("%d", number));
+		listener.onValueChange(this.number);
 	}
 	
 	public void setOnValueChangedListener(OnValueChangeListener listener) {
 		this.listener = listener;
 	}
 	
-	protected class IncrementListener implements View.OnClickListener {
-		private NumberPicker picker;
-		private EditText input;
+	class IncrementListener implements View.OnClickListener {
+		private final NumberPicker picker;
+		private final EditText input;
 		
-		protected IncrementListener(NumberPicker picker, EditText input) { 
+		IncrementListener(NumberPicker picker, EditText input) {
 			this.picker = picker;
 			this.input = input;
 		}
 		
 		public void onClick(View v) {
-        	int oldVal = number;
         	number++;
-        	listener.onValueChange(picker, oldVal, number);
+        	listener.onValueChange(number);
         	
-        	input.setText(Integer.toString(number));
+        	input.setText(String.format("%d", number));
         }
 	}
 	
-	protected class DecrementListener implements View.OnClickListener {
-		private NumberPicker picker;
-		private EditText input;
+	class DecrementListener implements View.OnClickListener {
+		private final NumberPicker picker;
+		private final EditText input;
 		
-		protected DecrementListener(NumberPicker picker, EditText input) { 
+		DecrementListener(NumberPicker picker, EditText input) {
 			this.picker = picker;
 			this.input = input;
 		}
 		
 		public void onClick(View v) {
-        	int oldVal = number;
         	number--;
-        	if(number < picker.getMinimum()) {
-        		number = picker.getMinimum();
+        	if(number < 0) {
+        		number = 0;
         		return;
         	}
         	
-        	listener.onValueChange(picker, oldVal, number);
+        	listener.onValueChange(number);
         	
-        	input.setText(Integer.toString(number));
+        	input.setText(String.format("%d", number));
         }
 	}
 }

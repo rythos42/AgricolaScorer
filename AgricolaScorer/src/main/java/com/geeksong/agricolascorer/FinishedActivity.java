@@ -24,7 +24,7 @@ import java.util.Map;
 // SuppressWarnings: for generic around Score, because Score is not parameterized outside this class
 @SuppressWarnings("unchecked")
 public class FinishedActivity extends Activity {
-    private static final Map<GameType, IGameTypeHandler> GAME_TYPE_HANDLERS = new HashMap<GameType, IGameTypeHandler>();
+    private static final Map<GameType, IGameTypeHandler> GAME_TYPE_HANDLERS = new HashMap<>();
     static {
         GAME_TYPE_HANDLERS.put(GameType.Agricola, new AgricolaHandler());
         GAME_TYPE_HANDLERS.put(GameType.Farmers, new FarmersHandler());
@@ -161,6 +161,7 @@ public class FinishedActivity extends Activity {
         startAgain(source);
     }
 
+    @SuppressWarnings("WeakerAccess")
     public void startAgain(View source) {
         GameCache.getInstance().clearGame();
 

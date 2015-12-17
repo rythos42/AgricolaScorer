@@ -6,7 +6,7 @@ import com.geeksong.agricolascorer.R;
 
 public class PickerUnitScoreView extends AbstractUnitScoreView {
 
-    private NumberPicker numberPicker;
+    private final NumberPicker numberPicker;
 
     public PickerUnitScoreView(Context context, AttributeSet attrs) {
         super(context, attrs, R.layout.picker_unit_score_view);

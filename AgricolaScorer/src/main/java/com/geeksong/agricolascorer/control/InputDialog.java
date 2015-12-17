@@ -16,18 +16,16 @@ public class InputDialog extends AlertDialog.Builder {
 		final EditText editText = new EditText(context);
 		setView(editText);
 		
-		final InputDialog thisDialog = this;
-
 		setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
 			public void onClick(DialogInterface dialog, int whichButton) {
 				String input = editText.getText().toString();
-				listener.onClick(thisDialog, DialogResult.OK, input);
+				listener.onClick(DialogResult.OK, input);
 			}
 		});
 
 		setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
 			public void onClick(DialogInterface dialog, int whichButton) {
-				listener.onClick(thisDialog, DialogResult.CANCEL, "");
+				listener.onClick(DialogResult.CANCEL, "");
 			}
 		});
 	}

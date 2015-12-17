@@ -89,7 +89,9 @@ public class AllCreaturesScoreMapper extends BaseScoreMapper {
 		Cursor gamesCursor = sqlDb.rawQuery(selectGames, null);
 		
 		boolean hasGame = gamesCursor.moveToNext();
-		return hasGame ? gamesCursor.getInt(0) : 0;
+		int gameCount = hasGame ? gamesCursor.getInt(0) : 0;
+		gamesCursor.close();
+		return gameCount;
 	}
 	
 	@Override

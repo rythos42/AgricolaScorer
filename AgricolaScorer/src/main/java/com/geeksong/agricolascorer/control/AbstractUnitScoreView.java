@@ -19,12 +19,14 @@ public abstract class AbstractUnitScoreView extends RelativeLayout {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         inflater.inflate(layoutId, this, true);
 
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.UnitScoreView, 0, 0);
-        ((TextView) findViewById(R.id.label)).setText(a.getString(R.styleable.UnitScoreView_label));
+        TypedArray attributes = context.obtainStyledAttributes(attrs, R.styleable.UnitScoreView, 0, 0);
+        ((TextView) findViewById(R.id.label)).setText(attributes.getString(R.styleable.UnitScoreView_label));
 
         scoreTextView = (TextView) findViewById(R.id.unit_score);
-        scoreTextView.setVisibility(a.getBoolean(R.styleable.UnitScoreView_hideScore, false)
+        scoreTextView.setVisibility(attributes.getBoolean(R.styleable.UnitScoreView_hideScore, false)
                 ? View.INVISIBLE : View.VISIBLE);
+
+        attributes.recycle();
     }
 
     public void updateScore(int score) {

@@ -17,8 +17,8 @@ import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
 
 public class GameHistoryAdapter extends BaseExpandableListAdapter {
-	private Context context;
-	private List<Game> games;
+	private final Context context;
+	private final List<Game> games;
 	
 	public GameHistoryAdapter(Context context, List<Game> games) {
 		this.context = context;
@@ -41,7 +41,7 @@ public class GameHistoryAdapter extends BaseExpandableListAdapter {
 
 	public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
 		if (convertView == null) {
-			LayoutInflater inflater = (LayoutInflater) ((Activity)context).getLayoutInflater();
+			LayoutInflater inflater = ((Activity)context).getLayoutInflater();
 			convertView = inflater.inflate(R.layout.game_history_player_list_item, null);
 		}
 		
@@ -51,7 +51,7 @@ public class GameHistoryAdapter extends BaseExpandableListAdapter {
 		personNameView.setText(score.getPlayer().getName());
 
 		TextView personScoreView = (TextView) convertView.findViewById(R.id.score);
-		personScoreView.setText(Integer.toString(score.getTotalScore()));
+		personScoreView.setText(String.format("%d", score.getTotalScore()));
 
 		return convertView;
 	}
@@ -75,7 +75,7 @@ public class GameHistoryAdapter extends BaseExpandableListAdapter {
 	public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
 		Game game = (Game) getGroup(groupPosition);
 		if (convertView == null) {
-			LayoutInflater inflater = (LayoutInflater) ((Activity)context).getLayoutInflater();
+			LayoutInflater inflater = ((Activity)context).getLayoutInflater();
 			convertView = inflater.inflate(R.layout.game_history_list_item, null);
 		}
 		Date gameDate = game.getDate();

@@ -12,10 +12,10 @@ import android.content.ContentValues;
 import android.database.Cursor;
 
 public interface ScoreMapper {
-	public ContentValues toDatabase(Score score, long gameId);
-	public Score toScore(Cursor cursor, Player player);
-	public List<Game> getGamesList(Database db);	
-	public void deleteGame(Database db, Game game);
-	public int getGameCount(Database db, int playerId);
-	public List<PlayerStatistics> getPlayerStatistics(Database db, StatisticSearch search);
+	ContentValues toDatabase(Score score, long gameId);
+	Score toScore(Cursor cursor, Player player);
+	List<Game> getGamesList(Database db);
+	void deleteGame(Database db, Game game);
+	int getGameCount(Database db, int playerId);
+	List<PlayerStatistics> getPlayerStatistics(Database db, StatisticSearch search);
 }

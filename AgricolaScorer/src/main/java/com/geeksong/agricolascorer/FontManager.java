@@ -13,7 +13,7 @@ public class FontManager {
 		instance = new FontManager(assets);
 	}
 	
-	private AssetManager assets;
+	private final AssetManager assets;
 	private Typeface dominican;
 	
 	private FontManager(AssetManager assets) {

@@ -14,8 +14,8 @@ import com.geeksong.agricolascorer.formatter.GameCountFormatter;
 import com.geeksong.agricolascorer.model.Player;
 
 public class AddPlayerAdapter extends ArrayAdapter<Player> {
-	public AddPlayerAdapter(Context context, int layout, int textViewResourceId, List<Player> players) {
-		super(context, layout, textViewResourceId, players);
+	public AddPlayerAdapter(Context context, List<Player> players) {
+		super(context, R.layout.recent_player_list_item, R.id.name, players);
 	}
 	
 	@Override

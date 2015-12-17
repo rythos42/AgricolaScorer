@@ -16,13 +16,13 @@ public class Database extends SQLiteOpenHelper {
     public static final String TABLE_RECENTPLAYERS = "RecentPlayers";
 	public static final String TABLE_GAMES = "Games";
 	public static final String TABLE_SCORES = "Scores";
-	public static final String TABLE_SETTINGS = "Settings";
+	private static final String TABLE_SETTINGS = "Settings";
 	public static final String TABLE_ALL_CREATURES_SCORES = "AllCreaturesScores";
     
     public static final String KEY_NAME = "name";
-    public static final String KEY_FARMERS = "farmers";
+    private static final String KEY_FARMERS = "farmers";
     public static final String KEY_GAMECOUNT = "gameCount";
-    public static final String KEY_WHO_WON = "whoWon";
+    private static final String KEY_WHO_WON = "whoWon";
 	
 	public static final String KEY_DATE = "playedDate";
 	public static final String KEY_GAME_TYPE = "gameType";

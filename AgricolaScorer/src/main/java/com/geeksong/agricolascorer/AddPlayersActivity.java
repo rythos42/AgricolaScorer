@@ -38,7 +38,7 @@ public class AddPlayersActivity extends Activity implements OnItemClickListener 
 		TextView item = (TextView) view.findViewById(R.id.name);
 		
 		putNameIntoInput(item.getText().toString().trim());
-		addPlayerToGame(null);
+		addPlayerToGame(view);
 	}
     
     private void putNameIntoInput(String name) {
@@ -51,7 +51,8 @@ public class AddPlayersActivity extends Activity implements OnItemClickListener 
     	return inputPlayerName.getText().toString();
     }
      
-    public void addPlayerToGame(View source) {
+    @SuppressWarnings({"WeakerAccess", "UnusedParameters"})
+	public void addPlayerToGame(View source) {
     	String playerName = getInputName();
     	returnToCreateGame(playerName);
     }
@@ -63,7 +64,8 @@ public class AddPlayersActivity extends Activity implements OnItemClickListener 
     	finish();
     }
     
-    public void searchAddressBook(View source) {
+    @SuppressWarnings("UnusedParameters")
+	public void searchAddressBook(View source) {
     	Intent intent = new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);
     	startActivityForResult(intent, PICK_CONTACT);
     }
@@ -73,16 +75,19 @@ public class AddPlayersActivity extends Activity implements OnItemClickListener 
     	super.onActivityResult(reqCode, resultCode, data);
 			
     	switch (reqCode) {
-    		case PICK_CONTACT:
-    			if (resultCode != Activity.RESULT_OK)
-    				return;
+			case PICK_CONTACT:
+				if (resultCode != Activity.RESULT_OK)
+					return;
 
-    			Uri contactData = data.getData();
-				Cursor c = getContentResolver().query(contactData, null, null, null, null);
+				Uri contactData = data.getData();
+				Cursor contactCursor = getContentResolver().query(contactData, null, null, null, null);
 
-				if (c.moveToFirst()) {
-					String playerName = c.getString(c.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
-					returnToCreateGame(playerName);  
+				if (contactCursor != null) {
+					if (contactCursor.moveToFirst()) {
+						String playerName = contactCursor.getString(contactCursor.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
+						returnToCreateGame(playerName);
+					}
+					contactCursor.close();
 				}
     			break;
     		case PICK_DATABASE:

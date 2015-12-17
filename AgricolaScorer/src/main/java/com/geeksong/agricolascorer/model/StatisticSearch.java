@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class StatisticSearch {
-	private static StatisticSearch instance = new StatisticSearch();
+	private static final StatisticSearch instance = new StatisticSearch();
 	private StatisticSearch() {
 	}
 	public static StatisticSearch getInstance() {
 		return instance;
 	}	
 	
-	private ArrayList<String> playerNames = new ArrayList<String>();
+	private final ArrayList<String> playerNames = new ArrayList<>();
 	private Date endDate = new Date(0);
 	private Date startDate = new Date(0);
 	private GameType gameType = GameType.Agricola;

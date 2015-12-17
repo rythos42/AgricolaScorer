@@ -6,15 +6,16 @@ import java.util.Locale;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.util.Log;
 
 import com.geeksong.agricolascorer.managers.GameTypeManager;
 import com.geeksong.agricolascorer.model.PlayerStatistics;
 import com.geeksong.agricolascorer.model.StatisticSearch;
 
 public class StatisticsMapper {
-	private Database db;
+	private final Database db;
 	
-	private static StatisticsMapper instance = new StatisticsMapper();
+	private static final StatisticsMapper instance = new StatisticsMapper();
 	public static StatisticsMapper getInstance() {
 		return instance;
 	}
@@ -32,8 +33,9 @@ public class StatisticsMapper {
     	Date date = new Date(0L);
     	if(dateCursor.moveToNext())
     		date = new Date(dateCursor.getLong(0));
-    	
-    	return date;
+
+        dateCursor.close();
+        return date;
     }
     
     public Date getEarliestGameDate() {
@@ -45,8 +47,12 @@ public class StatisticsMapper {
     }
     
     public List<PlayerStatistics> getStatisticsForSearch(StatisticSearch search) {
-    	ScoreMapper mapper = GameTypeManager.createScoreMapper(search.getGameType());
-    	
-    	return mapper.getPlayerStatistics(db, search);
+		ScoreMapper mapper = GameTypeManager.createScoreMapper(search.getGameType());
+		if(mapper == null) {
+			Log.wtf("AgricolaScorer", "Tried to create a ScoreMapper for a game that doesn't exist.");
+			return null;
+		}
+
+		return mapper.getPlayerStatistics(db, search);
     }
 }

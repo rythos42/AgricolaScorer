@@ -9,7 +9,7 @@ public class Game implements Serializable {
 	
 	private int id;
 	private Date date;
-	private ArrayList<Score> scores = new ArrayList<Score>();
+	private final ArrayList<Score> scores = new ArrayList<>();
 	private GameType gameType;
 	
 	public void setId(int id) { this.id = id; }

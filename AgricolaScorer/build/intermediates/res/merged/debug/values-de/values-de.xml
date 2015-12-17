@@ -11,10 +11,8 @@
     </plurals>
     <string name="about">Über</string>
     <string name="about_text">Agricola Scorer von Craig Fleming (rythos42@gmail.com). Dominican font von www.haroldsfonts.com. Chart icon von blog.twg.ca. Deutsche Übersetzung von Fred Baumgarten (dc6iq@gmx.de)</string>
-    <string name="action_settings">Einstellungen</string>
     <string name="add">Dazu</string>
     <string name="add_player">Spieler hinzufügen</string>
-    <string name="add_player_prompt">Zum Start Spieler hinzufügen!</string>
     <string name="address_book">vom Adressbuch</string>
     <string name="app_name">Agricola Scorer</string>
     <string name="begging_cards_label">Bettelkarten:</string>
@@ -52,7 +50,6 @@
     <string name="in_game_label">(im Spiel)</string>
     <string name="input_player_name">Spielername eingeben:</string>
     <string name="limit_number_of_players">Spielerzahl auf 5 begrenzen</string>
-    <string name="menu_settings">Einstellungen</string>
     <string name="no_detail_scores">Das Spiel ist ohne Ergebnisdetails!</string>
     <string name="no_history">Keine Historie vorhanden, spiele ein Spiel!</string>
     <string name="ok">OK</string>
@@ -62,7 +59,6 @@
     <string name="pastures_label">Weiden:</string>
     <string name="player_already_exists">Dieser Spielername ist schon da!</string>
     <string name="player_list">Spielerliste</string>
-    <string name="playersLabel">Spieler:</string>
     <string name="points_for_cards_label">Punkte auf Karten:</string>
     <string name="randomize">zufällig</string>
     <string name="randomize_player">Startspieler</string>

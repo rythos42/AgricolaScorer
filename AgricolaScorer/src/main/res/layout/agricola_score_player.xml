@@ -216,7 +216,6 @@
 
             <!-- Picker row #4 (optional) -->
             <include layout="@layout/agricola_score_player_farmers"
-                     android:layout_below="@id/begging_cards_picker"
                      android:visibility="gone"/>
 
         </RelativeLayout>

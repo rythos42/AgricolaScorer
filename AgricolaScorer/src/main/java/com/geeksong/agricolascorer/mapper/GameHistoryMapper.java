@@ -12,10 +12,11 @@ import com.geeksong.agricolascorer.model.Game;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
+import android.util.Log;
 
 public class GameHistoryMapper {    
-    private Context context;
-    private Database db;
+    private final Context context;
+    private final Database db;
  
     public GameHistoryMapper(Context context) {
     	this.context = context;
@@ -23,7 +24,7 @@ public class GameHistoryMapper {
     }
 	
     public GameHistoryAdapter getListAdapter() {
-    	List<Game> gamesList = new ArrayList<Game>();
+    	List<Game> gamesList = new ArrayList<>();
     	for(ScoreMapper mapper : GameTypeManager.getAllScoreMappers()) {
     		gamesList.addAll(mapper.getGamesList(db));
     	}
@@ -37,9 +38,13 @@ public class GameHistoryMapper {
     }
     
     public void deleteGame(Game game) {
-    	ScoreMapper mapper = GameTypeManager.createScoreMapper(game.getGameType());
-    	mapper.deleteGame(db, game);
-    }
+		ScoreMapper mapper = GameTypeManager.createScoreMapper(game.getGameType());
+		if(mapper == null) {
+			Log.wtf("AgricolaScorer", "Tried to create a ScoreMapper for a game that doesn't exist.");
+			return;
+		}
+		mapper.deleteGame(db, game);
+	}
     
     public void updateGameDate(Game game) {
     	SQLiteDatabase sqlDb = db.getWritableDatabase();

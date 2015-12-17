@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class AllCreaturesScoreTabFactory extends BaseScoreTabFactory {
-	private Activity tabHost;
+	private final Activity tabHost;
 	
 	public AllCreaturesScoreTabFactory(Activity tabHost) {
 		this.tabHost = tabHost;

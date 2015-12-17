@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="11"
-        android:targetSdkVersion="22" />
+        android:targetSdkVersion="23" />
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
@@ -22,6 +22,7 @@
             android:theme="@style/GreenTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>

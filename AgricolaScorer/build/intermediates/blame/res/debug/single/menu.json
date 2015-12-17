@@ -1,18 +1,18 @@
 [
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\menu\\create_game.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\menu\\create_game.xml"
+        "merged": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\menu\\create_game.xml",
+        "source": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\src\\main\\res\\menu\\create_game.xml"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\menu\\search_statistics.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\menu\\search_statistics.xml"
+        "merged": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\menu\\search_statistics.xml",
+        "source": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\src\\main\\res\\menu\\search_statistics.xml"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\menu\\add_players.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\menu\\add_players.xml"
+        "merged": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\menu\\add_players.xml",
+        "source": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\src\\main\\res\\menu\\add_players.xml"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\menu\\statistics.xml",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\menu\\statistics.xml"
+        "merged": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\menu\\statistics.xml",
+        "source": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\src\\main\\res\\menu\\statistics.xml"
     }
 ]

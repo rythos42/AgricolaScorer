@@ -12,7 +12,7 @@ import android.app.AlertDialog;
 import android.view.View;
 
 public class RandomizationActivity extends Activity {
-	private Random random = new Random();
+	private final Random random = new Random();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,7 @@ public class RandomizationActivity extends Activity {
         ActionBarHelper.setActionBarTitle(this, R.string.randomize);
 	}
 	
+	@SuppressWarnings("UnusedParameters")
 	public void randomizePlayer(View source) {
 		String playerName = GameCache.getInstance().hasPlayers() ? randomizeFromGame() : randomizeFromDatabase();
 		

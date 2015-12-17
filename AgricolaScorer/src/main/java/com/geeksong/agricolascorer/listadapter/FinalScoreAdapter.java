@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-public class FinalScoreAdapter extends ArrayAdapter<Score> {
+class FinalScoreAdapter extends ArrayAdapter<Score> {
 	public FinalScoreAdapter(Context context, int textViewResourceId, List<Score> scores) {
 		super(context, textViewResourceId, scores);
 	}
@@ -29,7 +29,7 @@ public class FinalScoreAdapter extends ArrayAdapter<Score> {
 	            playerNameView.setText(o.getPlayer().getName());
 	            
 	            TextView scoreView = (TextView) v.findViewById(R.id.score);
-	            scoreView.setText(Integer.toString(o.getTotalScore()));
+	            scoreView.setText(String.format("%d", o.getTotalScore()));
 	    }
 	    return v;
     }

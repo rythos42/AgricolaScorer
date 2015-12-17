@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\values-v11\\values-v11.xml",
+        "outputFile": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\values-v11\\values-v11.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 113
                 },
                 "from": {
-                    "file": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\values-v11\\styles.xml",
+                    "file": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\src\\main\\res\\values-v11\\styles.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

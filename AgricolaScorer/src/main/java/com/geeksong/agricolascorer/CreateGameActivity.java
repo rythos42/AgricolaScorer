@@ -31,11 +31,8 @@ import android.widget.TextView;
 public class CreateGameActivity extends ListActivity {
     private final int MENU_REMOVE_FROM_GAME = 0;
     private final int MENU_RENAME_PLAYER = 1;
-    
-    private final int MAX_PLAYERS = 5;
-    private final int MIN_PLAYERS = 1;
-	
-	public static final int ADD_PLAYER_REQUEST = 1;
+
+	private static final int ADD_PLAYER_REQUEST = 1;
 	public static final String AddedPlayerBundleKey = "AddedPlayer";
 	
 	private CurrentPlayersAdapter adapter;
@@ -49,7 +46,7 @@ public class CreateGameActivity extends ListActivity {
 
         registerForContextMenu(getListView());
         
-        adapter = new CurrentPlayersAdapter(this, R.layout.current_players_list_item, GameCache.getInstance().getPlayerList());
+        adapter = new CurrentPlayersAdapter(this, GameCache.getInstance().getPlayerList());
         setListAdapter(adapter);
     	
     	checkButtonsVisibility();
@@ -79,14 +76,16 @@ public class CreateGameActivity extends ListActivity {
     private void checkAddPlayerButtonVisibility() {
     	SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
     	boolean limitNumberOfPlayers = sharedPref.getBoolean(SettingsActivity.Pref_LimitNumberOfPlayers, true);
-    	
-    	boolean visible = !limitNumberOfPlayers || GameCache.getInstance().getPlayerList().size() < MAX_PLAYERS;
+
+		int MAX_PLAYERS = 5;
+		boolean visible = !limitNumberOfPlayers || GameCache.getInstance().getPlayerList().size() < MAX_PLAYERS;
   		Button addPlayerButton = (Button) findViewById(R.id.addPlayerButton);
    		addPlayerButton.setVisibility(visible? View.VISIBLE : View.GONE);
     }
     
     private void checkScoreGameButtonVisibility() {
-    	int visible = GameCache.getInstance().getPlayerList().size() >= MIN_PLAYERS ? View.VISIBLE : View.GONE;
+		int MIN_PLAYERS = 1;
+		int visible = GameCache.getInstance().getPlayerList().size() >= MIN_PLAYERS ? View.VISIBLE : View.GONE;
     	
     	
   		Button scoreAgricola = (Button) findViewById(R.id.scoreAgricolaButton);
@@ -177,7 +176,7 @@ public class CreateGameActivity extends ListActivity {
     	final Context thisContext = this;
     	
     	dialog.setOnClickListener(new OnClickListener() {
-			public void onClick(InputDialog dialog, DialogResult result, String newPlayerName) {
+			public void onClick(DialogResult result, String newPlayerName) {
 		    	if(result == DialogResult.OK && !newPlayerName.equals("")) {
 		    		PlayerMapper mapper = PlayerMapper.getInstance();
 		    		if(mapper.playerExists(newPlayerName)) {

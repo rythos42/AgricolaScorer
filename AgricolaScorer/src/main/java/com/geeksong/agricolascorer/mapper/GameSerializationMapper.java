@@ -5,7 +5,6 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.io.StreamCorruptedException;
 
 import com.geeksong.agricolascorer.model.Game;
 
@@ -18,7 +17,7 @@ public class GameSerializationMapper {
     	return byteArrayStream.toByteArray();
     }
     
-    public static Game deserialize(byte[] gameBytes) throws StreamCorruptedException, IOException, ClassNotFoundException {
+    public static Game deserialize(byte[] gameBytes) throws IOException, ClassNotFoundException {
     	ByteArrayInputStream byteArrayStream = new ByteArrayInputStream(gameBytes);
     	ObjectInputStream objectStream = new ObjectInputStream(byteArrayStream);
     	Game game = (Game) objectStream.readObject();

@@ -19,12 +19,12 @@
 	    <TextView android:id="@+id/gameType"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        style="@style/smallerText"></TextView>
+	        style="@style/smallerText"/>
 	    
 	    <TextView android:id="@+id/gameTime"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        style="@style/smallerText"></TextView>
+	        style="@style/smallerText"/>
 	    
 	</LinearLayout>
 	

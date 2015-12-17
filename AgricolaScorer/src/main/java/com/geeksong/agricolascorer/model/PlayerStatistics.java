@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class PlayerStatistics {
-	private String name;
-	private ArrayList<Integer> scores = new ArrayList<Integer>();
-	private ArrayList<Date> dates = new ArrayList<Date>();
+	private final String name;
+	private final ArrayList<Integer> scores = new ArrayList<>();
+	private final ArrayList<Date> dates = new ArrayList<>();
 	
 	public PlayerStatistics(String name) {
 		this.name = name;

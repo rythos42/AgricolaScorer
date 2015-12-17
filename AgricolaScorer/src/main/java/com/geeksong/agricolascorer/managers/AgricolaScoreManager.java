@@ -13,14 +13,14 @@ import com.geeksong.agricolascorer.model.RoomType;
 import com.geeksong.agricolascorer.model.Score;
 
 public class AgricolaScoreManager extends ScoreManager {
-	private TextView totalScoreView;
+	private final TextView totalScoreView;
 	
 	public AgricolaScoreManager(AgricolaScore score, TextView totalScoreView) {
 		super(score);
 
 		this.totalScoreView = totalScoreView;
 		
-		totalScoreView.setText(Integer.toString(score.getTotalScore()));
+		totalScoreView.setText(String.format("%d", score.getTotalScore()));
 	}
 
     public void onSegmentedScoreChange(SegmentedUnitScoreView unitScoreView, int checkedId) {
@@ -67,9 +67,9 @@ public class AgricolaScoreManager extends ScoreManager {
 		    		break;
 	    	}
 			
-			totalScoreView.setText(Integer.toString(score.getTotalScore()));
+			totalScoreView.setText(String.format("%d", score.getTotalScore()));
     	} catch(Exception e) {
-    		Log.e("com.geeksong.agricolascorer", e.getMessage());
+    		Log.e("AgricolaScorer", e.getMessage());
     	}
     }
     
@@ -104,9 +104,9 @@ public class AgricolaScoreManager extends ScoreManager {
 		    		score.setInBedFamilyCount(newVal);
 		    		score.setFamilyMemberScore(getScoreForFamilyMembers(score.getTotalFamilyCount(), score.getInBedFamilyCount()));
 	    	}
-			totalScoreView.setText(Integer.toString(score.getTotalScore()));
+			totalScoreView.setText(String.format("%d", score.getTotalScore()));
     	} catch(Exception e) {
-    		Log.e("com.geeksong.agricolascorer", e.getMessage());
+    		Log.e("AgricolaScorer", e.getMessage());
     	}
 	}
 	
@@ -301,7 +301,7 @@ public class AgricolaScoreManager extends ScoreManager {
 	}
 
     @Override
-    public int getUnitScore(Score score, SegmentedUnitScoreView unitScoreView) throws Exception {
+    public int getUnitScore(Score score, SegmentedUnitScoreView unitScoreView) {
         AgricolaScore agricolaScore = (AgricolaScore) score;
 
         switch(unitScoreView.getId()) {
@@ -324,12 +324,12 @@ public class AgricolaScoreManager extends ScoreManager {
   		    	case R.id.family_members:
                     return agricolaScore.getFamilyScoreWithoutInBedFamily();
                 default:
-                    throw new IllegalArgumentException("Unkown score view: " + unitScoreView + "!?");
+                    throw new IllegalArgumentException("Unknown score view: " + unitScoreView + "!?");
   	    	}
     }
 
     @Override
-    public int getUnitScore(Score score, PickerUnitScoreView unitScoreView) throws Exception {
+    public int getUnitScore(Score score, PickerUnitScoreView unitScoreView) {
         AgricolaScore agricolaScore = (AgricolaScore) score;
 
         switch(unitScoreView.getId()) {
@@ -350,7 +350,7 @@ public class AgricolaScoreManager extends ScoreManager {
   		    	case R.id.in_bed_family_picker:
                     return agricolaScore.getInBedFamilyScore();
                 default:
-                    throw new IllegalArgumentException("Unkown score view: " + unitScoreView + "!?");
+                    throw new IllegalArgumentException("Unknown score view: " + unitScoreView + "!?");
   	    	}
     }
 }

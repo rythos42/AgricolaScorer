@@ -37,7 +37,7 @@ public class AgricolaScore implements Score, Serializable {
 	private int id;
 	private boolean isTotalScoreProvided = false;
 	
-	private static int emptyScorePoints;
+	private static final int emptyScorePoints;
 	
 	static {
 		AgricolaScore blankScore = new AgricolaScore(null);
@@ -65,7 +65,7 @@ public class AgricolaScore implements Score, Serializable {
 			setBeggingCardsScore(AgricolaScoreManager.getScoreForBeggingCards(0));
 			setHorsesScore(AgricolaScoreManager.getScoreForHorses(0));
 		} catch(Exception e) {
-    		Log.e("com.geeksong.agricolascorer", e.getMessage());
+    		Log.e("AgricolaScorer", e.getMessage());
     	}
 	}
 	

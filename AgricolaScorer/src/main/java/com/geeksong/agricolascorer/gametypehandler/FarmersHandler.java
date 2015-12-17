@@ -5,7 +5,7 @@ import com.geeksong.agricolascorer.R;
 import com.geeksong.agricolascorer.model.AgricolaScore;
 
 public  class FarmersHandler extends AgricolaHandler {
-    public static final int[] SCORE_LABEL_IDS = new int[AgricolaHandler.SCORE_LABEL_IDS.length + 2];
+    private static final int[] SCORE_LABEL_IDS = new int[AgricolaHandler.SCORE_LABEL_IDS.length + 2];
     static {
         System.arraycopy(AgricolaHandler.SCORE_LABEL_IDS, 0, SCORE_LABEL_IDS, 0,
                 AgricolaHandler.SCORE_LABEL_IDS.length);

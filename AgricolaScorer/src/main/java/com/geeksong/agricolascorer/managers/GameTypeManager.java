@@ -75,7 +75,7 @@ public class GameTypeManager {
 	}
 	
 	public static List<ScoreMapper> getAllScoreMappers() {
-		List<ScoreMapper> list = new ArrayList<ScoreMapper>();
+		List<ScoreMapper> list = new ArrayList<>();
 		for(GameType gameType : GameType.values()) {
 			// Ignore Farmers, as it is (currently) the same ScoreMapper as for Agricola.
 			if(gameType == GameType.Farmers)

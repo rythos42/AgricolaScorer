@@ -9,15 +9,13 @@ import com.geeksong.agricolascorer.control.PickerUnitScoreView;
 import com.geeksong.agricolascorer.managers.ScoreManager;
 import com.geeksong.agricolascorer.model.Score;
 
-public abstract class BaseScoreTabFactory implements TabHost.TabContentFactory {
-	protected void addValueChangeListener(View scorePlayer, final ScoreManager manager, int id) {
+abstract class BaseScoreTabFactory implements TabHost.TabContentFactory {
+	void addValueChangeListener(View scorePlayer, final ScoreManager manager, int id) {
         final PickerUnitScoreView unitScoreView = (PickerUnitScoreView) scorePlayer.findViewById(id);
         NumberPicker picker = unitScoreView.getNumberPicker();
 
-		picker.setMinimum(0);
-		
 	    picker.setOnValueChangedListener(new OnValueChangeListener() {
-	    	public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
+	    	public void onValueChange(int newVal) {
             	manager.onPickerScoreChange(unitScoreView, newVal);
             	updateScoreDisplay(manager, unitScoreView);
 	    	}
@@ -36,7 +34,7 @@ public abstract class BaseScoreTabFactory implements TabHost.TabContentFactory {
 		try {
         	unitScoreView.updateScore(manager.getUnitScore(manager.getScore(), unitScoreView));
         } catch (Exception e) {
-    		Log.e("com.geeksong.agricolascorer", e.getMessage());
+    		Log.e("AgricolaScorer", e.getMessage());
         }
 	}
 }

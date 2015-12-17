@@ -11,10 +11,8 @@
     </plurals>
     <string name="about">A propos</string>
     <string name="about_text">Agricola Scorer par Craig Fleming (rythos42@gmail.com). Fonte Dominican par www.haroldsfonts.com. Icône du graphique par by blog.twg.ca. Traduction française par Sylvain FRANCOIS (syllant@gmail.com).</string>
-    <string name="action_settings">Réglages</string>
     <string name="add">Ajout</string>
     <string name="add_player">Nouveau joueur</string>
-    <string name="add_player_prompt">Ajouter un joueur pour commencer !</string>
     <string name="address_book">Ajout à partir des contacts</string>
     <string name="app_name">Agricola Scorer</string>
     <string name="begging_cards_label">Mendicités :</string>
@@ -52,7 +50,6 @@
     <string name="in_game_label">(dans la partie)</string>
     <string name="input_player_name">Nom du joueur</string>
     <string name="limit_number_of_players">Limiter le nombre de joueurs</string>
-    <string name="menu_settings">Réglages</string>
     <string name="no_detail_scores">La partie ne peut pas être modifiée, elle ne contient aucun score !</string>
     <string name="no_history">Aucun historique. Allez donc jouer !</string>
     <string name="ok">OK</string>
@@ -62,7 +59,6 @@
     <string name="pastures_label">Pâturages :</string>
     <string name="player_already_exists">Le nom a déjà été attribué à un autre joueur !</string>
     <string name="player_list">Liste des joueurs</string>
-    <string name="playersLabel">Joueurs :</string>
     <string name="points_for_cards_label">Cartes :</string>
     <string name="randomize">Premier joueur</string>
     <string name="randomize_player">Choisir le premier joueur</string>

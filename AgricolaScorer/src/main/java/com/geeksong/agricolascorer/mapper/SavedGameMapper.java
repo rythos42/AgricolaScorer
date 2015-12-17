@@ -12,7 +12,7 @@ import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
 
 public class SavedGameMapper {
-	private Database db;
+	private final Database db;
 	
     public SavedGameMapper() {
     	this.db = Database.getInstance();

@@ -1,74 +1,80 @@
+Version 1.6
+    - Scoring buttons were too small in Android 5.x
+    - Converted project to Android Studio, because it's way better than Eclipse.
+    - Game count on Create Game screen now includes All Creatures scores.
+    - Fixed a lot of Android Studio lint warnings (but not all - some are wrong!)
+
 Version 1.54
-	Minor:
-		- Fixed bug in display of family and in-bed family scores.
-		- Changed "?" icon for randomization to a pair of dice.
+    Minor:
+        - Fixed bug in display of family and in-bed family scores.
+        - Changed "?" icon for randomization to a pair of dice.
 
 Version 1.5-1.52
-	Major:
-		- French language translation.
-		- Broken-down scores shown as you score.
-		- Final screen shows broken-down scores.
+    Major:
+        - French language translation.
+        - Broken-down scores shown as you score.
+        - Final screen shows broken-down scores.
 
 Version 1.4
-	Major:
-		- All Creatures Big and Small scoring!
-			- Has support for all other app functionality, including graphing and editing of saved games!
-	Minor:
-		- Added preferences ability to ignore the maximum number of players
-		- Set the default maximum to 5, where it should be.
-		- Ability to edit the date of a saved game.
-		- Using US Locale for all database strings, apparently it's bad to use the default one for this.
+    Major:
+        - All Creatures Big and Small scoring!
+            - Has support for all other app functionality, including graphing and editing of saved games!
+    Minor:
+        - Added preferences ability to ignore the maximum number of players
+        - Set the default maximum to 5, where it should be.
+        - Ability to edit the date of a saved game.
+        - Using US Locale for all database strings, apparently it's bad to use the default one for this.
 
 Version 1.32
-	Minor:
-		- Horses are no longer scored if you aren't playing Farmers!
-		- Fixed bug whereby if you start a game, press back until the game quits, the Start Game button doesn't appear.
-		- Fixed bug in German translation whereby no room scoring was occurred.
-		
+    Minor:
+        - Horses are no longer scored if you aren't playing Farmers!
+        - Fixed bug whereby if you start a game, press back until the game quits, the Start Game button doesn't appear.
+        - Fixed bug in German translation whereby no room scoring was occurred.
+
 Version 1.31
-	Minor: 
-		- Graph your game history. Search by players and dates.
-		- German translations generously provided by Fred Baumgarten!
+    Minor:
+        - Graph your game history. Search by players and dates.
+        - German translations generously provided by Fred Baumgarten!
 
 Version 1.3
-	Major:
-		- Randomization feature:
-			- Starting player (from database, or from added players)
-		- Graph of scores
-			- Search by all players in database
-			- Search by date range
-	Minor:
-		- Added Expand All/Collapse All button
-		- Changed score_player.xml to use R.string for numeric scoring values
-		- Add Top Player and Add From Database now show game count
-		- If you edit a game, then hit back, then add a player and start the game, the old game data no longer appears.
-		- No longer able to edit games which have no score details (have been manually added to database)
+    Major:
+        - Randomization feature:
+            - Starting player (from database, or from added players)
+        - Graph of scores
+            - Search by all players in database
+            - Search by date range
+    Minor:
+        - Added Expand All/Collapse All button
+        - Changed score_player.xml to use R.string for numeric scoring values
+        - Add Top Player and Add From Database now show game count
+        - If you edit a game, then hit back, then add a player and start the game, the old game data no longer appears.
+        - No longer able to edit games which have no score details (have been manually added to database)
 
 Version 1.23
-	Major:
-		- fixed a brutal bug for new users where the games database table wasn't being created properly.  
-	Minor:
-		- Farmers of the Moor checkbox state now remembered between games
-		- UI state on starting screen and scoring screen now maintained between rotation and sleep.
-		
+    Major:
+        - fixed a brutal bug for new users where the games database table wasn't being created properly.
+    Minor:
+        - Farmers of the Moor checkbox state now remembered between games
+        - UI state on starting screen and scoring screen now maintained between rotation and sleep.
+
 
 Version 1.1
-	Major:
-		- Support for scoring Farmers of the Moor!
-		- You can now edit previously saved games! Long-press on a game in History!
-		- There is now a list of all players who have played - check the menu in Add Player. You can add a player to your game from this list.
-		- Shrunk background by 150kb.
-	
-	Minor:
-		- History now sorted by date
-		- Added a "game count" to the main screen
-		- You can no longer rename players to an existing player name.
-		- Added a note "(in-game)" to player lists to show that a player has been added already.
-		- fixed a bug whereby adding a player who hadn't played any games added him to the database again
-	
-	UI fixes:
-		- Added a margin on the score board so it's a little brighter.
-		- Lightened the darkest colour in the scoring segmented pickers.
-		- Added "+" to fields and pastures maximums.
-		- Swapped sides of increment and decrement buttons for number pickers.
-		- Fixed the show/hide arrow on the History page
+    Major:
+        - Support for scoring Farmers of the Moor!
+        - You can now edit previously saved games! Long-press on a game in History!
+        - There is now a list of all players who have played - check the menu in Add Player. You can add a player to your game from this list.
+        - Shrunk background by 150kb.
+
+    Minor:
+        - History now sorted by date
+        - Added a "game count" to the main screen
+        - You can no longer rename players to an existing player name.
+        - Added a note "(in-game)" to player lists to show that a player has been added already.
+        - fixed a bug whereby adding a player who hadn't played any games added him to the database again
+
+    UI fixes:
+        - Added a margin on the score board so it's a little brighter.
+        - Lightened the darkest colour in the scoring segmented pickers.
+        - Added "+" to fields and pastures maximums.
+        - Swapped sides of increment and decrement buttons for number pickers.
+        - Fixed the show/hide arrow on the History page

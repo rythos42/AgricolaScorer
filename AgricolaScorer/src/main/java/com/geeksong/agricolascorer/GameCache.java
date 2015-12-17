@@ -8,8 +8,8 @@ import com.geeksong.agricolascorer.model.Player;
 import com.geeksong.agricolascorer.model.Score;
 
 public class GameCache {
-	private ArrayList<Score> scores = new ArrayList<Score>();
-	private ArrayList<Player> players = new ArrayList<Player>();
+	private final ArrayList<Score> scores = new ArrayList<>();
+	private final ArrayList<Player> players = new ArrayList<>();
 	
 	private boolean isFromDatabase = false;
 	private Game savedGame;
@@ -92,7 +92,7 @@ public class GameCache {
 		return players.get(position);
 	}
 	
-	public Player getPlayerByName(String playerName) {
+	private Player getPlayerByName(String playerName) {
 		for(Player player : players) {
 			if(player.getName().equals(playerName))
 				return player;

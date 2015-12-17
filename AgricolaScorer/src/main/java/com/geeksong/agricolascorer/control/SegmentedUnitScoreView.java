@@ -12,15 +12,15 @@ public class SegmentedUnitScoreView extends AbstractUnitScoreView {
     /**
      * RadioGroup where to add nested children
      */
-    protected RadioGroup radioGroup;
+    private RadioGroup radioGroup;
     private final int segmentCount;
 
     public SegmentedUnitScoreView(Context context, AttributeSet attrs) {
         super(context, attrs, R.layout.segmented_unit_score_view);
 
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.UnitScoreView, 0, 0);
-
-        segmentCount = a.getInt(R.styleable.UnitScoreView_segmentCount, 0);
+        TypedArray attributes = context.obtainStyledAttributes(attrs, R.styleable.UnitScoreView, 0, 0);
+        segmentCount = attributes.getInt(R.styleable.UnitScoreView_segmentCount, 0);
+        attributes.recycle();
     }
 
     @Override

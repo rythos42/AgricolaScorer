@@ -1,74 +1,66 @@
 [
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_default_focused_holo_light.9.png",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\btn_default_focused_holo_light.9.png"
+        "merged": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\dice.png",
+        "source": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\dice.png"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\chart_line.png",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\chart_line.png"
+        "merged": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_default_pressed_holo_light.9.png",
+        "source": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\btn_default_pressed_holo_light.9.png"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\navigation_accept.png",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\navigation_accept.png"
+        "merged": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\action_search.png",
+        "source": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\action_search.png"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\social_group.png",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\social_group.png"
+        "merged": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\content_remove.png",
+        "source": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\content_remove.png"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\action_search.png",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\action_search.png"
+        "merged": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\chart_line.png",
+        "source": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\chart_line.png"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_action_search.png",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\ic_action_search.png"
+        "merged": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_default_focused_holo_light.9.png",
+        "source": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\btn_default_focused_holo_light.9.png"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\collections_view_as_list.png",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\collections_view_as_list.png"
+        "merged": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\collections_view_as_list.png",
+        "source": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\collections_view_as_list.png"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\content_remove.png",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\content_remove.png"
+        "merged": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\social_group.png",
+        "source": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\social_group.png"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_default_disabled_holo_light.9.png",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\btn_default_disabled_holo_light.9.png"
+        "merged": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_default_normal_holo_light.9.png",
+        "source": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\btn_default_normal_holo_light.9.png"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\action_help.png",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\action_help.png"
+        "merged": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\navigation_accept.png",
+        "source": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\navigation_accept.png"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_default_disabled_focused_holo_light.9.png",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\btn_default_disabled_focused_holo_light.9.png"
+        "merged": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\action_settings.png",
+        "source": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\action_settings.png"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\action_settings.png",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\action_settings.png"
+        "merged": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_default_disabled_holo_light.9.png",
+        "source": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\btn_default_disabled_holo_light.9.png"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\action_about.png",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\action_about.png"
+        "merged": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\action_about.png",
+        "source": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\action_about.png"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_default_normal_holo_light.9.png",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\btn_default_normal_holo_light.9.png"
+        "merged": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\right_arrow.9.png",
+        "source": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\right_arrow.9.png"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\down_arrow.9.png",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\down_arrow.9.png"
+        "merged": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_default_disabled_focused_holo_light.9.png",
+        "source": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\btn_default_disabled_focused_holo_light.9.png"
     },
     {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_default_pressed_holo_light.9.png",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\btn_default_pressed_holo_light.9.png"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\dice.png",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\dice.png"
-    },
-    {
-        "merged": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\right_arrow.9.png",
-        "source": "C:\\work\\Local\\AgricolaScorer-Studio\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\right_arrow.9.png"
+        "merged": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\down_arrow.9.png",
+        "source": "C:\\work\\Local\\AgricolaScorer\\AgricolaScorer\\src\\main\\res\\drawable-hdpi\\down_arrow.9.png"
     }
 ]

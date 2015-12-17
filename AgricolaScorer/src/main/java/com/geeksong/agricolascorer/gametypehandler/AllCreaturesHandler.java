@@ -5,7 +5,7 @@ import com.geeksong.agricolascorer.R;
 import com.geeksong.agricolascorer.model.AllCreaturesScore;
 
 public class AllCreaturesHandler implements IGameTypeHandler<AllCreaturesScore> {
-    public static final int[] SCORE_LABEL_IDS = new int[]{
+    private static final int[] SCORE_LABEL_IDS = new int[]{
             R.string.sheep_label,
             R.string.wild_boar_label,
             R.string.cattle_label,

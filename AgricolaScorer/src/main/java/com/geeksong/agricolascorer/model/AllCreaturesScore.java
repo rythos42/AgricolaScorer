@@ -10,7 +10,7 @@ public class AllCreaturesScore implements Score, Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	private int id;
-	private Player player;
+	private final Player player;
 	
 	private int sheepScore;
 	private int sheepBonusScore;
@@ -23,7 +23,7 @@ public class AllCreaturesScore implements Score, Serializable {
 	private int fullExpansionScore;
 	private int buildingScore;
 	
-	private static int emptyScorePoints;
+	private static final int emptyScorePoints;
 	
 	static {
 		AllCreaturesScore blankScore = new AllCreaturesScore(null);
@@ -45,7 +45,7 @@ public class AllCreaturesScore implements Score, Serializable {
 			setFullExpansionScore(AllCreaturesScoreManager.getScoreForFullExpansion(0));
 			setBuildingScore(AllCreaturesScoreManager.getScoreForBuildings(0));
 		} catch(Exception e) {
-    		Log.e("com.geeksong.agricolascorer", e.getMessage());
+    		Log.e("AgricolaScorer", e.getMessage());
     	}
 	}
 	

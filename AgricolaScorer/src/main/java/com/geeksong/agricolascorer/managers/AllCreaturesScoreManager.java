@@ -9,14 +9,14 @@ import com.geeksong.agricolascorer.model.AllCreaturesScore;
 import com.geeksong.agricolascorer.model.Score;
 
 public class AllCreaturesScoreManager extends ScoreManager {
-	private TextView totalScoreView;
+	private final TextView totalScoreView;
 	
 	public AllCreaturesScoreManager(AllCreaturesScore score, TextView totalScoreView) {
 		super(score);
 
 		this.totalScoreView = totalScoreView;
 		
-		totalScoreView.setText(Integer.toString(score.getTotalScore()));
+		totalScoreView.setText(String.format("%d", score.getTotalScore()));
 	}
 	
 	public  void onPickerScoreChange(PickerUnitScoreView unitScoreView, int newVal) {
@@ -47,9 +47,9 @@ public class AllCreaturesScoreManager extends ScoreManager {
 		    		score.setBuildingScore(getScoreForBuildings(newVal));
 		    		break;
 	    	}
-			totalScoreView.setText(Integer.toString(getScore().getTotalScore()));
+			totalScoreView.setText(String.format("%d", getScore().getTotalScore()));
     	} catch(Exception e) {
-    		Log.e("com.geeksong.agricolascorer", e.getMessage());
+    		Log.e("AgricolaScorer", e.getMessage());
     	}
 	}
 	
@@ -149,12 +149,12 @@ public class AllCreaturesScoreManager extends ScoreManager {
 	}
 
     @Override
-    public int getUnitScore(Score score, SegmentedUnitScoreView unitScoreView) throws Exception {
-        throw new IllegalArgumentException("Unkown score view: " + unitScoreView.getId() + "!?");
+    public int getUnitScore(Score score, SegmentedUnitScoreView unitScoreView) {
+        throw new IllegalArgumentException("Unknown score view: " + unitScoreView.getId() + "!?");
     }
 
     @Override
-    public int getUnitScore(Score score, PickerUnitScoreView unitScoreView) throws Exception {
+    public int getUnitScore(Score score, PickerUnitScoreView unitScoreView) {
         int value = unitScoreView.getNumberPicker().getValue();
 
         switch(unitScoreView.getId()) {
@@ -171,7 +171,7 @@ public class AllCreaturesScoreManager extends ScoreManager {
   		    	case R.id.building_score_picker:
                     return getScoreForBuildings(value);
                 default:
-                    throw new IllegalArgumentException("Unkown score view: " + unitScoreView + "!?");
+                    throw new IllegalArgumentException("Unknown score view: " + unitScoreView + "!?");
   	    	}
     }
 }

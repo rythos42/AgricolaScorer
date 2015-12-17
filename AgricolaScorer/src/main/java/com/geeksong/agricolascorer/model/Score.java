@@ -1,10 +1,10 @@
 package com.geeksong.agricolascorer.model;
 
 public interface Score {
-	public int getId();
-	public void setId(int id);
-	public int getTotalScore();
-	public Player getPlayer();
-	public boolean isOnlyTotalScore();
-	public boolean isEmpty();
+	int getId();
+	void setId(int id);
+	int getTotalScore();
+	Player getPlayer();
+	boolean isOnlyTotalScore();
+	boolean isEmpty();
 }

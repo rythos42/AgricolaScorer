@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AgricolaScorer/AgricolaScorer.iml" filepath="$PROJECT_DIR$/AgricolaScorer/AgricolaScorer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/AgricolaScorer-Studio.iml" filepath="$PROJECT_DIR$/AgricolaScorer-Studio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AgricolaScorer.iml" filepath="$PROJECT_DIR$/AgricolaScorer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AgricolaScorer/AgricolaScorer-AgricolaScorer.iml" filepath="$PROJECT_DIR$/AgricolaScorer/AgricolaScorer-AgricolaScorer.iml" />
     </modules>
   </component>
 </project>

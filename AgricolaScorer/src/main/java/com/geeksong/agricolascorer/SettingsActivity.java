@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.app.Activity;
 
 public class SettingsActivity extends Activity {
-	public static String Pref_LimitNumberOfPlayers = "pref_limitNumberOfPlayers";
+	public static final String Pref_LimitNumberOfPlayers = "pref_limitNumberOfPlayers";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

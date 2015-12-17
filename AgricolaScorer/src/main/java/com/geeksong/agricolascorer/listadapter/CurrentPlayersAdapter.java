@@ -14,11 +14,11 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 public class CurrentPlayersAdapter extends ArrayAdapter<Player> {
-	private ArrayList<Player> players;
-	private Context context;
+	private final ArrayList<Player> players;
+	private final Context context;
 	
-	public CurrentPlayersAdapter(Context context, int textViewResourceId, ArrayList<Player> players) {
-		super(context, textViewResourceId, players);
+	public CurrentPlayersAdapter(Context context, ArrayList<Player> players) {
+		super(context, R.layout.current_players_list_item, players);
 		
 		this.context = context;
 		this.players = players;

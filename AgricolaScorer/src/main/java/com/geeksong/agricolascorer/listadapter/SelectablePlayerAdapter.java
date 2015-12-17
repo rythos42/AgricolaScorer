@@ -16,11 +16,11 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 
 public class SelectablePlayerAdapter extends ArrayAdapter<Player> {
 	private OnCheckedChangeListener onCheckChange;
-	private int layout;
+	private final int layout;
 	
-	public SelectablePlayerAdapter(Context context, int layout, int textViewResourceId, List<Player> players) {
-		super(context, layout, textViewResourceId, players);
-		this.layout = layout;
+	public SelectablePlayerAdapter(Context context, List<Player> players) {
+		super(context, R.layout.select_player_list_item, R.id.playerName, players);
+		this.layout = R.layout.select_player_list_item;
 	}
 	
 	public void setOnCheckedChangeListener(OnCheckedChangeListener onCheckChange) {

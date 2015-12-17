@@ -16,7 +16,7 @@ import com.geeksong.agricolascorer.model.AgricolaScore;
 import com.geeksong.agricolascorer.model.Score;
 
 public class AgricolaScoreTabFactory extends BaseScoreTabFactory {
-	private Activity tabHost;
+	private final Activity tabHost;
 	
 	public AgricolaScoreTabFactory(Activity tabHost) {
 		this.tabHost = tabHost;
@@ -35,7 +35,7 @@ public class AgricolaScoreTabFactory extends BaseScoreTabFactory {
 		return scorePlayer;
 	}
 	
-	public void attachListeners(View scorePlayer, AgricolaScoreManager manager) {
+	void attachListeners(View scorePlayer, AgricolaScoreManager manager) {
 		addCheckedChangeListener(scorePlayer, manager, R.id.fields);
 		addCheckedChangeListener(scorePlayer, manager, R.id.pastures);
 		addCheckedChangeListener(scorePlayer, manager, R.id.grains);
@@ -55,7 +55,7 @@ public class AgricolaScoreTabFactory extends BaseScoreTabFactory {
 		addValueChangeListener(scorePlayer, manager, R.id.begging_cards_picker);
 	}
 	
-	protected void addCheckedChangeListener(final View scorePlayer, final AgricolaScoreManager manager, final int id) {
+	private void addCheckedChangeListener(final View scorePlayer, final AgricolaScoreManager manager, final int id) {
 		final SegmentedUnitScoreView unitScoreView = (SegmentedUnitScoreView) scorePlayer.findViewById(id);
 		RadioGroup group = unitScoreView.getRadioGroup();
 		group.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -63,14 +63,14 @@ public class AgricolaScoreTabFactory extends BaseScoreTabFactory {
                 manager.onSegmentedScoreChange(unitScoreView, checkedId);
                 try {
                     unitScoreView.updateScore(manager.getUnitScore(manager.getScore(), unitScoreView));
-                    
+
         			// Room Count is the only field that needs score updated based on two inputs
         			if(id == R.id.room_type) {
         				final PickerUnitScoreView roomCountScoreView = (PickerUnitScoreView) scorePlayer.findViewById(R.id.rooms_picker);
         				roomCountScoreView.updateScore(manager.getUnitScore(manager.getScore(), unitScoreView));
         			}
                 } catch (Exception e) {
-                    Log.e("com.geeksong.agricolascorer", e.getMessage());
+                    Log.e("AgricolaScorer", e.getMessage());
                 }
             }
         });
@@ -87,7 +87,7 @@ public class AgricolaScoreTabFactory extends BaseScoreTabFactory {
 		}
 	}
 	
-	protected void addValueChangeListener(View scorePlayer, final AgricolaScoreManager manager, int id) {
+	void addValueChangeListener(View scorePlayer, final AgricolaScoreManager manager, int id) {
 		super.addValueChangeListener(scorePlayer, manager, id);
 
 		final PickerUnitScoreView unitScoreView = (PickerUnitScoreView) scorePlayer.findViewById(id);

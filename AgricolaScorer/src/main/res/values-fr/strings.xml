@@ -3,7 +3,6 @@
 
     <string name="app_name">Agricola Scorer</string>
     <string name="add_player">Nouveau joueur</string>
-    <string name="menu_settings">Réglages</string>
     <string name="title_activity_add_players">Ajout de joueurs</string>
     <string name="input_player_name">Nom du joueur</string>
     <string name="add">Ajout</string>
@@ -37,7 +36,6 @@
     <string name="rename">Renommer</string>
     <string name="view_game">Voir les scores</string>
     <string name="delete_game">Supprimer la partie</string>
-    <string name="add_player_prompt">Ajouter un joueur pour commencer !</string>
     <string name="no_history">Aucun historique. Allez donc jouer !</string>
     <string name="from_player_list">A partir de la liste de joueurs</string>
     <string name="cannot_rename">Renommage impossible !</string>
@@ -57,7 +55,6 @@
     <string name="about">A propos</string>
     <string name="about_text">Agricola Scorer par Craig Fleming (rythos42@gmail.com). Fonte Dominican par www.haroldsfonts.com. Icône du graphique par by blog.twg.ca. Traduction française par Sylvain FRANCOIS (syllant@gmail.com).</string>
     <string name="search">Rechercher</string>
-    <string name="playersLabel">Joueurs :</string>
     <string name="scores">Scores</string>
     <string name="score">Score</string>
     <string name="date">Date</string>
@@ -85,7 +82,6 @@
     <string name="five_to_six">5&#8211;6</string>
     <string name="six_to_seven">6&#8211;7</string>
     <string name="randomize">Premier joueur</string>
-    <string name="action_settings">Réglages</string>
     <string name="randomize_player">Choisir le premier joueur</string>
     <string name="can_not_edit">Impossible de modifier la partie</string>
     <string name="no_detail_scores">La partie ne peut pas être modifiée, elle ne contient aucun score !</string>

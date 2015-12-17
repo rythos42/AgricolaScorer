@@ -20,7 +20,7 @@ public class SegmentedControlButton extends RadioButton {
     private Paint checkedTextPaint;
     private Paint uncheckedTextPaint;
     private Paint borderPaint;
-    private Rect rect = new Rect();
+    private final Rect rect = new Rect();
     
     public SegmentedControlButton(Context context) {
         super(context);

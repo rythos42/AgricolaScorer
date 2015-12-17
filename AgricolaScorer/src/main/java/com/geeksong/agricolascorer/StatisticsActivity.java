@@ -25,13 +25,13 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class StatisticsActivity extends Activity {
-	public static final int GET_STATISTIC_SEARCH = 0;
+	private static final int GET_STATISTIC_SEARCH = 0;
 
-	private int[] Colours = { Color.RED, Color.BLUE, Color.GREEN, Color.MAGENTA, Color.WHITE };
+	private final int[] Colours = { Color.RED, Color.BLUE, Color.GREEN, Color.MAGENTA, Color.WHITE };
 	
     private GraphicalView chart;
-    private XYMultipleSeriesDataset dataSet = new XYMultipleSeriesDataset();
-    private XYMultipleSeriesRenderer renderer = new XYMultipleSeriesRenderer();
+    private final XYMultipleSeriesDataset dataSet = new XYMultipleSeriesDataset();
+    private final XYMultipleSeriesRenderer renderer = new XYMultipleSeriesRenderer();
     
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

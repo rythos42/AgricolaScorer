@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-import com.geeksong.agricolascorer.R;
 import com.geeksong.agricolascorer.listadapter.AddPlayerAdapter;
 import com.geeksong.agricolascorer.listadapter.SelectablePlayerAdapter;
 import com.geeksong.agricolascorer.managers.GameTypeManager;
@@ -16,8 +15,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 public class PlayerMapper {
-    private Context context;
-    private Database db;
+    private final Context context;
+    private final Database db;
     
     private static PlayerMapper instance;
     public static void initialize(Context context) {
@@ -52,6 +51,7 @@ public class PlayerMapper {
         	addedPlayer.setId(playerCursor.getInt(0));
         	addedPlayer.setGameCount(playerCursor.getInt(1));
         }
+        playerCursor.close();
         sqlDb.close();
         
         addPlayer(addedPlayer);
@@ -59,7 +59,7 @@ public class PlayerMapper {
         return addedPlayer;
     }
     
-    public void addPlayer(Player player) {
+    private void addPlayer(Player player) {
     	if(player.hasId())
     		updatePlayer(player);
     	else
@@ -68,25 +68,25 @@ public class PlayerMapper {
     
     public AddPlayerAdapter getTopPlayersListAdapter() {
         List<Player> playerList = getPlayers(true);
-        return new AddPlayerAdapter(this.context, R.layout.recent_player_list_item, R.id.name, playerList);
+        return new AddPlayerAdapter(this.context, playerList);
     }
     
     public AddPlayerAdapter getPlayersListAdapter() {
         List<Player> playerList = getPlayers(true);
-        return new AddPlayerAdapter(this.context, R.layout.recent_player_list_item, R.id.name, playerList);
+        return new AddPlayerAdapter(this.context, playerList);
     }
     
     public ArrayList<String> getPlayerNames() {
-    	ArrayList<String> playerNames = new ArrayList<String>();
+    	ArrayList<String> playerNames = new ArrayList<>();
     	for(Player player : getPlayers(false)) {
     		playerNames.add(player.getName());
     	}
-    	return playerNames;    	
+    	return playerNames;
     }
     
     public SelectablePlayerAdapter getSelectablePlayersListAdapter() {
         List<Player> playerList = getPlayers(false);
-        return new SelectablePlayerAdapter(this.context, R.layout.select_player_list_item, R.id.playerName, playerList);
+        return new SelectablePlayerAdapter(this.context, playerList);
     }
     
     private void insertPlayer(Player player) {
@@ -100,16 +100,16 @@ public class PlayerMapper {
         sqlDb.close();
     }
     
-    public int updatePlayer(Player player) {
+    public void updatePlayer(Player player) {
     	if(playerExists(player.getName()))
-    		return -1;
+    		return;
     	
         SQLiteDatabase sqlDb = db.getWritableDatabase();
      
         ContentValues values = new ContentValues();
         values.put(Database.KEY_NAME, player.getName());
      
-        return sqlDb.update(Database.TABLE_RECENTPLAYERS, values, Database.KEY_ID + " = ?", new String[] { String.valueOf(player.getId()) });
+        sqlDb.update(Database.TABLE_RECENTPLAYERS, values, Database.KEY_ID + " = ?", new String[] { String.valueOf(player.getId()) });
     }
     
     private List<Player> getPlayers(boolean requireGame) {
@@ -119,7 +119,7 @@ public class PlayerMapper {
         		Database.KEY_ID, Database.KEY_NAME, Database.TABLE_RECENTPLAYERS);
         Cursor playersCursor = sqlDb.rawQuery(selectPlayers, null);
         
-        List<Player> playerList = new ArrayList<Player>();
+        List<Player> playerList = new ArrayList<>();
         while(playersCursor.moveToNext()) {
 			int playerId = playersCursor.getInt(0);
 			int gameCount = 0;
@@ -135,6 +135,7 @@ public class PlayerMapper {
 			playerList.add(player);
 		}
 
+        playersCursor.close();
         return playerList;
     }
     
@@ -142,7 +143,8 @@ public class PlayerMapper {
     	String selectQuery = String.format(Locale.US, "SELECT %s FROM %s WHERE %s='%s'", Database.KEY_ID, Database.TABLE_RECENTPLAYERS, Database.KEY_NAME, playerName);
         SQLiteDatabase sqlDb = db.getWritableDatabase();
         Cursor players = sqlDb.rawQuery(selectQuery, null);
-        
-        return players.moveToNext();
+        boolean playerExists = players.moveToNext();
+        players.close();
+        return playerExists;
     }
 }
