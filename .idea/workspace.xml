@@ -6,244 +6,16 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="agricola" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89ca57ba-849f-40cd-876f-8a4094351ba4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AgricolaScorer/AgricolaScorer-AgricolaScorer.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_23_1_1.xml" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\.gradle\2.8\taskArtifacts\cache.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\.gradle\2.8\taskArtifacts\cache.properties.lock" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\.gradle\2.8\taskArtifacts\fileHashes.bin" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\.gradle\2.8\taskArtifacts\fileSnapshots.bin" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\.gradle\2.8\taskArtifacts\outputFileStates.bin" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\.gradle\2.8\taskArtifacts\taskArtifacts.bin" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\.idea\libraries\support_v4_18_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer-Studio.iml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\generated\source\buildConfig\androidTest\debug\com\geeksong\agricolascorer\test\BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\generated\source\buildConfig\debug\com\geeksong\agricolascorer\BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\generated\source\r\debug\com\geeksong\agricolascorer\R.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\assets\debug\DOMINICA.TTF" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\blame\res\debug\multi\values-de.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\blame\res\debug\multi\values-fr.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\blame\res\debug\multi\values-sw720dp-land-v13.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\blame\res\debug\multi\values-v11.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\blame\res\debug\multi\values-v14.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\blame\res\debug\multi\values.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\blame\res\debug\single\drawable-hdpi-v4.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\blame\res\debug\single\drawable-mdpi-v4.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\blame\res\debug\single\drawable-xhdpi-v4.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\blame\res\debug\single\drawable.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\blame\res\debug\single\layout.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\blame\res\debug\single\menu.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\blame\res\debug\single\xml.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\incremental\compileDebugAidl\dependency.store" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\incremental\compileDebugAndroidTestAidl\dependency.store" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\incremental\mergeDebugAndroidTestAssets\merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\incremental\mergeDebugAndroidTestResources\merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\incremental\mergeDebugAssets\merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\incremental\mergeDebugResources\merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\manifest\androidTest\debug\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\manifests\full\debug\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-hdpi-v4\action_about.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-hdpi-v4\action_help.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-hdpi-v4\action_search.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-hdpi-v4\action_settings.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-hdpi-v4\btn_default_disabled_focused_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-hdpi-v4\btn_default_disabled_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-hdpi-v4\btn_default_focused_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-hdpi-v4\btn_default_normal_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-hdpi-v4\btn_default_pressed_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-hdpi-v4\chart_line.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-hdpi-v4\collections_view_as_list.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-hdpi-v4\content_remove.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-hdpi-v4\dice.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-hdpi-v4\down_arrow.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-hdpi-v4\ic_action_search.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-hdpi-v4\navigation_accept.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-hdpi-v4\right_arrow.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-hdpi-v4\social_group.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-mdpi-v4\action_about.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-mdpi-v4\action_help.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-mdpi-v4\action_search.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-mdpi-v4\action_settings.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-mdpi-v4\btn_default_disabled_focused_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-mdpi-v4\btn_default_disabled_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-mdpi-v4\btn_default_focused_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-mdpi-v4\btn_default_normal_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-mdpi-v4\btn_default_pressed_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-mdpi-v4\chart_line.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-mdpi-v4\collections_view_as_list.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-mdpi-v4\content_remove.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-mdpi-v4\dice.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-mdpi-v4\down_arrow.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-mdpi-v4\ic_action_search.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-mdpi-v4\navigation_accept.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-mdpi-v4\right_arrow.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-mdpi-v4\social_group.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-xhdpi-v4\action_about.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-xhdpi-v4\action_help.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-xhdpi-v4\action_search.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-xhdpi-v4\action_settings.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-xhdpi-v4\btn_default_disabled_focused_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-xhdpi-v4\btn_default_disabled_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-xhdpi-v4\btn_default_focused_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-xhdpi-v4\btn_default_normal_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-xhdpi-v4\btn_default_pressed_holo_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-xhdpi-v4\chart_line.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-xhdpi-v4\collections_view_as_list.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-xhdpi-v4\content_remove.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-xhdpi-v4\dice.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-xhdpi-v4\down_arrow.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-xhdpi-v4\ic_action_search.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-xhdpi-v4\navigation_accept.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-xhdpi-v4\right_arrow.9.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable-xhdpi-v4\social_group.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable\expandable_list_view_indicator.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable\graph_shape.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable\grass.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable\primary_list_shape.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable\sheep.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable\spinner.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable\tab_indicator.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable\tab_press.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable\tab_selected.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable\tab_unselected.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable\table_body_border.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable\table_body_border_max.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable\table_body_border_min.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable\total_score_footer.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\drawable\unit_score_value.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\action_bar.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\activity_add_players.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\activity_create_game.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\activity_finished.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\activity_history.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\activity_player_list.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\activity_randomization.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\activity_score_players.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\activity_search_statistics.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\activity_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\activity_statistics.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\agricola_score_player.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\agricola_score_player_farmers.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\allcreatures_score_player.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\current_players_list_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\finished_cell_player.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\finished_cell_score.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\finished_cell_total_score.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\finished_cell_total_score_max.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\finished_cell_total_score_min.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\finished_cell_unit_score.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\finished_cell_unit_score_max.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\finished_cell_unit_score_min.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\finished_player_list_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\finished_row.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\game_history_list_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\game_history_player_list_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\picker_unit_score_view.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\recent_player_list_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\score_player_footer.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\score_tab_button.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\segmented_unit_score_view.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\layout\select_player_list_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\menu\add_players.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\menu\create_game.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\menu\search_statistics.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\menu\statistics.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\values-de\values-de.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\values-fr\values-fr.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\values-sw720dp-land-v13\values-sw720dp-land-v13.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\values-v11\values-v11.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\values-v14\values-v14.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\values\values.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\merged\debug\xml\preferences.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\resources-debug-androidTest.ap_" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\intermediates\res\resources-debug.ap_" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\build\outputs\logs\manifest-merger-debug-report.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\src\main\res\drawable-hdpi\action_help.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\src\main\res\drawable-hdpi\ic_action_search.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\src\main\res\drawable-mdpi\action_help.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\src\main\res\drawable-mdpi\ic_action_search.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\src\main\res\drawable-xhdpi\action_help.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\AgricolaScorer\src\main\res\drawable-xhdpi\ic_action_search.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/control/AbstractUnitScoreView.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/control/AbstractUnitScoreView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/ActionBarHelper.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/ActionBarHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/listadapter/AddPlayerAdapter.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/listadapter/AddPlayerAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/AddPlayersActivity.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/AddPlayersActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/AgricolaApplication.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/AgricolaApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/gametypehandler/AgricolaHandler.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/gametypehandler/AgricolaHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/model/AgricolaScore.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/model/AgricolaScore.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/managers/AgricolaScoreManager.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/managers/AgricolaScoreManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/mapper/AgricolaScoreMapper.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/mapper/AgricolaScoreMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/control/scoretabfactory/AgricolaScoreTabFactory.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/control/scoretabfactory/AgricolaScoreTabFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/AgricolaScorer.iml" afterPath="$PROJECT_DIR$/AgricolaScorer/AgricolaScorer.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/gametypehandler/AllCreaturesHandler.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/gametypehandler/AllCreaturesHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/model/AllCreaturesScore.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/model/AllCreaturesScore.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/managers/AllCreaturesScoreManager.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/managers/AllCreaturesScoreManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/mapper/AllCreaturesScoreMapper.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/mapper/AllCreaturesScoreMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/control/scoretabfactory/AllCreaturesScoreTabFactory.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/control/scoretabfactory/AllCreaturesScoreTabFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/mapper/BaseScoreMapper.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/mapper/BaseScoreMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/control/scoretabfactory/BaseScoreTabFactory.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/control/scoretabfactory/BaseScoreTabFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/CreateGameActivity.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/CreateGameActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/listadapter/CurrentPlayersAdapter.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/listadapter/CurrentPlayersAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/mapper/Database.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/mapper/Database.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/gametypehandler/FarmersHandler.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/gametypehandler/FarmersHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/listadapter/FinalScoreAdapter.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/listadapter/FinalScoreAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/FinishedActivity.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/FinishedActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/FontManager.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/FontManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/model/Game.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/model/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/GameCache.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/GameCache.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/listadapter/GameHistoryAdapter.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/listadapter/GameHistoryAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/mapper/GameHistoryMapper.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/mapper/GameHistoryMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/mapper/GameSerializationMapper.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/mapper/GameSerializationMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/managers/GameTypeManager.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/managers/GameTypeManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/HistoryActivity.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/HistoryActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/control/InputDialog.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/control/InputDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/control/NumberPicker.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/control/NumberPicker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/control/OnClickListener.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/control/OnClickListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/control/OnValueChangeListener.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/control/OnValueChangeListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/control/PickerUnitScoreView.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/control/PickerUnitScoreView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/mapper/PlayerMapper.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/mapper/PlayerMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/model/PlayerStatistics.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/model/PlayerStatistics.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/RandomizationActivity.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/RandomizationActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/mapper/SavedGameMapper.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/mapper/SavedGameMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/model/Score.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/model/Score.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/managers/ScoreManager.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/managers/ScoreManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/mapper/ScoreMapper.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/mapper/ScoreMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/ScorePlayersActivity.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/ScorePlayersActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/SearchStatisticsActivity.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/SearchStatisticsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/control/SegmentedControlButton.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/control/SegmentedControlButton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/control/SegmentedUnitScoreView.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/control/SegmentedUnitScoreView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/listadapter/SelectablePlayerAdapter.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/listadapter/SelectablePlayerAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/SettingsActivity.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/SettingsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/model/StatisticSearch.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/model/StatisticSearch.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/StatisticsActivity.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/StatisticsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/mapper/StatisticsMapper.java" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/java/com/geeksong/agricolascorer/mapper/StatisticsMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/res/layout/activity_add_players.xml" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/res/layout/activity_add_players.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/res/layout/activity_create_game.xml" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/res/layout/activity_create_game.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/res/layout/activity_history.xml" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/res/layout/activity_history.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/res/layout/activity_player_list.xml" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/res/layout/activity_player_list.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/res/layout/activity_score_players.xml" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/res/layout/activity_score_players.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/res/layout/activity_search_statistics.xml" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/res/layout/activity_search_statistics.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/res/layout/activity_statistics.xml" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/res/layout/activity_statistics.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/res/menu/add_players.xml" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/res/menu/add_players.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/res/layout/agricola_score_player.xml" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/res/layout/agricola_score_player.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/build.gradle" afterPath="$PROJECT_DIR$/AgricolaScorer/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/changelog.txt" afterPath="$PROJECT_DIR$/changelog.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/res/menu/create_game.xml" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/res/menu/create_game.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/res/drawable/expandable_list_view_indicator.xml" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/res/drawable/expandable_list_view_indicator.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/res/layout/game_history_list_item.xml" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/res/layout/game_history_list_item.xml" />
+    <list default="true" id="e51aa281-009e-4087-a018-940ed47a06c3" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\work\Local\AgricolaScorer\app\AgricolaScorer-AgricolaScorer.iml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/res/menu/search_statistics.xml" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/res/menu/search_statistics.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/res/menu/statistics.xml" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/res/menu/statistics.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/res/values-de/strings.xml" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/res/values-de/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgricolaScorer/src/main/res/values-fr/strings.xml" afterPath="$PROJECT_DIR$/AgricolaScorer/src/main/res/values-fr/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AgricolaScorer.iws" />
@@ -273,16 +45,20 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AgricolaScorer/src/main/AndroidManifest.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="1.066202">
+              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="C:\work\Local\AgricolaScorer\keystore" />
+    <option name="KEY_ALIAS" value="agricolascorer" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -300,12 +76,12 @@
           <value>
             <list>
               <ExternalProjectPojo>
-                <option name="name" value="AgricolaScorer" />
-                <option name="path" value="$PROJECT_DIR$" />
+                <option name="name" value=":app" />
+                <option name="path" value="$PROJECT_DIR$/app" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
-                <option name="name" value=":AgricolaScorer" />
-                <option name="path" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="name" value="AgricolaScorer" />
+                <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
             </list>
           </value>
@@ -886,563 +662,563 @@
             </list>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/AgricolaScorer">
+        <entry key="$PROJECT_DIR$/app">
           <value>
             <list>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the Android dependencies of the project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="androidDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles all variants of all applications and secondary packages." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="assemble" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles all the Test applications." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="assembleAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles all Debug builds." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="assembleDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="assembleDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="assembleDebugUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles all Release builds." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="assembleRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="assembleReleaseUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="build" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="buildDependents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="buildNeeded" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="check" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="checkDebugManifest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="checkReleaseManifest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="clean" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileDebugAidl" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileDebugAndroidTestAidl" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileDebugAndroidTestJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileDebugAndroidTestNdk" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileDebugAndroidTestRenderscript" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileDebugAndroidTestSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileDebugJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileDebugNdk" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileDebugRenderscript" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileDebugSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileDebugUnitTestJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileDebugUnitTestSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileLint" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileReleaseAidl" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileReleaseJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileReleaseNdk" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileReleaseRenderscript" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileReleaseSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileReleaseUnitTestJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileReleaseUnitTestSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':AgricolaScorer'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="description" value="Displays the components produced by project ':app'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="components" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs and runs instrumentation tests for all flavors on connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="connectedAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs all device checks on currently connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="connectedCheck" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs and runs the tests for debug on connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="connectedDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':AgricolaScorer'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="description" value="Displays all dependencies declared in project ':app'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="dependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':AgricolaScorer'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="description" value="Displays the insight into a specific dependency in project ':app'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs and runs instrumentation tests using all Device Providers." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="deviceAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs all device checks using Device Providers and Test Servers." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="deviceCheck" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="generateDebugAndroidTestAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="generateDebugAndroidTestBuildConfig" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="generateDebugAndroidTestResValues" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="generateDebugAndroidTestResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="generateDebugAndroidTestSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="generateDebugAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="generateDebugBuildConfig" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="generateDebugResValues" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="generateDebugResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="generateDebugSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="generateReleaseAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="generateReleaseBuildConfig" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="generateReleaseResValues" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="generateReleaseResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="generateReleaseSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="help" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="installDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs the android (on device) tests for the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="installDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="jarDebugClasses" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="jarReleaseClasses" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs lint on all variants." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="lint" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs lint on the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="lintDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs lint on the Release build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="lintRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs lint on just the fatal issues in the Release build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="lintVitalRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="mergeDebugAndroidTestAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="mergeDebugAndroidTestJniLibFolders" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="mergeDebugAndroidTestResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="mergeDebugAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="mergeDebugJniLibFolders" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="mergeDebugResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="mergeReleaseAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="mergeReleaseJniLibFolders" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="mergeReleaseResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Creates a version of android.jar that's suitable for unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="mockableAndroidJar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':AgricolaScorer'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="description" value="Displays the configuration model of project ':app'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="model" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="packageDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="packageDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="packageRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="preBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="preDebugAndroidTestBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="preDebugBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="preDebugUnitTestBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="preReleaseBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="preReleaseUnitTestBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare com.android.support:support-v4:23.1.1" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="prepareComAndroidSupportSupportV42311Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="prepareDebugAndroidTestDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="prepareDebugDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="prepareDebugUnitTestDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="prepareReleaseDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="prepareReleaseUnitTestDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="processDebugAndroidTestJavaRes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="processDebugAndroidTestManifest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="processDebugAndroidTestResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="processDebugJavaRes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="processDebugManifest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="processDebugResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="processDebugUnitTestJavaRes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="processReleaseJavaRes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="processReleaseManifest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="processReleaseResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="processReleaseUnitTestJavaRes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':AgricolaScorer'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="description" value="Displays the sub-projects of project ':app'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':AgricolaScorer'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="description" value="Displays the properties of project ':app'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the signing info for each variant." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="signingReport" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prints out all the source sets defined in this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="sourceSets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':AgricolaScorer'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="description" value="Displays the tasks runnable from project ':app'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="tasks" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Run unit tests for all variants." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="test" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Run unit tests for the debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="testDebugUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Run unit tests for the release build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="testReleaseUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="transformClassesWithDexForDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="transformClassesWithDexForDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="transformClassesWithDexForRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="transformNative_libsWithMergeJniLibsForDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="transformNative_libsWithMergeJniLibsForDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="transformNative_libsWithMergeJniLibsForRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="transformResourcesWithMergeJavaResForDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="transformResourcesWithMergeJavaResForDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="transformResourcesWithMergeJavaResForDebugUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="transformResourcesWithMergeJavaResForRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="transformResourcesWithMergeJavaResForReleaseUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Uninstall all applications." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="uninstallAll" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Uninstalls the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="uninstallDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Uninstalls the android (on device) tests for the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="uninstallDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Uninstalls the Release build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="uninstallRelease" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="validateDebugSigning" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/AgricolaScorer" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="zipalignDebug" />
               </ExternalTaskPojo>
             </list>
@@ -1452,7 +1228,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="C:\work\Local\AgricolaScorer" value="4350900793710" />
+        <entry key="C:\work\Local\AgricolaScorer" value="4351076160401" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1568,7 +1344,7 @@
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
-                  <entry key="$PROJECT_DIR$/AgricolaScorer">
+                  <entry key="$PROJECT_DIR$/app">
                     <value>
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
@@ -1673,13 +1449,13 @@
                             <option value="$MODULE_DIR$/libs/achartengine-1.1.0-rc2.jar" />
                           </list>
                         </option>
-                        <option name="path" value="$PROJECT_DIR$/AgricolaScorer" />
+                        <option name="path" value="$PROJECT_DIR$/app" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
                 </map>
               </option>
-              <option name="name" value="AgricolaScorer" />
+              <option name="name" value="app" />
               <option name="projectBuildClasspath">
                 <list>
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.8-all/ah86jmo43de9lfa8xg9ux3c4h/gradle-2.8/src/announce" />
@@ -1840,9 +1616,9 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
@@ -1851,6 +1627,10 @@
               <option name="myItemId" value="AgricolaScorer" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle Scripts" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1858,7 +1638,7 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AgricolaScorer-AgricolaScorer" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1872,7 +1652,7 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AgricolaScorer-AgricolaScorer" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1886,7 +1666,7 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AgricolaScorer-AgricolaScorer" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1904,7 +1684,7 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AgricolaScorer-AgricolaScorer" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1928,10 +1708,12 @@
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="HTC_One_M9_API_21" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/keystore" />
+    <property name="ExportApk.ApkPath" value="C:\work\Local\AgricolaScorer\app" />
+    <property name="ExportApk.Flavors" value="" />
+    <property name="ExportApk.BuildType" value="release" />
   </component>
-  <component name="RunManager" selected="Android Application.AgricolaScorer-AgricolaScorer">
+  <component name="RunManager" selected="Android Application.app">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -2028,8 +1810,8 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="AgricolaScorer-AgricolaScorer" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="AgricolaScorer-AgricolaScorer" />
+    <configuration default="false" name="app" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="app" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
@@ -2050,7 +1832,7 @@
       <method />
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Android Application.AgricolaScorer-AgricolaScorer" />
+      <item index="0" class="java.lang.String" itemvalue="Android Application.app" />
     </list>
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -2066,10 +1848,10 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="89ca57ba-849f-40cd-876f-8a4094351ba4" name="Default" comment="" />
-      <created>1450383126306</created>
+      <changelist id="e51aa281-009e-4087-a018-940ed47a06c3" name="Default" comment="" />
+      <created>1450469058107</created>
       <option name="number" value="Default" />
-      <updated>1450383126306</updated>
+      <updated>1450469058107</updated>
     </task>
     <servers />
   </component>
@@ -2078,22 +1860,22 @@
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988507" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32873562" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6375144" sideWeight="0.49755502" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2850575" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32988507" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30149597" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21494253" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988507" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988507" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5212888" sideWeight="0.502445" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28178483" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21271394" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -2116,15 +1898,19 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changing name to &quot;app&quot;, to remove the &quot;AgricolaScorer-AgricolaScorer&quot; name weirdness." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changing name to &quot;app&quot;, to remove the &quot;AgricolaScorer-AgricolaScorer&quot; name weirdness." />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AgricolaScorer/src/main/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.066202">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
           <folding />
         </state>
       </provider>
