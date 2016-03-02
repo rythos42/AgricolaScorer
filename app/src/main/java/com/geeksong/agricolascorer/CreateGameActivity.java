@@ -48,10 +48,11 @@ public class CreateGameActivity extends ListActivity {
         
         adapter = new CurrentPlayersAdapter(this, GameCache.getInstance().getPlayerList());
         setListAdapter(adapter);
-    	
-    	checkButtonsVisibility();
+        GameCache.getInstance().setCurrentPlayersAdapter(adapter);  // see method comment for details
+
+        checkButtonsVisibility();
     }
-    
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
