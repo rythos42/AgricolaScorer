@@ -2,12 +2,9 @@ package com.geeksong.agricolascorer;
 
 import com.geeksong.agricolascorer.mapper.PlayerMapper;
 
-import android.net.Uri;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.app.Activity;
 import android.content.Intent;
-import android.database.Cursor;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -19,7 +16,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 public class AddPlayersActivity extends Activity implements OnItemClickListener {
-	private static final int PICK_CONTACT = 1;
 	private static final int PICK_DATABASE = 2;
 
     @Override
@@ -63,33 +59,12 @@ public class AddPlayersActivity extends Activity implements OnItemClickListener 
     	setResult(RESULT_OK, backToCreateGame);
     	finish();
     }
-    
-    @SuppressWarnings("UnusedParameters")
-	public void searchAddressBook(View source) {
-    	Intent intent = new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);
-    	startActivityForResult(intent, PICK_CONTACT);
-    }
-    
+
     @Override
     public void onActivityResult(int reqCode, int resultCode, Intent data) {
     	super.onActivityResult(reqCode, resultCode, data);
 			
     	switch (reqCode) {
-			case PICK_CONTACT:
-				if (resultCode != Activity.RESULT_OK)
-					return;
-
-				Uri contactData = data.getData();
-				Cursor contactCursor = getContentResolver().query(contactData, null, null, null, null);
-
-				if (contactCursor != null) {
-					if (contactCursor.moveToFirst()) {
-						String playerName = contactCursor.getString(contactCursor.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
-						returnToCreateGame(playerName);
-					}
-					contactCursor.close();
-				}
-    			break;
     		case PICK_DATABASE:
     			if(resultCode == Activity.RESULT_CANCELED)
     				return;

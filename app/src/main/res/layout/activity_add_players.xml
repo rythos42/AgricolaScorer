@@ -17,6 +17,7 @@
 	        android:ems="10"
 	        android:hint="@string/input_player_name"
 	 		android:layout_toLeftOf = "@+id/doneAddingPlayerButton"
+			android:layout_toStartOf = "@+id/doneAddingPlayerButton"
 	 		style="@style/text" >
 	   	</EditText>
 	   	
@@ -26,19 +27,11 @@
 	        android:layout_height="wrap_content"
 	        android:text="@string/add"
 	        android:layout_alignParentRight = "true"
+			android:layout_alignParentEnd = "true"
 	        android:onClick="addPlayerToGame" />
 	 	
 	</RelativeLayout>
-	
-	<Button
-        android:id="@+id/addressBookButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/address_book"
-        android:onClick="searchAddressBook"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp" />
-	
+
 	<TextView
 	    android:id="@+id/recentPlayersLabel"
 	    android:text="@string/recent_label" 
