@@ -120,24 +120,33 @@ public class CreateGameActivity extends ListActivity {
     }
     
     public void scoreAgricola(View source) {
+        GameCache game = GameCache.getInstance();
+
   		clearScoreIfChanging(GameType.Agricola);
-  		GameCache.getInstance().setGameType(GameType.Agricola);
+        game.setGameType(GameType.Agricola);
+        game.createScoresForPlayers();
     	
     	Intent startGameIntent = new Intent(source.getContext(), ScorePlayersActivity.class);
     	startActivity(startGameIntent);
     }
     
     public void scoreFarmers(View source) {
+        GameCache game = GameCache.getInstance();
+
   		clearScoreIfChanging(GameType.Farmers);
-		GameCache.getInstance().setGameType(GameType.Farmers);
+        game.setGameType(GameType.Farmers);
+        game.createScoresForPlayers();
 		
     	Intent startGameIntent = new Intent(source.getContext(), ScorePlayersActivity.class);
     	startActivity(startGameIntent);
     }
     
     public void scoreAllCreatures(View source) {
+        GameCache game = GameCache.getInstance();
+
   		clearScoreIfChanging(GameType.AllCreatures);
-    	GameCache.getInstance().setGameType(GameType.AllCreatures);
+        game.setGameType(GameType.AllCreatures);
+        game.createScoresForPlayers();
     	
     	Intent startGameIntent = new Intent(source.getContext(), ScorePlayersActivity.class);
     	startActivity(startGameIntent);

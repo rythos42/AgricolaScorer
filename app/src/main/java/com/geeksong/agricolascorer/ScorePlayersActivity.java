@@ -41,14 +41,8 @@ public class ScorePlayersActivity extends Activity {
         LayoutInflater inflater = getLayoutInflater();
         
         GameCache cache = GameCache.getInstance();
-        ArrayList<Player> playerList = cache.getPlayerList();
-        for(int i = 0; i < playerList.size(); i++ ) {
-        	Player player = playerList.get(i);
+        for(Player player : cache.getPlayerList()) {
         	String playerName = player.getName();
-        	
-        	if(!cache.hasScoreForPlayer(playerName))
-        		cache.getScoreList().add(GameTypeManager.createScore(player));
-        	
             TabSpec tab = tabs.newTabSpec(playerName);
             
             View tabButtonView = inflater.inflate(R.layout.score_tab_button, null);

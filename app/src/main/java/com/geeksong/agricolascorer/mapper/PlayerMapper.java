@@ -33,23 +33,24 @@ public class PlayerMapper {
     }
     
     public Player addPlayer(String name) {
-        String selectQuery =
-        		String.format(Locale.US, "SELECT " +
-                            "(SELECT %s from %s as players WHERE players.%s='%s'), " +
-                            "(SELECT COUNT(*) FROM %s as scores JOIN %s as players on players.id=scores.playerId WHERE players.%s='%s') + " +
-                            "(SELECT COUNT(*) FROM %s as scores JOIN %s as players on players.id=scores.playerId WHERE players.%s='%s')",
-                        Database.KEY_ID, Database.TABLE_RECENTPLAYERS, Database.KEY_NAME, name,
-                        Database.TABLE_SCORES, Database.TABLE_RECENTPLAYERS, Database.KEY_NAME, name,
-                        Database.TABLE_ALL_CREATURES_SCORES, Database.TABLE_RECENTPLAYERS, Database.KEY_NAME, name
-                );
         SQLiteDatabase sqlDb = db.getReadableDatabase();
-        Cursor playerCursor = sqlDb.rawQuery(selectQuery, null);
-        
         Player addedPlayer = new Player(name);
-        
+
+        String selectQuery = String.format(Locale.US, "SELECT %s from %s as players WHERE players.%s='%s'",
+                Database.KEY_ID, Database.TABLE_RECENTPLAYERS, Database.KEY_NAME, name);
+        Cursor playerCursor = sqlDb.rawQuery(selectQuery, null);
+
         if(playerCursor.moveToNext()) {
         	addedPlayer.setId(playerCursor.getInt(0));
-        	addedPlayer.setGameCount(playerCursor.getInt(1));
+
+            String getGameCountQuery = String.format(Locale.US, "SELECT (" +
+                    "(SELECT COUNT(*) FROM %s as scores JOIN %s as players on players.id=scores.playerId WHERE players.%s='%s') + " +
+                    "(SELECT COUNT(*) FROM %s as scores JOIN %s as players on players.id=scores.playerId WHERE players.%s='%s'))",
+                    Database.TABLE_SCORES, Database.TABLE_RECENTPLAYERS, Database.KEY_NAME, name,
+                    Database.TABLE_ALL_CREATURES_SCORES, Database.TABLE_RECENTPLAYERS, Database.KEY_NAME, name);
+            Cursor gameCountCursor = sqlDb.rawQuery(getGameCountQuery, null);
+            if(gameCountCursor.moveToNext())
+            	addedPlayer.setGameCount(gameCountCursor.getInt(0));
         }
         playerCursor.close();
         sqlDb.close();

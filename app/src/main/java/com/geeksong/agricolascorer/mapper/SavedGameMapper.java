@@ -29,7 +29,8 @@ public class SavedGameMapper {
         ScoreMapper scoreMapper = GameTypeManager.createScoreMapper();
 
         for(Score score : scores) {
-        	sqlDb.insert(GameTypeManager.getScoreTableName(), null, scoreMapper.toDatabase(score, gameId));
+        	long success = sqlDb.insert(GameTypeManager.getScoreTableName(), null, scoreMapper.toDatabase(score, gameId));
+            int i = 0;
         }
         sqlDb.close();
     }

@@ -3,6 +3,7 @@ package com.geeksong.agricolascorer;
 import java.util.ArrayList;
 
 import com.geeksong.agricolascorer.listadapter.CurrentPlayersAdapter;
+import com.geeksong.agricolascorer.managers.GameTypeManager;
 import com.geeksong.agricolascorer.model.Game;
 import com.geeksong.agricolascorer.model.GameType;
 import com.geeksong.agricolascorer.model.Player;
@@ -121,11 +122,17 @@ public class GameCache {
 		}
 		return null;
 	}
-	
-	public boolean hasScoreForPlayer(String playerName) {
-		return getScoreByPlayerName(playerName) != null;
-	}
-	
+
+    public void createScoresForPlayers() {
+        for(Player player: players) {
+            String playerName = player.getName();
+            Score playerScore = getScoreByPlayerName(playerName);
+
+            if (playerScore == null)
+                scores.add(GameTypeManager.createScore(player));
+        }
+    }
+
 	public ArrayList<Player> getPlayerList() { return players; }
 	public ArrayList<Score> getScoreList() { return scores; }
 	
