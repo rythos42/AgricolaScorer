@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Подсчет очков Агрикола</string>
+    <string name="add_player">Добавить игрока</string>
+    <string name="title_activity_add_players">Добавить игроков</string>
+    <string name="input_player_name">Введите имя игрока</string>
+    <string name="add">Добавить</string>
+    <string name="address_book">Добавить из телефона</string>
+    <string name="recent_label">Недавние:</string>
+    <string name="fields_label">Поля:</string>
+    <string name="pastures_label">Пастбища:</string>
+    <string name="grain_label">Зерно:</string>
+    <string name="vegetables_label">Овощи:</string>
+    <string name="sheep_label">Овцы:</string>
+    <string name="wild_boar_label">Свиньи:</string>
+    <string name="cattle_label">Коровы:</string>
+    <string name="unused_spaces_label">Пустые ячейки:</string>
+    <string name="fenced_stables_label">Огороженные хлева:</string>
+    <string name="room_type_label">Материал:</string>
+    <string name="rooms_label">Количество комнат:</string>
+    <string name="family_members_label">Количество родичей:</string>
+    <string name="points_for_cards_label">Очки за карты:</string>
+    <string name="bonus_points_label">Бонусы:</string>
+    <string name="begging_cards_label">Начальные карты:</string>
+    <string name="score_label">Очки:</string>
+    <string name="wood">Дерево</string>
+    <string name="clay">Глина</string>
+    <string name="stone">Камень</string>
+    <string name="finish">Подсчитать</string>
+    <string name="save_game">Сохранить</string>
+    <string name="start_again">Новая игра</string>
+    <string name="history">История</string>
+    <string name="remove_from_game">Удалить из игры</string>
+    <string name="rename_player">Переименовать игрока</string>
+    <string name="rename">Переименовать</string>
+    <string name="view_game">Показать результат</string>
+    <string name="delete_game">Удалить игру</string>
+    <string name="no_history">История недоступна. Сыграйте хотя бы одну игру</string>
+    <string name="from_player_list">Из списка игроков</string>
+    <string name="cannot_rename">Невозможно переименовать</string>
+    <string name="player_already_exists">Невозможно переименовать. Игрок уже существует.</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Отмена</string>
+    <string name="player_list">Список игроков</string>
+    <string name="in_game_label">(в игре)</string>
+
+    <plurals name="games_count">
+        <item quantity="one">1 игра</item>
+        <item quantity="few">%d игры</item>
+        <item quantity="other">%d игр</item>
+    </plurals>
+
+    <string name="edit_game">Редактировать игру</string>
+    <string name="statistics">Статистика</string>
+    <string name="about">О программе</string>
+    <string name="about_text">Подсчет очков в Агриколе создана Craig Fleming (rythos42@gmail.com). Dominican шрифт предоставлен www.haroldsfonts.com. Иконка Chart предоставлена blog.twg.ca.</string>
+    <string name="search">Поиск</string>
+    <string name="scores">Очки</string>
+    <string name="score">Очки</string>
+    <string name="date">Дата</string>
+    <string name="in_bed_family_label">In bed family:</string>
+    <string name="horses_label">Лошади:</string>
+    <string name="expand_all">Развернуть</string>
+    <string name="collapse_all">Свернуть</string>
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="four_plus">4+</string>
+    <string name="five_plus">5+</string>
+    <string name="six_plus">6+</string>
+    <string name="seven_plus">7+</string>
+    <string name="eight_plus">8+</string>
+    <string name="zero_to_one">0&#8211;1</string>
+    <string name="one_to_two">1&#8211;2</string>
+    <string name="one_to_three">1&#8211;3</string>
+    <string name="two_to_three">2&#8211;3</string>
+    <string name="three_to_four">3&#8211;4</string>
+    <string name="four_to_five">4&#8211;5</string>
+    <string name="five_to_six">5&#8211;6</string>
+    <string name="six_to_seven">6&#8211;7</string>
+    <string name="randomize">Случайный</string>
+    <string name="randomize_player">Первый игрок</string>
+    <string name="can_not_edit">Не могу редактировать игру</string>
+    <string name="no_detail_scores">Ты не можешь редактировать игру, поскольку в ней не зарегистрировано очков!</string>
+    <string name="graph_of_scores">Диаграмма игр</string>
+    <string name="search_to_create_graph">Нажмите поиск чтобы увидеть диаграмму</string>
+    <string name="search_by_start_date">Поиск по начальной дате</string>
+    <string name="search_by_end_date">Поиск по конечной дате</string>
+    <string name="remove_start_date">Удалить начальную дату</string>
+    <string name="remove_end_date">Удалить конечную дату</string>
+    <string name="limit_number_of_players">Ограничить количество игроков</string>
+    <string name="settings">Настройки</string>
+    <string name="edit_game_date">Редактировать дату игры</string>
+    <string name="score_agricola">Играть в Агриколу</string>
+    <string name="score_farmers">Играть в Фермеров</string>
+    <string name="score_all_creatures">Играть в All Creatures</string>
+    <string name="full_expansion_count_label">Дополнения: </string>
+    <string name="building_score_label">Очки строительства: </string>
+    <string-array name="game_type_array">
+        <item>Агрикола</item>
+        <item>Farmers of the Moor</item>
+        <item>All Creatures</item>
+    </string-array>
+</resources>
