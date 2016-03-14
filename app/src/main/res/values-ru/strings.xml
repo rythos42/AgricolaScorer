@@ -5,7 +5,7 @@
     <string name="add_player">Добавить игрока</string>
     <string name="title_activity_add_players">Добавить игроков</string>
     <string name="input_player_name">Введите имя игрока</string>
-    <string name="add">Добавить</string>
+    <string name="add">+</string>
     <string name="address_book">Добавить из телефона</string>
     <string name="recent_label">Недавние:</string>
     <string name="fields_label">Поля:</string>
@@ -16,13 +16,13 @@
     <string name="wild_boar_label">Свиньи:</string>
     <string name="cattle_label">Коровы:</string>
     <string name="unused_spaces_label">Пустые ячейки:</string>
-    <string name="fenced_stables_label">Огороженные хлева:</string>
+    <string name="fenced_stables_label">Закрытые хлева:</string>
     <string name="room_type_label">Материал:</string>
-    <string name="rooms_label">Количество комнат:</string>
+    <string name="rooms_label">Комнаты:</string>
     <string name="family_members_label">Количество родичей:</string>
     <string name="points_for_cards_label">Очки за карты:</string>
     <string name="bonus_points_label">Бонусы:</string>
-    <string name="begging_cards_label">Начальные карты:</string>
+    <string name="begging_cards_label">Начальные:</string>
     <string name="score_label">Очки:</string>
     <string name="wood">Дерево</string>
     <string name="clay">Глина</string>
@@ -59,7 +59,7 @@
     <string name="scores">Очки</string>
     <string name="score">Очки</string>
     <string name="date">Дата</string>
-    <string name="in_bed_family_label">In bed family:</string>
+    <string name="in_bed_family_label">Больные родичи:</string>
     <string name="horses_label">Лошади:</string>
     <string name="expand_all">Развернуть</string>
     <string name="collapse_all">Свернуть</string>
