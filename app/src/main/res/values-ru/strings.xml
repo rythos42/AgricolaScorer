@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Подсчет очков Агрикола</string>
+    <string name="app_name">Агрикола счет</string>
     <string name="add_player">Добавить игрока</string>
     <string name="title_activity_add_players">Добавить игроков</string>
     <string name="input_player_name">Введите имя игрока</string>

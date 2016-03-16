@@ -115,6 +115,7 @@ public class StatisticsActivity extends Activity {
         ActionBarHelper.setActionBarTitle(this, R.string.graph_of_scores);
         
         renderer.setPointSize(5f);
+        renderer.setLegendTextSize(64);
     }
 
     protected void onResume() {

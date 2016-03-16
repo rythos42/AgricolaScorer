@@ -20,16 +20,16 @@ public class PlayerMapper {
     
     private static PlayerMapper instance;
     public static void initialize(Context context) {
-    	instance = new PlayerMapper(context);
+        instance = new PlayerMapper(context);
     }
     
     public static PlayerMapper getInstance() {
-    	return instance;
+        return instance;
     }
  
     private PlayerMapper(Context context) {
-    	this.context = context;
-    	this.db = Database.getInstance();
+        this.context = context;
+        this.db = Database.getInstance();
     }
     
     public Player addPlayer(String name) {
@@ -41,7 +41,7 @@ public class PlayerMapper {
         Cursor playerCursor = sqlDb.rawQuery(selectQuery, null);
 
         if(playerCursor.moveToNext()) {
-        	addedPlayer.setId(playerCursor.getInt(0));
+            addedPlayer.setId(playerCursor.getInt(0));
 
             String getGameCountQuery = String.format(Locale.US, "SELECT (" +
                     "(SELECT COUNT(*) FROM %s as scores JOIN %s as players on players.id=scores.playerId WHERE players.%s='%s') + " +
@@ -50,7 +50,7 @@ public class PlayerMapper {
                     Database.TABLE_ALL_CREATURES_SCORES, Database.TABLE_RECENTPLAYERS, Database.KEY_NAME, name);
             Cursor gameCountCursor = sqlDb.rawQuery(getGameCountQuery, null);
             if(gameCountCursor.moveToNext())
-            	addedPlayer.setGameCount(gameCountCursor.getInt(0));
+                addedPlayer.setGameCount(gameCountCursor.getInt(0));
         }
         playerCursor.close();
         sqlDb.close();
@@ -59,12 +59,12 @@ public class PlayerMapper {
         
         return addedPlayer;
     }
-    
+
     private void addPlayer(Player player) {
-    	if(player.hasId())
-    		updatePlayer(player);
-    	else
-    		insertPlayer(player);
+        if(player.hasId())
+            updatePlayer(player);
+        else
+            insertPlayer(player);
     }
     
     public AddPlayerAdapter getTopPlayersListAdapter() {
@@ -73,20 +73,20 @@ public class PlayerMapper {
     }
     
     public AddPlayerAdapter getPlayersListAdapter() {
-        List<Player> playerList = getPlayers(true);
+        List<Player> playerList = getPlayers(false);
         return new AddPlayerAdapter(this.context, playerList);
     }
     
     public ArrayList<String> getPlayerNames() {
-    	ArrayList<String> playerNames = new ArrayList<>();
-    	for(Player player : getPlayers(false)) {
-    		playerNames.add(player.getName());
-    	}
-    	return playerNames;
+        ArrayList<String> playerNames = new ArrayList<>();
+        for(Player player : getPlayers(false)) {
+            playerNames.add(player.getName());
+        }
+        return playerNames;
     }
     
     public SelectablePlayerAdapter getSelectablePlayersListAdapter() {
-        List<Player> playerList = getPlayers(false);
+        List<Player> playerList = getPlayers(true);
         return new SelectablePlayerAdapter(this.context, playerList);
     }
     
@@ -102,46 +102,46 @@ public class PlayerMapper {
     }
     
     public void updatePlayer(Player player) {
-    	if(playerExists(player.getName()))
-    		return;
-    	
+        if(playerExists(player.getName()))
+            return;
+
         SQLiteDatabase sqlDb = db.getWritableDatabase();
      
         ContentValues values = new ContentValues();
         values.put(Database.KEY_NAME, player.getName());
      
-        sqlDb.update(Database.TABLE_RECENTPLAYERS, values, Database.KEY_ID + " = ?", new String[] { String.valueOf(player.getId()) });
+        sqlDb.update(Database.TABLE_RECENTPLAYERS, values, Database.KEY_ID + " = ?", new String[]{String.valueOf(player.getId())});
     }
     
     private List<Player> getPlayers(boolean requireGame) {
         SQLiteDatabase sqlDb = db.getReadableDatabase();
         
         String selectPlayers = String.format(Locale.US, "SELECT player.%s as _id, player.%s FROM %s as player",
-        		Database.KEY_ID, Database.KEY_NAME, Database.TABLE_RECENTPLAYERS);
+                Database.KEY_ID, Database.KEY_NAME, Database.TABLE_RECENTPLAYERS);
         Cursor playersCursor = sqlDb.rawQuery(selectPlayers, null);
         
         List<Player> playerList = new ArrayList<>();
         while(playersCursor.moveToNext()) {
-			int playerId = playersCursor.getInt(0);
-			int gameCount = 0;
-			
-			for(ScoreMapper mapper : GameTypeManager.getAllScoreMappers()) {
-				gameCount += mapper.getGameCount(db, playerId);
-			}
+            int playerId = playersCursor.getInt(0);
+            int gameCount = 0;
 
-			if(requireGame && gameCount == 0)
-				continue;
+            for(ScoreMapper mapper : GameTypeManager.getAllScoreMappers()) {
+                gameCount += mapper.getGameCount(db, playerId);
+            }
 
-			Player player = new Player(playerId, playersCursor.getString(1), gameCount);
-			playerList.add(player);
-		}
+            if(requireGame && gameCount == 0)
+                continue;
+
+            Player player = new Player(playerId, playersCursor.getString(1), gameCount);
+            playerList.add(player);
+        }
 
         playersCursor.close();
         return playerList;
     }
     
     public boolean playerExists(String playerName) {
-    	String selectQuery = String.format(Locale.US, "SELECT %s FROM %s WHERE %s='%s'", Database.KEY_ID, Database.TABLE_RECENTPLAYERS, Database.KEY_NAME, playerName);
+        String selectQuery = String.format(Locale.US, "SELECT %s FROM %s WHERE %s='%s'", Database.KEY_ID, Database.TABLE_RECENTPLAYERS, Database.KEY_NAME, playerName);
         SQLiteDatabase sqlDb = db.getWritableDatabase();
         Cursor players = sqlDb.rawQuery(selectQuery, null);
         boolean playerExists = players.moveToNext();
